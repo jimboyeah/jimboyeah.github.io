@@ -1,1 +1,12 @@
 theme: jekyll-theme-time-machine
+
+# Site settings
+
+title: 夏
+SEOTitle: 夏的博客 | ats' Blog
+header-img: img/home-bg-hill.jpg
+email: keysaim@gmail.com
+description: "描述"
+keyword: "夏, ats"
+url: "https://jeango.github.io"
+baseurl: ""
