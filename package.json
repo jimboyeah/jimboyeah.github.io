@@ -1,0 +1,23 @@
+{
+  "name": "react-tic-tac-toe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --devtool eval --progress --colors",
+    "dev": "set NODE_ENV=development&& webpack-dev-server --open ",
+    "build": "set NODE_ENV=production&& webpack --progress --color"
+  },
+  "dependencies": {
+    "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.2.1",
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.7.5",
+    "webpack": "^2.3.3"
+  }
+}
