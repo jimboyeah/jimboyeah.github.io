@@ -21,6 +21,18 @@
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
 			"quiet": true,
+			"name": "Run PHP Server",
+			"cmd": ["php", "-S", "localhost:80", "-t", "."],
+			"working_dir": "${project_path}"
+		},
+		{
+			"encoding": "gkb",
+			"env":
+			{
+				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
+			},
+			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
+			"quiet": true,
 			"name": "NPM run start",
 			"cmd": ["npm.cmd", "run", "start"],
 			"working_dir": "${project_path}"
