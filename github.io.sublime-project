@@ -2,63 +2,90 @@
 	"build_systems":
 	[
 		{
+			"cmd":
+			[
+				"npm.cmd",
+				"run",
+				"test"
+			],
 			"encoding": "gkb",
 			"env":
 			{
 				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
-			"quiet": true,
 			"name": "NPM run test",
-			"cmd": ["npm.cmd", "run", "test"],
+			"quiet": true,
 			"working_dir": "${project_path}"
 		},
 		{
+			"cmd":
+			[
+				"php",
+				"-S",
+				"localhost:80",
+				"-t",
+				"."
+			],
 			"encoding": "gkb",
 			"env":
 			{
 				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
-			"quiet": true,
 			"name": "Run PHP Server",
-			"cmd": ["php", "-S", "localhost:80", "-t", "."],
+			"quiet": true,
 			"working_dir": "${project_path}"
 		},
 		{
+			"cmd":
+			[
+				"npm.cmd",
+				"run",
+				"start"
+			],
 			"encoding": "gkb",
 			"env":
 			{
 				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
-			"quiet": true,
 			"name": "NPM run start",
-			"cmd": ["npm.cmd", "run", "start"],
+			"quiet": true,
 			"working_dir": "${project_path}"
 		},
 		{
+			"cmd":
+			[
+				"npm.cmd",
+				"run",
+				"dev"
+			],
 			"encoding": "gkb",
 			"env":
 			{
 				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
-			"quiet": true,
 			"name": "NPM run dev",
-			"cmd": ["npm.cmd", "run", "dev"],
+			"quiet": true,
 			"working_dir": "${project_path}"
 		},
 		{
+			"cmd":
+			[
+				"npm.cmd",
+				"run",
+				"build"
+			],
 			"encoding": "gkb",
 			"env":
 			{
 				"PATH": "c:/CodeBlocks/MinGW/bin/;%PATH%"
 			},
 			"file_regex": "^  (.+)\\((\\d+)\\)(): ((?:fatal )?(?:error|warning) \\w+\\d\\d\\d\\d: .*) \\[.*$",
-			"quiet": true,
 			"name": "NPM run build",
-			"cmd": ["npm.cmd", "run", "build"],
+			"quiet": true,
 			"working_dir": "${project_path}"
 		},
 		{
@@ -102,6 +129,9 @@
 			],
 			"name": "Git Demo Project",
 			"path": "."
+		},
+		{
+			"path": "C:\\coding\\md-code\\vue-3.0\\vue3rd"
 		}
 	],
 	"settings":

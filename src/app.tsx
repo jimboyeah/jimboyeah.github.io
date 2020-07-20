@@ -4,6 +4,7 @@ import { Board } from "./Board";
 import { RestartBtn } from "./RestartBtn";
 import { GameStateBar } from "./GameStateBar";
 import { GameState } from "./constants";
+import { Markdown } from "./markdown";
 
 class App extends React.Component<{}, {}> {
     render() {
@@ -14,8 +15,9 @@ class App extends React.Component<{}, {}> {
                     <span className="description t1"> Player(X) </span>                
                     <span className="description t2"> Computer(O) </span>
                 </div>
-                <RestartBtn />     
-                <GameStateBar />           
+                <RestartBtn />
+                <GameStateBar />
+                <Markdown />
             </div> 
         )
     }

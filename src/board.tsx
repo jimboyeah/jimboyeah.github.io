@@ -79,8 +79,8 @@ export class Board extends React.Component<{}, BoardState> {
         if (cells[pos0] === cells[pos1] &&
             cells[pos1] === cells[pos2] &&
             cells[pos0] !== "") {
-            if (cells[pos0] === "X") {
-                return "X Wins!";
+            if (cells[pos0] === "Y") {
+                return "You Wins!";
             }
             return "O Wins!";
         }

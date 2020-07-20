@@ -5,6 +5,16 @@ html {
     box-sizing: inherit;
 }
 
+table { border-collapse: collapse; border-radius: 24px; border:1px solid #dadada; box-shadow: 1px solid #282828; }
+thead { background: #282828; color: white; }
+th {text-align: center;}
+td {padding: 4px 16px;}
+tr {line-height: 28px;}
+tr:nth-child(2n){ background: #efefef;  }
+li { line-height: 28px; }
+div.hello { text-align: left; width:640px; margin: auto; }
+
+
 .app {
     font-family: 'Open Sans', sans-serif;
     margin: 80px;
