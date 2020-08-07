@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>坚果 Hugo 教程 on Go Learning</title>
-    <link>https://jimboyeah.github.io/public/tutorials/</link>
+    <link>https://jimboyeah.github.io/tutorials/</link>
     <description>Recent content in 坚果 Hugo 教程 on Go Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nothing is Mine</copyright>
     <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
     
-	<atom:link href="https://jimboyeah.github.io/public/tutorials/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimboyeah.github.io/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I: Hugo Web Framework</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch01-hugo-web-framework/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch01-hugo-web-framework/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch01-hugo-web-framework/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch01-hugo-web-framework/</guid>
       <description>Hugo Framework 是一个静态网站构建工具，以 Go 语言所写，号称&lt;strong&gt;世界上最快的静态网站引擎&lt;/strong&gt;。提供文件头，即扉页 front matter 和模板的等基本功能，兼备可伸缩性和可管理性。Hugo 不仅是给开发者设计的，也同样适用于内容管理员和写作人员。</description>
     </item>
     
     <item>
       <title>II: Hugo 目录组织</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch02-project-directories/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch02-project-directories/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch02-project-directories/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch02-project-directories/</guid>
       <description>Hugo 仓库提供的文档项目本身就是一个很好的示范，理解 Hogo 工程的目录结构是为了更好地利用 Hugo 的静态站点生成能力，比如语言支持与目录结构的关系、页面模板与 Markdown 文件的关系与文件的组织方式。</description>
     </item>
     
     <item>
       <title>III: Hugo Modules 模块</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch03-hugo-modules/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch03-hugo-modules/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch03-hugo-modules/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch03-hugo-modules/</guid>
       <description>Hugo Modules 是基于 Go Modules 实现的，模块 Hugo 构建的核心块，一个模块可以一个 Hugo 工程，也可以是 Hugo 定义的 7 种小模块 static, content, layouts, data, assets, i18n, archetypes，可以按喜欢的方式组件使用模块，甚至从工程外部装入模块目录以构建一个大型的虚拟联合文件系统。</description>
     </item>
     
     <item>
       <title>IV: Hugo Pipes 管道处理</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch04-hugo-pipes/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch04-hugo-pipes/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch04-hugo-pipes/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch04-hugo-pipes/</guid>
       <description>Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 &lt;strong&gt;assetDir&lt;/strong&gt; 配置项指定，默认是 assets，这些资源通过管道处理生成最终需要的文件，比如 SCSS 通过管道的工具处理生成 CSS，其中一个工具就是 PostCSS。</description>
     </item>
     
     <item>
       <title>V: Templates 模板</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch05-hugo-templates/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch05-hugo-templates/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch05-hugo-templates/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch05-hugo-templates/</guid>
       <description>Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能。Mardown 文件提共内容数据，而模板则是数据的消化系统。</description>
     </item>
     
     <item>
       <title>VI: Multilingual 多语言支持</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch06-multilingual/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch06-multilingual/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch06-multilingual/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch06-multilingual/</guid>
       <description>Hugo 的多语言支持是深入各个方面的，包括页面的语言、数据文件的多语言、i18n 多语言字符串转换函数等。多语言的内容组织方式有两种，文件名组织和目录结构组织。多语言可以与菜单很好地结合，让静态站点也可以拥有动态站在一样的效果。</description>
     </item>
     
     <item>
       <title>VII: Variables 对象变量</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch07-varialbes/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch07-varialbes/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch07-varialbes/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch07-varialbes/</guid>
       <description>&lt;p&gt;Hugo 提供的对象及变量就是 Go 语言实现的各种对象对外公开的函数方法或属性，了解这些对象是用好模板的基础。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>IX: Menus 菜单组织</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch09-menus/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch09-menus/</link>
       <pubDate>Thu, 06 Aug 2020 12:09:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch09-menus/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch09-menus/</guid>
       <description>Hugo 的菜单系统和多语言结合得非常紧密，在定义多语言时，也可以相应定义相应的菜单。也就是说，一个 Hugo 项目可以有多个不同语言的，每种语言都可以使用专用菜单。&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>VIII: Functions 内置函数</title>
-      <link>https://jimboyeah.github.io/public/tutorials/ch08-functions/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch08-functions/</link>
       <pubDate>Thu, 06 Aug 2020 12:09:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/public/tutorials/ch08-functions/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch08-functions/</guid>
       <description>Hugo 导出的函数有许多，这里提供一个以内置函数实现的 Markdown 目录生成功能，使用目录生成时，只需要在 MD 文件中定义目录点位符 [TOC] 即可在对应位置生成目录。&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
