@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小说 on Go Learning</title>
+    <link>https://jimboyeah.github.io/public/post/</link>
+    <description>Recent content in 小说 on Go Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nothing is Mine</copyright>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://jimboyeah.github.io/public/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

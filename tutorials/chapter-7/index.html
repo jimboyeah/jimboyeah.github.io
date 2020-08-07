@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>VII: Variables 对象变量 | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+    
+    
+      
+      <link href="/theme/css/main.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
+
+
+    
+
+    
+    
+    <meta property="og:title" content="VII: Variables 对象变量" />
+<meta property="og:description" content="坚果的 Hugo 教程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1314/tutorials/chapter-7/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="name" content="VII: Variables 对象变量">
+<meta itemprop="description" content="坚果的 Hugo 教程">
+<meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="804">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VII: Variables 对象变量"/>
+<meta name="twitter:description" content="坚果的 Hugo 教程"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1314/assets/IMG_20181101_233654_s.jpg');background-position: center bottom;">
+    <div class="pb3-m pb6-l bg-black-10">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="坚果 Hugo 教程 page">
+              坚果 Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">VII: Variables 对象变量</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              坚果的 Hugo 教程
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+<textarea style="height: 50vh; width:98vw;display: none;">
+
+================ ================ ================ ================
+
+
+    
+|坚果 Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+    
+
+    
+|关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|小说 | /post/ |  post\ |  |  .Children = []
+    
+
+    
+|联络 | /contact/ |  \ |  |  .Children = []
+    
+
+
+================ ================ ================ ================
+
+
+    .Children = []
+|坚果 Hugo 教程 | /tutorials/ |  | HasMenuCurrent
+    
+
+    .Children = []
+|关于 | /about/ |  | 
+    
+
+    .Children = []
+|小说 | /post/ |  | 
+    
+
+
+================ ================ ================ ================
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = false
+.Translations = Pages(0)
+.AllTranslations = Pages(1)
+
+
+
+
+================ ================ ================ ================
+
+  &lt;a href="/en/">🏠 Go Learning en&lt;/a> 
+  &lt;a href="/">🏠 Go Learning zh&lt;/a> 
+
+
+.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+
+.Site.Data = map[webpack_assets:map[app:map[css:css/app.4fc0b62e4b82c997bb0041217cd6b979.css js:js/app.3fc0f988d21662902933.js]]]
+.Site.Language.Lang = zh
+
+
+</textarea>
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        坚果 HUGO 教程
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://localhost:1314/tutorials/chapter-7/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://localhost:1314/tutorials/chapter-7/&amp;text=VII:%20Variables%20%e5%af%b9%e8%b1%a1%e5%8f%98%e9%87%8f" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1314/tutorials/chapter-7/&amp;title=VII:%20Variables%20%e5%af%b9%e8%b1%a1%e5%8f%98%e9%87%8f" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">VII: Variables 对象变量</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+           
+          
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      <p>Hugo 提供的对象及变量就是 Go 语言实现的各种对象对外公开的函数方法或属性，了解这些对象是用好模板的基础。</p>
+<h1 id="variables-对象变量">Variables 对象变量</h1>
+<p>File 文件系统对象：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.File.Path</td>
+<td>文件路径，如 <code>posts/foo.en.md</code></td>
+</tr>
+<tr>
+<td>.File.LogicalName</td>
+<td>内容文件页面逻辑名，如 <code>foo.en.md</code></td>
+</tr>
+<tr>
+<td>.File.TranslationBaseName</td>
+<td>翻译内容的原文件名，如 <code>foo.md</code></td>
+</tr>
+<tr>
+<td>.File.ContentBaseName</td>
+<td>等价 TranslationBaseName 或是所在文件夹名，如果是一个 leaf bundle</td>
+</tr>
+<tr>
+<td>.File.BaseFileName</td>
+<td>不含扩展名的文件名，如 <code>foo.en</code></td>
+</tr>
+<tr>
+<td>.File.Ext</td>
+<td>扩展名，如 <code>md</code>，同 <code>.File.Extension</code>，注意没点号</td>
+</tr>
+<tr>
+<td>.File.Lang</td>
+<td>文件关联的语言，如 <code>en</code>，参考 Hugo 多语言支持 Multilingual features</td>
+</tr>
+<tr>
+<td>.File.Dir</td>
+<td>目录路径 <code>content/posts/dir1/dir2/</code>，相对于工程目录，注意 <code>\</code> 或 <code>/</code> 对应不同系统</td>
+</tr>
+<tr>
+<td>.File.UniqueID</td>
+<td>文件路径的 MD5 校验值</td>
+</tr>
+</tbody>
+</table>
+<p>Hugo 可以使用 Git 一起工作，要求如下：</p>
+<ol>
+<li>站点项目是一个 Git 仓库目录。</li>
+<li>能在 <code>PATH</code> 目录能找到并可以执行 Git 命令。</li>
+<li>启用 <code>.GitInfo</code> 需要登入 Hugo 命令行参数 <code>--enableGitInfo</code> 或配置文件设置 <code>enableGitInfo = true</code>。</li>
+</ol>
+<p>GitInfo 对象：</p>
+<p>|.AbbreviatedHash | 简短的 git commit hash，如 <code>866cbcc</code>
+|.AuthorName | 作者，对应 <code>.mailmap</code>
+|.AuthorEmail | 作者邮箱，对应 <code>.mailmap</code>
+|.AuthorDate | 发布日期
+|.Hash | 完整 commit hash，如 <code>866cbccdab588b9908887ffd3b4f2667e94090c3</code>
+|.Subject | Git 提交的说明信息，如 <code>tpl: Add custom index function</code></p>
+<p>Hugo 对象，Page.Hugo 属性已经试用，直接使用全局变量，如 <code>hugo.Generator</code>。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Hugo.Generator</td>
+<td>生成 HTML 标签，如 <code>&lt;meta name=&quot;generator&quot; content=&quot;Hugo 0.18&quot; /&gt;</code></td>
+</tr>
+<tr>
+<td>.Hugo.Version</td>
+<td>Hugo 版本，如 <code>0.13-DEV</code></td>
+</tr>
+<tr>
+<td>.Hugo.Environment</td>
+<td>当前的运行环境，即 <code>--environment</code> 命令行参数</td>
+</tr>
+<tr>
+<td>.Hugo.CommitHash</td>
+<td>当前 Hugo 版本的 git commit hash 值</td>
+</tr>
+<tr>
+<td>.Hugo.BuildDate</td>
+<td>Hugo 编译日期，RFC 3339 格式，如 <code>2002-10-02T10:00:00-05:00</code></td>
+</tr>
+</tbody>
+</table>
+<p>菜单模板中使用的菜单对象：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Menu</td>
+<td>string</td>
+<td>包含此菜单条目的菜单名 <strong>menu</strong> -&gt; <strong>menu entry</strong></td>
+</tr>
+<tr>
+<td>.URL</td>
+<td>string</td>
+<td>菜单设置的 <code>url</code> 或者内容文件 front-matter 配置的菜单，默认值是 <code>.RelPermalink</code></td>
+</tr>
+<tr>
+<td>.Page</td>
+<td>* Page</td>
+<td>Page 对象引用，如果菜单条目在 front-matter 或者在站点配置文件，它不会为 nil</td>
+</tr>
+<tr>
+<td>.Name</td>
+<td>string</td>
+<td>菜单配置的 <code>name</code>，默认值 <code>.LinkTitle</code></td>
+</tr>
+<tr>
+<td>.Identifier</td>
+<td>string</td>
+<td>菜单配置的 <code>identifier</code> 值，如果菜单有同名，那么必需设备</td>
+</tr>
+<tr>
+<td>.Pre</td>
+<td>template.HTML</td>
+<td>菜单配置的 <code>pre</code> 值，HTML 标签开始的字符串</td>
+</tr>
+<tr>
+<td>.Post</td>
+<td>template.HTML</td>
+<td>菜单配置的 <code>post</code> 值，HTML 标签结束位置的字符串</td>
+</tr>
+<tr>
+<td>.Weight</td>
+<td>int</td>
+<td>菜单配置的 <code>weight</code>权重，排序有关，默认值同页面的权重</td>
+</tr>
+<tr>
+<td>.Parent</td>
+<td>string</td>
+<td>上层菜单条目 <strong>menu entry</strong> 的名字或标识，设置 <code>parent</code> 会将菜单嵌入对应的菜单条目下</td>
+</tr>
+<tr>
+<td>.Children</td>
+<td>Menu</td>
+<td>子菜单集合，由 Hugo 自动填充</td>
+</tr>
+</tbody>
+</table>
+<p>菜单条目还有以下函数方法：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>返回值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.HasChildren</td>
+<td>boolean</td>
+<td>返回 <code>true</code> 如果 <code>.Children</code> 非 nil</td>
+</tr>
+<tr>
+<td>.KeyName</td>
+<td>string</td>
+<td>返回 <code>.Identifier</code> 如果存在键值，否则返回 <code>.Name</code></td>
+</tr>
+<tr>
+<td>.IsEqual</td>
+<td>boolean</td>
+<td>返回 <code>true</code> 如果同一个菜单条目</td>
+</tr>
+<tr>
+<td>.IsSameResource</td>
+<td>boolean</td>
+<td>返回 <code>true</code> 如果两个菜单条目有相同 <code>.URL</code></td>
+</tr>
+<tr>
+<td>.Title</td>
+<td>string</td>
+<td>链接标签的标题，菜单配置的 <code>title</code> 属性或者内容文件页面 <code>.LinkTitle</code></td>
+</tr>
+</tbody>
+</table>
+<p>另外，页面对应提供 IsMenuCurrent 和 HasMenuCurrent 方法来判断页面和菜单的关系：</p>
+<pre><code>.IsMenuCurrent(menu string, menuEntry *MenuEntry ) boolean
+.HasMenuCurrent(menu string, menuEntry *MenuEntry) boolean
+</code></pre>
+<p>页面对象 Page 属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.AlternativeOutputFormats</td>
+<td>包含所有输出格式，在 <code>&lt;head&gt;</code> 中列表 <code>link rel</code> 有用</td>
+</tr>
+<tr>
+<td>.AllTranslations</td>
+<td>所有关联的翻译页面，包含当前页面，如果有多语言翻译的内容</td>
+</tr>
+<tr>
+<td>.Aliases</td>
+<td>页面别名</td>
+</tr>
+<tr>
+<td>.Content</td>
+<td>页面内容，即内容文件 front matter 下面的内容</td>
+</tr>
+<tr>
+<td>.Data</td>
+<td>为此类型页面指定的数据内容</td>
+</tr>
+<tr>
+<td>.Date</td>
+<td>内容文件的日期信息，和 <code>.ExpiryDate</code>, <code>.PublishDate</code>, <code>.Lastmod</code> 相关</td>
+</tr>
+<tr>
+<td>.Description</td>
+<td>内容配置的描述信息</td>
+</tr>
+<tr>
+<td>.Draft</td>
+<td>标记文件是否是草稿状态 <code>true</code> 表示草稿，启动 Hugo 时需要 -D 参数</td>
+</tr>
+<tr>
+<td>.ExpiryDate</td>
+<td>过期日期，当前系统日期超过内容文件配置的 <code>expirydate</code> 表示过期</td>
+</tr>
+<tr>
+<td>.File</td>
+<td>文件系统对象</td>
+</tr>
+<tr>
+<td>.FuzzyWordCount</td>
+<td>字符统计，近似值</td>
+</tr>
+<tr>
+<td>.IsHome</td>
+<td>标记是否是主页</td>
+</tr>
+<tr>
+<td>.IsNode</td>
+<td>总为 <code>false</code> 表示正常内容页</td>
+</tr>
+<tr>
+<td>.IsPage</td>
+<td>总为 <code>true</code>  表示正常内容页</td>
+</tr>
+<tr>
+<td>.IsTranslated</td>
+<td><code>true</code> 表示此页面有关联的翻译内容页面</td>
+</tr>
+<tr>
+<td>.Keywords</td>
+<td>内容配置的 meta 关键字</td>
+</tr>
+<tr>
+<td>.Kind</td>
+<td>内容文件配置的页面类型 <em>kind</em></td>
+</tr>
+<tr>
+<td>.Language</td>
+<td>语言对象，指向配置文件语言配置信息，<code>.Language.Lang</code> 就是语言代码</td>
+</tr>
+<tr>
+<td>.Lastmod</td>
+<td>文件扉页配置的最后修改日期 <code>lastmod</code>，如果启用了 GitInfo 则以其为准</td>
+</tr>
+<tr>
+<td>.LinkTitle</td>
+<td>内容文件的 <code>linktitle</code> 或 <code>title</code></td>
+</tr>
+<tr>
+<td>.Next</td>
+<td>下一个页面对象，即更新的页面</td>
+</tr>
+<tr>
+<td>.NextInSection</td>
+<td>当前 section 中的下一个页面，如 <code>/blog</code> 分区中的页面，按列表模板默认排序</td>
+</tr>
+<tr>
+<td>.OutputFormats</td>
+<td>所有输了格式 OutputFormat 对象集体，参考 <code>.Get</code> 方法</td>
+</tr>
+<tr>
+<td>.Pages</td>
+<td>相关页面的集合，对于正常页面为 nil</td>
+</tr>
+<tr>
+<td>.Permalink</td>
+<td>页面永久链接 URL</td>
+</tr>
+<tr>
+<td>.Plain</td>
+<td>纯文本内容，过滤了 HTML 标签</td>
+</tr>
+<tr>
+<td>.PlainWords</td>
+<td>纯文本字符串数组，不含分行，<code>[]string</code></td>
+</tr>
+<tr>
+<td>.Prev</td>
+<td>上一页面对象，即更旧的页面</td>
+</tr>
+<tr>
+<td>.PrevInSection</td>
+<td>当前 section 中的前一个页面</td>
+</tr>
+<tr>
+<td>.PublishDate</td>
+<td>内容文件设置的 published 发布时间</td>
+</tr>
+<tr>
+<td>.RawContent</td>
+<td>原始 markdown 文件内容无 front matter 部分，和 remarkjs.com 一起很有用</td>
+</tr>
+<tr>
+<td>.ReadingTime</td>
+<td>阅读完需要的时间，分钟</td>
+</tr>
+<tr>
+<td>.Resources</td>
+<td>当前页面关联的资源文件，如图片, CSS</td>
+</tr>
+<tr>
+<td>.Ref</td>
+<td>返回给定内容文件的 URL 地址，如 <code>.Ref &quot;sample.md&quot;</code>，参考 Cross References</td>
+</tr>
+<tr>
+<td>.RelPermalink</td>
+<td>返回当前页面的相对链接地址</td>
+</tr>
+<tr>
+<td>.RelRef</td>
+<td>返回给内容文件的相对链接地址</td>
+</tr>
+<tr>
+<td>.Site</td>
+<td>当前站点对象</td>
+</tr>
+<tr>
+<td>.Sites</td>
+<td>所有语言的站点，如第一个站点的 URL {{ .Sites.First.Home.RelPermalink }}</td>
+</tr>
+<tr>
+<td>.Sites.First</td>
+<td>第一个语言对应的站点，非多语言站点就返回自身</td>
+</tr>
+<tr>
+<td>.Summary</td>
+<td>内容摘要，默认自动截取，可用 <code>&lt;!--more--&gt;</code> 进行分隔摘要部分，或者在扉页配置 summary</td>
+</tr>
+<tr>
+<td>.TableOfContents</td>
+<td>内容页面的目录</td>
+</tr>
+<tr>
+<td>.Title</td>
+<td>页面标题</td>
+</tr>
+<tr>
+<td>.Translations</td>
+<td>当前页面的关联翻译内容页面列表</td>
+</tr>
+<tr>
+<td>.TranslationKey</td>
+<td>当前页面翻译内容关联键值</td>
+</tr>
+<tr>
+<td>.Truncated</td>
+<td>标记 <code>.Summary</code> 是不是截取的，通常在 &ldquo;Read more&hellip;&rdquo; 链接中使用</td>
+</tr>
+<tr>
+<td>.Type</td>
+<td>内容类型，如 <code>posts</code></td>
+</tr>
+<tr>
+<td>.Weight</td>
+<td>内容文件配置的权重值</td>
+</tr>
+<tr>
+<td>.WordCount</td>
+<td>单词统计</td>
+</tr>
+<tr>
+<td>.Dir</td>
+<td>内容文件的目录路径，相对 <code>content</code> 目录，使用 File.Dir 替代</td>
+</tr>
+<tr>
+<td>.Hugo</td>
+<td>弃用，建议直接使用 hugo 全局对象</td>
+</tr>
+<tr>
+<td>.RSSLink (deprecated)</td>
+<td>RSS 地址，替代 <code>{{ with .OutputFormats.Get &quot;RSS&quot; }}{{ .RelPermalink }}{{ end }}</code>.</td>
+</tr>
+<tr>
+<td>.UniqueID</td>
+<td>弃用，MD5 校验值，使用 <code>.File.UniqueID</code> 替代</td>
+</tr>
+</tbody>
+</table>
+<p>.Kind 页面类型有 <code>page</code>, <code>home</code>, <code>section</code>, <code>taxonomy</code>, <code>taxonomyTerm</code>，还有 <code>RSS</code>, <code>sitemap</code>, <code>robotsTXT</code>, <code>404</code> 等，但是它们只有渲染对应类型时有效，在 <code>Pages</code> 集合中无效。</p>
+<p>在列表页面模板中，可以使用 .Pages 集合的 .Next 和 .Prev 获取前、后页面信息，具体参考 lists.md。</p>
+<p><strong>shortcode</strong> 短代码模板对象中可使用的属性变量，以上面的调用方法作为参考，对应值如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>参考值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Name</td>
+<td>Shortcode 名字</td>
+<td>page-kinds</td>
+</tr>
+<tr>
+<td>.Ordinal</td>
+<td>基于 0 的序号，表示 shortcode 在页面内容的位置</td>
+<td>1</td>
+</tr>
+<tr>
+<td>.Parent</td>
+<td>嵌套的 parent shortcode</td>
+<td>nil</td>
+</tr>
+<tr>
+<td>.Position</td>
+<td>所在页面文件名和行列号，常用于调试</td>
+<td>&ldquo;C:\content\posts\2nd-post.md:29:5&rdquo;</td>
+</tr>
+<tr>
+<td>.IsNamedParams</td>
+<td>指示是否使用命名参数，而不是位置化参数</td>
+<td>false</td>
+</tr>
+<tr>
+<td>.Inner</td>
+<td>在 shortcode 标签之间的的内容</td>
+<td>sometext</td>
+</tr>
+</tbody>
+</table>
+<p>站点对象是全局对象，如页面中的 <code>.Site.RegularPages</code> 方法可以按全局方式调用 <code>site.RegularPages</code>。</p>
+<p>以下是站点对象的常用变量：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Site.AllPages</td>
+<td>包含所有页面的数组，不管是不是翻译页面</td>
+</tr>
+<tr>
+<td>.Site.Author</td>
+<td>包含所有作者的映射对象 map</td>
+</tr>
+<tr>
+<td>.Site.BaseURL</td>
+<td>站点的基本 URL</td>
+</tr>
+<tr>
+<td>.Site.BuildDrafts</td>
+<td>站点是否启用草稿</td>
+</tr>
+<tr>
+<td>.Site.Copyright</td>
+<td>配置文件中的版权信息 copyright</td>
+</tr>
+<tr>
+<td>.Site.Data</td>
+<td>自定义的数据文件对象</td>
+</tr>
+<tr>
+<td>.Site.DisqusShortname</td>
+<td>Disqus shortcode 的短名称字符串</td>
+</tr>
+<tr>
+<td>.Site.GoogleAnalytics</td>
+<td>Google Analytics 追踪代码字符串</td>
+</tr>
+<tr>
+<td>.Site.Home</td>
+<td>主页面对象的引用</td>
+</tr>
+<tr>
+<td>.Site.IsMultiLingual</td>
+<td>指示是否是多语言站点</td>
+</tr>
+<tr>
+<td>.Site.IsServer</td>
+<td>指示是否在 Hugo 内置服务器中运行，即命令行 hugo server 运行时返回 true</td>
+</tr>
+<tr>
+<td>.Site.Language.Lang</td>
+<td>本地化语言代码，如 en</td>
+</tr>
+<tr>
+<td>.Site.Language.LanguageName</td>
+<td>完整的语言名称，如 English</td>
+</tr>
+<tr>
+<td>.Site.Language.Weight</td>
+<td>the weight that defines the order in the <code>.Site.Languages</code> list.</td>
+</tr>
+<tr>
+<td>.Site.Language</td>
+<td>当前站点使用的语言对象，在站点配置文件指定的语言</td>
+</tr>
+<tr>
+<td>.Site.LanguageCode</td>
+<td>当前语言代码，常用于 RSS 链接属性</td>
+</tr>
+<tr>
+<td>.Site.LanguagePrefix</td>
+<td>可以在 URL 上使用的语言前缀，参考 absLangURL</td>
+</tr>
+<tr>
+<td>.Site.Languages</td>
+<td>站点所有语言列表，按 weight 排序</td>
+</tr>
+<tr>
+<td>.Site.LastChange</td>
+<td>站点最近更改时间，基于内容文件 front matter 的 <code>date</code> 定义</td>
+</tr>
+<tr>
+<td>.Site.Menus</td>
+<td>站点定义的所有菜单</td>
+</tr>
+<tr>
+<td>.Site.Pages</td>
+<td>站点当前语言的所有页面，按日期排序</td>
+</tr>
+<tr>
+<td>.Site.RegularPages</td>
+<td>一般页面的列表，等价 <code>where .Site.Pages &quot;Kind&quot; &quot;page&quot;</code></td>
+</tr>
+<tr>
+<td>.Site.Sections</td>
+<td>内容目录下的 Session 列表，即一级子目录</td>
+</tr>
+<tr>
+<td>.Site.Taxonomies</td>
+<td>当前站点的分类页面，替代了 <code>.Site.Indexes</code></td>
+</tr>
+<tr>
+<td>.Site.Title</td>
+<td>站点标题</td>
+</tr>
+</tbody>
+</table>
+<p>语言对象没有在文档中罗列，可以参考源代码，在站点配置语言时，也需要根据 Language struct 提供的字段配置：</p>
+<pre><code>// Language manages specific-language configuration.
+type Language struct {
+    Lang              string
+    LanguageName      string
+    LanguageDirection string
+    Title             string
+    Weight            int
+
+    Disabled bool
+    ContentDir string
+    ...
+}
+</code></pre>
+<p>在站点地图模板使用的 Sitemap 对象也是一个 Page 对象，参考属性：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Sitemap.ChangeFreq</td>
+<td>页面更改频率</td>
+</tr>
+<tr>
+<td>.Sitemap.Priority</td>
+<td>页面的优先级</td>
+</tr>
+<tr>
+<td>.Sitemap.Filename</td>
+<td>站点地图文件</td>
+</tr>
+</tbody>
+</table>
+<p>分类页面模板中使用的也是一个页面对象 Page，但是有额外的数据：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Data.Singular</td>
+<td>: The singular name of the taxonomy (e.g., <code>tags =&gt; tag</code>)</td>
+</tr>
+<tr>
+<td>.Data.Plural</td>
+<td>: The plural name of the taxonomy (e.g., <code>tags =&gt; tags</code>)</td>
+</tr>
+<tr>
+<td>.Data.Pages</td>
+<td>: The list of pages in the taxonomy</td>
+</tr>
+<tr>
+<td>.Data.Terms</td>
+<td>: The taxonomy itself</td>
+</tr>
+<tr>
+<td>.Data.Terms.Alphabetical</td>
+<td>: The taxonomy terms alphabetized</td>
+</tr>
+<tr>
+<td>.Data.Terms.ByCount</td>
+<td>: The Terms ordered by popularity</td>
+</tr>
+</tbody>
+</table>
+<p>注意 <code>Alphabetical</code> 和 <code>ByCount</code> 的数据可以进行反转排序：</p>
+<ul>
+<li><code>.Data.Terms.Alphabetical.Reverse</code></li>
+<li><code>.Data.Terms.ByCount.Reverse</code></li>
+</ul>
+<p>在分类模板外，要使用分类就通过 <code>.Site.Taxonomies</code> 实现，它包含站点定义的所有分类列表 TaxonomyList，元素是个 map 对象，如：</p>
+<pre><code>{&quot;tags&quot; -&gt; [&quot;tag1&quot;, &quot;tag2&quot;, &quot;tag3&quot;]}
+</code></pre>
+<p>每个值都是 Taxonomy 对象变量，包含分类列表，而非字符串，列表每个元素对应内容页面。</p>
+<p>默认的有目录 <strong>categories</strong> 和标签 <strong>tags</strong> 两个分类，看示范如果列表站点的分类页面：</p>
+<pre><code>&lt;section&gt;
+  &lt;ul&gt;
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      &lt;li&gt;&lt;a href=&quot;{{ &quot;/&quot; | relLangURL}}{{ $taxonomyname | urlize }}&quot;&gt;{{ $taxonomyname }}&lt;/a&gt;
+        &lt;ul&gt;
+          {{ range $key, $value := $taxonomy }}
+          &lt;li&gt; {{ $key }} &lt;/li&gt;
+                &lt;ul&gt;
+                {{ range $value.Pages }}
+                    &lt;li&gt;&lt;a href=&quot;{{ .Permalink}}&quot;&gt; {{ .LinkTitle }} &lt;/a&gt; &lt;/li&gt;
+                {{ end }}
+                &lt;/ul&gt;
+          {{ end }}
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    {{ end }}
+  &lt;/ul&gt;
+&lt;/section&gt;
+</code></pre><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-2/">II: Hugo 目录组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-1/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-4/">IV: Hugo Pipes 管道处理</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-3/">III: Hugo Modules 模块</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-6/">VI: Multilingual 多语言支持</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-8/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-5/">V: Templates 模板</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1314" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

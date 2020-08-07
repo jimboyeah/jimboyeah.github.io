@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>III: Hugo Modules 模块 | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+    
+    
+      
+      <link href="/theme/css/main.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
+
+
+    
+
+    
+    
+    <meta property="og:title" content="III: Hugo Modules 模块" />
+<meta property="og:description" content="坚果的 Hugo 教程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1314/tutorials/chapter-3/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="name" content="III: Hugo Modules 模块">
+<meta itemprop="description" content="坚果的 Hugo 教程">
+<meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="402">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="III: Hugo Modules 模块"/>
+<meta name="twitter:description" content="坚果的 Hugo 教程"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1314/assets/IMG_20181101_233654_s.jpg');background-position: center bottom;">
+    <div class="pb3-m pb6-l bg-black-10">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="坚果 Hugo 教程 page">
+              坚果 Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">III: Hugo Modules 模块</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              坚果的 Hugo 教程
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+<textarea style="height: 50vh; width:98vw;display: none;">
+
+================ ================ ================ ================
+
+
+    
+|坚果 Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+    
+
+    
+|关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|小说 | /post/ |  post\ |  |  .Children = []
+    
+
+    
+|联络 | /contact/ |  \ |  |  .Children = []
+    
+
+
+================ ================ ================ ================
+
+
+    .Children = []
+|坚果 Hugo 教程 | /tutorials/ |  | HasMenuCurrent
+    
+
+    .Children = []
+|关于 | /about/ |  | 
+    
+
+    .Children = []
+|小说 | /post/ |  | 
+    
+
+
+================ ================ ================ ================
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = false
+.Translations = Pages(0)
+.AllTranslations = Pages(1)
+
+
+
+
+================ ================ ================ ================
+
+  &lt;a href="/en/">🏠 Go Learning en&lt;/a> 
+  &lt;a href="/">🏠 Go Learning zh&lt;/a> 
+
+
+.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+
+.Site.Data = map[webpack_assets:map[app:map[css:css/app.4fc0b62e4b82c997bb0041217cd6b979.css js:js/app.3fc0f988d21662902933.js]]]
+.Site.Language.Lang = zh
+
+
+</textarea>
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        坚果 HUGO 教程
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://localhost:1314/tutorials/chapter-3/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://localhost:1314/tutorials/chapter-3/&amp;text=III:%20Hugo%20Modules%20%e6%a8%a1%e5%9d%97" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1314/tutorials/chapter-3/&amp;title=III:%20Hugo%20Modules%20%e6%a8%a1%e5%9d%97" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">III: Hugo Modules 模块</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      
+      
+        
+          
+           
+          
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      <h1 id="hugo-modules-模块">Hugo Modules 模块</h1>
+<ul>
+<li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
+<li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/59687626">https://zhuanlan.zhihu.com/p/59687626</a></li>
+</ul>
+<p>Hugo Modules 是基于 Go Modules 实现的，模块 Hugo 构建的核心块，一个模块可以一个 Hugo 工程，也可以是 Hugo 定义的 7 种小模块 static, content, layouts, data, assets, i18n, archetypes，可以按喜欢的方式组件使用模块，甚至从工程外部装入模块目录以构建一个大型的虚拟联合文件系统。</p>
+<p>Go Modules 有哪些特点：</p>
+<ul>
+<li>Go Modules 是官方正式推出的包依赖管理项目；</li>
+<li>Go Modules 出现的目的之一就是为了解决 GOPATH 的问题，相当替换 GOPATH。旧项目必须在 $GOPATH/src 里进行，现在允许在任何目录下使用 <strong>go.mod</strong> 管理项目依赖。</li>
+<li>使用模块代理协议 Module proxy protocol，通过这个协议可以使用 Go 模块镜像，使用 github 获取依赖。</li>
+<li>Tag 必须遵循语义化版本控制，如果没有将忽略 Tag，然后根据你的 Commit 时间和哈希值再为你生成一个假定的符合语义化版本控制的版本号。</li>
+<li>Go Modules 默认认为，只要你的主版本号不变，那这个模块版本肯定就不包含 Breaking changes，因为语义化版本控制这么规定。</li>
+<li>Global Caching 全局缓存数据，同一个模块版本的数据只缓存一份，共享使用，位于 <strong>$GOPATH/pkg/mod</strong> 和 <strong>$GOPATH/pkg/sum</strong> 目录下；</li>
+<li>使用 <strong>go clean -modcache</strong> 清理所有已缓存的模块版本数据。</li>
+<li>使用 <strong>go mod</strong> 命令管理模块。</li>
+</ul>
+<p>另外在 Go1.11 之后 GOCACHE 已经不允许设置为 off 了，默认使用模块数据缓存。</p>
+<p>Go Moduels 项目配置文件 <strong>go.mod</strong> 描述了当前项目，也可以看作是当前模块的元信息，每一行都以一个动词开头，目前有以下 5 个动词:</p>
+<ul>
+<li><strong>module</strong> 用于定义当前项目的模块路径。</li>
+<li><strong>go</strong> 用于设置预期的 Go 版本。</li>
+<li><strong>require</strong> 用于设置一个特定的模块版本。</li>
+<li><strong>exclude</strong> 用于从使用中排除一个特定的模块版本。</li>
+<li><strong>replace</strong> 用于将一个模块版本替换为另外一个模块版本。</li>
+</ul>
+<p>这里的填写格式基本为包引用路径+版本号，另外比较特殊的是 go $version，目前从 Go1.13 的代码里来看，还只是个标识作用。</p>
+<p>✅ 模块基本用法</p>
+<p>在国内网络访问 proxy.golang.org 会有问题，使用 Go Modules 代理可以解决，使用 <strong>go env</strong> 设置 Go 使用环境变量：</p>
+<pre><code>go env -w GO111MODULE=&quot;on&quot;
+go env -w GOPROXY=https://goproxy.io,direct
+</code></pre>
+<p>goget 也是一个常用的模块安装工具，它可以从 github 获取安装 golang.org 上的模块：</p>
+<pre><code>go get github.com/leconio/goget
+goget golang.org/x/xxx
+</code></pre>
+<p>使用 go mod 命令创建模块项目：</p>
+<pre><code>go mod init github.com/islishude/gomodtest
+</code></pre>
+<p>这时可看到目录内多了 go.mod 文件，内容很简单只有两行：</p>
+<pre><code>module github.com/islishude/gomodtest
+
+go 1.12
+</code></pre>
+<p>首行为当前的模块名称，接下来是 go 的使用版本。这两行和 npm package.json 的 name 和 engine 字段的功能很类似。</p>
+<p>创建一个 main.go 来测试模块的管理功能，引用 quote 模块作为测试：</p>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+
+    &quot;rsc.io/quote&quot;
+)
+
+func main() {
+    fmt.Println(quote.Hello())
+}
+</code></pre>
+<p>后面就可以直接使用 go run、go build、go test 等命令，因为使用了 Go Module，它们能自动下载相关依赖包。</p>
+<pre><code>&gt;go build
+go: finding module for package rsc.io/quote
+go: downloading rsc.io/quote v1.5.2
+...
+</code></pre>
+<p>执行完成，go.mod 会自动更新一个依赖设置：</p>
+<pre><code>module github.com/islishude/gomodtest
+
+go 1.14
+
+require rsc.io/quote v1.5.2
+</code></pre>
+<p>✅ Hugo 中的模块</p>
+<p>将 Hugo 项目初始为一个模块：</p>
+<pre><code>hugo mod init github.com/gohugoio/myShortcodes
+</code></pre>
+<p>相应地会在模块配置文件上添加当前模块的名称定义：</p>
+<pre><code>module github.com/gohugoio/myShortcodes
+</code></pre>
+<p>在 Hugo 项目中，模块配置错误会出现以下信息：</p>
+<pre><code>Module &quot;xxx&quot; not found
+</code></pre>
+<p>这时，需要检查引用模块名是不是正确的，是否已经安装。比如引用主题目录下的 <strong>gohugo-theme-iris</strong> 模块，但在在配置文件中写成 <strong>hugo-theme-iris</strong>，就会导致模块找不到。</p>
+<p>将主题模块导入，Hugo 文档使用的主题是模块方式导入的，见 config.toml 配置文件：</p>
+<pre><code>[module]
+  [module.hugoVersion]
+    min = &quot;0.56.0&quot;
+  [[module.imports]]
+    path = &quot;github.com/gohugoio/gohugoioTheme&quot;
+</code></pre>
+<p>模块导入可以设置 Hugo 版本要求 [module.hugoVersion]。</p>
+<p>通常，以 Github 仓库创建主题的方式为常用，</p>
+<pre><code>hugo mod init github.com/&lt;your_user&gt;/&lt;your_project&gt;
+</code></pre>
+<p>设置 Module Imports 后会下载主题，可以使用 <strong>hugo mod get</strong> 来管理版本：</p>
+<pre><code># Update All Modules 
+hugo mod get -u
+
+# Update All Modules Recursively New in v0.65.0
+hugo mod get -u ./...
+
+# Update One Module 
+hugo mod get -u github.com/gohugoio/myShortcodes
+
+# Get a Specific Version 
+hugo mod get github.com/gohugoio/myShortcodes@v1.0.7
+
+# Print Dependency Graph
+hugo mod graph
+</code></pre>
+<p>使用专用的供应目录来存储 Modules，以下命令会将依赖模块放到 <strong>_vendor</strong> 目录下管理，对后面的构建生效：</p>
+<pre><code>hugo mod vendor 
+</code></pre>
+<p>注意：</p>
+<ul>
+<li>可以在 module tree 任意层级上使用此命令。</li>
+<li>供应化管理 Vendoring 不会保存 themes 目录下的模块。</li>
+<li>大多数命令接收 &ndash;ignoreVendor 选项来忽略 <strong>_vendor</strong> 目录。</li>
+</ul>
+<p>✅ 管理命令参考</p>
+<p>升级次级或补丁版本号：</p>
+<pre><code>go get -u rsc.io/quote
+</code></pre>
+<p>仅升级补丁版本号：</p>
+<pre><code>go get -u=patch rscio/quote
+</code></pre>
+<p>升降级版本号，可以使用比较运算符控制：</p>
+<pre><code>go get foo@'&lt;v1.6.2'
+</code></pre>
+<p>移出所有代码中不需要的包：</p>
+<pre><code>go mod tidy
+</code></pre>
+<p>如果仅仅修改 go.mod 配置文件，比如要移出 crypto 包</p>
+<pre><code>go mod edit --droprequire=golang.org/x/crypto
+</code></pre>
+<p>对文件进行文本格式化。</p>
+<pre><code>go mod edit -fmt
+</code></pre>
+<p>模块发布包的新版本和其它包管理工具基本一致，可以直接打标签，不过打标签之前需要在 go.mod 中写入相应的版本号：</p>
+<pre><code>$ go mod edit --module=github.com/islishude/gomodtest/v2
+$ cat go.mod
+module github.com/islishude/gomodtest/v2
+
+go 1.12
+
+require (
+    golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a // indirect
+    rsc.io/quote v1.5.2
+)
+</code></pre>
+<p>官方推荐将上述过程在一个新分支来避免混淆，那么类如上述例子可以创建一个 v2 分支，但这个不是强制要求的。</p>
+<p>还有一种方式发布新版本，那就是在主线版本种加入 v2 文件夹，相应的也需要内置 go.mod 这个文件。</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-7/">VII: Variables 对象变量</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-4/">IV: Hugo Pipes 管道处理</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-8/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-6/">VI: Multilingual 多语言支持</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-5/">V: Templates 模板</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-2/">II: Hugo 目录组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-1/">I: Hugo Web Framework</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1314" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

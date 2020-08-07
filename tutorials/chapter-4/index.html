@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>IV: Hugo Pipes 管道处理 | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+    
+    
+      
+      <link href="/theme/css/main.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
+
+
+    
+
+    
+    
+    <meta property="og:title" content="IV: Hugo Pipes 管道处理" />
+<meta property="og:description" content="坚果的 Hugo 教程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1314/tutorials/chapter-4/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="name" content="IV: Hugo Pipes 管道处理">
+<meta itemprop="description" content="坚果的 Hugo 教程">
+<meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="1407">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="IV: Hugo Pipes 管道处理"/>
+<meta name="twitter:description" content="坚果的 Hugo 教程"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1314/assets/IMG_20181101_233654_s.jpg');background-position: center bottom;">
+    <div class="pb3-m pb6-l bg-black-10">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="坚果 Hugo 教程 page">
+              坚果 Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">IV: Hugo Pipes 管道处理</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              坚果的 Hugo 教程
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+<textarea style="height: 50vh; width:98vw;display: none;">
+
+================ ================ ================ ================
+
+
+    
+|坚果 Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+    
+
+    
+|关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|小说 | /post/ |  post\ |  |  .Children = []
+    
+
+    
+|联络 | /contact/ |  \ |  |  .Children = []
+    
+
+
+================ ================ ================ ================
+
+
+    .Children = []
+|坚果 Hugo 教程 | /tutorials/ |  | HasMenuCurrent
+    
+
+    .Children = []
+|关于 | /about/ |  | 
+    
+
+    .Children = []
+|小说 | /post/ |  | 
+    
+
+
+================ ================ ================ ================
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = false
+.Translations = Pages(0)
+.AllTranslations = Pages(1)
+
+
+
+
+================ ================ ================ ================
+
+  &lt;a href="/en/">🏠 Go Learning en&lt;/a> 
+  &lt;a href="/">🏠 Go Learning zh&lt;/a> 
+
+
+.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+
+.Site.Data = map[webpack_assets:map[app:map[css:css/app.4fc0b62e4b82c997bb0041217cd6b979.css js:js/app.3fc0f988d21662902933.js]]]
+.Site.Language.Lang = zh
+
+
+</textarea>
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        坚果 HUGO 教程
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://localhost:1314/tutorials/chapter-4/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://localhost:1314/tutorials/chapter-4/&amp;text=IV:%20Hugo%20Pipes%20%e7%ae%a1%e9%81%93%e5%a4%84%e7%90%86" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1314/tutorials/chapter-4/&amp;title=IV:%20Hugo%20Pipes%20%e7%ae%a1%e9%81%93%e5%a4%84%e7%90%86" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">IV: Hugo Pipes 管道处理</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      
+      
+        
+          
+           
+          
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      <h1 id="hugo-pipes-管道处理">Hugo Pipes 管道处理</h1>
+<p>Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 <strong>assetDir</strong> 配置项指定，默认是 assets。</p>
+<p>涉及处理的内容：</p>
+<ul>
+<li>样式脚本 SASS / SCSS</li>
+<li>构建后期 PostProcess</li>
+<li>样式加工 PostCSS</li>
+<li>脚本转译 JavaScript Building</li>
+<li>脚本转译 Babel</li>
+<li>资源压缩 Asset minification</li>
+<li>资源打包 Asset bundling</li>
+<li>资源指纹 Fingerprinting and SRI</li>
+<li>资源生成 Resource from Template</li>
+<li>资源生成 Resource from String</li>
+</ul>
+<p>管道处理还应用于模板中串联函数的调用，如，生成 5 个数再将顺序打乱：</p>
+<pre><code>{{ shuffle (seq 1 5) }}
+</code></pre>
+<p>使用管道的语法：</p>
+<pre><code>{{ (seq 1 5) | shuffle }}
+</code></pre>
+<p>资源对象的提供的属性变量或方法参考 Page Resources 文档：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ResourceType</td>
+<td>资源 MIME 类型，如 <code>image/jpeg</code> 对应 ResourceType <code>image</code></td>
+</tr>
+<tr>
+<td>Name</td>
+<td>资源文件名，相对于当前页面，可以在 front matter 设置</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>默认和 <code>.Name</code> 一样，也可以在 front matter 设置</td>
+</tr>
+<tr>
+<td>Permalink</td>
+<td>资源绝对 URL，对于 <code>page</code> 资源空值</td>
+</tr>
+<tr>
+<td>RelPermalink</td>
+<td>资源相对 URL，对于 <code>page</code> 资源空值</td>
+</tr>
+<tr>
+<td>Content</td>
+<td>资源内容，通常是字符串内容</td>
+</tr>
+<tr>
+<td>MediaType</td>
+<td>MIME 类型，如 <code>image/jpeg</code></td>
+</tr>
+<tr>
+<td>MediaType.MainType</td>
+<td>主要 MIME 类型，如 <code>application/pdf</code> 的 MainType 就是 <code>application</code></td>
+</tr>
+<tr>
+<td>MediaType.SubType</td>
+<td>次要 MIME 类型，上面 <code>pdf</code> 的 SubType 是 <code>pdf</code>，而 PPT 文件是 <code>vnd.mspowerpoint</code></td>
+</tr>
+<tr>
+<td>MediaType.Suffixes</td>
+<td>可能 MIME 列表，切片数据类型</td>
+</tr>
+</tbody>
+</table>
+<p>如果，有 Go 语言基础，可以试着读 Hugo 源代码，这也是开源的一大好片处，似乎不搞源代码开源就没有意义了：</p>
+<pre><code>// Resource represents a linkable resource, i.e. a content page, image etc.
+type Resource interface {
+    ResourceTypeProvider
+    MediaTypeProvider
+    ResourceLinksProvider
+    ResourceMetaProvider
+    ResourceParamsProvider
+    ResourceDataProvider
+}
+</code></pre>
+<p>使用资源对象方法：</p>
+<pre><code>&lt;script&gt;{{ (.Resources.GetMatch &quot;myscript.js&quot;).Content | safeJS }}&lt;/script&gt;
+&lt;img src=&quot;{{ (.Resources.GetMatch &quot;mylogo.png&quot;).Content | base64Encode }}&quot;&gt;
+</code></pre>
+<p>如果，文件不一定会存在，那么就需要加条件判断：</p>
+<pre><code>{{ $style := resources.Get &quot;theme/css/main.css&quot; | resources.PostCSS }}
+{{ if $css }}
+  {{ printf $style.Content }}
+{{ end }}
+</code></pre>
+<p>✅ 处理 SCSS 样式脚本资源</p>
+<p>先将资源文件读入使用：</p>
+<pre><code>{{ $style := resources.Get &quot;sass/main.scss&quot; }}
+</code></pre>
+<p>在 resources.Get 函数读取 SCSS 样式脚本后，就要使用扩展将其转换为 CSS。</p>
+<p>资源文件会被打包到 /public 目录下，如果使用了 .Permalink 或 .RelPermalink，即意味使用了资源，Hugo 就会将将其打包。</p>
+<pre><code>{{ $style := resources.Get &quot;sass/main.scss&quot; | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ $style.Permalink }}&quot;&gt;
+
+{{ $style := resources.Get &quot;sass/main.scss&quot; | toCSS | minify | fingerprint }}
+&lt;link rel=&quot;stylesheet&quot; href=&quot;{{ $style.Permalink }}&quot;&gt;
+</code></pre>
+<p>每个 Hugo Pipes 资源转换方法都使用驼峰式 camelCased 别名，如 <strong>toCSS</strong> 表示 resources.ToCSS，非转换方法就没有这样的别名，如 resources.Get, resources.FromString, resources.ExecuteAsTemplate, resources.Concat 等。</p>
+<p>整个 Hugo Pipes 管道链是基于缓存的，即前一级生成的内容缓存后进入下一级处理：</p>
+<pre><code>{{ $mainJs := resources.Get &quot;js/main.js&quot; | js.Build &quot;main.js&quot; | minify | fingerprint }}
+</code></pre>
+<p>在 Hugo 构建站点时，管道链在首次调用后建立，所有资源都会从缓存中获取，不必担心模板执行反反复复地使用资源而引起构建性能问题。</p>
+<p>通过 toCSS 进行转换时，可以设置以下参数：</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>targetPath</td>
+<td>[string]</td>
+<td>指定输出路径，默认只修改原 SASS/SCSS 的扩展名为 .css；</td>
+</tr>
+<tr>
+<td>outputStyle</td>
+<td>[string]</td>
+<td>默认是 nested，其它输出风格有 expanded, compact, compressed 等；</td>
+</tr>
+<tr>
+<td>precision</td>
+<td>[int]</td>
+<td>浮点值处理精度</td>
+</tr>
+<tr>
+<td>enableSourceMap</td>
+<td>[bool]</td>
+<td>是不使用 source map 调试信息映射文件</td>
+</tr>
+<tr>
+<td>includePaths</td>
+<td>[string slice]</td>
+<td>添加 SCSS/SASS 包含目录，注意要使用工程目录中的相对路径</td>
+</tr>
+</tbody>
+</table>
+<p>示范，给 SCSS/SASS 添加 includePaths 路径参数，注意使用了 dict 字典对象：</p>
+<pre><code>{{ $options := (dict &quot;targetPath&quot; &quot;style.css&quot; &quot;outputStyle&quot; &quot;compressed&quot; &quot;enableSourceMap&quot; true &quot;includePaths&quot; (slice &quot;node_modules/myscss&quot;)) }}
+{{ $style := resources.Get &quot;sass/main.scss&quot; | resources.ToCSS $options }}
+</code></pre>
+<p>设置 outputStyle 为 compressed 可以获得比 resources.Minify 更好的 SASS/SCSS 压缩效果。</p>
+<p>SASS / SCSS 作为 CSS 的升级版，实现以样式脚本的方式来定义样式表，掌握它们可以极大提高效率。但是学习曲线陡峭，另一个选择是使用 PostCSS 工具。</p>
+<p>✅ 构建后期 PostProcess</p>
+<p>允许在构建生成后延迟资源到 /public 的转移，使用 <strong>resources.PostProcess</strong> 标记资源资源后，延迟转移生成后的任何文件，通常转换链中的一个或多个步骤取决于生成的结果。</p>
+<p>一个基本的后期处理是使用 PostCSS 对样式进行清理，当前有两个限制：</p>
+<ul>
+<li>只能处理 <strong>.html</strong> 模板文件；</li>
+<li>不可以操纵由资源对象方法返回的值；</li>
+</ul>
+<p>例如，示例中 <strong>upper</strong> 函数的调用就不能正常得到正确结果：</p>
+<pre><code>{{ $css := resources.Get &quot;css/main.css&quot; }}
+{{ $css = $css | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
+{{ $css.RelPermalink | upper }}
+</code></pre>
+<p>配合 PostCSS 清理 CSS，有多种方法实现，考虑简单的实现方法，避免使用 resources.PostProcess 从模板中提取关键字，可以参考 tailwindcss 文档示例。</p>
+<p>下面的配置写入项目根目录下的 hugo_stats.json，如果只想在发布时有效，可以将其保存到 config/production 目录。</p>
+<pre><code>[build]
+  writeStats = true
+</code></pre>
+<p>配置脚本：</p>
+<pre><code>const purgecss = require('@fullhuman/postcss-purgecss')({
+    content: [ './hugo_stats.json' ],
+    defaultExtractor: (content) =&gt; {
+        let els = JSON.parse(content).htmlElements;
+        return els.tags.concat(els.classes, els.ids);
+    }
+});
+
+module.exports = {
+    plugins: [
+        require('tailwindcss'),
+        require('autoprefixer'),
+        ...(process.env.HUGO_ENVIRONMENT === 'production' ? [ purgecss ] : [])
+    ]
+};
+</code></pre>
+<p>上面配置为发布时清理，那么在页面模板中也要相应使用条件进行环境判断：</p>
+<pre><code>{{ $css := resources.Get &quot;css/main.css&quot; }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+{{ $css = $css | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+
+&lt;link href=&quot;{{ $css.RelPermalink }}&quot; rel=&quot;stylesheet&quot; /&gt;
+</code></pre>
+<p>✅ 样式加工 PostCSS</p>
+<p>Hugo Pipes 可以使用 PostCSS 处理样式文件，这是一个非常实用的 CSS 工具。</p>
+<p>PostCSS 官方介绍插件功能特性：</p>
+<ul>
+<li>增加代码可读性 → <strong>autoprefixer</strong></li>
+<li>使用先进的 CSS 样式，Use tomorrow&rsquo;s CSS, today! → <strong>postcss-cssnext</strong></li>
+<li>全局样式 Global CSS 终结者 → <strong>postcss-modules</strong></li>
+<li>保证样式正确性 → <strong>stylelint</strong></li>
+<li>强大的 grid CSS → <strong>LostGrid</strong></li>
+</ul>
+<p>一些支持的功能：</p>
+<ul>
+<li>片断引入 partial imports</li>
+<li>变量 variables</li>
+<li>嵌套 nesting</li>
+<li>混合宏 mixins</li>
+<li>扩展 extend</li>
+<li>占位符 placeholder classes</li>
+<li>颜色函数 darken and rgba color functions</li>
+<li>压缩 compression</li>
+</ul>
+<p>语法支持参考各个插件，大数预处理器由 Syntaxes 语法扩展而来。事实上，Sass、Stylus 和 LESS 很多功能都可以通过 PostCSS 语言的扩展实现，比如说添加 mixin，变量，条件，循环，嵌套和扩展等。</p>
+<p>例如，定义以下一个样式：</p>
+<pre><code>:fullscreen { ... }
+</code></pre>
+<p>经过 PostCSS autoprefixer 处理后，自动添加了浏览器前缀：</p>
+<pre><code>:-webkit-full-screen { ... }
+:-ms-fullscreen { ... }
+:fullscreen { ... }
+</code></pre>
+<p>Lost Grid 是一个强大的 PostCSS 网格系统，可与任何预处理器甚至是原生 CSS 一起使用。</p>
+<p>在这里有非常好的 demo 展示：http://lostgrid.org/lostgrid-example.html</p>
+<p>以下例子根据不同的设备屏幕大小来调整网格的每行格子数，小屏幕一行一格，中小屏幕一行三格，大屏幕一行六格：</p>
+<pre><code>.ColumnSection__grid div {
+    lost-column: 1/1;
+}
+
+@media (min-width: 400px) {
+    .ColumnSection__grid div {
+        lost-column: 1/3;
+    }
+}
+
+@media (min-width: 900px) {
+    .ColumnSection__grid div {
+        lost-column: 1/6;
+    }
+}
+</code></pre>
+<p>postcss-nested 实现类似 Sass 功能：</p>
+<pre><code>.phone {
+    &amp;_title {
+        width: 500px;
+        @media (max-width: 500px) { width: auto; }
+        body.is_dark &amp; { color: white; }
+    }
+    img { display: block; }
+}
+
+.title {
+  font-size: var( --font );
+  @at-root html { --font: 16px }
+}
+</code></pre>
+<p>@at-root 相应为上级节点定义一个新的样式，var (&ndash;font) 这样的表示引用变量，只有上级节点的值才能有效引用。</p>
+<p>转译生成：</p>
+<pre><code>.phone_title { width: 500px; }
+
+@media (max-width: 500px) {
+    .phone_title { width: auto; }
+}
+
+body.is_dark .phone_title { color: white; }
+
+.phone img { display: block; }
+
+.title { font-size: var(--font); }
+
+html { --font: 16px }
+</code></pre>
+<p>postcss-nested &amp; postcss-mixins 结合实现 Sass 中最常用的特性：</p>
+<pre><code>@define-mixin clearfix{
+    &amp;:after{
+        display: table;
+        clear: both;
+        content: &quot; &quot;;
+    }
+}
+
+.column-container{
+    color: #333;
+    @mixin clearfix;
+}
+</code></pre>
+<p>编译后：</p>
+<pre><code>.column-container{
+    color: #333;
+}
+
+.column-container:after{
+    display: table;
+    clear: both;
+    content: &quot; &quot;;
+}
+</code></pre>
+<p>postcss-cssnext 语法：</p>
+<pre><code>:root {
+  --fontSize: 1rem;
+  --mainColor: #12345678;
+  --centered: {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  };
+}
+body {
+    color: var(--mainColor);
+    font-size: var(--fontSize);
+    line-height: calc(var(--fontSize) * 1.5);
+    padding: calc((var(--fontSize) / 2) + 1px);
+}
+.centered {
+    @apply --centered;
+}
+</code></pre>
+<p>生成浏览器可用语法:</p>
+<pre><code>body {
+    color: rgba(18, 52, 86, 0.47059);
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    padding: calc(0.5rem + 1px);
+}
+.centered {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+</code></pre>
+<p>可以在 baseof.html 模板中引入样式资源：</p>
+<pre><code>{{ $css := resources.Get &quot;css/main.css&quot; }}
+{{ $style := $css | resources.PostCSS }}
+</code></pre>
+<p>或者指定配置：</p>
+<pre><code>{{ $style := resources.Get &quot;css/main.css&quot; | resources.PostCSS (dict &quot;config&quot; &quot;customPostCSS.js&quot; &quot;noMap&quot; true) }}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>config</td>
+<td>[string]</td>
+<td>指定 PostCSS 配置文件，默认 postcss.config.js</td>
+</tr>
+<tr>
+<td>noMap</td>
+<td>[bool]</td>
+<td>默认 true 不生成调试映射文件</td>
+</tr>
+<tr>
+<td>inlineImports</td>
+<td>[bool]</td>
+<td>默认 false，启用 @import &ldquo;&hellip;&rdquo; 或 @import url(&rdquo;&hellip;&quot;) 语句</td>
+</tr>
+<tr>
+<td>use</td>
+<td>[string]</td>
+<td>使用的 PostCSS 插件列表</td>
+</tr>
+<tr>
+<td>parser</td>
+<td>[string]</td>
+<td>指定 PostCSS parser</td>
+</tr>
+<tr>
+<td>stringifier</td>
+<td>[string]</td>
+<td>指定 PostCSS stringifier</td>
+</tr>
+<tr>
+<td>syntax</td>
+<td>[string]</td>
+<td>指定 postcss syntax</td>
+</tr>
+</tbody>
+</table>
+<p>安装 postcss-cli 或相应插件模块，以下为全局安装，建议在工程中安装，即去掉 -g 参数：</p>
+<pre><code>npm install -g postcss-cli
+npm install -g autoprefixer postcss-cssnext postcss-import postcss-apply postcss-nested postcss-mixin postcss-sass
+</code></pre>
+<p>使用 Hugo Snap package 则需要在项目中安装 PostCSS 而不是全局安装：</p>
+<pre><code>npm install postcss-cli
+</code></pre>
+<p>安装后可以按以下命令格式试试样式的编译：</p>
+<pre><code>postcss --use autoprefixer -c options.json -o main.css css/*.css
+
+postcss input.css -o output.css
+postcss src/**/*.css --base src --dir build
+cat input.css | postcss -u autoprefixer  &gt; output.css
+</code></pre>
+<p>可以在 postcss.config.js 进行配置，通过 Node 上下文指定环境。</p>
+<pre><code>module.exports = {
+  plugins: [
+    require('autoprefixer'),
+    require('postcss-cssnext'),
+    require('postcss-nested'),
+    ...process.env.HUGO_ENVIRONMENT === 'production'
+      ? [purgecss]
+      : []
+  ]
+}
+</code></pre>
+<p>参考 <a href="https://github.com/postcss/postcss#usage">https://github.com/postcss/postcss#usage</a></p>
+<p>✅ JavaScript Building 脚本打包</p>
+<p>Hugo Pipes 使用 ESBuild 来转译 JavaScript 脚本，Tree Shaking 算法可以有效清除死代码，这是一个高效 JavaScript 转译器：</p>
+<pre><code>{{ $built := resources.Get &quot;js/index.js&quot; | js.Build &quot;main.js&quot; }}
+</code></pre>
+<p>可以通过 target [string] 指定 es5, es2015, es2016, es2017, es2018, es2019, es2020, esnext 行目标输出规范，默认是 esnext。</p>
+<p>或使用其它选项，使用 dict 关键字定义两个字典来传入参数：</p>
+<pre><code>{{ $externals := slice &quot;react&quot; &quot;react-dom&quot; }}
+{{ $defines := dict &quot;process.env.NODE_ENV&quot; `&quot;development&quot;` }}
+
+{{ $opts := dict &quot;targetPath&quot; &quot;main.js&quot; &quot;externals&quot; $externals &quot;defines&quot; $defines }}
+{{ $built := resources.Get &quot;scripts/main.js&quot; | js.Build $opts }}
+&lt;script type=&quot;text/javascript&quot; src=&quot;{{ $built.RelPermalink }}&quot; defer&gt;&lt;/script&gt;
+</code></pre>
+<p>✅ Babel 脚本转译</p>
+<p>Hugo Pipes 也可以通过 Babel 来转译脚本，任意版本的 JavaScript 可以转译为另一个版本规范。</p>
+<p>Babel 使用了 babel cli，需要先进行安装，全局安装或作为工程依赖安装：</p>
+<pre><code>npm install -g @babel/cli @babel/core
+npm install @babel/preset-env --save-dev
+</code></pre>
+<p>如果使用了 Hugo Snap 包则需要在工程中安装，而不是全局安装：</p>
+<pre><code>npm install @babel/cli @babel/core --save-dev
+
+
+{{- $transpiled := resources.Get &quot;scripts/main.js&quot; | babel  -}}
+
+{{ $opts := dict &quot;noComments&quot; true }}
+{{- $transpiled := resources.Get &quot;scripts/main.js&quot; | babel $opts -}}
+</code></pre>
+<p>默认地，Babel 会使用工程中 babel.config.js 作为配置文件。</p>
+<p>✅ Asset minification</p>
+<p>Hugo Pipes 可以使用 <strong>resources.Minify</strong> 压缩 CSS, JS, JSON, HTML, SVG, XML 等资源：</p>
+<pre><code>{{ $css := resources.Get &quot;css/main.css&quot; }}
+{{ $style := $css | resources.Minify }}
+</code></pre>
+<p>如果需要压缩最终输出到 /public 目录的 HTML 文件，可以使用 <strong>hugo &ndash;minify</strong> 命令。</p>
+<p>✅ Asset bundling</p>
+<p>Hugo Pipes 可以将任意资源打包在一起，相同的 MIME 类型文件就只可以打包为一个文件以减少浏览器请求。</p>
+<pre><code>{{ $plugins := resources.Get &quot;js/plugins.js&quot; }}
+{{ $global := resources.Get &quot;js/global.js&quot; }}
+{{ $js := slice $plugins $global | resources.Concat &quot;js/bundle.js&quot; }}
+</code></pre>
+<p>✅ 为资源文件生成指纹 Fingerprinting</p>
+<p>通过 <strong>resources.Fingerprint</strong> 方法生成 sha256 哈希摘要，可以指定其它，如 sha384, sha512, md5 等。</p>
+<p>处理后的资源对象会在 .Data.Integrity 属性保存摘要数据，由生成摘要的函数名和摘要数据的 Base64 编码用连字符拼接组成。</p>
+<pre><code>{{ $js := resources.Get &quot;js/global.js&quot; }}
+{{ $secureJS := $js | resources.Fingerprint &quot;sha512&quot; }}
+
+&lt;script src=&quot;{{ $secureJS.Permalink }}&quot; integrity=&quot;{{ $secureJS.Data.Integrity }}&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>SRI - Subresource Integrity 子资源完整性，用它可以确保站点在客户端运行时，加载的是未经篡改的原始资源。</p>
+<p>大部分运营商被劫持，都是因为插入广告代码的需求。如果网站启用了 SRI，篡改后的文件就无法执行，这很可能让页面变得完全不可用。所以 SRI 给我的感觉是：宁为玉碎不为瓦全。</p>
+<p>使用 CSP - Content Security Policy 外链白名单机制可以在现代浏览器下减小 XSS 风险。但针对 CDN 内容被篡改而导致的 XSS，CSP 并不能防范，因为网站所使用的 CDN 域名，肯定在 CSP 白名单之中。而 SRI 通过对资源进行摘要签名机制，保证外链资源的完整性。</p>
+<p>例如，要引入以下这个资源，并启用 SRI 策略：</p>
+<pre><code>https://example.com/static/js/other/zepto.js
+</code></pre>
+<p>可以使用 sha256 算法生成摘要签名，并进行 Base64 编码：</p>
+<pre><code>curl https://example.com/static/js/other/zepto.js | openssl dgst -sha256 -binary | openssl enc -base64 -A
+
+b/TAR5GfYbbQ3gWQCA3fxESsvgU4AbP4rZ+qu1d9CuQ=
+</code></pre>
+<p>最终的代码如下：</p>
+<pre><code>&lt;script crossorigin=&quot;anonymous&quot; integrity=&quot;sha256-b/TAR5GfYbbQ3gWQCA3fxESsvgU4AbP4rZ+qu1d9CuQ=&quot; src=&quot;https://example.com/static/js/other/zepto.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>浏览器拿到资源内容之后，会使用 integrity 所指定的签名算法计算结果，并与 integrity 提供的摘要签名比对，如果二者不一致，就不会执行这个资源。</p>
+<p>动态加载的资源使用 SRI 也是类似的，需要指定 crossOrigin 和 integrity 属性。例如：</p>
+<pre><code>var s = document.createElement('script');
+s.crossOrigin = 'anonymous';
+s.integrity = 'sha256-b/TAR5GfYbbQ3gWQCA3fxESsvgU4AbP4rZ+qu1d9CuQ=';
+s.src = 'https://example.com/static/js/other/zepto.js';
+document.head.appendChild(s);
+</code></pre>
+<p>✅ 从字符串中创建资源</p>
+<p>示范生成 JS 脚本：</p>
+<pre><code>{{ $string := (printf &quot;var rootURL: '%s'; var apiURL: '%s';&quot; (absURL &quot;/&quot;) (.Param &quot;API_URL&quot;)) }}
+{{ $targetPath := &quot;js/vars.js&quot; }}
+{{ $vars := $string | resources.FromString $targetPath }}
+{{ $global := resources.Get &quot;js/global.js&quot; | resources.Minify }}
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;{{ $vars.Permalink }}&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;{{ $global.Permalink }}&quot;&gt;&lt;/script&gt;
+</code></pre>
+<p>✅ 从模板中获取创建资源</p>
+<p>使用 resources.ExecuteAsTemplate 只将资源作为模板执行：</p>
+<pre><code>// assets/sass/template.scss
+$backgroundColor: {{ .Param &quot;backgroundColor&quot; }};
+$textColor: {{ .Param &quot;textColor&quot; }};
+body{
+    background-color:$backgroundColor;
+    color: $textColor;
+}
+// [...]
+
+// some md file
+{{ $sassTemplate := resources.Get &quot;sass/template.scss&quot; }}
+{{ $style := $sassTemplate | resources.ExecuteAsTemplate &quot;main.scss&quot; . | resources.ToCSS }}
+</code></pre>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-8/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-7/">VII: Variables 对象变量</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-1/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-2/">II: Hugo 目录组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-3/">III: Hugo Modules 模块</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-5/">V: Templates 模板</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-6/">VI: Multilingual 多语言支持</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1314" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

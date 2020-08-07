@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>VI: Multilingual 多语言支持 | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+    
+    
+      
+      <link href="/theme/css/main.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
+
+
+    
+
+    
+    
+    <meta property="og:title" content="VI: Multilingual 多语言支持" />
+<meta property="og:description" content="坚果的 Hugo 教程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1314/tutorials/chapter-6/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="name" content="VI: Multilingual 多语言支持">
+<meta itemprop="description" content="坚果的 Hugo 教程">
+<meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="369">
+
+
+
+<meta itemprop="keywords" content="hugo," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="VI: Multilingual 多语言支持"/>
+<meta name="twitter:description" content="坚果的 Hugo 教程"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+  
+  
+  <header class="cover bg-top" style="background-image: url('http://localhost:1314/assets/IMG_20181101_233654_s.jpg');background-position: center bottom;">
+    <div class="pb3-m pb6-l bg-black-10">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="坚果 Hugo 教程 page">
+              坚果 Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">VI: Multilingual 多语言支持</h1>
+          
+            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              坚果的 Hugo 教程
+            </h2>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+<textarea style="height: 50vh; width:98vw;display: none;">
+
+================ ================ ================ ================
+
+
+    
+|坚果 Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+    
+
+    
+|关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|小说 | /post/ |  post\ |  |  .Children = []
+    
+
+    
+|联络 | /contact/ |  \ |  |  .Children = []
+    
+
+
+================ ================ ================ ================
+
+
+    .Children = []
+|坚果 Hugo 教程 | /tutorials/ |  | HasMenuCurrent
+    
+
+    .Children = []
+|关于 | /about/ |  | 
+    
+
+    .Children = []
+|小说 | /post/ |  | 
+    
+
+
+================ ================ ================ ================
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = false
+.Translations = Pages(0)
+.AllTranslations = Pages(1)
+
+
+
+
+================ ================ ================ ================
+
+  &lt;a href="/en/">🏠 Go Learning en&lt;/a> 
+  &lt;a href="/">🏠 Go Learning zh&lt;/a> 
+
+
+.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+
+.Site.Data = map[webpack_assets:map[app:map[css:css/app.4fc0b62e4b82c997bb0041217cd6b979.css js:js/app.3fc0f988d21662902933.js]]]
+.Site.Language.Lang = zh
+
+
+</textarea>
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        坚果 HUGO 教程
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=http://localhost:1314/tutorials/chapter-6/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=http://localhost:1314/tutorials/chapter-6/&amp;text=VI:%20Multilingual%20%e5%a4%9a%e8%af%ad%e8%a8%80%e6%94%af%e6%8c%81" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http://localhost:1314/tutorials/chapter-6/&amp;title=VI:%20Multilingual%20%e5%a4%9a%e8%af%ad%e8%a8%80%e6%94%af%e6%8c%81" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">VI: Multilingual 多语言支持</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      
+      
+        
+      
+        
+          
+           
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      <h2 id="multilingual-多语言支持">Multilingual 多语言支持</h2>
+<p>Hugo 的多语言支持是深入各个方面的，包括页面的语言、数据文件的多语言、i18n 多语言字符串转换函数等。</p>
+<p>在 config.toml 配置中，DefaultContentLanguage 设置默认的语言，在 <strong>[languages]</strong> 区定义多语言相应配置：</p>
+<p>
+
+
+
+
+
+
+
+<div class="code relative" id="config.toml"><div class="filename san-serif f6 dib lh-solid pl2 pv2">config.toml</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">
+    <span style="color:#a6e22e">DefaultContentLanguage</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+    <span style="color:#a6e22e">copyright</span> = <span style="color:#e6db74">&#34;Everything is mine&#34;</span>
+
+    <span style="color:#a6e22e">defaultContentLanguageInSubdirto</span> = <span style="color:#66d9ef">true</span>
+
+    [<span style="color:#a6e22e">languages</span>]
+      [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">ar</span>]
+        <span style="color:#a6e22e">LanguageName</span> = <span style="color:#e6db74">&#34;阿拉伯语&#34;</span>
+        <span style="color:#a6e22e">languagedirection</span> = <span style="color:#e6db74">&#34;rtl&#34;</span>
+        <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;مدونتي&#34;</span>
+        <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+      [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>]
+        <span style="color:#a6e22e">LanguageName</span> = <span style="color:#e6db74">&#34;英文&#34;</span>
+        <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My blog&#34;</span>
+        <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+        [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">params</span>]
+          <span style="color:#a6e22e">linkedin</span> = <span style="color:#e6db74">&#34;https://linkedin.com/whoever&#34;</span>
+      [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>]
+        <span style="color:#a6e22e">LanguageName</span> = <span style="color:#e6db74">&#34;法语&#34;</span>
+        <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Mon blogue&#34;</span>
+        <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+        <span style="color:#a6e22e">contentDir</span> = <span style="color:#a6e22e">content</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">french</span>
+        [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">params</span>]
+          <span style="color:#a6e22e">linkedin</span> = <span style="color:#e6db74">&#34;https://linkedin.com/fr/whoever&#34;</span>
+          [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">navigation</span>]
+            <span style="color:#a6e22e">help</span> = <span style="color:#e6db74">&#34;Aide&#34;</span>
+
+    [<span style="color:#a6e22e">params</span>]
+      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">navigation</span>]
+        <span style="color:#a6e22e">help</span> = <span style="color:#e6db74">&#34;Help&#34;</span>
+</code></pre></div>
+    </div>
+
+</div>
+
+对应到些没有多语言配置的参数，比如 help 在定义了 fr 语版本，那么在使用 ar 或 en 时就会自动回滚到顶级的 <strong>help = &ldquo;Help&rdquo;</strong>。</p>
+<pre><code>&lt;title&gt;{{ .Param &quot;title&quot; }}&lt;/title&gt;
+</code></pre>
+<p>多语言的内容组织方式有两种，文件名组织和目录结构组织：</p>
+<ul>
+<li>content/about.md</li>
+<li>content/contact.md</li>
+<li>content/about.fr.md ✅</li>
+<li>content/french/about.md ✅</li>
+<li>content/french/a-propos.md  🚫</li>
+</ul>
+<p>在 config.yaml 配置文件中，<strong>defaultContentLanguageInSubdirto</strong> 可以设置默认的语言也在内容子目录中，而 <strong>contentDir</strong> 参数可以为具体语言指定其内容目录名称。</p>
+<p>可以配置禁用某些语言：</p>
+<pre><code>disableLanguages = [&quot;fr&quot;, &quot;ja&quot;]
+</code></pre>
+<p>通过环境变量可以覆盖禁用配置：</p>
+<pre><code>HUGO_DISABLELANGUAGES=&quot;fr ja&quot;
+HUGO_DISABLELANGUAGES=&quot; &quot;
+</code></pre>
+<p>翻译内容连接设置是很重要的步骤，通过在 MD 内容文件的扉页设置 translationKey，可以</p>
+<pre><code># From all three pages: about.md, a-propos.fr.md, acerda.es.md
+---
+translationKey: about
+---
+</code></pre>
+<p>Hugo 将链接的翻译内容保存在页面对象的两个变量中：</p>
+<ul>
+<li>.Translations 包含已链接的页面；</li>
+<li>.AllTranslations 包含已经链接的页面，包括当前翻译的页面。</li>
+</ul>
+<p>这两个集合按 language Weight 设置的值排序，值小的靠前。<strong>.IsTranslated</strong> 表示当前查看的页面是否有相应的翻译内容页面，如果有，就可以在以上两个页面变量集合中获取。</p>
+<pre><code>{{ if .IsTranslated }}
+  {{ range .Translations }}
+  &lt;link rel=&quot;alternate&quot; hreflang=&quot;{{ .Language.Lang }}&quot; href=&quot;{{ .Permalink }}&quot; title=&quot;{{ .Language.LanguageName }}&quot;&gt;
+  {{ end }}
+{{ end }}
+
+{{ if .IsTranslated }}
+  &lt;nav class=&quot;LangNav&quot;&gt;
+  {{ range .Translations }}
+    &lt;a href=&quot;{{ .Permalink }}&quot;&gt;{{ .Name }} - {{ .Title }}&lt;/a&gt;
+  {{ end}}
+  &lt;/nav&gt;
+{{ end }}
+</code></pre>
+<p>设置语言后，模板文件的搜索会按语言调整，例如加载一个 AMP 页面，<code>index.fr.amp.html</code> 会优先于 <code>index.amp.html</code> 被选中，但 <code>index.fr.html</code> 会作为前两个模板的备选，只有它们缺失时有效。</p>
+<p><a href="https://www.ampproject.org/">AMP - Accelerated Mobile Pages</a> 是 Google 联合 8 家科技公司发起的移动页面加速开源项目。它带来的结果就是，你真的可以瞬时打开一个网页了，速度快到第一次使用的人难以相信这竟然是 Web 页面。</p>
+<p>从技术方面来说，采用 AMP 技术的网页之所以可以打开的这么快，这主要得益于它剔除了网页代码中各种可能会拖慢速度的部分，比如第三方的脚本文件、一些 HTML 标签、广告追踪器等等，所有脚本按异步执行。</p>
+<p>在页面加速这方面，Facebook 开发了交互式媒体内容创建工具 Instant Articles，目标都是要使用户浏览 Web 的体验得到提升，使用户感觉就像在使用本地应用程序一样。</p>
+<p>为了获得更好 SEO 效果，多语言页面的 URL 可以在页面中配置扉页的 slug 参数进行相应的修改：</p>
+<pre><code># about.fr.md
+title: À Propos
+slug: a-propos
+
+# acerda.es.md
+title: Acerda
+slug: acerda
+</code></pre>
+<p>这样，模板目录结构就有了一些变化，相应在页面 URL 也相应改变：</p>
+<pre><code>fr/a-propos/index.html 🇫🇷 👌
+es/acerda/index.html   🇪🇸 👌
+</code></pre>
+<p>Taxonomies and Blackfriday 多语言配置：</p>
+<pre><code>[Taxonomies]
+  tag = &quot;tags&quot;
+
+[blackfriday]
+  angledQuotes = true
+  hrefTargetBlank = true
+
+[languages]
+  [languages.en]
+    title = &quot;English&quot;
+    weight = 1
+    [languages.en.blackfriday]
+      angledQuotes = false
+  [languages.fr]
+    title = &quot;Français&quot;
+    weight = 2
+    [languages.fr.Taxonomies]
+      plaque = &quot;plaques&quot;
+</code></pre>
+<p>数据文件的多语言组织：</p>
+<pre><code>data
+  ├── en
+  │   └── team.yaml
+  └── fr
+      └── team.yaml
+</code></pre>
+<p>多语言数据的使用，先通过 index 函数获取站点配置的语言对应的数据文件，再使用：</p>
+<pre><code>{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ range $data.team }}
+    &lt;a href=&quot;{{ .url }}&quot;&gt;{{ .name }}&lt;/a&gt;
+{{ end }}
+</code></pre>
+<p>多语言主机配置，以下示范根据主机域名使用不同的语言：</p>
+<pre><code>[languages]
+  [languages.en]
+    baseURL = &quot;https://example.com&quot;
+    languageName = &quot;English&quot;
+    title = &quot;In English&quot;
+    weight = 2
+  [languages.fr]
+    baseURL = &quot;https://example.fr&quot;
+    languageName = &quot;Français&quot;
+    title = &quot;En Français&quot;
+    weight = 1
+</code></pre>
+<p>这两个语言配置对应生成两个发布内容目录：</p>
+<pre><code>public
+├── en
+└── fr
+</code></pre>
+<p>使用主题字符串也能实现内容的多语言转换，具体参考 i18n 函数。</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-7/">VII: Variables 对象变量</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-1/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-4/">IV: Hugo Pipes 管道处理</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-5/">V: Templates 模板</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-3/">III: Hugo Modules 模块</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-2/">II: Hugo 目录组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/chapter-8/">I: Hugo Web Framework</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1314" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

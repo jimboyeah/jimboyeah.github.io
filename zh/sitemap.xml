@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/categories/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/categories/content-management/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tags/hugo/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch01-hugo-web-framework/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch02-project-directories/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch03-hugo-modules/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch04-hugo-pipes/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tags/menu/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tags/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch05-hugo-templates/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch06-multilingual/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch07-varialbes/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/about/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/about/slideshow/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch09-menus/</loc>
+    <lastmod>2020-08-06T12:09:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/tutorials/ch08-functions/</loc>
+    <lastmod>2020-08-06T12:09:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/post/</loc>
+    <lastmod>2017-03-02T12:00:00-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/post/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/public/contact/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/public/en/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/public/contact/"
+                />
+  </url>
+  
+</urlset>

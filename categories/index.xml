@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Go Learning</title>
+    <link>https://jimboyeah.github.io/public/categories/</link>
+    <description>Recent content in Categories on Go Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nothing is Mine</copyright>
+    <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://jimboyeah.github.io/public/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>content management</title>
+      <link>https://jimboyeah.github.io/public/categories/content-management/</link>
+      <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
+      
+      <guid>https://jimboyeah.github.io/public/categories/content-management/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
