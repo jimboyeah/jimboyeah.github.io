@@ -1,0 +1,3101 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"P",
+				"PrintErrorMessage"
+			],
+			[
+				"MathLibrary",
+				"MathLibrary_dll.cpp"
+			],
+			[
+				"PROJ",
+				"PROJECT_SOURCE_DIR\tbuiltin"
+			],
+			[
+				"bin",
+				"bin-clr/"
+			],
+			[
+				"link",
+				"link_directories\tcommand"
+			],
+			[
+				"add_c",
+				"add_custom_command\tcommand"
+			],
+			[
+				"tar",
+				"target_link_libraries\tcommand"
+			],
+			[
+				"F",
+				"Finished"
+			],
+			[
+				"qml",
+				"main.qml"
+			],
+			[
+				"p",
+				"plugins/"
+			],
+			[
+				"img",
+				"imageMat"
+			],
+			[
+				"lena",
+				"lena_thresh"
+			],
+			[
+				"chapp",
+				"ch_app.erl"
+			],
+			[
+				"wxMen",
+				"wxMenuBar"
+			],
+			[
+				"create",
+				"create_test_menu"
+			],
+			[
+				"ge",
+				"GenerateNames"
+			],
+			[
+				"I",
+				"IsStatic"
+			],
+			[
+				"lo",
+				"localhost.pfx"
+			],
+			[
+				"Hook",
+				"KeyboardHook"
+			],
+			[
+				"Hoo",
+				"HookStop"
+			],
+			[
+				"Ho",
+				"HookStart"
+			],
+			[
+				"int",
+				"Int32"
+			],
+			[
+				"PlaySoun",
+				"PlaySoundFlags"
+			],
+			[
+				"O",
+				"OpenFileDialog"
+			],
+			[
+				"From",
+				"Form1_Load"
+			],
+			[
+				"Form1",
+				"Form1_Load"
+			],
+			[
+				"Do",
+				"DoWorkStatic"
+			],
+			[
+				"S",
+				"Singletons"
+			],
+			[
+				"Test",
+				"TestClass"
+			],
+			[
+				"_",
+				"_count"
+			],
+			[
+				"Con",
+				"Contacts"
+			],
+			[
+				"up",
+				"upperCase"
+			],
+			[
+				"cli",
+				"on_button_clicked"
+			],
+			[
+				"height",
+				"max-height\tproperty"
+			],
+			[
+				"so",
+				"socket.io-client"
+			],
+			[
+				"En",
+				"EncodeToString\tfunc(src []byte) string ·ƒ"
+			],
+			[
+				"st",
+				"StdEncoding\t*base64.Encoding ·ν"
+			],
+			[
+				"Engin",
+				"EngineioMessage\tfunc(text string) ·ƒ"
+			],
+			[
+				"EIO",
+				"EIO_Message\tEngineioPacket ·Ɩ"
+			],
+			[
+				"SIO_Bin",
+				"SIO_Binary_Event\tSocketioPacket ·Ɩ"
+			],
+			[
+				"SIO",
+				"SIO_Event\tSocketioPacket ·Ɩ"
+			],
+			[
+				"U",
+				"Uint16\tfunc(b []byte) uint16 ·ƒ"
+			],
+			[
+				"Error",
+				"ErrorNil\tErrorCode ·Ɩ"
+			],
+			[
+				"Err",
+				"ErrorNil\tErrorCode ·Ɩ"
+			],
+			[
+				"Messa",
+				"MessageType\tbyte ·ʈ"
+			],
+			[
+				"E",
+				"Err\terror ·ν"
+			],
+			[
+				"e",
+				"Err\terror ·ν"
+			],
+			[
+				"b",
+				"brw\t*bufio.ReadWriter ·ν"
+			],
+			[
+				"Mi",
+				"Millisecond\ttime.Duration ·Ɩ"
+			],
+			[
+				"Webs",
+				"github.com/gorilla/websocket\t ·ʂ"
+			],
+			[
+				"Set",
+				"SetReadDeadline\tfunc(t time.Time) error ·ƒ"
+			],
+			[
+				"B",
+				"BrokenMessage\tMessageType ·Ɩ"
+			],
+			[
+				"R",
+				"RemoteAddr\tfunc() net.Addr ·ƒ"
+			],
+			[
+				"utf",
+				"unicode/utf8\t ·ʂ"
+			],
+			[
+				"Mask",
+				"Masking\tbool ·ν"
+			],
+			[
+				"Mess",
+				"MessageType\tbyte ·ʈ"
+			],
+			[
+				"Ma",
+				"Maskingkey\t[4]byte ·ν"
+			],
+			[
+				"Masking",
+				"Masking\tbool ·ν"
+			],
+			[
+				"M",
+				"Maskingkey\t[4]byte ·ν"
+			],
+			[
+				"CloseMe",
+				"CloseMessageCode\tuint ·ʈ"
+			],
+			[
+				"Ti",
+				"PingTimeout\ttime.Duration ·Ɩ"
+			],
+			[
+				"Ping",
+				"PingTimeout\ttime.Duration ·Ɩ"
+			],
+			[
+				"r",
+				"SetReadDeadline\tfunc(t time.Time) error ·ƒ"
+			],
+			[
+				"Read",
+				"ReadWriter\tstruct ·ʈ"
+			],
+			[
+				"StatusIn",
+				"StatusInternalServerError\tuntyped int ·Ɩ"
+			],
+			[
+				"net",
+				"netConn\tnet.Conn ·ν"
+			],
+			[
+				"enc",
+				"encoding/base64\t ·ʂ"
+			],
+			[
+				"Re",
+				"RequestURI\tstring ·ν"
+			],
+			[
+				"Respn",
+				"ResponseWriter\tinterface ·ʈ"
+			],
+			[
+				"Ha",
+				"Handler\tinterface ·ʈ"
+			],
+			[
+				"L",
+				"GetLabel\tfunc() string ·ƒ"
+			],
+			[
+				"test",
+				"test_pb.js"
+			],
+			[
+				"react",
+				"react-quill/"
+			],
+			[
+				"el",
+				"element-ui/"
+			],
+			[
+				"rel",
+				"icedesign-qrcode.rel.js"
+			],
+			[
+				"get",
+				"getCroppedCanvas\twarning"
+			],
+			[
+				"cl",
+				"className"
+			],
+			[
+				"hex",
+				"hex2decimal"
+			],
+			[
+				"flex",
+				"flex-wrap\tproperty"
+			],
+			[
+				"in",
+				"MarshalIndent\tfunc(v interface{}, prefix string, indent string) []byte, error ·ƒ"
+			],
+			[
+				"io",
+				"io/ioutil\t ·ʂ"
+			],
+			[
+				"re",
+				"ReadDir\tfunc(dirname string) []os.FileInfo, error ·ƒ"
+			],
+			[
+				"init",
+				"initQueue"
+			],
+			[
+				"thread",
+				"threadID"
+			],
+			[
+				"exit",
+				"exitFlag"
+			],
+			[
+				"con",
+				"content_encoding"
+			],
+			[
+				"content",
+				"content_length"
+			],
+			[
+				"name",
+				"nameKey"
+			],
+			[
+				"work",
+				"workQueue"
+			],
+			[
+				"en",
+				"enqueue"
+			],
+			[
+				"none",
+				"None"
+			],
+			[
+				"Mo",
+				"ModeExclusive\tos.FileMode ·Ɩ"
+			],
+			[
+				"encod",
+				"encoding/json\t ·ʂ"
+			],
+			[
+				"Cmd",
+				"Command\tfunc(name string, arg ...string) *exec.Cmd ·ƒ"
+			],
+			[
+				"next",
+				"next.min.js"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/coding/md/writing/hugo.md",
+			"settings":
+			{
+				"buffer_size": 102731,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/php.bat",
+			"settings":
+			{
+				"buffer_size": 153,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/docs/content/en/templates/pagination.md",
+			"settings":
+			{
+				"buffer_size": 4790,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/tutorials/ch05-Hugo Templates.md",
+			"settings":
+			{
+				"buffer_size": 33451,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/tutorials/ch07-Varialbes.md",
+			"settings":
+			{
+				"buffer_size": 16296,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/tutorials/ch02-Project Directories.md",
+			"settings":
+			{
+				"buffer_size": 7609,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/public/theme/css/main.css",
+			"settings":
+			{
+				"buffer_size": 2924,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "quickstart/config.toml",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/code.html",
+			"settings":
+			{
+				"buffer_size": 1220,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/contact.md",
+			"settings":
+			{
+				"buffer_size": 1502,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/tutorials/ch01-Hugo Web Framework.md",
+			"settings":
+			{
+				"buffer_size": 5001,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
+			"settings":
+			{
+				"buffer_size": 5109,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/post/list.html",
+			"settings":
+			{
+				"buffer_size": 900,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/tutorials/list.html",
+			"settings":
+			{
+				"buffer_size": 514,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/cn/tutorials/_index.md",
+			"settings":
+			{
+				"buffer_size": 1189,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/tpl/tplimpl/embedded/templates/pagination.html",
+			"settings":
+			{
+				"buffer_size": 1631,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
+			"settings":
+			{
+				"buffer_size": 462,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/single.html",
+			"settings":
+			{
+				"buffer_size": 3309,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/assets/theme/css/main.css",
+			"settings":
+			{
+				"buffer_size": 2954,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/docs/content/en/functions/replace.md",
+			"settings":
+			{
+				"buffer_size": 475,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/index.html",
+			"settings":
+			{
+				"buffer_size": 2360,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+			"settings":
+			{
+				"buffer_size": 1809,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/page-header.html",
+			"settings":
+			{
+				"buffer_size": 1400,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/content/en/about/_index.md",
+			"settings":
+			{
+				"buffer_size": 892,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
+			"settings":
+			{
+				"buffer_size": 1226,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/_default/page.html",
+			"settings":
+			{
+				"buffer_size": 1013,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Ninja - all",
+					""
+				],
+				[
+					"Ninja - clean",
+					""
+				],
+				[
+					"Ninja - edit_cache",
+					""
+				],
+				[
+					"Ninja - rebuild_cache",
+					""
+				],
+				[
+					"Ninja - test",
+					""
+				],
+				[
+					"Ninja Make(Windows)",
+					""
+				]
+			],
+			[
+				"Ninja - all",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Ninja - all",
+					""
+				],
+				[
+					"Ninja - clean",
+					""
+				],
+				[
+					"Ninja - edit_cache",
+					""
+				],
+				[
+					"Ninja - rebuild_cache",
+					""
+				],
+				[
+					"Ninja - test",
+					""
+				],
+				[
+					"Ninja Make(Windows)",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++17)"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++14)"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++11)"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++11) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++11) Release with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++0x) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c++98) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-ansi) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c11) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c99) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"(-std=c90) with ENV"
+				],
+				[
+					"Packages/User/C++ MinGW.sublime-build",
+					"控制台中运行"
+				]
+			],
+			[
+				"Ninja - all",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"edit",
+				"Project: Edit Project"
+			],
+			[
+				"enable",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable ",
+				"Package Control: Enable Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"open ",
+				"SFTP: Show Panel"
+			],
+			[
+				"commit",
+				"Git: Commit history"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"statsu",
+				"Git: Status"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"add curr",
+				"Git: Add Current File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"pushc",
+				"Git: Push Current Branch"
+			],
+			[
+				"comm\t",
+				"Git: Commit"
+			],
+			[
+				"enabl",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"hex",
+				"HexViewer: Toggle Hex View"
+			],
+			[
+				"adda",
+				"Git: Add All"
+			],
+			[
+				"ena",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"enab",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"addll",
+				"Git: Add All"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"LSPEnable",
+				"LSP: Enable Language Server in Project"
+			],
+			[
+				"isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"print",
+				"Print to HTML: print as HTML via browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"check",
+				"Git: Checkout Current File"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"cmm",
+				"Git: Commit"
+			],
+			[
+				"repl",
+				"Package Control: Enable Package"
+			],
+			[
+				"en",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"endablecu",
+				"Table Editor: Enable for current syntax"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git i",
+				"Git: Init"
+			],
+			[
+				"table edit",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"table",
+				"Table Editor: Show demo film in new scratch view"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"Build With: Markdown"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"endable",
+				"Package Control: Disable Package"
+			],
+			[
+				"la",
+				"LaTeXTools: Clear cache"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"erlang",
+				"Set Syntax: Erlang"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"TypesCript",
+				"TypeScript: Signature Info"
+			],
+			[
+				"markdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"debug",
+				"SublimeCodeIntel: Enable Debug Mode"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"new pro",
+				"Project Manager: Add New Project"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 302.0,
+		"history":
+		[
+			"out.write(\"\\0x62\\0xfa\\0x10\")",
+			"out = open(\"C:/download/OpenCV/redbook/asset/test.gzip\", \"wb\")",
+			"out.write(\"\\0x62\\0xfa\\0x10\")",
+			"newFile.write(newFileBytes)",
+			"newFile = open(\"filename.txt\", \"wb\")",
+			"newFileBytes = [123, 3, 255, 0, 100]",
+			"out.write(data)",
+			"data = [0x62, 0xfa, 0x10]",
+			"out.write([0x62, 0xfa, 0x10])",
+			"out = open(\"C:/download/OpenCV/redbook/asset/test.gzip\")",
+			" out = open(\"C:/download/OpenCV/redbook/asset/test.gzip\", \"wb\")",
+			"out.write([0x62, 0xfa, 0x10])",
+			"out.write((0x62, 0xfa, 0x10))",
+			"out = open(\"C:/download/OpenCV/redbook/asset/test.gzip\")",
+			"os.system(\"dir\");",
+			"import os;",
+			"execfile(\"..\")",
+			"execfile",
+			"system.io(\"dir\");",
+			"print(window)",
+			"print(view)",
+			"print(view);",
+			"dir(sublime)",
+			"dir(sheet)",
+			"print(__name__)",
+			"print(__name_)",
+			"print(__doc__)",
+			".",
+			";",
+			"__doc__",
+			"dir()",
+			"ver",
+			"__version",
+			".version().",
+			".version()",
+			"version()",
+			"1+1",
+			"dir",
+			"r = os.system(\"cmd /k echo >>c:/coding/md/log.txt\")",
+			"r = os.system(\"cmd /k \\\"echo c:/coding/md/log.txt mkdir c:\\mkdir\\\"\")",
+			"r = os.system(\"cmd /k echo \\\"c:/coding/md/log.txt mkdir c:\\mkdir\\\"\")",
+			"r = os.system(\"cmd /k echo c:/coding/md/log.txt mkdir c:\\mkdir'\")",
+			"r = os.system(\"cmd /k 'echo c:/coding/md/log.txt mkdir c:\\mkdir'\")",
+			"r = os.system(\"cmd -k echo c:/coding/md/log.txt mkdir c:\\mkdir\")",
+			"r = os.system(\"echo c:/coding/md/log.txt mkdir c:\\mkdir\")",
+			"r = os.system(\"echo c:/log.txt mkdir c:\\mkdir\")",
+			"r = os.system(\"echo c:\\\\log.txt mkdir c:\\mkdir\")",
+			"r = os.system(\"mkdir c:\\mkdir\")",
+			"r = os.system(\"cwd .\")",
+			"print(r)",
+			"r = os.system(\"dir .\")",
+			"print(r)",
+			"pring(r)",
+			"r = os.system(\"dir\")",
+			"os.system(\"dir\")",
+			"subprocess.run(\"ls\")",
+			"subprocess.run()",
+			"import subprocess",
+			"subprocess.run()",
+			"import commands",
+			"for i in val.readlines()",
+			"for i in val.readlines(): &  print(i)",
+			"for i in val.readlines()  print(i)",
+			"for i in val.readlines(): print(i)",
+			"for i in val.readlines():",
+			"val = os.popen('ls -al')",
+			"val = os.ppopen('ls -al')",
+			"val = os.Ppopen('ls -al')",
+			"import os",
+			"val = os.Ppopen('ls -al')",
+			"cwd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/coding/md-code/hugo/quickstart",
+		"/C/coding/md-code/hugo/quickstart/content",
+		"/C/coding/md-code/hugo/quickstart/content/cn",
+		"/C/coding/md-code/hugo/quickstart/content/cn/about",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials",
+		"/C/coding/md-code/hugo/quickstart/content/en",
+		"/C/coding/md-code/hugo/quickstart/content/en/about",
+		"/C/coding/md-code/hugo/quickstart/data",
+		"/C/coding/md-code/hugo/src/docs",
+		"/C/coding/md-code/hugo/src/docs/_vendor",
+		"/C/coding/md-code/hugo/src/docs/_vendor/github.com",
+		"/C/coding/md-code/hugo/src/docs/config",
+		"/C/coding/md-code/hugo/src/docs/config/_default",
+		"/C/coding/md-code/hugo/src/docs/config/_default/menus",
+		"/C/coding/md-code/hugo/src/docs/config/development",
+		"/C/coding/md-code/hugo/src/docs/config/production",
+		"/C/coding/md-code/hugo/src/docs/content",
+		"/C/coding/md-code/hugo/src/docs/content/en",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/image-processing",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions",
+		"/C/coding/md-code/hugo/src/docs/content/en/getting-started",
+		"/C/coding/md-code/hugo/src/docs/content/en/hosting-and-deployment",
+		"/C/coding/md-code/hugo/src/docs/content/en/hugo-pipes",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables",
+		"/C/coding/md-code/hugo/src/docs/content/zh",
+		"/C/coding/md-code/hugo/src/docs/content/zh/news"
+	],
+	"file_history":
+	[
+		"/C/coding/md-code/hugo/hugo.sublime-project",
+		"/C/coding/md-code/hugo/quickstart/hugo.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch09-Menus.md",
+		"/C/coding/md-code/hugo/quickstart/public/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-navigation.html",
+		"/C/coding/md-code/hugo/quickstart/postcss.config.js",
+		"/C/coding/md-code/hugo/quickstart/content/en/contact.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/_index.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-7.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-6.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-4.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-2.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-3.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-1.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-5.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-8.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/hasPrefix.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/split.md",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/css/main.css",
+		"/C/coding/md-code/hugo/quickstart/content/cn/about/slideshow.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/about/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/contact.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-6.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/summaries.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/front-matter.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-1.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/menu-templates.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/_index.md",
+		"/C/coding/md-code/hugo/quickstart/php.bat",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-5.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/menus.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/menus.md",
+		"/C/coding/md-code/hugo/syna/exampleSite/config.toml",
+		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/_default/menu.yaml",
+		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/production/params.yaml",
+		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/production/config.yaml",
+		"/C/coding/md-code/hugo/quickstart/content/cn/_index.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/i18nlist.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/menu-contextual.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/i18n/zh.toml",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/multilingual.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/page.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/ismenucurrent.md",
+		"/C/coding/md-code/hugo/src/langs/language.go",
+		"/C/coding/md-code/hugo/quickstart/content/about/slideshow.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/taxonomy.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/site.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/lists.md",
+		"/C/coding/md-code/hugo/quickstart/content/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/about/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/contact.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/cross-references.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/files.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/about/_index.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-1.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-1.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-4.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-5.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-6.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-3.md",
+		"/C/coding/md-code/hugo/quickstart/content/post/chapter-2.md",
+		"/C/coding/md-code/hugo/src/docs/data/docs.json",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.en.html",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/base/minireset.sass",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/utilities/initial-variables.sass",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/utilities/derived-variables.sass",
+		"/C/coding/md-code/hugo/quickstart/static/assets/IMG_20181016_130158.jpg",
+		"/C/coding/md-code/hugo/src/resources/resource/resourcetypes.go",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/output-formats.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/page-resources.md",
+		"/C/coding/md-code/hugo/src/resources/transform.go",
+		"/C/coding/md-code/hugo/quickstart/.gitignore",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/style.scss",
+		"/C/coding/md-code/hugo/src/hugolib/page.go",
+		"/C/coding/md-code/hugo/src/resources/resource.go",
+		"/C/coding/md-code/hugo/quickstart/config.toml",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-favicon.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/baseof-dis.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/func/GetFrontMatter.html",
+		"/C/coding/md-code/hugo/src/tpl/tplimpl/embedded/templates/shortcodes/figure.html",
+		"/C/coding/md-code/hugo/quickstart/public/dist/js/app.3fc0f988d21662902933.js",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/static/dist/css/app.7e7787cc1402d7de28bc90f7e65adf96.css",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/get.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/default.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/table.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/lookup-order.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/data-templates.md",
+		"/C/coding/md-code/hugo/quickstart/iris-ex.bat",
+		"/C/coding/md-code/hugo/quickstart/syna-ex.bat",
+		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/config/_default/config.yaml",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
+		"/C/coding/md-code/hugo/src/docs/layouts/shortcodes/datatable.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/introduction.md",
+		"/C/coding/md-code/hugo/quickstart/go.mod",
+		"/C/coding/md-code/hugo/src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/partials/docs/functions-signature.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/markdownify.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/shortcodes.md",
+		"/C/coding/md-code/hugo/src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/partials/home-page-sections/tweets.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/troubleshooting/faq.md",
+		"/C/coding/md-code/tachyons-4.12/src/_tables.css",
+		"/C/coding/md-code/hugo/src/docs/config.toml",
+		"/C/coding/md-code/hugo/src/tpl/tplimpl/embedded/templates/pagination.html",
+		"/C/pictures/a/l/!acqier.bat",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/src/css/_tachyons.css",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/theme.toml",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/static/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/exampleSite/config.toml",
+		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/assets/theme/scss/bulma-0.7.5/elements/table.sass",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/example.html",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/markdown.js",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/marked.js",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/math/math.js",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/print-pdf/print-pdf.js",
+		"/C/coding/md-code/reveal.js/test/test-auto-animate.html",
+		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/example.md",
+		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/content/en/_index.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/exampleSite/content/contact.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/md5.md",
+		"/C/coding/md-code/hugo/src/docs/public/functions/os.stat/index.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/index-function.md",
+		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/layouts/shortcodes/table.html",
+		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/content/en/posts/rich-content.md"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 451.0,
+		"where_history":
+		[
+			"C:\\coding\\md-code\\hugo\\quickstart",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes",
+			"C:\\coding\\md-code\\hugo\\quickstart\\content\\cn\\tutorials",
+			"C:\\coding\\md-code\\hugo\\quickstart\\",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts",
+			"C:\\coding\\md-code\\hugo\\quickstart\\content",
+			"C:\\coding\\md-code\\hugo\\quickstart\\",
+			"C:\\coding\\md-code\\hugo\\src\\docs",
+			"C:\\coding\\md-code\\hugo\\quickstart",
+			"C:\\coding\\md-code\\hugo\\quickstart\\assets\\theme\\scss\\bulma-0.7.5",
+			"C:\\coding\\md-code\\hugo\\quickstart\\assets\\theme\\scss\\bulma-0.7.5\\elements",
+			"C:\\coding\\md-code\\hugo\\quickstart\\assets\\theme\\scss",
+			"C:\\coding\\md-code\\hugo\\src",
+			"C:\\coding\\md-code\\hugo\\quickstart\\public",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts",
+			"C:\\coding\\md-code\\hugo\\src\\docs\\_vendor\\github.com\\gohugoio\\gohugoioTheme\\layouts",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\hugo-theme-iris",
+			"C:\\coding\\md-code\\hugo\\src\\docs",
+			"C:\\coding\\md-code\\hugo\\docs",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\hugo-theme-iris",
+			"C:\\coding\\md-code\\hugo\\quickstart\\",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\syna",
+			"C:\\coding\\md-code\\hugo\\",
+			"C:\\coding\\md-code\\hugo\\quickstart"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"    -",
+			"Paginator",
+			"pagination",
+			"LIST.HTML",
+			"menu",
+			"Menu",
+			"menu",
+			"Menu",
+			"menu",
+			"Menu",
+			"menu",
+			"Menu",
+			"&#",
+			"&#28",
+			"- $item",
+			"safehtml",
+			"\n    -",
+			"recent_posts_number",
+			"resources.PostCSS",
+			"\n#",
+			"\n# ",
+			"\n#",
+			"b",
+			"  {{ end }} ",
+			" {{ end }}",
+			"white-",
+			"omit_header_text",
+			"坚果的 Hugo",
+			"{{<",
+			"{{%",
+			"    {{<",
+			"{{<",
+			"{{%",
+			"坚果的 Hugo 教程",
+			"main",
+			".Path",
+			"File.Path",
+			"menu:",
+			"whatsInThis",
+			"这是什么",
+			"toc",
+			"Front",
+			"Summmer",
+			"Sumarry",
+			"black",
+			"micro_s",
+			": _",
+			"_ <br",
+			" : _",
+			"-",
+			"路径",
+			"Disqus shortcode",
+			"\n.Data.",
+			".Data.",
+			".Sitemap",
+			"\n.Site",
+			".Site",
+			"Prev",
+			"Sort",
+			"sort",
+			"|.",
+			"\n.",
+			"_ <br />",
+			"|.",
+			"\n.",
+			" (e.g.,",
+			"\n.",
+			")",
+			"|.File.",
+			"\n.File.",
+			".File.",
+			"<br>",
+			"\n.Hugo",
+			".Hugo",
+			".",
+			"\n.",
+			".File",
+			"\n.",
+			"\n.File",
+			"Translations",
+			"链接",
+			" ✅",
+			"Language.LanguageName",
+			"fr",
+			" .",
+			"MetaDataFormat",
+			"AMP",
+			"\">",
+			"  content/",
+			"优先",
+			"DefaultContentLanguage",
+			"config.toml 配置中，设置默认的语言：\n\n    DefaultContentLanguage = \"zh\"\n\n",
+			"DefaultContentLanguage",
+			"i18n",
+			"white-bis",
+			"border-collapse",
+			"collaspe",
+			"coll",
+			" !default",
+			"!default;",
+			"$color",
+			"$name",
+			"$pair",
+			"$colors",
+			"table-cell-border",
+			"$text-strong",
+			"border",
+			" $table-cell-border",
+			"$",
+			"grey-darker",
+			"#name",
+			"端口",
+			"port",
+			"{",
+			"$table-color",
+			"autoprefixer",
+			"[",
+			"resource.",
+			"resourceAdapter",
+			"css/",
+			":",
+			"postcssAsset",
+			"css",
+			"\r",
+			"stylesheet",
+			"（",
+			"\r",
+			"→ "
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"\n##"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/coding/md/writing/hugo.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 102731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4536,
+								4536
+							]
+						],
+						"settings":
+						{
+							"enable_table_editor": true,
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": true,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2257.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "quickstart/php.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 153,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								153,
+								153
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/docs/content/en/templates/pagination.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "quickstart/content/cn/tutorials/ch05-Hugo Templates.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								267,
+								267
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "quickstart/content/cn/tutorials/ch07-Varialbes.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16296,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2429.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "quickstart/content/cn/tutorials/ch02-Project Directories.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7609,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								276,
+								276
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1184.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "quickstart/public/theme/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1647,
+								1717
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 542.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "quickstart/config.toml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/TOML/TOML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/code.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1220,
+								1220
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "quickstart/content/cn/contact.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "quickstart/content/cn/tutorials/ch01-Hugo Web Framework.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								640,
+								640
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1206,
+								1206
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 158.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/post/list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								568,
+								568
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/tutorials/list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								514,
+								514
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "quickstart/content/cn/tutorials/_index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1189,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								778,
+								778
+							]
+						],
+						"settings":
+						{
+							"enable_table_editor": true,
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "src/tpl/tplimpl/embedded/templates/pagination.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 462,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								462,
+								462
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/single.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2775,
+								2775
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 423.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "quickstart/assets/theme/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1066,
+								1066
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "src/docs/content/en/functions/replace.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								387,
+								387
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								126,
+								126
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": true,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1809,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								52
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/page-header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1400,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1120,
+								1108
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "quickstart/content/en/about/_index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 892,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								145,
+								145
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/_default/page.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								905,
+								1013
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 153.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.diagnostics":
+	{
+		"height": 0.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 349.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 375.0
+	},
+	"output.markdown":
+	{
+		"height": 109.0
+	},
+	"output.sftp":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "",
+	"project": "hugo.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pagination.html",
+				"hugo\\src\\tpl\\tplimpl\\embedded\\templates\\pagination.html"
+			],
+			[
+				"pagination",
+				"hugo\\src\\docs\\content\\en\\templates\\pagination.md"
+			],
+			[
+				"chapter8",
+				"hugo\\quickstart\\content\\cn\\tutorials\\chapter-8.md"
+			],
+			[
+				"single",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\_default\\single.html"
+			],
+			[
+				"main.css",
+				"quickstart\\assets\\theme\\css\\main.css"
+			],
+			[
+				"chapter5",
+				"hugo\\quickstart\\content\\cn\\tutorials\\chapter-5.md"
+			],
+			[
+				"split.md",
+				"docs\\content\\en\\functions\\split.md"
+			],
+			[
+				"replace.",
+				"docs\\content\\en\\functions\\replace.md"
+			],
+			[
+				"page-head",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\page-header.html"
+			],
+			[
+				"postconfig",
+				"hugo\\quickstart\\postcss.config.js"
+			],
+			[
+				"post",
+				"quickstart\\postcss.config.js"
+			],
+			[
+				"contact",
+				"quickstart\\content\\cn\\contact.md"
+			],
+			[
+				"chap6",
+				"quickstart\\content\\cn\\tutorials\\chapter-6.md"
+			],
+			[
+				"chap5",
+				"quickstart\\content\\cn\\tutorials\\chapter-5.md"
+			],
+			[
+				"chapte",
+				"quickstart\\content\\cn\\tutorials\\chapter-1.md"
+			],
+			[
+				"tutorial",
+				"quickstart\\content\\cn\\tutorials\\_index.md"
+			],
+			[
+				"chapter",
+				"quickstart\\content\\cn\\tutorials\\chapter-2.md"
+			],
+			[
+				"app.",
+				"quickstart\\public\\dist\\css\\app.4fc0b62e4b82c997bb0041217cd6b979.css"
+			],
+			[
+				"summar",
+				"docs\\content\\en\\content-management\\summaries.md"
+			],
+			[
+				"fron",
+				"docs\\content\\en\\content-management\\front-matter.md"
+			],
+			[
+				"menu",
+				"docs\\content\\en\\templates\\menu-templates.md"
+			],
+			[
+				"front",
+				"docs\\content\\en\\content-management\\front-matter.md"
+			],
+			[
+				"menus.m",
+				"hugo\\src\\docs\\content\\en\\content-management\\menus.md"
+			],
+			[
+				"menus",
+				"docs\\content\\en\\variables\\menus.md"
+			],
+			[
+				"menu.md",
+				"docs\\content\\en\\content-management\\menus.md"
+			],
+			[
+				"summaries",
+				"docs\\content\\en\\content-management\\summaries.md"
+			],
+			[
+				"page",
+				"docs\\content\\en\\variables\\page.md"
+			],
+			[
+				"IsMenuCurrent",
+				"docs\\content\\en\\functions\\ismenucurrent.md"
+			],
+			[
+				"multi",
+				"docs\\content\\en\\content-management\\multilingual.md"
+			],
+			[
+				"lists.",
+				"docs\\content\\en\\templates\\lists.md"
+			],
+			[
+				"lists",
+				"docs\\content\\en\\templates\\lists.md"
+			],
+			[
+				"cross-references",
+				"docs\\content\\en\\content-management\\cross-references.md"
+			],
+			[
+				"variables.md",
+				"docs\\content\\en\\variables\\site.md"
+			],
+			[
+				"functionindex.md",
+				"docs\\content\\en\\functions\\_index.md"
+			],
+			[
+				"docs.",
+				"docs\\data\\docs.json"
+			],
+			[
+				"multilingual.md",
+				"docs\\content\\en\\content-management\\multilingual.md"
+			],
+			[
+				"form-contact",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\form-contact.html"
+			],
+			[
+				"file.md",
+				"docs\\content\\en\\variables\\files.md"
+			],
+			[
+				"site-favicon.html",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\site-favicon.html"
+			],
+			[
+				"app.7e7787cc1402d7de28bc90f7e65adf96",
+				"quickstart\\themes\\gohugo-theme-ananke\\static\\dist\\css\\app.7e7787cc1402d7de28bc90f7e65adf96.css"
+			],
+			[
+				"Get.md",
+				"docs\\content\\en\\functions\\get.md"
+			],
+			[
+				"figure",
+				"hugo\\src\\tpl\\tplimpl\\embedded\\templates\\shortcodes\\figure.html"
+			],
+			[
+				"default",
+				"docs\\content\\en\\functions\\default.md"
+			],
+			[
+				"GetFeaturedImage",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\func\\GetFeaturedImage.html"
+			],
+			[
+				"config",
+				"hugo\\quickstart\\config.toml"
+			],
+			[
+				"baseof",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\_default\\baseof.html"
+			],
+			[
+				"con",
+				"hugo\\quickstart\\config.toml"
+			],
+			[
+				"docs",
+				"docs\\data\\docs.json"
+			],
+			[
+				"datatable",
+				"docs\\layouts\\shortcodes\\datatable.html"
+			],
+			[
+				"output-formats",
+				"docs\\content\\en\\templates\\output-formats.md"
+			],
+			[
+				"introduc",
+				"docs\\content\\en\\templates\\introduction.md"
+			],
+			[
+				"lookup-order.md",
+				"docs\\content\\en\\templates\\lookup-order.md"
+			],
+			[
+				"conf",
+				"hugo\\quickstart\\config.toml"
+			],
+			[
+				"page.md",
+				"docs\\content\\en\\variables\\page.md"
+			],
+			[
+				"table.html",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\table.html"
+			],
+			[
+				"_talbes",
+				"tachyons-4.12\\src\\_tables.css"
+			],
+			[
+				"tachyons",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\src\\css\\_tachyons.css"
+			],
+			[
+				"anaktable.html",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\table.html"
+			],
+			[
+				"achyon",
+				"quickstart\\themes\\gohugo-theme-ananke\\src\\css\\_tachyons.css"
+			],
+			[
+				"Table.html",
+				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\table.html"
+			],
+			[
+				"pdf",
+				"quickstart\\static\\revealjs-v3.9.2\\plugin\\print-pdf\\print-pdf.js"
+			],
+			[
+				"data-tem",
+				"docs\\content\\en\\templates\\data-templates.md"
+			],
+			[
+				"multilingualmd",
+				"docs\\content\\en\\content-management\\multilingual.md"
+			],
+			[
+				"tweet",
+				"docs\\_vendor\\github.com\\gohugoio\\gohugoioTheme\\layouts\\partials\\home-page-sections\\tweets.html"
+			],
+			[
+				"functionshtml",
+				"docs\\_vendor\\github.com\\gohugoio\\gohugoioTheme\\layouts\\partials\\docs\\functions-signature.html"
+			],
+			[
+				"markdownify.md",
+				"hugo\\src\\docs\\content\\en\\functions\\markdownify.md"
+			],
+			[
+				"functions\\md5.md",
+				"hugo\\src\\docs\\content\\en\\functions\\md5.md"
+			],
+			[
+				"function",
+				"hugo\\src\\docs\\content\\en\\functions\\index-function.md"
+			],
+			[
+				"formcontact.html",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\form-contact.html"
+			],
+			[
+				"configu",
+				"hugo\\src\\docs\\content\\en\\getting-started\\configuration.md"
+			],
+			[
+				"config.",
+				"quickstart\\config.toml"
+			],
+			[
+				".git",
+				"♬☾ CPP Demo Project\\.gitignore"
+			],
+			[
+				"plugin_",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\plugin_assembly.cpp"
+			],
+			[
+				"src\\reflectioncpp",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\vcpp_reflection_6.cpp"
+			],
+			[
+				"mcppv2_gcnew_2",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\mcppv2_gcnew_2.cpp"
+			],
+			[
+				"friend",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\friend_assemblies_dll.cpp"
+			],
+			[
+				"friend_assemblies_2",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\friend_assemblies_2.cpp"
+			],
+			[
+				"override_native_keyword",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\override_native_keyword.cpp"
+			],
+			[
+				"sealed_native_keyword",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\sealed_native_keyword.cpp"
+			],
+			[
+				"stream-file",
+				"♬☾ CPP Demo Project\\src\\stream-file.cpp"
+			],
+			[
+				"stream",
+				"src\\streamfile\\streamfile.cbp"
+			],
+			[
+				"vcpp_reflection_5",
+				"♬☾ CPP Demo Project\\dotnet-clr\\src\\vcpp_reflection_5.cpp"
+			],
+			[
+				"cmakelist.txt",
+				"♬☾ CPP Demo Project\\dotnet-clr\\CMakeLists.txt"
+			],
+			[
+				"cdaystep",
+				"md\\c-daystep\\readme.md"
+			],
+			[
+				"stm",
+				"md\\STM\\STM32_Nucleo.md"
+			],
+			[
+				"git",
+				"md\\readme_git.md"
+			],
+			[
+				"ffmp",
+				"md\\OpenToonz\\ffmpeg.md"
+			],
+			[
+				"win.",
+				"md\\readme_win.md"
+			],
+			[
+				"mysql",
+				"md\\db\\readme_mysql.md"
+			],
+			[
+				"ci.md",
+				"md\\readme_ci.md"
+			],
+			[
+				"sublime",
+				"md\\readme_sublime.md"
+			],
+			[
+				"win.m",
+				"md\\readme_win.md"
+			],
+			[
+				"mfc",
+				"md\\writing\\mfc\\mfc.md"
+			],
+			[
+				"win",
+				"md\\readme_win.md"
+			],
+			[
+				"pythond",
+				"md\\readme_python.md"
+			],
+			[
+				"python",
+				"md\\readme_python.md"
+			],
+			[
+				"pyth",
+				"md\\readme_python.md"
+			],
+			[
+				"ts.md",
+				"md\\webpack\\readme_ts.md"
+			],
+			[
+				"react",
+				"md\\webpack\\readme_react.md"
+			],
+			[
+				"vue",
+				"md\\c-daystep\\readme_vue.md"
+			],
+			[
+				"web",
+				"md\\webpack\\readme_webpack.md"
+			],
+			[
+				"css.md",
+				"md\\webpack\\readme_css.md"
+			],
+			[
+				"vue.md",
+				"md\\c-daystep\\readme_vue.md"
+			],
+			[
+				"react.md",
+				"md\\webpack\\readme_react.md"
+			],
+			[
+				"webpack",
+				"md\\webpack\\readme_webpack.md"
+			],
+			[
+				"ts.m",
+				"md\\webpack\\readme_ts.md"
+			],
+			[
+				"node",
+				"md\\webpack\\readme_node.md"
+			],
+			[
+				"java",
+				"md\\readme_java.md"
+			],
+			[
+				"qt.md",
+				"md\\Qt\\readme.md"
+			],
+			[
+				"linux",
+				"md\\readme_linux.md"
+			],
+			[
+				"vim",
+				"md\\readme_vim.md"
+			],
+			[
+				"LINUX",
+				"md\\readme_linux.md"
+			],
+			[
+				"coding.js",
+				"coding\\coding.js"
+			],
+			[
+				"sublim",
+				"md\\readme_sublime.md"
+			],
+			[
+				"coding.py",
+				"coding\\coding.py"
+			],
+			[
+				"lin",
+				"md\\OpenGL\\LinearAlgebra.md"
+			],
+			[
+				"markdown",
+				"md\\readme_markdown.md"
+			],
+			[
+				"bit",
+				"md\\writing\\bmp\\bitmap.md"
+			],
+			[
+				"bitma",
+				"md\\writing\\bmp\\bitmap.md"
+			],
+			[
+				"mark",
+				"md\\readme_markdown.md"
+			],
+			[
+				"git.",
+				"md\\readme_git.md"
+			],
+			[
+				"makr",
+				"md\\Markdown Cheatsheet.md"
+			],
+			[
+				"blen",
+				"md\\OpenToonz\\Blender.md"
+			],
+			[
+				"mingw",
+				"User\\C++ MinGW.sublime-build"
+			],
+			[
+				"mina",
+				"md\\readme_mina.md"
+			],
+			[
+				"pay",
+				"md\\readme_pay.md"
+			],
+			[
+				"openGL",
+				"md\\OpenGL\\OpenGL.md"
+			],
+			[
+				"fls",
+				"md\\OpenToonz\\flstudio.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\coding\\md-code\\cppDemos\\mfcDemo\\mfcDemo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "Language",
+		"selected_items":
+		[
+			[
+				"Language",
+				"Language"
+			],
+			[
+				"resourceA",
+				"resourceAdapter"
+			],
+			[
+				"Resource",
+				"Resources"
+			],
+			[
+				"resource",
+				"resourceFileInfo"
+			],
+			[
+				"page",
+				"Page"
+			],
+			[
+				"resourceAdapter",
+				"resourceAdapter"
+			],
+			[
+				"",
+				"\"$(INTDIR)\""
+			],
+			[
+				"Cobject",
+				"CObject"
+			],
+			[
+				"createTrackbar",
+				"createTrackbar"
+			],
+			[
+				"addWeighted",
+				"addWeighted"
+			],
+			[
+				"resize",
+				"resize"
+			],
+			[
+				"ApplicationViewer",
+				"QmlApplicationViewer"
+			],
+			[
+				"cuda_GpuMat",
+				"cuda_GpuMat"
+			],
+			[
+				"Function: element",
+				"Function: element"
+			],
+			[
+				"element",
+				"Function: element"
+			],
+			[
+				"spawn",
+				"Function: spawn"
+			],
+			[
+				"start_timer",
+				"Function: start_timer"
+			],
+			[
+				"ethr_atomic_read",
+				"ethr_atomic_read"
+			],
+			[
+				"erts_atomic64_read_nob",
+				"erts_atomic64_read_nob"
+			],
+			[
+				"now_",
+				"now_0"
+			],
+			[
+				"erl_start",
+				"erl_start"
+			],
+			[
+				"process_main",
+				"process_main"
+			],
+			[
+				"bs_init2",
+				"Function: do_bs_init_2"
+			],
+			[
+				"ErlSub",
+				"ErlSubBin"
+			],
+			[
+				"ProcBin",
+				"ProcBin"
+			],
+			[
+				"SMALL",
+				"small"
+			],
+			[
+				"Process",
+				"Process"
+			],
+			[
+				"TAG_PRIMARY_LIST",
+				"TAG_PRIMARY_LIST"
+			],
+			[
+				"ErlDrvEntry",
+				"ErlDrvEntry"
+			],
+			[
+				"driver_entry",
+				"add_driver_entry"
+			],
+			[
+				"driver_select",
+				"driver_select"
+			],
+			[
+				"ready_output",
+				"ready_output"
+			],
+			[
+				"main",
+				"main"
+			],
+			[
+				"AddSingleTon",
+				"TryAddSingleton"
+			]
+		],
+		"width": 848.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 347.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

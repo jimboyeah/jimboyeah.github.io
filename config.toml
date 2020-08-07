@@ -1,0 +1,65 @@
+title = "Go Learning"
+baseURL = "https://jimboyeah.github.io/public"
+# baseURL = "http://localhost:1314"
+languageCode = "en-us"
+theme = "gohugo-theme-ananke"
+themesDir = "themes"
+PostcssAsset = "theme/css/main.css"
+
+MetaDataFormat = "yaml"
+SectionPagesMenu = "main"
+Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+enableRobotsTXT = true
+
+
+DefaultContentLanguage = "zh"
+copyright = "Nothing is Mine"
+
+defaultContentLanguageInSubdirto = true
+sectionPagesMenu = "smain"
+
+[languages]
+  [languages.en]
+    LanguageName = "English"
+    weight = 1
+    contentDir = "content/en/"
+    [languages.en.params]
+      cover_dimming_class = "bg-black-80"
+  [languages.zh]
+    LanguageName = "中文"
+    weight = 2
+    contentDir = "content/cn/"
+    [languages.zh.params]
+      linkedin = "https://linkedin.com/"
+
+
+[pam]
+  postcssasset = "theme/css/main.css"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  postcssasset = "theme/css/main.css"
+  favicon = "/assets/micro_xs.png"
+  site_logo = "/assets/micro_xs.png"
+  description = "The last theme you'll ever need. Maybe."
+  facebook = ""
+  twitter = ""
+  instagram = ""
+  youtube = ""
+  github = "https://github.com/jimboyeah/jimboyeah.github.io"
+  gitlab = ""
+  linkedin = ""
+  mastodon = ""
+  slack = ""
+  stackoverflow = ""
+  rss = ""
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
+  recent_posts_number = 5
+  cover_dimming_class = "bg-black-10"
