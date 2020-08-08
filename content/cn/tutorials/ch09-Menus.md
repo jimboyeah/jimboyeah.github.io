@@ -2,7 +2,7 @@
 title: "IX: Menus 菜单组织"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T12:09:08-04:00
-featured_image: "/assets/IMG_20181101_233654_s.jpg"
+featured_image_: "/assets/IMG_20181101_233654_s.jpg"
 tags: ["hugo", "menu"]
 disable_share: false
 summary: "Hugo 的菜单系统和多语言结合得非常紧密，在定义多语言时，也可以相应定义相应的菜单。也就是说，一个 Hugo 项目可以有多个不同语言的，每种语言都可以使用专用菜单。<!--more-->"

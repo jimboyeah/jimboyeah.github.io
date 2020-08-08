@@ -2,7 +2,7 @@
 title: "VIII: Functions 内置函数"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T12:09:08-04:00
-featured_image: "/assets/IMG_20181101_233654_s.jpg"
+featured_image_: "/assets/IMG_20181101_233654_s.jpg"
 tags: ["hugo"]
 disable_share: false
 summary: "Hugo 导出的函数有许多，这里提供一个以内置函数实现的 Markdown 目录生成功能，使用目录生成时，只需要在 MD 文件中定义目录点位符 [TOC] 即可在对应位置生成目录。<!--more-->"
@@ -11,8 +11,11 @@ summary: "Hugo 导出的函数有许多，这里提供一个以内置函数实�
 
 Hugo 提供的对象及变量就是 Go 语言实现的各种对象对外公开的函数方法或属性，了解这些对象是用好模板的基础。
 
+目录：
 
-# Functions 内置函数
+[TOC]
+
+## markdownify 内置函数
 
 
 讲几个常用的内置函数，首先是 Markdown processor 函数，必用的，通过调用 **markdownify** 将输入的 MD 字符串转化为 HTML 字符串。
@@ -54,6 +57,7 @@ Goldmark 中提供了 Markdown Render Hooks 回调实现自定义的内容渲染
             ├── render-image.rss.xml
             └── render-link.html
 
+## i18n 国际化函数
 
 国际化函数 i18n 参考 multilingual.md。
 
@@ -94,6 +98,7 @@ config.toml 配置中，设置默认的语言：
     DefaultContentLanguage = "zh"
 
 
+## MD5 摘要生成函数
 
 MD5 摘要生成函数，参考 functions\md5.md 文档：
 
@@ -117,6 +122,8 @@ MD5 摘要生成函数，参考 functions\md5.md 文档：
 
 编码后 & 变成 `&amp;`，还有 <, >, &, ', " 等符号，解码过程中为了输出原样 HTML 可以再通过 safeHTML 函数处理。
 
+
+## [TOC] 使用函数生成目录
 
 Hugo 导出的函数有许多，可以参考文档列表，这里以内置函数来实现 Markdown 的目录生成功能。
 
@@ -144,3 +151,42 @@ Hugo 导出的函数有许多，可以参考文档列表，这里以内置函数
 {{</code>}}     
 
 替换时注意内容是转换后带 HTML 标签的字符串，原始的 Markdown 内容可以通过 **.RawContent** 获取。
+
+
+注意，以上 range 结构直接在模板中使用会导致页面产生许多换行符，可以将其用模板片断包装。因为，模板片断可以当作函数一样使用，可以获取其 return 语句返回的内容。
+
+如下，将代码保存了模板片断目录下的 GetTOC.html 文件中，然后再调用：
+
+{{<code file="/partial/func/GetTOC.html">}}
+    {{$contents := ""}}
+    {{/* 
+        GetTOC
+
+        This partial gets the url for [TOC] for a given page. 
+        
+        {{$contents := partial "func/GetTOC.html" .}}
+        {{- replaceRE "<p>\\[TOC\\]</p>" (printf "<div class=\"contents\">%s</div>" $contents) .Content | safeHTML -}}
+
+        @return Permalink list string
+
+    */}}
+
+    {{/* Declare a new string variable */}}
+    {{ $contents := "" }}
+
+    {{range (split .RawContent "\n")}}
+    {{if (hasPrefix . "# ")}}
+        {{ $item := replace (lower .) "#" ""}}
+        {{ $item = trim $item " \n\r"}}
+        {{- $trimed := replace $item " " "-" -}}
+        {{ $contents = printf "%s<a href=\"#%s\">%s</a><br>" $contents $trimed .}} 
+        {{else if hasPrefix . "## "}}
+        {{ $item := replace (lower .) "##" ""}}
+        {{ $item = trim $item " \n\r"}}
+        {{- $trimed := replace $item " " "-" -}}
+        {{ $contents = printf "%s<a href=\"#%s\">%s</a><br>" $contents $trimed .}}
+    {{end}}
+    {{end}}
+
+    {{ return $contents }}
+{{</code>}}     

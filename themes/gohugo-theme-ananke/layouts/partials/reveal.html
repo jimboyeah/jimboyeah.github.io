@@ -1,0 +1,80 @@
+{{$currentpage := .}}
+{{ with $.Params.reveal }}
+    <link rel="stylesheet" href="/revealjs-v3.9.2/css/reveal.css">
+    <link rel="stylesheet" href="/revealjs-v3.9.2/css/theme/white.css" id="theme">
+    <link rel="stylesheet" href="/revealjs-v3.9.2/lib/css/monokai.css">
+    <style>
+    .logo { z-index: 999; position: relative; }
+    .reveal img { max-height: 50vh; border: 4px solid #bab3cb87 !important; }
+    .reveal {
+        position: fixed !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: white;
+    }
+    #player {
+        position: fixed; 
+        z-index: 999;
+        top: 64px;
+        left: 72px;
+    }
+    </style>
+
+    {{if $currentpage.Params.bgmaudio }}
+    <a id="player" href="#javascript:void(0);" onclick="toggleBGM(this)">⏸</a>
+    <audio id="bgm" autoplay src="{{$currentpage.Params.bgmaudio}}"></audio>
+    <script>
+        function toggleBGM(it)
+        {
+            var audio = document.getElementById("bgm");
+            if (audio.paused){ 
+                audio.play();
+            }else{
+                audio.pause();
+            }
+            it.innerHTML = audio.paused? "▶":"⏸";
+            return !audio.paused;
+        }
+    </script>
+    {{end}}
+
+    <!-- <script src="/js/mathjax-v3.0.1-tex-mml-chtml.js"></script> -->
+    <!-- <script src="/js/mermaid-v8.4.6.min.js"></script> -->
+    <script src="/revealjs-v3.9.2/js/reveal.js"></script>
+    <script>
+
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        math: {
+            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+            config: 'TeX-AMS_HTML-full',
+            TeX: {
+                Macros: {
+                    R: '\\mathbb{R}',
+                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+                }
+            }
+        },
+
+        // plugins: [ RevealMath ]
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: '/revealjs-v3.9.2/plugin/math/math.js', },
+            { src: '/revealjs-v3.9.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/revealjs-v3.9.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: '/revealjs-v3.9.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: '/revealjs-v3.9.2/plugin/notes/notes.js' }
+        ]
+    });
+
+    </script>
+{{ end }}

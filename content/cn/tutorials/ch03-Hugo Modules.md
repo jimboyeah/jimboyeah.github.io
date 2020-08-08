@@ -2,7 +2,8 @@
 title: "III: Hugo Modules 模块"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
-featured_image: "/assets/IMG_20181101_233654_s.jpg"
+featured_image_: "/assets/IMG_20181101_233654_s.jpg"
+thumb_image_: "/assets/micro_s.png"
 summary: Hugo Modules 是基于 Go Modules 实现的，模块 Hugo 构建的核心块，一个模块可以一个 Hugo 工程，也可以是 Hugo 定义的 7 种小模块 static, content, layouts, data, assets, i18n, archetypes，可以按喜欢的方式组件使用模块，甚至从工程外部装入模块目录以构建一个大型的虚拟联合文件系统。
 tags: ["hugo"]
 ---

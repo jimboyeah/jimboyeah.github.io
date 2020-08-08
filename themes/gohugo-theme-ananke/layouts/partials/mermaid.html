@@ -1,0 +1,23 @@
+{{ if $.Params.mermaid }}
+  {{ $js := resources.Get "js/mermaid-v8.4.6.min.js" }}
+  <!-- use assets/js/mermaid-v8.4.6.min.js -->
+  <!-- https://github.com/mermaid-js/mermaid -->
+  {{ $secureJS := $js | resources.Fingerprint "sha512" }}
+  <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}"></script>
+  <script>
+    var config = {
+      startOnLoad: true,
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: "cardinal",
+      },
+      theme: "neutral",
+      theme: "forest",
+      securityLevel: "strict",
+      securityLevel: 'loose',
+    };
+
+    mermaid.initialize(config);
+  </script>
+{{ end }}

@@ -1,5 +1,5 @@
 ---
-title: "坚果 Hugo 教程"
+title: "Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
 toc: true
 weight: 10
@@ -8,7 +8,8 @@ cover_dimming_class: bg-black-20
 subheadline_class: "white-90"
 menu: main
 ---
-本教程是坚果搭建 github.io 静态站点过程中的知识汇总，按 Hugo 系统的构架组织内容，可以直接查看感兴趣的部分。
+本教程是提供本 jimboyeah.github.io 静态站点搭建使用到的知识汇总，按 Hugo 系统的构架组织内容，可以直接查看感兴趣的部分。
+
 
 {{<table>}}
 |    Hugo Web Framework   |       Templates 模板       |
@@ -22,6 +23,9 @@ menu: main
 | Menus 菜单组织          | Single Page Template       |
 | Functions 内置函数      | List Templates 列表模板    |
 {{</table>}}
+
+原文件代码仓库地址在 [hugo-project](https://github.com/jimboyeah/jimboyeah.github.io/tree/hugo-project) 这个分支，master 分支是发布的静态站点文件。
+
 
 <!-- 
 I - one

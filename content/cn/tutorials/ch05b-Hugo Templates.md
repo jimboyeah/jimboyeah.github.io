@@ -1,345 +1,15 @@
 ---
-title: "V: Templates 模板"
+title: "V: Templates 其它模板"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
-featured_image: "/assets/IMG_20190117_123248_s1.jpg"
-summary: Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能。Mardown 文件提共内容数据，而模板则是数据的消化系统。
+featured_image_: "/assets/IMG_20190117_123248_s1.jpg"
+summary: Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能。Mardown 文件提共内容数据，而模板则是数据的消化系统。这部分介绍其它各种模板的使用。
 tags: ["hugo", "menu"]
 ---
 
 # 目录
 
 [TOC]
-
-# Templates 模板
-- [Go html/template 模板文档](https://godoc.org/html/template)
-- [Go text/template 模板文档](https://godoc.org/text/template)
-- [Hugo 主题](https://themes.gohugo.io/)
-- [Hugo 模板的基本语法](https://gohugo.io/templates/introduction/)
-
-Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能，语法参考官方文档 templates introduction.md 文件。
-
-关于 Hugo 模板的使用，参考模板介绍文档 introduction.md，其它模板类型文档如下：
-
-    | alternatives.md   | lists.md                 | robots.md                | template-debugging.md |
-    | base.md           | lookup-order.md          | rss.md                   | views.md              |
-    | data-templates.md | menu-templates.md        | section-templates.md     |                       |
-    | files.md          | ordering-and-grouping.md | shortcode-templates.md   |                       |
-    | homepage.md       | output-formats.md        | single-page-templates.md |                       |
-    | internal.md       | pagination.md            | sitemap-template.md      |                       |
-    | introduction.md   | partials.md              | taxonomy-templates.md    |                       |
-
-基本上，一套简单的模板下来，就有好几个文件：
-
-- **layouts/_default/baseof.html** 页面骨架模板 Base Template，包含 HTML 的 Head、Body 或者页面基本布局结构； 
-- **layouts/_default/list.html** 与 **_index.md** 等列表页面对应的列表模板，包括首页、分类页面、分类术语也属性列表；
-- **layouts/_default/page.html** 与 page 目录对应的 session 模板；
-- **layouts/_default/single.html** 与 md 内容对应的单面面模板；
-- **layouts/_default/taxonomy.html** 分类列表页面模板；
-- **layouts/_default/terms.html** 分类术语页面模板；
-
-所有模板文件在加载时，都涉及到模板文件的定位这一步骤，具体可以查阅 lookup-order.md 文档，或者直接翻 docs.json 数据，找里的 Template Lookup Order。
-
-
-所有页面 Page 对象都有一个 .Kind 属性变量，查找模板的规则与它密切相关。
-
-部分页面对象变量参考如下：
-
-{{< table >}}
-|    Kind    |      说明      |                              例子                              | 默认输出格式 |
-|------------|----------------|----------------------------------------------------------------|--------------|
-| `home`     | 加载首页       | `/index.html`                                                  | HTML, RSS    |
-| `page`     | 加载页面       | `my-post` page (`/posts/my-post/index.html`)                   | HTML         |
-| `section`  | 加载分区类型   | `posts` section (`/posts/index.html`)                          | HTML, RSS    |
-| `taxonomy` | 加载分类页     | `tags` taxonomy (`/tags/index.html`)                           | HTML, RSS    |
-| `term`     | 加载分类术语页 | term `awesome` in `tags` taxonomy (`/tags/awesome/index.html`) | HTML, RSS    |
-{{< /table >}}
-
-
-除了 .King 属性，还有以下相关设置：
-
-- 内容文件扉页设置的 Layout 属性；
-
-- 输出内容格式设置 Output，参考 output-formats.md 文档，`name` (e.g. `rss`, `amp`, `html`) and a `suffix` (e.g. `xml`, `html`). We prefer matches with both (e.g. `index.amp.html`, but look for less specific templates.
-
-- 语言设置 Language，比如设置 language: "fr", 那么`index.fr.amp.html` 优先于 `index.amp.html` 被选中，但 `index.fr.html` 会作为前两个模板的备选，只有它们缺失时有效。
-
-- 页面扉页数据设置 Type 类型，如 **type: "blog"**，默认值是 "page"。
-
-- Section 类型 `section`, `taxonomy`, `term` 等类型。
-
-
-以下几个模板是最基本的要求，主题目录都会设置它们：
-
-    ├── _default
-    │   ├── baseof.html
-    │   ├── list.html
-    │   └── single.html
-    └── index.html
-
-
-Hugo 使用的是 Go 语言自带的模板引擎，有 Go 语言基础理解起来就更容易。模板的标签为 **{{}}**, 其中包含的内容叫动作 Action，动作分为两种类型：
-
-- 数据求值
-- 控制结构
-
-求值的结果会直接输出到模板中, 控制结构主要包含条件、循环、函数调用等。
-
-列如，以下这段 Go 代码演示了其内置模板的使用：
-
-{{<code file="demo.go">}}
-    package main
-
-    import (
-        "text/template"
-        "os"
-    )
-
-    func main() {
-        v := struct{A,B string}{ "foo", "bar" }
-
-        tmpl, _ := template.New("foo").Parse(`{{define "T"}}Hello, {{.A}} and {{.B}}!{{end}}`)
-        _ = tmpl.ExecuteTemplate(os.Stdout, "T", v)
-
-        t2, _ := template.New("foo").Parse(`{{define "T"}}Hello, {{.}}!{{end}}`)
-        _ = t2.ExecuteTemplate(os.Stdout, "T", "<script>alert('you have been pwned')</script>")
-    }
-
-    // Hello, foo and bar!Hello, <script>alert('you have been pwned')</script>!
-{{</code>}}
-
-在这段代码里，模板部分用反引号包括：
-
-    {{define "T"}}Hello, {{.}}!{{end}}
-
-点 `.` 代表传递给模板的数据，表示模板当前的上下文对象，这个数据可以 Go 语言中的任何类型，如字符串、数组、结构体等，一些模板用法参考：
-
-{{<code file="demo.html">}}
-    // 注解
-    {{/* comment */}}
-    {{</* figure src="/media/spf13.jpg" title="Steve Francia" */>}}
-
-    // 清除 pipeline 前后的空格
-    {{- pipeline -}}
-
-    // 清除 pipeline 前面的空格
-    {{- pipeline }}
-
-    // 清除 pipeline 后面的空格
-    {{ pipeline -}}
-
-    // 变量名赋值
-    {{$var := "value"}}
-
-    // 条件判断流程
-    // 下面这些情况 pipeline 的值为空, false, 0, nil 指针或接口, 长度为 0 的数组、切片、map 和字符串，执行 T0
-    {{if pipeline}} T1 {{end}} 
-    {{if pipeline}} T1 {{else}} T0 {{end}}
-    {{if pipeline}} T1 {{else if pipeline}} T0 {{end}}
-
-    // 遍历 pipeline 必须是数组, 切片, map, channel，在 T1 中上下文就是当前访问到的元素
-    {{range pipeline}} T1 {{end}}
-
-    // with 设置上下文值为 pipeline
-    // 如果 pipeline 的值为空，点`.`的值不受影响，输出T1，否则点`.`的值设置成 pipeline 的值, 输出T0
-    {{with pipeline}} T1 {{end}}
-    {{with pipeline}} T1 {{else}} T0 {{end}}
-
-    // 使用 define 定义一个特定名称的模板
-    {{define "name"}} T1 {{end}}
-
-    // 使用 template 引入指定名称的模板, 不传入任何数据
-    {{template "name"}}
-
-    // 引入指定名称的模板, 设置模板上下文值为 pipeline 的值
-    {{template "name" pipeline}}
-
-    // block 定义特定名称的模板区块，并在当前位置引入该名称的模板
-    // 将 pipline  作为上下文值传入 
-    // 如果该名称的模板未实现(不存在), 则输出 T1 就相当于在基础模板页中定义了一个子模板占位符.
-    {{block "name" pipeline}} T1 {{end}}
-{{</code>}}
-
-这里再解析一下 with 关键字的用法，结合 Hugo 内置的 figure 说明，它的模板定义如下：
-
-{{<code file="demo.html">}}
-
-    <figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
-        {{- if .Get "link" -}}
-            <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
-        {{- end }}
-        <img src="{{ .Get "src" }}"
-             {{- if or (.Get "alt") (.Get "caption") }}
-             alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
-             {{- end -}}
-             {{- with .Get "width" }} width="{{ . }}"{{ end -}}
-             {{- with .Get "height" }} height="{{ . }}"{{ end -}}
-        /> <!-- Closing img tag -->
-        {{- if .Get "link" }}</a>{{ end -}}
-        {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
-            <figcaption>
-                {{ with (.Get "title") -}}
-                    <h4>{{ . }}</h4>
-                {{- end -}}
-                {{- if or (.Get "caption") (.Get "attr") -}}<p>
-                    {{- .Get "caption" | markdownify -}}
-                    {{- with .Get "attrlink" }}
-                        <a href="{{ . }}">
-                    {{- end -}}
-                    {{- .Get "attr" | markdownify -}}
-                    {{- if .Get "attrlink" }}</a>{{ end }}</p>
-                {{- end }}
-            </figcaption>
-        {{- end }}
-    </figure>
-{{</code>}}
-
-在页面中使用时，如下，传入的参数就是命名的参数，那么在 figure 模板内部就可以使用 .Get 来获取这些参数，只需要给定参数名字：
-
-    {{&lt figure src="/assets/demo.png" title="demo" width="50%">}}
-
-如果，传入的是一个数组，那么可以使用数字表示要获取的元素序号：
-
-    {{ $quality := default "100" (.Get 1) }}
-
-
-模板中常用的数据类型有字典 dict 和切片 slice：
-
-    {{ $style := resources.Get "css/main.css" | resources.PostCSS (dict "config" "customPostCSS.js" "noMap" true) }}
-
-
-
-## Base Template 页面骨架模板
-
-这是最基础的模板，为所有页面定义 HTML 标签基本结构，主要是 **head**、**body** 和页面设计布局定义。
-
-通过 block 关键字设置区块定义：
-
- {{<code file="demo.html">}}
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>{{ block "title" . }}
-          <!-- Blocks may include default content. -->
-          {{ .Site.Title }}
-        {{ end }}</title>
-      </head>
-      <body>
-        <!-- Code that all your templates share, like a header -->
-        {{ block "main" . }}
-          <!-- The part of the page that begins to differ between templates -->
-        {{ end }}
-        {{ block "footer" . }}
-          <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-        {{ end }}
-      </body>
-    </html>
-{{</code>}}
-
-然后，在页面模板中覆盖这些区块，比如在列表中：
-
-    {{ define "main" }}
-      <h1>Posts</h1>
-      {{ range .Pages }}
-        <article>
-          <h2>{{ .Title }}</h2>
-          {{ .Content }}
-        </article>
-      {{ end }}
-    {{ end }}
-
-前面的 block "title" 提供了默认的 **{{ .Site.Title }}** 模板，所以后续没有其它模板定义覆盖这个区块也没有问题，默认显示标题。
-
-
-参考 Ananke 主题的 baseof.html 的定义，可以看到模板中引用了 **data** 目录下的数据，即样式定义：
-
-    {{ $stylesheet := .Site.Data.webpack_assets.app }}
-    {{ with $stylesheet.css }}
-      <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
-    {{ end }}
-
-webpack_assets.json 数据文件内容：
-
-    {
-      "app": {
-        "js": "js/app.3fc0f988d21662902933.js",
-        "css": "css/app.4fc0b62e4b82c997bb0041217cd6b979.css"
-      }
-    }
-
-Ananke 使用的 CSS 样式库是 tachyons，这个库很像我刚开始做的 Web 开发的样式组织风格，特别熟悉的味道。样式表中按不同表现的 CSS 属性进行分类提供定义，使用时在 HTML 标签上写上相应的 CSS 样式那么就有对应的效果。比如说，样式表中定义了表格的各种样式类，其中 .collapse 用来塌陷边框，在 HTML 的 table 标签上使用它就使用表格获得相应的效果。
-
-在站点配置文件 config.toml 中
-
-    {{ block "favicon" . }}
-      {{ partialCached "site-favicon.html" . }}
-    {{ end }}
-
-
-
-模板文件内容：
-
-{{<code file="demo.html">}}
-
-    <!DOCTYPE html>
-    <html lang="{{ $.Site.LanguageCode | default "en" }}">
-      <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
-        <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
-        <meta name="viewport" content="width=device-width,minimum-scale=1">
-        {{ hugo.Generator }}
-        {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
-        {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-          <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-        {{ else }}
-          <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-        {{ end }}
-
-        {{ $stylesheet := .Site.Data.webpack_assets.app }}
-        {{ with $stylesheet.css }}
-          <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
-        {{ end }}
-
-        {{ range .Site.Params.custom_css }}
-          <link rel="stylesheet" href="{{ relURL (.) }}">
-        {{ end }}
-
-        {{ block "favicon" . }}
-          {{ partialCached "site-favicon.html" . }}
-        {{ end }}
-
-        {{ if .OutputFormats.Get "RSS" }}
-        {{ with .OutputFormats.Get "RSS" }}
-          <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-          <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-          {{ end }}
-        {{ end }}
-        
-        {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
-        {{- template "_internal/opengraph.html" . -}}
-        {{- template "_internal/schema.html" . -}}
-        {{- template "_internal/twitter_cards.html" . -}}
-
-        {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-          {{ template "_internal/google_analytics_async.html" . }}
-        {{ end }}
-        {{ block "head" . }}{{ partial "head-additions.html" }}{{ end }}
-      </head>
-
-      <body class="ma0 {{ $.Param "body_classes"  | default "avenir bg-near-white"}}{{ with getenv "HUGO_ENV" }} {{ . }}{{ end }}">
-
-        {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-        <main class="pb7" role="main">
-          {{ block "main" . }}{{ end }}
-        </main>
-        {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
-        {{ block "scripts" . }}{{ partialCached "site-scripts.html" . }}{{ end }}
-      </body>
-    </html>
-{{</code>}}
 
 
 ## Homepage Template 主页模板
@@ -531,6 +201,7 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
 **shortcode** 短代码模板可使用的属性变量，以上面的调用方法作为参考，对应值如下：
 
+{{<table>}}
 |      属性      |                      说明                      |                     参考值                     |
 |----------------|------------------------------------------------|------------------------------------------------|
 | .Name          | Shortcode 名字                                 | page-kinds                                     |
@@ -539,6 +210,7 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 | .Position      | 所在页面文件名和行列号，常用于调试             | "C:\quickstart\content\posts\2nd-post.md:29:5" |
 | .IsNamedParams | 指示是否使用命名参数，而不是位置化参数         | false                                          |
 | .Inner         | 在 shortcode 标签之间的的内容                  | sometext                                       |
+{{</table>}}
 
 
 Hugo 官方文档项目中提供了很好的 **shortcode** 模板学习示例，例如，最常用来展示高亮代码片段 **code** 为例，当你在查看官方文档 MD 文件时，看到以下这样的内容：
@@ -735,6 +407,7 @@ Hugo 工程的所有片断模板都位 `layouts/partials` 这一个目录，可�
 
 参考 .Paginator 对象提个的数据属性：
 
+{{<table>}}
 |          属性         |                             说明                             |
 |-----------------------|--------------------------------------------------------------|
 | PageNumber            | The current page’s number in the pager sequence              |
@@ -751,6 +424,7 @@ Hugo 工程的所有片断模板都位 `layouts/partials` 这一个目录，可�
 | PageSize              | Size of each pager                                           |
 | TotalPages            | The number of pages in the paginator                         |
 | TotalNumberOfElements | The number of elements on all pages in this paginator        |
+{{</table>}}
 
 页面对像提供了大量变量，如 .Title, .Permalink 等，具体参考 page.md 文档。
 

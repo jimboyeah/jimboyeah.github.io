@@ -2,9 +2,10 @@
 date: 2017-04-14T11:25:05-04:00
 description: "Esmeralda"
 featured_image: "/images/esmeralda.jpg"
+thumb_image: "/images/esmeralda.jpg"
 tags: []
 title: "Chapter VI: Esmeralda"
-disable_share: false
+disable_share: true
 ---
 We are delighted to be able to inform the reader, that during the whole of
 this scene, Gringoire and his piece had stood firm. His actors, spurred on

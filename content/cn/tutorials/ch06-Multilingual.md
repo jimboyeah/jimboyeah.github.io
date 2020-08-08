@@ -2,7 +2,7 @@
 title: "VI: Multilingual 多语言支持"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
-featured_image: "/assets/IMG_20181101_233654_s.jpg"
+featured_image_: "/assets/IMG_20181101_233654_s.jpg"
 summary: Hugo 的多语言支持是深入各个方面的，包括页面的语言、数据文件的多语言、i18n 多语言字符串转换函数等。多语言的内容组织方式有两种，文件名组织和目录结构组织。多语言可以与菜单很好地结合，让静态站点也可以拥有动态站在一样的效果。
 tags: ["hugo"]
 disable_share: false

@@ -9,36 +9,34 @@
     {{ hugo.Generator }}
     {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-    {{ else }}
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    {{ end }}
-
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW"> {{ else }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> {{ end }}
     {{ $stylesheet := .Site.Data.webpack_assets.app }}
     {{ with $stylesheet.css }}
-      <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
-    {{ end }}
-
-    {{ $postcss := .Site.Params.postcssasset }}
-    {{ $css := resources.Get $postcss }}
-    {{ if $css }}
-      {{ $postcss := resources.ToCSS $css }}
-      <link href="{{ relURL $postcss.Permalink }}" rel="stylesheet">
-    {{ end }}
-
+      <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">{{ end }}
+    {{$css := slice }}
+    {{if .Site.Params.postcssasset }}
+        {{ $postcss := resources.Get .Site.Params.postcssasset }}
+        {{ if $postcss }}
+          {{ $postcss = resources.ToCSS $postcss }}
+          {{$css = append $postcss $css}} {{ end }} {{ end }}
+    {{if .Site.Params.bulmacss}}
+        {{ $bulmacss := resources.Get .Site.Params.bulmacss }}
+        {{ if $bulmacss }}
+          {{ $bulmacss = resources.ToCSS $bulmacss }}
+          {{$css = append $bulmacss $css}} {{ end }} {{ end }}
+    {{ $cssbundle := $css | resources.Concat "css/main-bundle.css" }}
+    <link href="{{ relURL $cssbundle.Permalink }}" rel="stylesheet">
     {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ relURL (.) }}">
-    {{ end }}
+      <link rel="stylesheet" href="{{ relURL (.) }}">{{ end }}
 
     {{ block "favicon" . }}
-      {{ partialCached "site-favicon.html" . }}
-    {{ end }}
+      {{ partialCached "site-favicon.html" . }} {{ end }}
 
     {{ if .OutputFormats.Get "RSS" }}
     {{ with .OutputFormats.Get "RSS" }}
       <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
-      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
-      {{ end }}
+      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" /> {{ end }}
     {{ end }}
     
     {{/* NOTE: These Hugo Internal Templates can be found starting at https://github.com/spf13/hugo/blob/master/tpl/tplimpl/template_embedded.go#L158 */}}
@@ -47,8 +45,7 @@
     {{- template "_internal/twitter_cards.html" . -}}
 
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
-      {{ template "_internal/google_analytics_async.html" . }}
-    {{ end }}
+      {{ template "_internal/google_analytics_async.html" . }} {{ end }}
 	{{ block "head" . }}{{ partial "head-additions.html" }}{{ end }}
   </head>
 
@@ -91,8 +88,6 @@
 {{end}}
 
 ================ ================ ================ ================
-
-================ ================ ================ ================
 翻译内容页面：
 
 .IsTranslated = {{ .IsTranslated }}
@@ -111,14 +106,11 @@
 {{ range .Sites }}
   <a href="{{ .Home.RelPermalink }}">🏠 {{.Title}} {{.Language}}</a> {{ end }}
 
-
 .Sites = {{.Sites}}
 site.Sites = {{site.Sites}}
 
 .Site.Data = {{.Site.Data}}
 .Site.Language.Lang = {{.Site.Language.Lang}}
-
-
 </textarea>
 
     <main class="pb7" role="main">

@@ -2,7 +2,8 @@
 title: "IV: Hugo Pipes 管道处理"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
-featured_image: "/assets/IMG_20181101_233654_s.jpg"
+featured_image_: "/assets/IMG_20181101_233654_s.jpg"
+thumb_image_: "/assets/micro_s.png"
 summary: Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 **assetDir** 配置项指定，默认是 assets，这些资源通过管道处理生成最终需要的文件，比如 SCSS 通过管道的工具处理生成 CSS，其中一个工具就是 PostCSS。
 tags: ["hugo"]
 ---
@@ -34,6 +35,7 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 
 资源对象的提供的属性变量或方法参考 Page Resources 文档：
 
+{{<table>}}
 |        属性        |                                       说明                                       |
 |--------------------|----------------------------------------------------------------------------------|
 | ResourceType       | 资源 MIME 类型，如 `image/jpeg` 对应 ResourceType `image`                        |
@@ -46,6 +48,8 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 | MediaType.MainType | 主要 MIME 类型，如 `application/pdf` 的 MainType 就是 `application`              |
 | MediaType.SubType  | 次要 MIME 类型，上面 `pdf` 的 SubType 是 `pdf`，而 PPT 文件是 `vnd.mspowerpoint` |
 | MediaType.Suffixes | 可能 MIME 列表，切片数据类型                                                     |
+{{<table>}}
+{{</table>}}
 
 
 如果，有 Go 语言基础，可以试着读 Hugo 源代码，这也是开源的一大好片处，似乎不搞源代码开源就没有意义了：
@@ -102,6 +106,7 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 
 通过 toCSS 进行转换时，可以设置以下参数：
 
+{{<table>}}
 |       选项      |      类型      |                               说明                               |
 |-----------------|----------------|------------------------------------------------------------------|
 | targetPath      | [string]       | 指定输出路径，默认只修改原 SASS/SCSS 的扩展名为 .css；           |
@@ -109,6 +114,7 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 | precision       | [int]          | 浮点值处理精度                                                   |
 | enableSourceMap | [bool]         | 是不使用 source map 调试信息映射文件                             |
 | includePaths    | [string slice] | 添加 SCSS/SASS 包含目录，注意要使用工程目录中的相对路径      |
+{{</table>}}
 
 
 示范，给 SCSS/SASS 添加 includePaths 路径参数，注意使用了 dict 字典对象：
@@ -346,6 +352,7 @@ postcss-cssnext 语法：
 
     {{ $style := resources.Get "css/main.css" | resources.PostCSS (dict "config" "customPostCSS.js" "noMap" true) }}
 
+{{<table>}}
 |      属性     |   类型   |                            说明                           |
 |---------------|----------|-----------------------------------------------------------|
 | config        | [string] | 指定 PostCSS 配置文件，默认 postcss.config.js             |
@@ -355,6 +362,7 @@ postcss-cssnext 语法：
 | parser        | [string] | 指定 PostCSS parser                                       |
 | stringifier   | [string] | 指定 PostCSS stringifier                                  |
 | syntax        | [string] | 指定 postcss syntax                                       |
+{{</table>}}
 
 安装 postcss-cli 或相应插件模块，以下为全局安装，建议在工程中安装，即去掉 -g 参数：
 

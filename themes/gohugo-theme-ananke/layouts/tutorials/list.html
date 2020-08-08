@@ -1,7 +1,9 @@
 {{ define "main" }}
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
+    <!-- <h1>tutorial/list.html</h1> -->
+    <section class="cf ph3 ph7-l pv3 pv4-l f4 tl-l center lh-copy mid-gray">
     {{ if eq .Paginator.PageNumber 1 }}
       {{- .Content -}}
+    
     {{end}}
     </section>
     <section class="flex-ns flex-wrap justify-around mt5">
@@ -13,4 +15,8 @@
     </section>
     {{- template "_internal/pagination.html" . -}}
   </article>
+{{ end }}
+{{ define "scripts" }}
+  <!-- https://mermaid-js.github.io/mermaid/ -->
+  <!-- <script src="/mermaid/mermaid.min.js"></script> -->
 {{ end }}

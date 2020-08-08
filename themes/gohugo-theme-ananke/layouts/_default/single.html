@@ -4,6 +4,7 @@
 {{ end }}
 
 {{ define "main" }}
+  <!-- <h1>_default/single.html</h1> -->
   {{ $section := .Site.GetPage "section" .Section }}
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
     <header class="mt4 w-100">
@@ -46,20 +47,7 @@
       {{ end }}
     </header>
     <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      {{$contents := ""}}
-      {{range (split .RawContent "\n")}}
-        {{if (hasPrefix . "# ")}}
-          {{ $item := replace (lower .) "#" ""}}
-          {{ $item = trim $item " \n\r"}}
-          {{- $trimed := replace $item " " "-" -}}
-          {{ $contents = printf "%s<a href=\"#%s\">%s</a><br>" $contents $trimed .}} 
-          {{else if hasPrefix . "## "}}
-          {{ $item := replace (lower .) "##" ""}}
-          {{ $item = trim $item " \n\r"}}
-          {{- $trimed := replace $item " " "-" -}}
-          {{ $contents = printf "%s<a href=\"#%s\">%s</a><br>" $contents $trimed .}} 
-        {{end}}
-      {{end}}
+      {{$contents := partial "func/GetTOC.html" .}}
       {{- replaceRE "<p>\\[TOC\\]</p>" (printf "<div class=\"contents\">%s</div>" $contents) .Content | safeHTML -}}
       {{- partial "tags.html" . -}}
       <div class="mt6 instapaper_ignoref">

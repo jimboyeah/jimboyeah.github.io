@@ -2,7 +2,7 @@
 title: 联络
 featured_image: "images/notebook.jpg"
 omit_header_text: true
-description: 人们都是喜欢联络感情的。 jeango@gmail.com
+description: 人们都是喜欢联络感情的。 
 type: page
 menu: main
 toc: true

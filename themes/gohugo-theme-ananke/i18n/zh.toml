@@ -17,7 +17,7 @@ other = "这是什么 {{ .Type }}"
 other = "相关內容"
 
 [yourName]
-other = "你的名字"
+other = "你的称谓"
 
 [emailAddress]
 other = "电邮地址"

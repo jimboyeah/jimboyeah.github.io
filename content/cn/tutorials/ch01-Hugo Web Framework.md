@@ -2,7 +2,8 @@
 title: "I: Hugo Web Framework"
 description: "坚果的 Hugo 教程"
 date: 2020-08-06T20:14:08-04:00
-featured_image: "./assets/IMG_20181101_233654_s.jpg"
+featured_image_: "./assets/IMG_20181101_233654_s.jpg"
+thumb_image: "/assets/micro_s.png"
 summary: Hugo Framework 是一个静态网站构建工具，以 Go 语言所写，号称**世界上最快的静态网站引擎**。提供文件头，即扉页 front matter 和模板的等基本功能，兼备可伸缩性和可管理性。Hugo 不仅是给开发者设计的，也同样适用于内容管理员和写作人员。
 tags: ["hugo"]
 ---
@@ -10,18 +11,6 @@ tags: ["hugo"]
 
 
 # Hugo Web Framework 
-- [Hugo - The world’s fastest framework for building websites](https://gohugo.io)
-- [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
-- [Hugo Release](https://github.com/gohugoio/hugo/releases/)
-- [achyons-css](https://github.com/tachyons-css/tachyons/)
-- [twbs bootstrap](https://github.com/twbs/bootstrap)
-- [Markdown editor for typora](https://typora.io/#windows)
-- [Electron Web for Desktop Deplepment](https://github.com/electron/electron)
-- [Electron Web for Desktop Deplepment](https://www.electronjs.org/)
-- [Electron builder](https://github.com/electron-userland/electron-builder)
-- [NW.js (known as node-webkit)](https://nwjs.io/)
-- [Node addon examples for C/C++](https://github.com/nodejs/node-addon-examples)
-- [从 VSCode 看大型 IDE 技术架构](https://zhuanlan.zhihu.com/p/96041706)
 
 Hugo Framework 是一个静态网站构建工具，以 Go 语言所写，号称**世界上最快的静态网站引擎**。提供文件头，即扉页 front matter 和模板的等基本功能，兼备可伸缩性和可管理性。Hugo 不仅是给开发者设计的，也同样适用于内容管理员和写作人员。
 
@@ -182,3 +171,18 @@ Hugo 的使用基础涉及到以下几个部分的内容：
 - 管道处理 Hugo Pipes
 - 模块配置 Hugo Modules
 - 命令行工具 CLI
+
+参考：
+
+- [Hugo - The world’s fastest framework for building websites](https://gohugo.io)
+- [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/)
+- [Hugo Release](https://github.com/gohugoio/hugo/releases/)
+- [achyons-css](https://github.com/tachyons-css/tachyons/)
+- [twbs bootstrap](https://github.com/twbs/bootstrap)
+- [Markdown editor for typora](https://typora.io/#windows)
+- [Electron Web for Desktop Deplepment](https://github.com/electron/electron)
+- [Electron Web for Desktop Deplepment](https://www.electronjs.org/)
+- [Electron builder](https://github.com/electron-userland/electron-builder)
+- [NW.js (known as node-webkit)](https://nwjs.io/)
+- [Node addon examples for C/C++](https://github.com/nodejs/node-addon-examples)
+- [从 VSCode 看大型 IDE 技术架构](https://zhuanlan.zhihu.com/p/96041706)

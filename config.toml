@@ -11,7 +11,8 @@ SectionPagesMenu = "main"
 Paginate = 6 # this is set low for demonstrating with dummy content. Set to a higher number
 googleAnalytics = ""
 enableRobotsTXT = true
-
+disableAliases = true
+debug = false
 
 DefaultContentLanguage = "zh"
 copyright = "Nothing is Mine"
@@ -26,12 +27,13 @@ sectionPagesMenu = "smain"
     contentDir = "content/en/"
     [languages.en.params]
       cover_dimming_class = "bg-black-80"
+      github = "https://github.com/budparr/gohugo-theme-ananke"
   [languages.zh]
     LanguageName = "中文"
     weight = 2
     contentDir = "content/cn/"
     [languages.zh.params]
-      linkedin = "https://linkedin.com/"
+      linkedin = ""
 
 
 [pam]
@@ -44,6 +46,8 @@ sectionPagesMenu = "smain"
 
 [params]
   postcssasset = "theme/css/main.css"
+  bulmacss_ = "theme/scss/bulma.scss"
+  formspreeio = "jeango@gmail.com"
   favicon = "/assets/micro_xs.png"
   site_logo = "/assets/micro_xs.png"
   description = "The last theme you'll ever need. Maybe."

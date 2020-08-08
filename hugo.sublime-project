@@ -40,7 +40,7 @@
 	"folders":
 	[
 		{
-			"path": "..\\quickstart"
+			"path": "."
 		},
 		{
 			"path": "C:\\coding\\md-code\\hugo\\src\\docs"
@@ -49,7 +49,7 @@
 			"path": "C:\\coding\\md-code\\tachyons-4.12"
 		},
 		{
-			"path": "C:\\coding\\md-code\\hugo\\src\\"
+			"path": "C:\\coding\\md-code\\hugo\\src"
 		}
 	]
 }

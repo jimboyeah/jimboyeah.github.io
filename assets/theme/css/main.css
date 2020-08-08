@@ -41,9 +41,11 @@
 
 a {text-decoration: none;}
 
+pre code,
 ul {
   text-align: left;
 }
+
 .centered {
     @apply --centered;
 }
