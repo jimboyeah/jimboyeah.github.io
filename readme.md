@@ -1,7 +1,7 @@
 # Readme
 
 ![Github - shot.jpg](https://github.com/jimboyeah/jimboyeah.github.io/blob/hugo-project/assets/shot.jpg)
-![Gitee - shot.jpg](https://gitee.com/jimbowhy/jimbowhy.gitee.io/blob/hugo-project/assets/shot.jpg)
+![Gitee - shot.jpg](https://gitee.com/jimbowhy/jimbowhy.gitee.io/raw/hugo-project/assets/shot.jpg)
 Hugo 静态站点生成框架教程，演示站点项目在：
 
 https://jimboyeah.github.io/
