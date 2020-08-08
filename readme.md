@@ -9,4 +9,4 @@ https://jimboyeah.github.io/
 
 https://github.com/jimboyeah/jimboyeah.github.io/tree/hugo-project
 
-![github 图片打不开](https://upload-images.jianshu.io/upload_images/5509701-d951ad2bac8ff39f.jpg)
+<!-- ![github 图片打不开](https://upload-images.jianshu.io/upload_images/5509701-d951ad2bac8ff39f.jpg) -->
