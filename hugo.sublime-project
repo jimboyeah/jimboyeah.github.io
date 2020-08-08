@@ -22,6 +22,10 @@
 					"shell_cmd": "git remote add origin https://github.com/jimboyeah/jimboyeah.github.io.git"
 				},
 				{
+					"name": "Git Gitee attach",
+					"shell_cmd": "git remote add gitee https://gitee.com/jimbowhy/jimbowhy.gitee.io.git"
+				},
+				{
 					"name": "Branch List",
 					"shell_cmd": "git branch -a"
 				},
