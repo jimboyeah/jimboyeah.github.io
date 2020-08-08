@@ -1,6 +1,7 @@
 title = "Go Learning"
-baseURL = "https://jimboyeah.github.io/"
+# baseURL = "https://jimboyeah.github.io/"
 # baseURL = "http://localhost:1314"
+baseURL = "http://192.168.0.109/"
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 themesDir = "themes"

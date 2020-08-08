@@ -6,4 +6,4 @@ lastmod: 2020-08-06T20:14:08-04:00
 subheadline_class: "black-80"
 description_class: "black"
 ---
-欢迎！你这优秀，关注到这里。
+欢迎！你这么优秀，关注了这里。

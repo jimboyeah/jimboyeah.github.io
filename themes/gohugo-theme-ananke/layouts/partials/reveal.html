@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/revealjs-v3.9.2/lib/css/monokai.css">
     <style>
     .logo { z-index: 999; position: relative; }
-    .reveal img { max-height: 50vh; border: 4px solid #bab3cb87 !important; }
+    .reveal img { border: 4px solid #bab3cb87 !important; }
     .reveal {
         position: fixed !important;
         width: 100vw !important;
@@ -22,22 +22,25 @@
         top: 64px;
         left: 72px;
     }
+    @media (min-width: 800px) {
+        .reveal img { max-height: 50vh; }
+    }
     </style>
 
     {{if $currentpage.Params.bgmaudio }}
-    <a id="player" href="#javascript:void(0);" onclick="toggleBGM(this)">⏸</a>
-    <audio id="bgm" autoplay src="{{$currentpage.Params.bgmaudio}}"></audio>
+    <a id="player" href="#javascript:void(0);" onclick="toggleBGM(this)">▶</a>
+    <audio id="bgm" src="{{$currentpage.Params.bgmaudio}}"></audio>
     <script>
         function toggleBGM(it)
         {
-            var audio = document.getElementById("bgm");
-            if (audio.paused){ 
-                audio.play();
+            var bgm = document.getElementById("bgm");
+            if (bgm.paused){ 
+                bgm.play();
             }else{
-                audio.pause();
+                bgm.pause();
             }
-            it.innerHTML = audio.paused? "▶":"⏸";
-            return !audio.paused;
+            it.innerHTML = bgm.paused? "▶":"⏸";
+            return !bgm.paused;
         }
     </script>
     {{end}}

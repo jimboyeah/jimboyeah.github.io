@@ -12,6 +12,7 @@ lastmod: 2020-08-06T20:14:08-04:00
 categories: [content management]
 keywords: ["front matter", "yaml", "toml", "json", "metadata", "archetypes"]
 bgmaudio: "https://tx.stream.kg.qq.com/shkge-btfs/e38832defe4af240aaac6f2172948022a9117019"
+bgmurl: https://kg.qq.com/node/play?s=2ziyNI2Q3X_fz2Sc&shareuid=619c9880232b328d35
 audio: ["/assets/if-rym.mp3"]
 videos: ["/assets/2018-12-02-112213751.mp4"]
 type: slideshow
@@ -35,9 +36,9 @@ toc: true
 
     但，并不牢靠，就像一个人脑子里存放的东西终究一天会消失...
 
-    [《乐乎》](http://jimbowhy.lofter.com/post/1cac3850_9b172ac")
+    [《乐乎》](http://jimbowhy.lofter.com/post/1cac3850_9b172ac)
 
-    ###### 背景音乐来自锶儿翻唱的《Reality》
+    ###### 背景音乐来自锶儿翻唱的《Reality》(Logo 侧)
 
 <!-- 
         Met you by surprise I didn't realize
@@ -90,7 +91,7 @@ toc: true
 </section>
 
 <section data-transition="zoom-in fade-out">
-{{< figure src="/assets/MA201702031402350084-05-02500a000.jpg" title="五指山的小女孩" >}}
+{{< figure src="/assets/2016-10-01 1210.jpg" title="菜园里的花" >}}
 </section>
 
 <section data-transition="zoom-in fade-out">
@@ -98,7 +99,7 @@ toc: true
 </section>
 
 <section data-transition="zoom-in fade-out">
-{{< figure src="/assets/IMG_20190826_040643.jpg" title="同学？">}}
+{{< figure src="/assets/IMG_20190826_040643.jpg" title="同学">}}
 </section>
 
 <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
@@ -124,39 +125,58 @@ toc: true
 
 {{< figure src="/assets/IMG_20190827_125649.jpg" title="花儿与少年" >}}
 
-        ---
-
-{{< figure src="/assets/2015-11-14-a.jpg" title="以刨花论阴影的重要性" >}}
-
-        ---
-
-{{< figure src="/assets/2015-11-14-b.jpg" title="以刨花论阴影的重要性" >}}
-
 
     </script>
 </section>
 
 
 <!-- Slide attributes -->
-<section data-transition="concave" data-markdown>
+<section data-transition="zoom-in" data-markdown>
+    <script type="text/template">
+        <!-- .slide: data-background="#000000" -->
+        {{< figure src="/assets/2015-11-14-a.jpg" title="以刨花论阴影的重要性A" >}}
+    </script>
+</section>
+
+<!-- Slide attributes -->
+<section data-transition="zoom-in" data-markdown>
+    <script type="text/template">
+        <!-- .slide: data-background="#000000" -->
+        {{< figure src="/assets/2015-11-14-b.jpg" title="以刨花论阴影的重要性B" >}}
+    </script>
+</section>
+
+<!-- Slide attributes -->
+<section data-transition="concave" data-markdown style="top:-20%;">
     <script type="text/template">
         <!-- .slide: data-background="#000000" -->
         {{< figure src="/assets/IMG_20181020_204030.jpg" title="燃烧的火柴" >}}
     </script>
 </section>
 
-    <!-- Images -->
-    <section data-transition="convex-in fade-out" data-background="#211203" data-markdown>
-        <script type="text/template">
-            <!-- .slide: data-background="#000000" -->
-            {{< figure src="https://imglf.nosdn.127.net/img/Q3RGc0pZNGRsR3VoYVNiYkNnZ1pwWGMrRndyR3hSazlHcDllMUdWMkV2a1VsZUFtQ0JmUnlnPT0.jpg?imageView&thumbnail=1680x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2&text=wqkgamltYm93aHkgLyBqaW1ib3doeS5sb2Z0ZXIuY29t&font=bXN5aA==&gravity=southwest&dissolve=30&fontsize=340&dx=16&dy=20&stripmeta=0" title="桂山水" >}}
-        </script>
-    </section>
+<section data-transition="zoom-in fade-out" data-background="#211203">
+{{< figure src="/assets/20150317.jpg" title="微观之门" >}}
+</section>
+
+
+
+<section data-transition="zoom-in fade-out" data-markdown>
+    <script type="text/template">
+    {{< figure src="/assets/MA201702031402350084-05-02500a000.jpg" title="五指山的小女孩" >}}
+    </script>
+</section>
+
+<section data-transition="convex-in fade-out" data-markdown>
+    <script type="text/template">
+        <!-- .slide: data-background="white" -->
+        {{< figure src="/assets/20091002.jpg" title="桂山水" >}}
+    </script>
+</section>
 
 
 <section data-transition="zoom">
     <h1>The End</h1>
-    <h2>if - melody from 2015/1/12</h2>
+    <h2>《if》 - a melody 2015/1/12</h2>
     <p></p>
     <audio src="/assets/if-rym.mp3" data-autoplay></audio>
 </section>

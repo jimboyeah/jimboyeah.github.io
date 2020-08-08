@@ -32,6 +32,10 @@
 				{
 					"name": "git show",
 					"shell_cmd": "git show"
+				},
+				{
+					"name": "Hugo server",
+					"shell_cmd": "hugo server --baseURL http://192.168.0.109/ --bind 192.168.0.109 -p 80"
 				}
 			],
 			"working_dir": "${project_path}"
