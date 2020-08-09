@@ -19,10 +19,17 @@
 
     
     
+        
+        
+          
+          
+        
     
-      
-      <link href="/theme/css/main.css" rel="stylesheet">
+
     
+    
+    <link href="/css/main-bundle.css" rel="stylesheet">
+
 
     
 
@@ -67,10 +74,8 @@
 
 
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://jimboyeah.github.io/assets/IMG_20190117_123248_s1.jpg');background-position: center bottom;">
-    <div class="pb3-m pb6-l bg-black-10">
+  <header>
+    <div class="bg-black">
       
 
 <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -90,8 +95,15 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline  white-90" href="/tutorials/" title="坚果 Hugo 教程 page">
-              坚果 Hugo 教程
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
             </a>
           </li>
           
@@ -99,6 +111,20 @@
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
               关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
             </a>
           </li>
           
@@ -126,16 +152,6 @@
 
 
 
-<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
-
 
 <a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
   <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
@@ -159,16 +175,6 @@
   </div>
 </nav>
 
-      <div class="tc-l pv6 ph3 ph4-ns">
-        
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">V: Templates 模板</h1>
-          
-            <h2 class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
-              坚果的 Hugo 教程
-            </h2>
-          
-        
-      </div>
     </div>
   </header>
 
@@ -182,11 +188,23 @@
 
 
     
-|坚果 Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+|Hugo 教程 | /tutorials/ |  tutorials\ |  |  .Children = []
+    
+
+    
+|Hugo 教程 | /tutorials/ |  tutorials\ |  | HasMenuCurrent .Children = []
     
 
     
 |关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|关于 | /about/ |  about\ |  |  .Children = []
+    
+
+    
+|小说 | /post/ |  post\ |  |  .Children = []
     
 
     
@@ -200,18 +218,6 @@
 
 ================ ================ ================ ================
 
-
-    .Children = []
-|坚果 Hugo 教程 | /tutorials/ |  | HasMenuCurrent
-    
-
-    .Children = []
-|关于 | /about/ |  | 
-    
-
-    .Children = []
-|小说 | /post/ |  | 
-    
 
 
 ================ ================ ================ ================
@@ -248,7 +254,7 @@ site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked">
           
-        坚果 HUGO 教程
+        HUGO 教程
       </aside>
       
 
@@ -1545,6 +1551,10 @@ site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
         
       
         
+      
+        
+      
+        
           
            
         
@@ -1690,6 +1700,10 @@ site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
         
           
            
+        
+      
+        
+      
         
       
         
@@ -2985,7 +2999,9 @@ site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
 {{&amp;#25 /page-kinds %}}
 </code></pre>
 <p><strong>shortcode</strong> 短代码模板可使用的属性变量，以上面的调用方法作为参考，对应值如下：</p>
-<table>
+
+
+<table class="table is-striped is-hoverable">
 <thead>
 <tr>
 <th>属性</th>
@@ -3026,6 +3042,8 @@ site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
 </tr>
 </tbody>
 </table>
+
+
 <p>Hugo 官方文档项目中提供了很好的 <strong>shortcode</strong> 模板学习示例，例如，最常用来展示高亮代码片段 <strong>code</strong> 为例，当你在查看官方文档 MD 文件时，看到以下这样的内容：</p>
 <pre><code>{{&amp;lt code file=&quot;layouts/_default/section.html&quot; download=&quot;section.html&quot; &gt;}}
 ...
@@ -3248,7 +3266,9 @@ PaginatePath = page
 {{ end }}
 </code></pre>
 <p>参考 .Paginator 对象提个的数据属性：</p>
-<table>
+
+
+<table class="table is-striped is-hoverable">
 <thead>
 <tr>
 <th>属性</th>
@@ -3314,6 +3334,8 @@ PaginatePath = page
 </tr>
 </tbody>
 </table>
+
+
 <p>页面对像提供了大量变量，如 .Title, .Permalink 等，具体参考 page.md 文档。</p>
 <p>Hugo 内置分页模板定义如下：</p>
 
@@ -3660,11 +3682,7 @@ aliases: []
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
+          <a href="/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
         </li>
 	    
 	     <li  class="mb2">
@@ -3672,7 +3690,11 @@ aliases: []
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
+          <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
         </li>
 	    
 	     <li  class="mb2">
@@ -3700,16 +3722,6 @@ aliases: []
 
 
 
-
-<a href="https://linkedin.com/" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
-  <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-
-<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
-</svg>
-</span></a>
 
 
 <a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">

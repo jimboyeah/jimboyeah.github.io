@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resumes on Go Learning</title>
+    <link>https://jimbowhy.gitee.io/resume/</link>
+    <description>Recent content in Resumes on Go Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Nothing is Mine</copyright>
+    <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
+    
+	<atom:link href="https://jimbowhy.gitee.io/resume/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>个人信息</title>
+      <link>https://jimbowhy.gitee.io/resume/vc_wpwppipi/</link>
+      <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
+      
+      <guid>https://jimbowhy.gitee.io/resume/vc_wpwppipi/</guid>
+      <description>本静态站点用于演示之用，使用 Hugo 构建工具，以及 Markdown 文档内容。
+此站点提供了一篇关于 Hugo 静态站点生成框架的入门教程。
+  妖艳的柿子   这里有我觉得比较有有意思的一些照片、音乐。
+还有技术文档，和一些个人信息。
+  2017 年秋天的速写 忧郁的外甥女   另外，还有来自 Ananke 主题提供的英文版小说《巴黎圣母院》的前几个章节，最初的法文标题指的是圣母院大教堂，Notre-Dame de Paris，故事就是以它为中心的。1833 年，英国翻译家弗雷德里克·肖伯 Frederic Shoberl 将这部小说命名为 Hunchback of Notre Dame，因为当时哥特式小说比浪漫小说在英国更受欢迎。故事发生在中世纪晚期的法国巴黎，Louis XI 路易十一统治时期。。
+  燃烧的火柴   更多的图片，请移步[观看相册]</description>
+    </item>
+    
+  </channel>
+</rss>

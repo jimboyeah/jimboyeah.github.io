@@ -1,721 +1,355 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mermaid Quick Test Page</title>
-  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
-  <style>
-      div.mermaid {
-        /* font-family: 'trebuchet ms', verdana, arial; */
-        font-family: 'Courier New', Courier, monospace !important;
-      }
-  </style>
-</head>
-<body>
-  <div class="mermaid">
-    info
-  </div>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>mermaid | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> 
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+    
+        
+        
+          
+            
+    
+    
+    <link href="/css/main-bundle.css" rel="stylesheet">
+    
 
-  <hr/>
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
 
-  <div class="mermaid">
-    gantt
-      title Exclusive end dates (Manual date should end on 3d)
-      dateFormat YYYY-MM-DD
-      axisFormat %d
-      section Section1
-       2 Days: 1, 2019-01-01,2d
-       Manual Date: 2, 2019-01-01,2019-01-03
-  </div>
-  <div class="mermaid">
-    gantt
-      title Inclusive end dates (Manual date should end on 4th)
-      dateFormat YYYY-MM-DD
-      axisFormat %d
-      inclusiveEndDates
-      section Section1
-       2 Days: 1, 2019-01-01,2d
-       Manual Date: 2, 2019-01-01,2019-01-03
-  </div>
-  <div class="mermaid">
-    gantt
-      title Hide today marker (vertical line should not be visible)
-      dateFormat YYYY-MM-DD
-      axisFormat %d
-      todayMarker off
-      section Section1
-       Today: 1, -1h
-  </div>
-  <div class="mermaid">
-    gantt
-      title Style today marker (vertical line should be 5px wide and half-transparent blue)
-      dateFormat YYYY-MM-DD
-      axisFormat %d
-      todayMarker stroke-width:5px,stroke:#00f,opacity:0.5
-      section Section1
-       Today: 1, -1h
-  </div>
+ 
 
-  <hr/>
+    
+    
+    <meta property="og:title" content="mermaid" />
+<meta property="og:description" content="mermaid 图表" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jimbowhy.gitee.io/mermaid/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" /><meta property="og:audio" content="[/assets/if-rym.mp3]" />
+<meta property="og:video" content="https://jimbowhy.gitee.io/assets/2018-12-02-112213751.mp4" />
 
-  <div class="mermaid">
-      graph LR
-      sid-B3655226-6C29-4D00-B685-3D5C734DC7E1["
+<meta itemprop="name" content="mermaid">
+<meta itemprop="description" content="mermaid 图表">
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="175">
 
-      提交申请
-      熊大
-      "];
-      class sid-B3655226-6C29-4D00-B685-3D5C734DC7E1 node-executed;
-      sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A["
-      负责人审批
-      强子
-      "];
-      class sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A node-executed;
-      sid-E27C0367-E6D6-497F-9736-3CDC21FDE221["
-      DBA审批
-      强子
-      "];
-      class sid-E27C0367-E6D6-497F-9736-3CDC21FDE221 node-executed;
-      sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD["
-      SA审批
-      阿美
-      "];
-      class sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD node-executed;
-      sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7["
-      主管审批
-      光头强
-      "];
-      class sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7 node-executed;
-      sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89["
-      DBA确认
-      强子
-      "];
-      class sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89 node-executed;
-      sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937["
-      SA确认
-      阿美
-      "];
-      class sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937 node-executed;
-      sid-4FC27B48-A6F9-460A-A675-021F5854FE22["
-      结束
-      "];
-      class sid-4FC27B48-A6F9-460A-A675-021F5854FE22 node-executed;
-      sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E["
-      SA执行1
-      强子
-      "];
-      class sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E node-executed;
-      sid-6C2120F3-D940-4958-A067-0903DCE879C4["
-      SA执行2
-      强子
-      "];
-      class sid-6C2120F3-D940-4958-A067-0903DCE879C4 node-executed;
-      sid-9180E2A0-5C4B-435F-B42F-0D152470A338["
-      DBA执行1
-      强子
-      "];
-      class sid-9180E2A0-5C4B-435F-B42F-0D152470A338 node-executed;
-      sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD["
-      DBA执行3
-      强子
-      "];
-      class sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD node-executed;
-      sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756["
-      DBA执行2
-      强子
-      "];
-      class sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756 node-executed;
-      sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93["
-      DBA执行4
-      强子
-      "];
-      class sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93 node-executed;
-      sid-1897B30A-9C5C-4D5B-B80B-76A038785070["
-      负责人确认
-      梁静茹
-      "];
-      class sid-1897B30A-9C5C-4D5B-B80B-76A038785070 node-executed;
-      sid-B3655226-6C29-4D00-B685-3D5C734DC7E1-->sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7;
-      sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A-->sid-1897B30A-9C5C-4D5B-B80B-76A038785070;
-      sid-E27C0367-E6D6-497F-9736-3CDC21FDE221-->sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89;
-      sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD-->sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937;
-      sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E-->sid-6C2120F3-D940-4958-A067-0903DCE879C4;
-      sid-9180E2A0-5C4B-435F-B42F-0D152470A338-->sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756;
-      sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD-->sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93;
-      sid-6C2120F3-D940-4958-A067-0903DCE879C4-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
-      sid-1897B30A-9C5C-4D5B-B80B-76A038785070-->sid-4FC27B48-A6F9-460A-A675-021F5854FE22;
-      sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937-->sid-19DD9E9F-98C1-44EE-B604-842AFEE76F1E;
-      sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89-->sid-9180E2A0-5C4B-435F-B42F-0D152470A338;
-      sid-A1B3CD96-7697-4D7C-BEAA-73D187B1BE89-->sid-03A2C3AC-5337-48A5-B154-BB3FD0EC8DAD;
-      sid-D5E1F2F4-306C-47A2-BF74-F66E3D769756-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
-      sid-8C3F2F1D-F014-4F99-B966-095DC1A2BD93-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
-      sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-BED98281-9585-4D1B-934E-BD1AC6AC0EFD;
-      sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-E27C0367-E6D6-497F-9736-3CDC21FDE221;
-      sid-3E35A7FF-A2F4-4E07-9247-DBF884C81937-->sid-6C2120F3-D940-4958-A067-0903DCE879C4;
-      sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-4DA958A0-26D9-4D47-93A7-70F39FD7D51A;
-      sid-7CE72B24-E0C1-46D3-8132-8BA66BE05AA7-->sid-4FC27B48-A6F9-460A-A675-021F5854FE22;
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="mermaid"/>
+<meta name="twitter:description" content="mermaid 图表"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+
+  <header>
+    <div class="bg-black">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="logo f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
     </div>
-    <div class="mermaid">
-      graph TD
-      A[Christmas] -->|Get money| B(Go shopping)
-      B --> C{Let me thinksssssx<br/>sssssssssssssssssssuuu<br />tttsssssssssssssssssssssss}
-      C -->|One| D[Laptop]
-      C -->|Two| E[iPhone]
-      C -->|Three| F[Car]
+
+  </div>
+</nav>
+
     </div>
-  <div class="mermaid">
-    graph TD
-    A[/Christmas\]
-    A -->|Get money| B[\Go shopping/]
-    B --> C{Let me thinksssss<br/>ssssssssssssssssssssss<br/>sssssssssssssssssssssssssss}
-    C -->|One| D[/Laptop/]
-    C -->|Two| E[\iPhone\]
-    C -->|Three| F[Car]
-  </div>
-  <div class="mermaid">
-    graph LR
-47(SAM.CommonFA.FMESummary)-->48(SAM.CommonFA.CommonFAFinanceBudget)
-37(SAM.CommonFA.BudgetSubserviceLineVolume)-->48(SAM.CommonFA.CommonFAFinanceBudget)
-35(SAM.CommonFA.PopulationFME)-->47(SAM.CommonFA.FMESummary)
-41(SAM.CommonFA.MetricCost)-->47(SAM.CommonFA.FMESummary)
-44(SAM.CommonFA.MetricOutliers)-->47(SAM.CommonFA.FMESummary)
-46(SAM.CommonFA.MetricOpportunity)-->47(SAM.CommonFA.FMESummary)
-40(SAM.CommonFA.OPVisits)-->47(SAM.CommonFA.FMESummary)
-38(SAM.CommonFA.CommonFAFinanceRefund)-->47(SAM.CommonFA.FMESummary)
-43(SAM.CommonFA.CommonFAFinancePicuDays)-->47(SAM.CommonFA.FMESummary)
-42(SAM.CommonFA.CommonFAFinanceNurseryDays)-->47(SAM.CommonFA.FMESummary)
-45(SAM.CommonFA.MetricPreOpportunity)-->46(SAM.CommonFA.MetricOpportunity)
-35(SAM.CommonFA.PopulationFME)-->45(SAM.CommonFA.MetricPreOpportunity)
-41(SAM.CommonFA.MetricCost)-->45(SAM.CommonFA.MetricPreOpportunity)
-41(SAM.CommonFA.MetricCost)-->44(SAM.CommonFA.MetricOutliers)
-39(SAM.CommonFA.ChargeDetails)-->43(SAM.CommonFA.CommonFAFinancePicuDays)
-39(SAM.CommonFA.ChargeDetails)-->42(SAM.CommonFA.CommonFAFinanceNurseryDays)
-39(SAM.CommonFA.ChargeDetails)-->41(SAM.CommonFA.MetricCost)
-39(SAM.CommonFA.ChargeDetails)-->40(SAM.CommonFA.OPVisits)
-35(SAM.CommonFA.PopulationFME)-->39(SAM.CommonFA.ChargeDetails)
-36(SAM.CommonFA.PremetricCost)-->39(SAM.CommonFA.ChargeDetails)
-  </div>
-  <div class="mermaid">
-      graph TD
-      A("fa:fa-creative-commons My System | Test Environment")
-      B("fa:fa-cogs Shared Business Logic Server:Service 1")
-      C("fa:fa-cogs Shared Business Logic Server:Service 2")
-      D("fa:fa-cogs Shared Report Server:Service 1")
-      E("fa:fa-cogs Shared Report Server:Service 2")
-      F("fa:fa-cogs Dedicated Test Business Logic Server:Service 1")
-      G("fa:fa-cogs Dedicated Test Business Logic Server:Service 2")
-      b7042290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SupportDb]")
-      8f102290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[DevelopmentDb]")
-      0e102290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[TestDb]")
-      07132290_1ec3_e711_8c5a_005056ad0002("fa:fa-circle [DBServer\SharedDbInstance].[SharedReportingDb]")
-      c7072290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Shared Business Logic Server")
-      ca122290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Shared Report Server")
-      68102290_1ec3_e711_8c5a_005056ad0002("fa:fa-server Dedicated Test Business Logic Server")
-      f4112290_1ec3_e711_8c5a_005056ad0002("fa:fa-database [DBServer\SharedDbInstance]")
-      d6072290_1ec3_e711_8c5a_005056ad0002("fa:fa-server DBServer")
-      71082290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:MSSQLSERVER")
-      c0102290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:SQLAgent")
-      9a072290_1ec3_e711_8c5a_005056ad0002("fa:fa-cogs DBServer\:SQLBrowser")
-      1d0a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost1")
-      200a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost2")
-      1c0a2290_1ec3_e711_8c5a_005056ad0002("fa:fa-server VmHost3")
-      A-->B
-      A-->C
-      A-->D
-      A-->E
-      A-->F
-      A-->G
-      B-->b7042290_1ec3_e711_8c5a_005056ad0002
-      B-->8f102290_1ec3_e711_8c5a_005056ad0002
-      B-->0e102290_1ec3_e711_8c5a_005056ad0002
-      B-->c7072290_1ec3_e711_8c5a_005056ad0002
-      C-->c7072290_1ec3_e711_8c5a_005056ad0002
-      C-->B
-      D-->b7042290_1ec3_e711_8c5a_005056ad0002
-      D-->8f102290_1ec3_e711_8c5a_005056ad0002
-      D-->0e102290_1ec3_e711_8c5a_005056ad0002
-      D-->07132290_1ec3_e711_8c5a_005056ad0002
-      D-->ca122290_1ec3_e711_8c5a_005056ad0002
-      E-->ca122290_1ec3_e711_8c5a_005056ad0002
-      E-->D
-      F-->8f102290_1ec3_e711_8c5a_005056ad0002
-      F-->68102290_1ec3_e711_8c5a_005056ad0002
-      G-->68102290_1ec3_e711_8c5a_005056ad0002
-      G-->F
-      b7042290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
-      8f102290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
-      0e102290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
-      07132290_1ec3_e711_8c5a_005056ad0002-->f4112290_1ec3_e711_8c5a_005056ad0002
-      c7072290_1ec3_e711_8c5a_005056ad0002-->1d0a2290_1ec3_e711_8c5a_005056ad0002
-      ca122290_1ec3_e711_8c5a_005056ad0002-->200a2290_1ec3_e711_8c5a_005056ad0002
-      68102290_1ec3_e711_8c5a_005056ad0002-->1c0a2290_1ec3_e711_8c5a_005056ad0002
-      f4112290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
-      f4112290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
-      f4112290_1ec3_e711_8c5a_005056ad0002-->c0102290_1ec3_e711_8c5a_005056ad0002
-      f4112290_1ec3_e711_8c5a_005056ad0002-->9a072290_1ec3_e711_8c5a_005056ad0002
-      d6072290_1ec3_e711_8c5a_005056ad0002-->1c0a2290_1ec3_e711_8c5a_005056ad0002
-      71082290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
-      c0102290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
-      c0102290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
-      9a072290_1ec3_e711_8c5a_005056ad0002-->d6072290_1ec3_e711_8c5a_005056ad0002
-      9a072290_1ec3_e711_8c5a_005056ad0002-->71082290_1ec3_e711_8c5a_005056ad0002
-  </div>
-  <div class="mermaid">
-graph TB
-	subgraph One
-		a1-->a2
-	end
-  </div>
-  <div class="mermaid">
-  graph TB
-  A
-  B
-  subgraph foo[Foo SubGraph]
-    C
-    D
-  end
-  subgraph bar[Bar SubGraph]
-    E
-    F
-  end
-  G
+  </header>
 
-  A-->B
-  B-->C
-  C-->D
-  B-->D
-  D-->E
-  E-->A
-  E-->F
-  F-->D
-  F-->G
-  B-->G
-  G-->D
 
-  style foo fill:#F99,stroke-width:2px,stroke:#F0F
-  style bar fill:#999,stroke-width:10px,stroke:#0F0
-  </div>
-  <div class="mermaid">
-      graph LR
-      456ac9b0d15a8b7f1e71073221059886[1051 AAA fa:fa-check]
-      f7f580e11d00a75814d2ded41fe8e8fe[1141 BBB fa:fa-check]
-      81dc9bdb52d04dc20036dbd8313ed055[1234 CCC fa:fa-check]
-      456ac9b0d15a8b7f1e71073221059886 -->|Node| f7f580e11d00a75814d2ded41fe8e8fe
-      f7f580e11d00a75814d2ded41fe8e8fe -->|Node| 81dc9bdb52d04dc20036dbd8313ed055
-      click 456ac9b0d15a8b7f1e71073221059886 "/admin/user/view?id=1051" "AAA
-      6000"
-      click f7f580e11d00a75814d2ded41fe8e8fe "/admin/user/view?id=1141" "BBB
-      600"
-      click 81dc9bdb52d04dc20036dbd8313ed055 "/admin/user/view?id=1234" "CCC
-      3000"
-      style 456ac9b0d15a8b7f1e71073221059886 fill:#f9f,stroke:#333,stroke-width:4px
-  </div>
-  <div class="mermaid">
-    graph TD
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{{Let me think...<br />Do I want something for work,<br />something to spend every free second with,<br />or something to get around?}}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[Car]
-    click A "index.html#link-clicked" "link test"
-    click B testClick "click test"
-    classDef someclass fill:#f96;
-    class A someclass;
-    class C someclass;
-  </div>
-  <div class="mermaid">
-    graph TD
-    A([stadium shape test])
-    A -->|Get money| B([Go shopping])
-    B --> C([Let me think...<br />Do I want something for work,<br />something to spend every free second with,<br />or something to get around?])
-    C -->|One| D([Laptop])
-    C -->|Two| E([iPhone])
-    C -->|Three| F([Car<br/>wroom wroom])
-    click A "index.html#link-clicked" "link test"
-    click B testClick "click test"
-    classDef someclass fill:#f96;
-    class A someclass;
-    class C someclass;
-  </div>
-  <div class="mermaid">
-    graph LR
-    A[[subroutine shape test]]
-    A -->|Get money| B[[Go shopping]]
-    B --> C[[Let me think...<br />Do I want something for work,<br />something to spend every free second with,<br />or something to get around?]]
-    C -->|One| D[[Laptop]]
-    C -->|Two| E[[iPhone]]
-    C -->|Three| F[[Car<br/>wroom wroom]]
-    click A "index.html#link-clicked" "link test"
-    click B testClick "click test"
-    classDef someclass fill:#f96;
-    class A someclass;
-    class C someclass;
-  </div>
-  <div class="mermaid">
-    graph LR
-    A[(cylindrical<br />shape<br />test)]
-    A -->|Get money| B1[(Go shopping 1)]
-    A -->|Get money| B2[(Go shopping 2)]
-    A -->|Get money| B3[(Go shopping 3)]
-    C[(Let me think...<br />Do I want something for work,<br />something to spend every free second with,<br />or something to get around?)]
-    B1 --> C
-    B2 --> C
-    B3 --> C
-    C -->|One| D[(Laptop)]
-    C -->|Two| E[(iPhone)]
-    C -->|Three| F[(Car)]
-    click A "index.html#link-clicked" "link test"
-    click B testClick "click test"
-    classDef someclass fill:#f96;
-    class A someclass;
-  </div>
-  <div class="mermaid">
-    graph LR
-    A1[Multi<br>Line] -->|Multi<br>Line| B1(Multi<br>Line)
-    C1[Multi<br/>Line] -->|Multi<br/>Line| D1(Multi<br/>Line)
-    E1[Multi<br />Line] -->|Multi<br />Line| F1(Multi<br />Line)
-    A2[Multi<br>Line] -->|Multi<br>Line| B2(Multi<br>Line)
-    C2[Multi<br/>Line] -->|Multi<br/>Line| D2(Multi<br/>Line)
-    E2[Multi<br />Line] -->|Multi<br />Line| F2(Multi<br />Line)
-    linkStyle 0 stroke:DarkGray,stroke-width:2px
-    linkStyle 1 stroke:DarkGray,stroke-width:2px
-    linkStyle 2 stroke:DarkGray,stroke-width:2px
-  </div>
-  <div class="mermaid">
-    graph LR
-    A(( )) -->|step 1| B(( ))
-    B(( )) -->|step 2| C(( ))
-    C(( )) -->|step 3| D(( ))
-    linkStyle 1 stroke:greenyellow,stroke-width:2px
-    style C fill:greenyellow,stroke:green,stroke-width:4px
-  </div>
-  <div class="mermaid">
-    graph TB
-    TITLE["Link Click Events<br>(click the nodes below)"]
-    A[link test]
-    B[anchor test]
-    C[mailto test]
-    D[other protocol test]
-    E[script test]
-    TITLE --> A & B & C & D & E
-    click A "https://mermaid-js.github.io/mermaid/#/" "link test"
-    click B "#link-clicked" "anchor test"
-    click C "mailto:user@user.user" "mailto test"
-    click D "notes://do-your-thing/id" "other protocol test"
-    click E "javascript:alert('test')" "script test"
-  </div>
-  <hr/>
-  <div class="mermaid">
-    graph LR
-    A[red<br>text] -->|red<br>text| B(blue<br>text)
-    C[/red<br/>text/] -->|blue<br/>text| D{blue<br/>text}
-    E{{default<br />style}} -->|default<br />style| F([default<br />style])
-    linkStyle default color:Sienna;
-    linkStyle 0 color:red;
-    linkStyle 1 stroke:DarkGray,stroke-width:2px,color:#0000ff
-    style A color:red;
-    style B color:blue;
-    style C stroke:#ff0000,fill:#ffcccc,color:#ff0000
-    style D stroke:#0000ff,fill:#ccccff,color:#0000ff
-    click B "index.html#link-clicked" "link test"
-    click D testClick "click test"
-  </div>
-  <div class="mermaid">
-    graph TD
-    A[myClass1] --> B[default] & C[default]
-    B[default] & C[default] --> D[myClass2]
-    classDef default stroke-width:2px,fill:none,stroke:silver
-    classDef node color:red
-    classDef myClass1 color:#0000ff
-    classDef myClass2 stroke:#0000ff,fill:#ccccff
-    class A myClass1
-    class D myClass2
+
+
+    
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        LET&#39;S GO...
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://jimbowhy.gitee.io/mermaid/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://jimbowhy.gitee.io/mermaid/&amp;text=mermaid" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jimbowhy.gitee.io/mermaid/&amp;title=mermaid" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
   </div>
 
-  <hr/>
 
-  <div class="mermaid">
-sequenceDiagram
-participant Alice
-participant Bob
-participant John as John<br/>Second Line
-rect rgb(200, 220, 100)
-rect rgb(200, 255, 200)
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-end
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-Bob-->Alice: Checking with John...
-end
-alt either this
-Alice->>John: Yes
-else or this
-Alice->>John: No
-else or this will happen
-Alice->John: Maybe
-end
-par this happens in parallel
-Alice -->> Bob: Parallel message 1
-and
-Alice -->> John: Parallel message 2
-end
-  </div>
-  <div class="mermaid">
-    sequenceDiagram
-    participant 1 as multiline<br>using #lt;br#gt;
-    participant 2 as multiline<br/>using #lt;br/#gt;
-    participant 3 as multiline<br />using #lt;br /#gt;
-    participant 4 as multiline<br 	/>using #lt;br 	/#gt;
-    1->>2: multiline<br>using #lt;br#gt;
-    note right of 2: multiline<br>using #lt;br#gt;
-    2->>3: multiline<br/>using #lt;br/#gt;
-    note right of 3: multiline<br/>using #lt;br/#gt;
-    3->>4: multiline<br />using #lt;br /#gt;
-    note right of 4: multiline<br />using #lt;br /#gt;
-    4->>1: multiline<br 	/>using #lt;br 	/#gt;
-    note right of 1: multiline<br 	/>using #lt;br 	/#gt;
-  </div>
-  <div class="mermaid">
-    sequenceDiagram
-    autonumber
-    Alice->>John: Hello John,<br>how are you?
-    Alice->>John: John,<br/>can you hear me?
-    John-->>Alice: Hi Alice,<br />I can hear you!
-    John-->>Alice: I feel great!
-  </div>
+      <h1 class="f1 athelas mt3 mb1">mermaid</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
 
-  <hr/>
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray"><div class="mermaid">
+    pie
+        "Dogs" : 386
+        "Cats" : 85
+        "Rats" : 15
+</div>
 
-  <div class="mermaid">
-gantt
-dateFormat  YYYY-MM-DD
-axisFormat  %d/%m
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
+<div class="mermaid">
+    stateDiagram
+        [*] --> Still
+        Still --> [*]
+        Still --> Moving
+        Moving --> Still
+        Moving --> Crash
+        Crash --> [*]
+</div>
 
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
-
-section Critical tasks
-Completed task in the critical line :crit, done, 2014-01-06,24h
-Implement parser and jison          :crit, done, after des1, 2d
-Create tests for parser             :crit, active, 3d
-Future task in critical line        :crit, 5d
-Create tests for renderer           :2d
-Add to mermaid                      :1d
-
-section Documentation
-Describe gantt syntax               :active, a1, after des1, 3d
-Add gantt diagram to demo page      :after a1  , 20h
-Add another diagram to demo page    :doc1, after a1  , 48h
-
-section Clickable
-Visit mermaidjs               :active, cl1, 2014-01-07,2014-01-10
-Calling a Callback (look at the console log) :cl2, after cl1, 3d
-
-click cl1 href "https://mermaidjs.github.io/"
-click cl2 call ganttTestClick("test", test, test)
-
-section Last section
-Describe gantt syntax               :after doc1, 3d
-Add gantt diagram to demo page      : 20h
-Add another diagram to demo page    : 48h
-  </div>
-  <div class="mermaid">
+<div class="mermaid">
     gantt
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d/%m
-    title       GANTT diagram with multiline section titles
-    excludes    weekdays 2014-01-10
+    section Section
+    Completed :done,    des1, 2014-01-06,2014-01-08
+    Active        :active,  des2, 2014-01-07, 3d
+    Parallel 1   :         des3, after des1, 1d
+    Parallel 2   :         des4, after des1, 1d
+    Parallel 3   :         des5, after des3, 1d
+    Parallel 4   :         des6, after des4, 1d
+</div>
 
-    section A section<br>multiline
-    Completed task            : done,    des1, 2014-01-06,2014-01-08
-    Active task               : active,  des2, 2014-01-09, 3d
-    Future task               :          des3, after des2, 5d
-    Future task2              :          des4, after des3, 5d
+<div class="mermaid">
+    graph TD
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+</div>
 
-    section Critical tasks<br/>multiline
-    Completed task in the critical line : crit, done, 2014-01-06, 24h
-    Implement parser and jison          : crit, done, after des1, 2d
-    Create tests for parser             : crit, active, 3d
-    Future task in critical line        : crit, 5d
-    Create tests for renderer           : 2d
-    Add to mermaid                      : 1d
+<div class="mermaid">
+    graph TD
+    A[Hard] -->|Text| B(Round)
+    B --> C{Decision}
+    C -->|One| D[Result 1]
+    C -->|Two| E[Result 2]
+</div>
 
-    section Documentation<br />multiline
-    Describe gantt syntax               : active, a1, after des1, 3d
-    Add gantt diagram to demo page      : after a1, 20h
-    Add another diagram to demo page    : doc1, after a1, 48h
+<div class="mermaid">
+journey
+  title My working day
+  section Go to work
+    Make tea: 5: Me
+    Go upstairs: 3: Me
+    Do work: 1: Me, Cat
+  section Go home
+    Go downstairs: 5: Me
+    Sit down: 3: Me
+</div>
 
-    section Last section<br	/>multiline
-    Describe gantt syntax               : after doc1, 3d
-    Add gantt diagram to demo page      : 20h
-    Add another diagram to demo page    : 48h
-  </div>
-
-  <hr/>
-
-  <div class="mermaid">
-gitGraph:
-options
-{
-    "nodeSpacing": 150,
-    "nodeRadius": 10
-}
-end
-commit
-branch newbranch
-checkout newbranch
-commit
-commit
-checkout master
-commit
-commit
-merge newbranch
-  </div>
-
-  <hr/>
-
-  <div class="mermaid">
-classDiagram
-Class01 <|-- AveryLongClass : Cool
-&lt;&lt;interface&gt;&gt; Class01
-Class03 "0" *-- "0..n" Class04
-Class05 "1" o-- "many" Class06
-Class07 .. Class08
-Class09 "many" --> "1" C2  : Where am i?
-Class09 "0" --* "1..n" C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : #size()
-Class01 : -int chimp
-Class01 : +int gorilla
-Class08 <--> C2: Cool label
-class Class10 {
-  &lt;&lt;service&gt;&gt;
-  int id
-  size()
-}
-  </div>
-
-  <div class="mermaid">
+<div class="mermaid">
     classDiagram
-    class Class01~T~
-    Class01 : #size()
-    Class01 : -int chimp
-    Class01 : +int gorilla
-    class Class10~T~ {
-      &lt;&lt;service&gt;&gt;
-      int id
-      size()
-    }
-  </div>
+        Class01 <|-- AveryLongClass : Cool
+        <<interface>> Class01
+        Class09 --> C2 : Where am i?
+        Class09 --* C3
+        Class09 --|> Class07
+        Class07 : equals()
+        Class07 : Object[] elementData
+        Class01 : size()
+        Class01 : int chimp
+        Class01 : int gorilla
+        class Class10 {
+          <<service>>
+          int id
+          size()
+        }
+</div>
 
-  <div class="mermaid">
-    classDiagram
-    Class01~T~ <|-- AveryLongClass : Cool
-    &lt;&lt;interface&gt;&gt; Class01
-    Class03~T~ "0" *-- "0..n" Class04
-    Class05 "1" o-- "many" Class06
-    Class07~T~ .. Class08
-    Class09 "many" --> "1" C2  : Where am i?
-    Class09 "0" --* "1..n" C3
-    Class09 --|> Class07
-    Class07 : equals()
-    Class07 : Object[] elementData
-    Class01 : #size()
-    Class01 : -int chimp
-    Class01 : +int gorilla
-    Class08 <--> C2: Cool label
-    class Class10 {
-      &lt;&lt;service&gt;&gt;
-      int id
-      size()
-    }
-  </div>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
 
-  <div class="mermaid">
-    stateDiagram
-      State1
-  </div>
+  </article>
 
-  <hr>
+    </main>
 
-  <div class="mermaid">
-    stateDiagram
-    [*] --> First
-    state First {
-        [*] --> second
-        second --> [*]
-    }
-  </div>
-  <div class="mermaid">
-    stateDiagram
-        State1: The state with a note
-        note right of State1
-            Important information! You can write
-            notes.
-        end note
-        State1 --> State2
-        note left of State2 : This is the note to the left.
-  </div>
-  <div class="mermaid">
-    stateDiagram
-    State1
-    note right of State1
-    Line1<br>Line2<br/>Line3<br />Line4<br	/>Line5
-    end note
-  </div>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://jimbowhy.gitee.io/" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
 
-  <h1 id="link-clicked">Anchor for "link-clicked" test</h1>
 
-  <script src="./mermaid.js"></script>
+
+
+
+
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+    
+  
+  
+  
+  
+  <script src="https://jimbowhy.gitee.io/js/mermaid-v8.4.6.min.28ed69093216401137e8f6b38d32755b2d8a88c4763bd164b018245f00342add6327087557ff2d8c5378de8ae26b2f70fd8dd7a6d87a50dd705c2a2b7e725e0b.js" integrity="sha512-KO1pCTIWQBE36PazjTJ1Wy2KiMR2O9FksBgkXwA0Kt1jJwh1V/8tjFN43oriay9w/Y3Xpth6UN1wXCorfnJeCw=="></script>
   <script>
-    mermaid.initialize({
-      theme: 'forest',
-      // themeCSS: '.node rect { fill: red; }',
-      logLevel: 3,
+    var config = {
+      startOnLoad: true,
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: "cardinal",
+      },
+      theme: "neutral",
+      theme: "forest",
+      securityLevel: "strict",
       securityLevel: 'loose',
-      flowchart: { curve: 'basis' },
-      gantt: { axisFormat: '%m/%d/%Y' },
-      sequence: { actorMargin: 50 },
-      // sequenceDiagram: { actorMargin: 300 } // deprecated
-    });
-  </script>
-  <script>
-    function ganttTestClick(a, b, c){
-      console.log("a:", a)
-      console.log("b:", b)
-      console.log("c:", c)
-    }
-    function testClick(nodeId) {
-      console.log("clicked", nodeId)
-      var originalBgColor = document.querySelector('body').style.backgroundColor
-      document.querySelector('body').style.backgroundColor = 'yellow'
-      setTimeout(function() {
-        document.querySelector('body').style.backgroundColor = originalBgColor
-      }, 100)
-    }
-  </script>
-  <script>
-     const testLineEndings = (test, input) => {
-       try {
-         mermaid.render(test, input, () => {});
-       } catch (err) {
-         console.error("Error in %s:\n\n%s", test, err);
-       }
-     };
+    };
 
-     testLineEndings("CR", "graph LR\rsubgraph CR\rA --> B\rend");
-     testLineEndings("LF", "graph LR\nsubgraph LF\nA --> B\nend");
-     testLineEndings("CRLF", "graph LR\r\nsubgraph CRLF\r\nA --> B\r\nend");
+    mermaid.initialize(config);
   </script>
-</body>
+
+
+    
+
+
+
+  </body>
 </html>

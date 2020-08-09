@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>V: Templates 其它模板 | Go Learning</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.74.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW"> 
+    
+    
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+    
+        
+        
+          
+            
+    
+    
+    <link href="/css/main-bundle.css" rel="stylesheet">
+    
+
+    
+      
+<link rel="shortcut icon" href="/assets/micro_xs.png" type="image/x-icon" />
+
+ 
+
+    
+    
+    <meta property="og:title" content="V: Templates 其它模板" />
+<meta property="og:description" content="坚果的 Hugo 教程" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/" />
+<meta property="article:published_time" content="2020-08-06T20:14:08-04:00" />
+<meta property="article:modified_time" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="name" content="V: Templates 其它模板">
+<meta itemprop="description" content="坚果的 Hugo 教程">
+<meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
+<meta itemprop="wordCount" content="2015">
+
+
+
+<meta itemprop="keywords" content="hugo,menu," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="V: Templates 其它模板"/>
+<meta name="twitter:description" content="坚果的 Hugo 教程"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+
+
+
+
+
+  <header>
+    <div class="bg-black">
+      
+
+<nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+
+    <a href="/" class="logo f3 fw2 hover-white no-underline white-90 dib">
+      
+        <img src="/assets/micro_xs.png" class="w100 mw5-ns" alt="Go Learning" />
+      
+    </a>
+
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/contact/" title="联络 page">
+              联络
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+
+
+
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+
+    
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        HUGO 教程
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/&amp;text=V:%20Templates%20%e5%85%b6%e5%ae%83%e6%a8%a1%e6%9d%bf" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/&amp;title=V:%20Templates%20%e5%85%b6%e5%ae%83%e6%a8%a1%e6%9d%bf" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">V: Templates 其它模板</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      <h1 id="目录">目录</h1>
+<div class="contents"><a href="#目录"># 目录</a><br><a href="#homepage-template-主页模板">## Homepage Template 主页模板</a><br><a href="#shortcode-短代码模板">## shortcode 短代码模板</a><br><a href="#partials-模板">## Partials 模板</a><br><a href="#pagination-分页模板">## Pagination 分页模板</a><br><a href="#menu-templates-菜单模板">## Menu Templates 菜单模板</a><br><a href="#single-page-template">## Single Page Template</a><br><a href="#list-templates-列表模板">## List Templates 列表模板</a><br></div>
+<h2 id="homepage-template-主页模板">Homepage Template 主页模板</h2>
+<p>根据不同的内容，对应的不同的主页面，下面是其中的 Home 和 JSON 的主页定位方式，这里并没有列出主题目录，因为主题的 layouts 目录结构意义是一样的：</p>
+<pre><code>  {
+    &quot;Example&quot;: &quot;Home page&quot;,
+    &quot;Kind&quot;: &quot;home&quot;,
+    &quot;OutputFormat&quot;: &quot;HTML&quot;,
+    &quot;Suffix&quot;: &quot;html&quot;,
+    &quot;Template Lookup Order&quot;: [
+      &quot;layouts/index.html.html&quot;,
+      &quot;layouts/home.html.html&quot;,
+      &quot;layouts/list.html.html&quot;,
+      &quot;layouts/index.html&quot;,
+      &quot;layouts/home.html&quot;,
+      &quot;layouts/list.html&quot;,
+      &quot;layouts/_default/index.html.html&quot;,
+      &quot;layouts/_default/home.html.html&quot;,
+      &quot;layouts/_default/list.html.html&quot;,
+      &quot;layouts/_default/index.html&quot;,
+      &quot;layouts/_default/home.html&quot;,
+      &quot;layouts/_default/list.html&quot;
+    ]
+  },
+  {
+    &quot;Example&quot;: &quot;JSON home&quot;,
+    &quot;Kind&quot;: &quot;home&quot;,
+    &quot;OutputFormat&quot;: &quot;JSON&quot;,
+    &quot;Suffix&quot;: &quot;json&quot;,
+    &quot;Template Lookup Order&quot;: [
+      &quot;layouts/index.json.json&quot;,
+      &quot;layouts/home.json.json&quot;,
+      &quot;layouts/list.json.json&quot;,
+      &quot;layouts/index.json&quot;,
+      &quot;layouts/home.json&quot;,
+      &quot;layouts/list.json&quot;,
+      &quot;layouts/_default/index.json.json&quot;,
+      &quot;layouts/_default/home.json.json&quot;,
+      &quot;layouts/_default/list.json.json&quot;,
+      &quot;layouts/_default/index.json&quot;,
+      &quot;layouts/_default/home.json&quot;,
+      &quot;layouts/_default/list.json&quot;
+    ]
+  },
+</code></pre>
+<p>一个主页面模板参考：</p>
+<pre><code>{{ define &quot;main&quot; }}
+    &lt;main aria-role=&quot;main&quot;&gt;
+      &lt;header class=&quot;homepage-header&quot;&gt;
+        &lt;h1&gt;{{.Title}}&lt;/h1&gt;
+        {{ with .Params.subtitle }}
+        &lt;span class=&quot;subtitle&quot;&gt;{{.}}&lt;/span&gt;
+        {{ end }}
+      &lt;/header&gt;
+      &lt;div class=&quot;homepage-content&quot;&gt;
+        &lt;!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md --&gt;
+        {{.Content}}
+      &lt;/div&gt;
+      &lt;div&gt;
+        {{ range first 10 .Site.RegularPages }}
+            {{ .Render &quot;summary&quot;}}
+        {{ end }}
+      &lt;/div&gt;
+    &lt;/main&gt;
+{{ end }}
+</code></pre>
+<h2 id="shortcode-短代码模板">shortcode 短代码模板</h2>
+<p>短代码模板 <strong>shortcode</strong> 用来生成定义一段功能代码，再供页面调用。</p>
+<p>Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太好用：</p>
+<ul>
+<li>
+<p><em>figure</em> 使用语法及对应生成</p>
+<pre><code>  {{&amp;lt figure src=&quot;/media/spf13.jpg&quot; title=&quot;Steve Francia&quot; &gt;}}
+
+  &lt;figure&gt;
+      &lt;img src=&quot;/media/spf13.jpg&quot;  /&gt;
+      &lt;figcaption&gt;
+          &lt;h4&gt;Steve Francia&lt;/h4&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+</code></pre>
+</li>
+<li>
+<p><em>gist</em> 用于生成 Git 版本仓库中的 URL</p>
+<pre><code>  {{&amp;lt gist spf13 7896402 &gt;}}
+
+  https://gist.github.com/spf13/7896402
+
+  {{&amp;lt gist spf13 7896402 &quot;img.html&quot; &gt;}}
+
+  &lt;script type=&quot;application/javascript&quot; src=&quot;https://gist.github.com/spf13/7896402.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+</li>
+<li>
+<p><em>param</em> 获取页面扉页参数</p>
+<p>假设，设置了页面扉页参数 <strong>testparam: Hugo Rocks!</strong> 那么就可以通过将其输出到页面：</p>
+<pre><code>  {{&amp;lt param testparam &gt;}}
+
+  {{&amp;lt param &quot;my.nested.param&quot; &gt;}}
+</code></pre>
+</li>
+<li>
+<p><em>ref</em> 和 <strong>relref</strong> 根据页面文件生成相对或绝对页面引用 URL</p>
+<pre><code>  [Neat]({{&amp;lt; ref &quot;blog/neat.md&quot; &gt;}})
+  [Who]({{&amp;lt; relref &quot;about.md#who&quot; &gt;}})
+
+  &lt;a href=&quot;/blog/neat&quot;&gt;Neat&lt;/a&gt;
+  &lt;a href=&quot;/about/#who:c28654c202e73453784cfd2c5ab356c0&quot;&gt;Who&lt;/a&gt;
+</code></pre>
+</li>
+<li>
+<p><em>highlight</em> 生成高亮代码块</p>
+</li>
+<li>
+<p><em>instagram</em> 生成 Instagram 图片 URL，国内墙</p>
+<pre><code>  {{&amp;lt instagram BWNjjyYFxVx hidecaption &gt;}}
+
+  https://www.instagram.com/p/BWNjjyYFxVx/
+</code></pre>
+</li>
+<li>
+<p><em>tweet</em> 国内墙</p>
+</li>
+<li>
+<p><em>vimeo</em> 国内墙</p>
+</li>
+<li>
+<p><em>youtube</em>  国内墙</p>
+</li>
+</ul>
+<p>这些被墙的应用可能会导致 Hugo 运行失败，因为网站访问超时导致，如 twitter.html 定义使用了 <strong>api.twitter.com</strong>：</p>
+<pre><code>{{- $pc := .Page.Site.Config.Privacy.Twitter -}}
+{{- if not $pc.Disable -}}
+{{- if $pc.Simple -}}
+{{ template &quot;_internal/shortcodes/twitter_simple.html&quot; . }}
+{{- else -}}
+{{- $url := printf &quot;https://api.twitter.com/1/statuses/oembed.json?id=%v&amp;dnt=%t&quot; (index .Params 0) $pc.EnableDNT -}}
+{{- $json := getJSON $url -}}
+{{ $json.html | safeHTML }}
+{{- end -}}
+{{- end -}}
+</code></pre>
+<p>可以将有问题 API 调用注解掉，Hugo Docs 项目就使用了它们：</p>
+<pre><code>{{/*&lt; instagram_simple BGvuInzyFAe hidecaption &gt;*/}}
+{{/*&lt; twitter_simple 1085870671291310081 &gt;*/}}
+{{/*&lt; youtube ZJthWmvUzzc &gt;*/}}
+{{/*&lt; vimeo_simple 48912912 &gt;*/}}
+</code></pre>
+<p>另外，对于 MD 生成的标准的 HTML 标签，像表格，或列表，无法直接在 MD 设置样式：</p>
+<pre><code>{{&amp;lt table &gt;}}
+| Key | Value |
+|---|---|
+| Static Site Generator | Hugo |
+| Language | Go |
+{{&amp;lt /table &gt;}}
+</code></pre>
+<p>那么可以通过定义 <strong>shortcodes</strong> 的方式来加外层 DIV 通过 CSS 级联样式去定义，也可以使用</p>
+<pre><code>{{ $table := .Inner | markdownify | safeHTML }}
+{{ $tableBulma := $table | replaceRE &quot;&lt;table&gt;&quot; &quot;&lt;table class=\&quot;table is-striped is-hoverable\&quot;&gt;&quot; }}
+{{ $tableBulma | safeHTML }}
+</code></pre>
+<p>用户定义短代码模板的定位按以下顺序：</p>
+<ul>
+<li><code>/layouts/shortcodes/&lt;SHORTCODE&gt;.html</code></li>
+<li><code>/themes/&lt;THEME&gt;/layouts/shortcodes/&lt;SHORTCODE&gt;.html</code></li>
+</ul>
+<p>先定义一个 <strong>shortcode</strong> 模板 <strong>layouts\shortcodes\page-kinds.html</strong>：</p>
+<pre><code>所有页面 Page 对象都有一个 .Kind 属性变量，如下：
+
+|    Kind    |          说明          |                              例子                              |
+|------------|------------------------|----------------------------------------------------------------|
+| `home`     | 正在加载的是首页       | `/index.html`                                                  |
+| `page`     | 正在加载的指定页面     | `my-post` page (`/posts/my-post/index.html`)                   |
+| `section`  | 正在加载的是分区页     | `posts` section (`/posts/index.html`)                          |
+| `taxonomy` | 正在加载的是分类页     | `tags` taxonomy (`/tags/index.html`)                           |
+| `term`     | 正在加载的是分类术语页 | term `awesome` in `tags` taxonomy (`/tags/awesome/index.html`) |
+</code></pre>
+<p>然后在 MD 内容页面中调用 shortcode 以生成对应的内容：</p>
+<pre><code>{{&amp;#25 page-kinds %}}
+    sometext
+{{&amp;#25 /page-kinds %}}
+</code></pre>
+<p><strong>shortcode</strong> 短代码模板可使用的属性变量，以上面的调用方法作为参考，对应值如下：</p>
+
+
+<table class="table is-striped is-hoverable">
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>参考值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.Name</td>
+<td>Shortcode 名字</td>
+<td>page-kinds</td>
+</tr>
+<tr>
+<td>.Ordinal</td>
+<td>基于 0 的序号，表示 shortcode 在页面内容的位置</td>
+<td>1</td>
+</tr>
+<tr>
+<td>.Parent</td>
+<td>嵌套的 parent shortcode</td>
+<td><!-- raw HTML omitted --></td>
+</tr>
+<tr>
+<td>.Position</td>
+<td>所在页面文件名和行列号，常用于调试</td>
+<td>&ldquo;C:\quickstart\content\posts\2nd-post.md:29:5&rdquo;</td>
+</tr>
+<tr>
+<td>.IsNamedParams</td>
+<td>指示是否使用命名参数，而不是位置化参数</td>
+<td>false</td>
+</tr>
+<tr>
+<td>.Inner</td>
+<td>在 shortcode 标签之间的的内容</td>
+<td>sometext</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Hugo 官方文档项目中提供了很好的 <strong>shortcode</strong> 模板学习示例，例如，最常用来展示高亮代码片段 <strong>code</strong> 为例，当你在查看官方文档 MD 文件时，看到以下这样的内容：</p>
+<pre><code>{{&amp;lt code file=&quot;layouts/_default/section.html&quot; download=&quot;section.html&quot; &gt;}}
+...
+{{&amp;lt /code &gt;}}
+</code></pre>
+<p>这就表示，MD 文件正使用 <strong>code</strong> 生成相应的内容，来看看它的定义 <strong>layouts_default\shortcodes\code.html</strong>：</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$file</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$suffix</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">findRE</span> <span style="color:#e6db74">&#34;(\\.[^.]+)$&#34;</span> <span style="color:#a6e22e">$file</span> <span style="color:#a6e22e">1</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span>  <span style="color:#a6e22e">$suffix</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">index</span> <span style="color:#a6e22e">.</span> <span style="color:#a6e22e">0</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">strings</span><span style="color:#a6e22e">.TrimPrefix</span> <span style="color:#e6db74">&#34;.&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;codeLang&#34;</span> <span style="color:#75715e">}}{{</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">eq</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#e6db74">&#34;html&#34;</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;go-html-template&#34;</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;code relative&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$file</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">urlize</span><span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+        <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$file</span> <span style="color:#75715e">-}}</span>
+            &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;filename san-serif f6 dib lh-solid pl2 pv2&#34;</span>&gt;<span style="color:#75715e">{{</span><span style="color:#a6e22e">.</span><span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">div</span>&gt;
+        <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">ne</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;copy&#34;</span><span style="color:#f92672">)</span> <span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#75715e">}}</span>
+            &lt;<span style="color:#f92672">button</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Copy this code to your clipboard.&#34;</span> <span style="color:#a6e22e">data-clipboard-action</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;copy&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;copy button&#34;</span>&gt;
+            &lt;/<span style="color:#f92672">button</span>&gt;
+            <span style="color:#75715e">{{</span><span style="color:#75715e">/* Functionality located within filesaver.js The copy here is located in the css with .copy class so it can be replaced with JS on success */</span><span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span><span style="color:#66d9ef">end</span><span style="color:#75715e">}}</span>
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;code-copy-content nt3&#34;</span> <span style="color:#75715e">{{</span><span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;download&#34;</span><span style="color:#75715e">}}</span><span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span><span style="color:#a6e22e">.</span><span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span><span style="color:#66d9ef">end</span><span style="color:#75715e">}}</span>&gt;
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span>  <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;nocode&#34;</span> <span style="color:#75715e">}}{{</span> <span style="color:#a6e22e">$.Inner</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#75715e">}}{{-</span> <span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">$.Inner</span> <span style="color:#a6e22e">.</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#f92672">|</span> <span style="color:#75715e">-}}{{</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">}}</span>
+            &lt;<span style="color:#f92672">pre</span>&gt;&lt;<span style="color:#f92672">code</span>&gt;<span style="color:#75715e">{{-</span> <span style="color:#a6e22e">.Inner</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">string</span> <span style="color:#75715e">-}}</span>&lt;/<span style="color:#f92672">code</span>&gt;&lt;/<span style="color:#f92672">pre</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+</code></pre></div>
+    </div>
+
+</div>
+
+<p>这里最主要的是 <strong>highlight</strong> 这个内置函数，对代码片断进行处理得到高亮效果。也可以直接使用 highlight 像以下这样输出带行高的代码高亮代码块：</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#66d9ef">lt</span> <span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">go</span> <span style="color:#e6db74">&#34;linenos=table,hl_lines=8 15-17,linenostart=199&#34;</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
+    // GetTitleFunc returns a func that can be used to transform a string to
+    // title case.
+    //
+    // The supported styles are
+    //
+    // - &#34;Go&#34; (strings.Title)
+    // - &#34;AP&#34; (see https://www.apstylebook.com/)
+    // - &#34;Chicago&#34; (see https://www.chicagomanualofstyle.org/home.html)
+    //
+    // If an unknown or empty style is provided, AP style is what you get.
+    func GetTitleFunc(style string) func(s string) string {
+      switch strings.ToLower(style) {
+      case &#34;go&#34;:
+        return strings.Title
+      case &#34;chicago&#34;:
+        return transform.NewTitleConverter(transform.ChicagoStyle)
+      default:
+        return transform.NewTitleConverter(transform.APStyle)
+      }
+    }
+    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#66d9ef">lt</span> <span style="color:#960050;background-color:#1e0010">/</span> <span style="color:#a6e22e">highlight</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
+</code></pre></div>
+    </div>
+
+</div>
+
+<p>又以 <strong>note</strong> 短代码模板为例，它在文档页面中用来生成注解信息块：</p>
+<pre><code>{{ $_hugo_config := `{ &quot;version&quot;: 1 }` }}
+&lt;aside class=&quot;admonition note&quot;&gt;
+    &lt;div class=&quot;note-icon&quot;&gt;
+        {{partial &quot;svg/exclamation.svg&quot; (dict &quot;size&quot; &quot;20px&quot; ) }}
+    &lt;/div&gt;
+    &lt;!-- &lt;h2 id=&quot;{{if .Get 0}}{{.Get 0 | urlize}}{{else}}note{{end}}&quot;&gt;{{if .Get 0}}{{.Get 0 | markdownify}}{{else}}Note{{end}}&lt;/h2&gt; --&gt;
+    &lt;!-- &lt;h3&gt;Note&lt;/h3&gt; --&gt;
+    &lt;div class=&quot;admonition-content&quot;&gt;{{- .Inner -}}&lt;/div&gt;
+&lt;/aside&gt;
+</code></pre>
+<p>首先，模板中对 <code>_hugo_config</code> 变量进行赋值，但没有使用它。然后生成一个 note-icon 图标，然后再将注解内容 .Inner 输出到 div.admonition-content 标签上。</p>
+<p>其中，注释掉的部分没用起作用，但是这里调用了几个 Hugo 函数，<strong>urlize</strong> 用来将一个字符串进行 URL 合法化编码，参考 urlize.md 文档。</p>
+<p>注意，{{- .Inner -}} 模板中的负号用来移除内容的前缀、后缀空格。</p>
+<h2 id="partials-模板">Partials 模板</h2>
+<p>Partials 片断模板用来引用片断内容到页面中显示。</p>
+<p>模板文件定位：</p>
+<ul>
+<li><code>layouts/partials/*&lt;PARTIALNAME&gt;.html</code></li>
+<li><code>themes/&lt;THEME&gt;/layouts/partials/*&lt;PARTIALNAME&gt;.html</code></li>
+</ul>
+<p>Hugo 工程的所有片断模板都位 <code>layouts/partials</code> 这一个目录，可以下设多个子目录，参考如下：</p>
+<pre><code>.
+└── layouts
+    └── partials
+        ├── footer
+        │   ├── scripts.html
+        │   └── site-footer.html
+        ├── head
+        │   ├── favicons.html
+        │   ├── metadata.html
+        │   ├── prerender.html
+        │   └── twitter.html
+        └── header
+            ├── site-header.html
+            └── site-nav.html
+</code></pre>
+<p>然后，在页面中引用上面这些片断模板，参考语法格式：</p>
+<pre><code>{{ partial &quot;&lt;PATH&gt;/&lt;PARTIAL&gt;.html&quot; . }}
+</code></pre>
+<p>后面的点号表示将当前的上下文数据对象传入去。</p>
+<p>可以将 partial 模板当作自定义函数来使用，参考 Ananke 的 func/GetFeaturedImage.html：</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+
+   <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">/*</span> 
+        <span style="color:#a6e22e">GetFeaturedImage</span>
+
+        <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">return</span> <span style="color:#a6e22e">Permalink</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">featured</span> <span style="color:#a6e22e">image</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#66d9ef">or</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">empty</span> <span style="color:#a6e22e">string</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">found</span><span style="color:#a6e22e">.</span>
+
+    <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#75715e">}}</span>
+
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$linkToCover</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">}}</span>
+
+    <span style="color:#75715e">{{</span><span style="color:#75715e">/* Use the value from front matter if present */</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">.Params.featured_image</span> <span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$linkToCover</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#a6e22e">.Params.featured_image</span> <span style="color:#75715e">}}</span>
+
+    <span style="color:#75715e">{{</span><span style="color:#75715e">/* Find the first image with &#39;cover&#39; in the name in this page bundle. */</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$img</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">.Resources.ByType</span> <span style="color:#e6db74">&#34;image&#34;</span><span style="color:#f92672">)</span><span style="color:#a6e22e">.GetMatch</span> <span style="color:#e6db74">&#34;*cover*&#34;</span> <span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$img</span> <span style="color:#75715e">}}</span>
+            <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$linkToCover</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#a6e22e">.Permalink</span> <span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+
+    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">/*</span> <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">either</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">permalink</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#66d9ef">or</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">empty</span> <span style="color:#a6e22e">string</span><span style="color:#a6e22e">.</span> <span style="color:#a6e22e">Note</span> <span style="color:#a6e22e">that</span> <span style="color:#a6e22e">partials</span> <span style="color:#a6e22e">can</span> <span style="color:#a6e22e">only</span> <span style="color:#a6e22e">have</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">single</span>
+    <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">statement</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">so</span> <span style="color:#a6e22e">this</span> <span style="color:#a6e22e">needs</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">be</span> <span style="color:#a6e22e">at</span> <span style="color:#a6e22e">the</span> <span style="color:#66d9ef">end</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">partial</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">and</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">in</span> <span style="color:#a6e22e">the</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">block</span><span style="color:#f92672">)</span> <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">return</span> <span style="color:#a6e22e">$linkToCover</span> <span style="color:#75715e">}}</span>
+</code></pre></div>
+    </div>
+
+</div>
+
+<p>然后，在需要使用的模板中调用：</p>
+<pre><code>{{ $featured_image := partial &quot;func/GetFeaturedImage.html&quot; . }}
+</code></pre>
+<h2 id="pagination-分页模板">Pagination 分页模板</h2>
+<p>分页也可以当作菜单一样使用，在列表页面、Sessions、taxonomies 中进行分页呈现条目，让静态站点看下来更像是动态的站点。</p>
+<p>配合 SQL-like 一样的操作函数 first, last, after 可以对条目进行排序。</p>
+<p>在 config.toml 配置分页，设置每一页显示的条目数量和分页参数在 URL 中的 path 显示配置，默认样式 <strong>/page/1/</strong>：</p>
+<pre><code>Paginate = 10
+PaginatePath = page
+</code></pre>
+<p>分页将 homepage, sections, taxonomies 页面数据分成一小块加载显示，有两种方式使用 <strong>.Paginator</strong> 生成分布标签：</p>
+<ul>
+<li>在模板中直接调用 <strong>.Paginator.Pages</strong>；</li>
+<li>调用分页函数和排序再生成分页标签；</li>
+</ul>
+<p>示例：</p>
+<pre><code>{{ .Paginate.Pages }}
+{{ range (.Paginate ( first 50 .Pages.ByTitle )).Pages }}
+</code></pre>
+<p>配置文件中的 Paginate 可以在模板中覆盖，最后一个参数指定：</p>
+<pre><code>{{ range (.Paginator 5).Pages }}
+{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot;) 5 }}
+</code></pre>
+<p>还可以使用 GroupBy 函数进行分组：</p>
+<pre><code>{{ range (.Paginate (.Pages.GroupByDate &quot;2006&quot;)).PageGroups  }}
+</code></pre>
+<p>分布模板的最简单方法就是引入内置的分页模板 <strong>pagination.html</strong>，它兼容 Bootstrap 样式：</p>
+<pre><code>{{ $paginator := .Paginate (where .Pages &quot;Type&quot; &quot;posts&quot;) }}
+{{ template &quot;_internal/pagination.html&quot; . }}
+{{ range $paginator.Pages }}
+   {{ .Title }}
+{{ end }}
+</code></pre>
+<p>参考 .Paginator 对象提个的数据属性：</p>
+
+
+<table class="table is-striped is-hoverable">
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PageNumber</td>
+<td>The current page’s number in the pager sequence</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>The relative URL to the current pager</td>
+</tr>
+<tr>
+<td>Pages</td>
+<td>The pages in the current pager</td>
+</tr>
+<tr>
+<td>NumberOfElements</td>
+<td>The number of elements on this page</td>
+</tr>
+<tr>
+<td>HasPrev</td>
+<td>Whether there are page(s) before the current</td>
+</tr>
+<tr>
+<td>Prev</td>
+<td>The pager for the previous page</td>
+</tr>
+<tr>
+<td>HasNext</td>
+<td>Whether there are page(s) after the current</td>
+</tr>
+<tr>
+<td>Next</td>
+<td>The pager for the next page</td>
+</tr>
+<tr>
+<td>First</td>
+<td>The pager for the first page</td>
+</tr>
+<tr>
+<td>Last</td>
+<td>The pager for the last page</td>
+</tr>
+<tr>
+<td>Pagers</td>
+<td>A list of pagers that can be used to build a pagination menu</td>
+</tr>
+<tr>
+<td>PageSize</td>
+<td>Size of each pager</td>
+</tr>
+<tr>
+<td>TotalPages</td>
+<td>The number of pages in the paginator</td>
+</tr>
+<tr>
+<td>TotalNumberOfElements</td>
+<td>The number of elements on all pages in this paginator</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>页面对像提供了大量变量，如 .Title, .Permalink 等，具体参考 page.md 文档。</p>
+<p>Hugo 内置分页模板定义如下：</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$pag</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">$.Paginator</span> <span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">gt</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.TotalPages</span> <span style="color:#a6e22e">1</span> <span style="color:#75715e">-}}</span>
+    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination&#34;</span>&gt;
+      <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.First</span> <span style="color:#75715e">-}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;First&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;laquo;&amp;laquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.HasPrev</span> <span style="color:#75715e">}}</span><span style="color:#e6db74"> disabled</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.HasPrev</span> <span style="color:#75715e">}}</span><span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.Prev.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Previous&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;laquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$ellipsed</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">false</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$shouldEllipse</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">false</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.Pagers</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$right</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">sub</span> <span style="color:#a6e22e">.TotalPages</span> <span style="color:#a6e22e">.PageNumber</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$showNumber</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">or</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">eq</span> <span style="color:#a6e22e">.TotalPages</span> <span style="color:#a6e22e">5</span><span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">le</span> <span style="color:#a6e22e">.PageNumber</span> <span style="color:#a6e22e">3</span><span style="color:#f92672">)</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">eq</span> <span style="color:#a6e22e">$right</span> <span style="color:#a6e22e">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$showNumber</span> <span style="color:#75715e">-}}</span>
+        <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$ellipsed</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">false</span> <span style="color:#75715e">-}}</span>
+        <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$shouldEllipse</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">false</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">-}}</span>
+        <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$shouldEllipse</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">$ellipsed</span> <span style="color:#75715e">-}}</span>
+        <span style="color:#75715e">{{-</span> <span style="color:#a6e22e">$ellipsed</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">true</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$showNumber</span> <span style="color:#75715e">}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">eq</span> <span style="color:#a6e22e">.</span> <span style="color:#a6e22e">$pag</span> <span style="color:#75715e">}}</span><span style="color:#e6db74"> active</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.PageNumber</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$shouldEllipse</span> <span style="color:#75715e">}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item disabled&#34;</span>&gt;
+        &lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;nbsp;&amp;hellip;&amp;nbsp;&lt;/<span style="color:#f92672">span</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">-}}</span>
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.HasNext</span> <span style="color:#75715e">}}</span><span style="color:#e6db74"> disabled</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.HasNext</span> <span style="color:#75715e">}}</span><span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.Next.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Next&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;raquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.Last</span> <span style="color:#75715e">}}</span>
+      &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-item&#34;</span>&gt;
+        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;page-link&#34;</span> <span style="color:#a6e22e">aria-label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Last&#34;</span>&gt;&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">aria-hidden</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span>&gt;&amp;raquo;&amp;raquo;&lt;/<span style="color:#f92672">span</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;
+      &lt;/<span style="color:#f92672">li</span>&gt;
+      <span style="color:#75715e">{{-</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+    &lt;/<span style="color:#f92672">ul</span>&gt;
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+</code></pre></div>
+    </div>
+
+</div>
+
+<h2 id="menu-templates-菜单模板">Menu Templates 菜单模板</h2>
+<p>定义一个 <strong>layouts/partials/sidebar.html</strong></p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+
+    <span style="color:#75715e">&lt;!-- sidebar start --&gt;</span>
+    &lt;<span style="color:#f92672">aside</span>&gt;
+        &lt;<span style="color:#f92672">ul</span>&gt;
+            <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$currentPage</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">.Site.Menus.main</span> <span style="color:#75715e">}}</span>
+                <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">.HasChildren</span> <span style="color:#75715e">}}</span>
+                    &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$currentPage</span><span style="color:#a6e22e">.HasMenuCurrent</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">active</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span>&gt;
+                            <span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Pre</span> <span style="color:#75715e">}}</span>
+                            &lt;<span style="color:#f92672">span</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Name</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">span</span>&gt;
+                        &lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                    &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sub-menu&#34;</span>&gt;
+                        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">.Children</span> <span style="color:#75715e">}}</span>
+                            &lt;<span style="color:#f92672">li</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$currentPage</span><span style="color:#a6e22e">.IsMenuCurrent</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">active</span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+                                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Name</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt;
+                            &lt;/<span style="color:#f92672">li</span>&gt;
+                        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+                    &lt;/<span style="color:#f92672">ul</span>&gt;
+                <span style="color:#75715e">{{</span> <span style="color:#66d9ef">else</span> <span style="color:#75715e">}}</span>
+                    &lt;<span style="color:#f92672">li</span>&gt;
+                        &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">.URL</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;
+                            <span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Pre</span> <span style="color:#75715e">}}</span>
+                            &lt;<span style="color:#f92672">span</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Name</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">span</span>&gt;
+                        &lt;/<span style="color:#f92672">a</span>&gt;
+                    &lt;/<span style="color:#f92672">li</span>&gt;
+                <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+            &lt;<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Hardcoded Link 1&lt;/<span style="color:#f92672">a</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+            &lt;<span style="color:#f92672">li</span>&gt;
+                &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Hardcoded Link 2&lt;/<span style="color:#f92672">a</span>&gt;
+            &lt;/<span style="color:#f92672">li</span>&gt;
+        &lt;/<span style="color:#f92672">ul</span>&gt;
+    &lt;/<span style="color:#f92672">aside</span>&gt;
+</code></pre></div>
+    </div>
+
+</div>
+
+<p>内置函数 <strong>absLangURL</strong> 和 <strong>relLangURL</strong> 可以正确处理多语言配置的站点，此外，可以使用 absURL 和 relURL，它们会将语言前缀在 URL 上。</p>
+<p>在配置文件中设置 Section Menu 以将分区页面做为菜单数据：</p>
+<pre><code>sectionPagesMenu = &quot;main&quot;
+</code></pre>
+<p>然后在内页中呈现：</p>
+<pre><code>&lt;nav class=&quot;sidebar-nav&quot;&gt;
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    &lt;a class=&quot;sidebar-nav-item{{if or ($currentPage.IsMenuCurrent &quot;main&quot; .) ($currentPage.HasMenuCurrent &quot;main&quot; .) }} active{{end}}&quot; href=&quot;{{ .URL }}&quot; title=&quot;{{ .Title }}&quot;&gt;{{ .Name }}&lt;/a&gt;
+    {{ end }}
+&lt;/nav&gt;
+</code></pre>
+<p>配置站点菜单 config.toml：</p>
+<pre><code>[menu]
+
+  [[menu.main]]
+    identifier = &quot;blog&quot;
+    name = &quot;This is the blog section&quot;
+    title = &quot;blog section&quot;
+    url = &quot;/blog/&quot;
+    weight = -110
+</code></pre>
+<p>或者，在页面中定义菜单数据：</p>
+<pre><code>---
+title: Menu Templates
+linktitle: Menu Templates
+menu:
+  docs:
+    title: &quot;how to use menus in templates&quot;
+    parent: &quot;templates&quot;
+    weight: 130
+---
+...
+</code></pre>
+<p>在菜单中使用 .Page 获取页面对象：</p>
+<pre><code>&lt;nav class=&quot;sidebar-nav&quot;&gt;
+  {{ range .Site.Menus.main }}
+    &lt;a href=&quot;{{ .URL }}&quot; title=&quot;{{ .Title }}&quot;&gt;
+      {{- .Name -}}
+      {{- with .Page -}}
+        &lt;span class=&quot;date&quot;&gt;
+        {{- dateFormat &quot; (2006-01-02)&quot; .Date -}}
+        &lt;/span&gt;
+      {{- end -}}
+    &lt;/a&gt;
+  {{ end }}
+&lt;/nav&gt;
+</code></pre>
+<h2 id="single-page-template">Single Page Template</h2>
+<p>内容页面类型指定为 <code>page</code>，那么就会有相应的 page variables 和  site variables，在它们的模板文件中可以使用这些变量：</p>
+<p>具体变量列表需要查阅 pages.md 和 site.md。</p>
+<p>模板定位，参考 docs.json 给出的数据部分数据，如果页面在 posts 目录下就适用以下定位：</p>
+<pre><code>{
+&quot;Example&quot;: &quot;Single page in \&quot;posts\&quot; section&quot;,
+&quot;Kind&quot;: &quot;page&quot;,
+&quot;OutputFormat&quot;: &quot;HTML&quot;,
+&quot;Suffix&quot;: &quot;html&quot;,
+&quot;Template Lookup Order&quot;: [
+  &quot;layouts/posts/single.html.html&quot;,
+  &quot;layouts/posts/single.html&quot;,
+  &quot;layouts/_default/single.html.html&quot;,
+  &quot;layouts/_default/single.html&quot;
+]
+},
+</code></pre>
+<p>那么，在建立一个单页面模板 <strong>layouts/posts/single.html</strong> 就会有效：</p>
+
+
+
+
+
+
+
+
+
+
+<div class="code relative" id="demo.html"><div class="filename san-serif f6 dib lh-solid pl2 pv2">demo.html</div>
+        <button class="needs-js copy bg-accent-color-dark f6 absolute top-0 right-0 lh-solid hover-bg-primary-color-dark bn white ph3 pv2" title="Copy this code to your clipboard." data-clipboard-action="copy" aria-label="copy button">
+        </button>
+        
+    
+    <div class="code-copy-content nt3" >
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
+
+    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">define</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#75715e">}}</span>
+    &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span>&gt;
+      &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Title</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">h1</span>&gt;
+      &lt;<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">article</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;content&#34;</span>&gt;
+               <span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Content</span> <span style="color:#75715e">}}</span>
+            &lt;/<span style="color:#f92672">article</span>&gt;
+      &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">section</span>&gt;
+    &lt;<span style="color:#f92672">aside</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;meta&#34;</span>&gt;
+        &lt;<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">section</span>&gt;
+          &lt;<span style="color:#f92672">h4</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;date&#34;</span>&gt; <span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Date.Format</span> <span style="color:#e6db74">&#34;Mon Jan 2, 2006&#34;</span> <span style="color:#75715e">}}</span> &lt;/<span style="color:#f92672">h4</span>&gt;
+          &lt;<span style="color:#f92672">h5</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;wordcount&#34;</span>&gt; <span style="color:#75715e">{{</span> <span style="color:#a6e22e">.WordCount</span> <span style="color:#75715e">}}</span> Words &lt;/<span style="color:#f92672">h5</span>&gt;
+        &lt;/<span style="color:#f92672">section</span>&gt;
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.Params.topics</span> <span style="color:#75715e">}}</span>
+        &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;topics&#34;</span>&gt;
+          <span style="color:#75715e">{{</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>
+            &lt;<span style="color:#f92672">li</span>&gt;&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#e6db74">&#34;topics&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">absURL</span><span style="color:#75715e">}}{{</span> <span style="color:#a6e22e">.</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">urlize</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt; &lt;/<span style="color:#f92672">li</span>&gt;
+          <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        &lt;/<span style="color:#f92672">ul</span>&gt;
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.Params.tags</span> <span style="color:#75715e">}}</span>
+        &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tags&#34;</span>&gt;
+          <span style="color:#75715e">{{</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>
+            &lt;<span style="color:#f92672">li</span>&gt; &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span> <span style="color:#e6db74">&#34;tags&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">absURL</span> <span style="color:#75715e">}}{{</span> <span style="color:#a6e22e">.</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">urlize</span> <span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt; &lt;/<span style="color:#f92672">li</span>&gt;
+          <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        &lt;/<span style="color:#f92672">ul</span>&gt;
+        <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        &lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span>&gt;
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.PrevInSection</span> <span style="color:#75715e">}}</span>
+              &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;previous&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span><span style="color:#a6e22e">.Permalink</span><span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt; <span style="color:#75715e">{{</span><span style="color:#a6e22e">.Title</span><span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt;
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">.NextInSection</span> <span style="color:#75715e">}}</span>
+              &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;next&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#75715e">{{</span><span style="color:#a6e22e">.Permalink</span><span style="color:#75715e">}}</span><span style="color:#e6db74">&#34;</span>&gt; <span style="color:#75715e">{{</span><span style="color:#a6e22e">.Title</span><span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">a</span>&gt;
+            <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">aside</span>&gt;
+    <span style="color:#75715e">{{</span> <span style="color:#66d9ef">end</span> <span style="color:#75715e">}}</span>
+</code></pre></div>
+    </div>
+
+</div>
+
+<h2 id="list-templates-列表模板">List Templates 列表模板</h2>
+<p>参考 Hugo 文档的函数列表部分实现，在函数索引列表页面中，将各个函数 MD 内容中的 linktitle 和 description 呈现在页面上，例如 <strong>content\en\functions\md5.md</strong> 内容中扉页数据定义如下：</p>
+<pre><code>---
+title: md5
+linktitle: md5
+description: hashes the given input and returns its MD5 checksum.
+godocref:
+date: 2017-02-01
+publishdate: 2017-02-01
+lastmod: 2017-02-01
+categories: [functions]
+menu:
+  docs:
+    parent: &quot;functions&quot;
+keywords: []
+signature: [&quot;md5 INPUT&quot;]
+workson: []
+hugoversion:
+relatedfuncs: [sha]
+deprecated: false
+aliases: []
+---
+</code></pre>
+<p>Hugo 文档使用的主题是模块方式导入的，见 config.toml 配置文件：</p>
+<pre><code>[module]
+  [module.hugoVersion]
+    min = &quot;0.56.0&quot;
+  [[module.imports]]
+    path = &quot;github.com/gohugoio/gohugoioTheme&quot;
+</code></pre>
+<p>在 <strong>_vendor</strong> 目录下的 gohugoioTheme 定义了一个 <strong>layouts\partials\docs\functions-signature.html</strong> 片断，它会在每个函数页面模板中呈现函数的语法内容：</p>
+<pre><code>{{ if isset .Params &quot;signature&quot; -}}
+  {{- with .Params.signature }}
+    &lt;h2 class=&quot;minor mb1 pt4 primary-color-dark&quot;&gt;Syntax&lt;/h2&gt;
+    {{- range . }}
+      &lt;pre class=&quot;f5 mb4 ph3 pv2 bg-light-gray&quot; style=&quot;border-left:4px solid #0594CB;&quot;&gt;
+        {{- . -}}
+      &lt;/pre&gt;
+    {{- end }}
+  {{- end -}}
+{{ end }}
+{{/* The inline style overrides `pre` styling defaults */}}
+</code></pre>
+<p>然后在页面 section 模板中 <strong>layouts/_default/page.html</strong> 使用它来呈现函数语法信息：</p>
+<pre><code>&lt;div class=&quot;prose&quot; id=&quot;prose&quot;&gt;
+  {{- partial &quot;docs/functions-signature.html&quot; . -}}
+  {{ .Content }}
+&lt;/div&gt;
+</code></pre>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/menu" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">menu</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">相关內容</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch05a-hugo-templates/">V: Templates 模板机制</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch09-menus/">IX: Menus 菜单组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch08-functions/">VIII: Functions 内置函数</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://jimbowhy.gitee.io/" >
+    &copy;  Nothing is Mine 2020 
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+<a href="https://github.com/jimboyeah/jimboyeah.github.io" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
