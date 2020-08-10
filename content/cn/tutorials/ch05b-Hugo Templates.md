@@ -7,7 +7,7 @@ summary: Hugo 直接使用了 Golang 的模板语法，表达能力很强大，�
 tags: ["hugo", "menu"]
 ---
 
-# 目录
+目录：
 
 [TOC]
 
@@ -84,13 +84,13 @@ tags: ["hugo", "menu"]
 
 ## shortcode 短代码模板
 
-短代码模板 **shortcode** 用来生成定义一段功能代码，再供页面调用。
+短代码模板 **shortcode** 用来生成定义一段功能代码，供内容文件调用生成页面。
 
 Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太好用：
 
 - *figure* 使用语法及对应生成
 
-        {{&lt figure src="/media/spf13.jpg" title="Steve Francia" >}}
+        {{</* figure src="/media/spf13.jpg" title="Steve Francia" */>}}
 
         <figure>
             <img src="/media/spf13.jpg"  />
@@ -101,11 +101,11 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
 - *gist* 用于生成 Git 版本仓库中的 URL
 
-        {{&lt gist spf13 7896402 >}}
+        {{</* gist spf13 7896402 */>}}
 
         https://gist.github.com/spf13/7896402
 
-        {{&lt gist spf13 7896402 "img.html" >}}
+        {{</* gist spf13 7896402 "img.html" */>}}
 
         <script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
 
@@ -113,9 +113,9 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
     假设，设置了页面扉页参数 **testparam: Hugo Rocks!** 那么就可以通过将其输出到页面：
 
-        {{&lt param testparam >}}
+        {{</* param testparam */>}}
 
-        {{&lt param "my.nested.param" >}}
+        {{</* param "my.nested.param" */>}}
 
 - *ref* 和 **relref** 根据页面文件生成相对或绝对页面引用 URL
 
@@ -129,7 +129,7 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
 - *instagram* 生成 Instagram 图片 URL，国内墙
 
-        {{&lt instagram BWNjjyYFxVx hidecaption >}}
+        {{</* instagram BWNjjyYFxVx hidecaption */>}}
 
         https://www.instagram.com/p/BWNjjyYFxVx/
 
@@ -161,12 +161,12 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
 另外，对于 MD 生成的标准的 HTML 标签，像表格，或列表，无法直接在 MD 设置样式：
 
-    {{&lt table >}}
+    {{</* table */>}}
     | Key | Value |
     |---|---|
     | Static Site Generator | Hugo |
     | Language | Go |
-    {{&lt /table >}}
+    {{</* /table */>}}
 
 那么可以通过定义 **shortcodes** 的方式来加外层 DIV 通过 CSS 级联样式去定义，也可以使用
 
@@ -215,15 +215,13 @@ Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太�
 
 Hugo 官方文档项目中提供了很好的 **shortcode** 模板学习示例，例如，最常用来展示高亮代码片段 **code** 为例，当你在查看官方文档 MD 文件时，看到以下这样的内容：
 
-    {{&lt code file="layouts/_default/section.html" download="section.html" >}}
+    {{</* code file="layouts/_default/section.html" download="section.html" */>}}
     ...
-    {{&lt /code >}}
+    {{</* /code */>}}
 
 这就表示，MD 文件正使用 **code** 生成相应的内容，来看看它的定义 **layouts\_default\shortcodes\code.html**：
 
-{{<code file="demo.html">}}
-
-    {{ $file := .Get "file" }}
+{{<code file="demo.html">}}    {{ $file := .Get "file" }}
     {{ $codeLang := "" }}
     {{ $suffix := findRE "(\\.[^.]+)$" $file 1 }}
     {{ with  $suffix }}
@@ -253,7 +251,7 @@ Hugo 官方文档项目中提供了很好的 **shortcode** 模板学习示例，
 这里最主要的是 **highlight** 这个内置函数，对代码片断进行处理得到高亮效果。也可以直接使用 highlight 像以下这样输出带行高的代码高亮代码块：
 
  {{<code file="demo.html">}}
-    {{&lt highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+    {{</* highlight go "linenos=table,hl_lines=8 15-17,linenostart=199" */>}}
     // GetTitleFunc returns a func that can be used to transform a string to
     // title case.
     //
@@ -274,7 +272,7 @@ Hugo 官方文档项目中提供了很好的 **shortcode** 模板学习示例，
         return transform.NewTitleConverter(transform.APStyle)
       }
     }
-    {{&lt / highlight >}}
+    {{</* / highlight */>}}
 {{</code>}}
 
 
@@ -295,6 +293,10 @@ Hugo 官方文档项目中提供了很好的 **shortcode** 模板学习示例，
 其中，注释掉的部分没用起作用，但是这里调用了几个 Hugo 函数，**urlize** 用来将一个字符串进行 URL 合法化编码，参考 urlize.md 文档。
 
 注意，{{- .Inner -}} 模板中的负号用来移除内容的前缀、后缀空格。
+
+如果内部包含 Markdown 内容，需要使用 % 分隔符：
+
+    {{&#25; tab name="Tab 1" %}}This is **markdown**{{&#25; /tab %}}
 
 
 ## Partials 模板
@@ -332,13 +334,9 @@ Hugo 工程的所有片断模板都位 `layouts/partials` 这一个目录，可�
 
 可以将 partial 模板当作自定义函数来使用，参考 Ananke 的 func/GetFeaturedImage.html：
 
-{{<code file="demo.html">}}
-
-   {{/* 
+{{<code file="demo.html">}}   {{/* 
         GetFeaturedImage
-
         @return Permalink to featured image, or an empty string if not found.
-
     */}}
 
     {{ $linkToCover := "" }}
@@ -430,9 +428,7 @@ Hugo 工程的所有片断模板都位 `layouts/partials` 这一个目录，可�
 
 Hugo 内置分页模板定义如下：
 
-{{<code file="demo.html">}}
-
-    {{ $pag := $.Paginator }}
+{{<code file="demo.html">}}    {{ $pag := $.Paginator }}
     {{ if gt $pag.TotalPages 1 -}}
     <ul class="pagination">
       {{ with $pag.First -}}
@@ -482,9 +478,7 @@ Hugo 内置分页模板定义如下：
 
 定义一个 **layouts/partials/sidebar.html**
 
-{{<code file="demo.html">}}
-
-    <!-- sidebar start -->
+{{<code file="demo.html">}}    <!-- sidebar start -->
     <aside>
         <ul>
             {{ $currentPage := . }}
@@ -603,9 +597,7 @@ Hugo 内置分页模板定义如下：
 
 那么，在建立一个单页面模板 **layouts/posts/single.html** 就会有效：
 
-{{<code file="demo.html">}}
-
-    {{ define "main" }}
+{{<code file="demo.html">}}    {{ define "main" }}
     <section id="main">
       <h1 id="title">{{ .Title }}</h1>
       <div>

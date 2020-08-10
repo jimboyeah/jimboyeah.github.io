@@ -67,10 +67,10 @@ which five or six streets, like so many mouths of rivers, discharged every
 moment fresh floods of heads. The waves of this crowd, augmented
 incessantly, dashed against the angles of the houses which projected here
 and there, like so many promontories, into the irregular basin of the
-place. In the centre of the lofty Gothic* façade of the palace, the grand
+place. In the centre of the lofty Gothic * façade of the palace, the grand
 staircase, incessantly ascended and descended by a double current, which,
 after parting on the intermediate landing-place, flowed in broad waves
-along its lateral slopes,—the grand staircase, I say, trickled
+along its lateral slopes, —the grand staircase, I say, trickled
 incessantly into the place, like a cascade into a lake. The cries, the
 laughter, the trampling of those thousands of feet, produced a great noise
 and a great clamor. From time to time, this noise and clamor redoubled;
@@ -78,5 +78,5 @@ the current which drove the crowd towards the grand staircase flowed
 backwards, became troubled, formed whirlpools. This was produced by the
 buffet of an archer, or the horse of one of the provost’s sergeants, which
 kicked to restore order; an admirable tradition which the provostship has
-bequeathed to the constablery, the constablery to the _maréchaussée_,
+bequeathed to the constablery, the constablery to the _maréchaussée_ ,
 the _maréchaussée_ to our _gendarmeri_ of Paris.

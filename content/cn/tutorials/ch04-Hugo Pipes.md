@@ -7,7 +7,11 @@ thumb_image_: "/assets/micro_s.png"
 summary: Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 **assetDir** 配置项指定，默认是 assets，这些资源通过管道处理生成最终需要的文件，比如 SCSS 通过管道的工具处理生成 CSS，其中一个工具就是 PostCSS。
 tags: ["hugo"]
 ---
-# Hugo Pipes 管道处理
+目录：
+
+[TOC]
+
+## Hugo Pipes 管道处理
 
 Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 **assetDir** 配置项指定，默认是 assets。
 
@@ -79,7 +83,7 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 
 
 
-✅ 处理 SCSS 样式脚本资源
+## 处理 SCSS 样式脚本资源
 
 先将资源文件读入使用：
 
@@ -127,7 +131,7 @@ Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可
 SASS / SCSS 作为 CSS 的升级版，实现以样式脚本的方式来定义样式表，掌握它们可以极大提高效率。但是学习曲线陡峭，另一个选择是使用 PostCSS 工具。
 
 
-✅ 构建后期 PostProcess
+## 构建后期 PostProcess
 
 允许在构建生成后延迟资源到 /public 的转移，使用 **resources.PostProcess** 标记资源资源后，延迟转移生成后的任何文件，通常转换链中的一个或多个步骤取决于生成的结果。
 
@@ -180,7 +184,7 @@ SASS / SCSS 作为 CSS 的升级版，实现以样式脚本的方式来定义样
 
 
 
-✅ 样式加工 PostCSS
+## 样式加工 PostCSS
 
 Hugo Pipes 可以使用 PostCSS 处理样式文件，这是一个非常实用的 CSS 工具。
 
@@ -397,7 +401,7 @@ postcss-cssnext 语法：
 参考 https://github.com/postcss/postcss#usage
 
 
-✅ JavaScript Building 脚本打包
+## JavaScript Building 脚本打包
 
 Hugo Pipes 使用 ESBuild 来转译 JavaScript 脚本，Tree Shaking 算法可以有效清除死代码，这是一个高效 JavaScript 转译器：
 
@@ -415,7 +419,7 @@ Hugo Pipes 使用 ESBuild 来转译 JavaScript 脚本，Tree Shaking 算法可�
     <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
 
-✅ Babel 脚本转译
+## Babel 脚本转译
 
 Hugo Pipes 也可以通过 Babel 来转译脚本，任意版本的 JavaScript 可以转译为另一个版本规范。
 
@@ -438,7 +442,7 @@ Babel 使用了 babel cli，需要先进行安装，全局安装或作为工程�
 
 
 
-✅ Asset minification
+## Asset minification
 
 Hugo Pipes 可以使用 **resources.Minify** 压缩 CSS, JS, JSON, HTML, SVG, XML 等资源：
 
@@ -449,7 +453,7 @@ Hugo Pipes 可以使用 **resources.Minify** 压缩 CSS, JS, JSON, HTML, SVG, XM
 
 
 
-✅ Asset bundling
+## Asset bundling
 
 Hugo Pipes 可以将任意资源打包在一起，相同的 MIME 类型文件就只可以打包为一个文件以减少浏览器请求。
 
@@ -459,7 +463,7 @@ Hugo Pipes 可以将任意资源打包在一起，相同的 MIME 类型文件就
 
 
 
-✅ 为资源文件生成指纹 Fingerprinting
+## 为资源文件生成指纹 Fingerprinting
 
 通过 **resources.Fingerprint** 方法生成 sha256 哈希摘要，可以指定其它，如 sha384, sha512, md5 等。
 
@@ -501,7 +505,7 @@ SRI - Subresource Integrity 子资源完整性，用它可以确保站点在客�
     document.head.appendChild(s);
 
 
-✅ 从字符串中创建资源
+## 从字符串中创建资源
 
 示范生成 JS 脚本：
 
@@ -514,7 +518,7 @@ SRI - Subresource Integrity 子资源完整性，用它可以确保站点在客�
     <script type="text/javascript" src="{{ $global.Permalink }}"></script>
 
 
-✅ 从模板中获取创建资源
+## 从模板中获取创建资源
 
 使用 resources.ExecuteAsTemplate 只将资源作为模板执行：
 

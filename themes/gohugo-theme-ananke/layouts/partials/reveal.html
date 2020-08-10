@@ -27,24 +27,6 @@
     }
     </style>
 
-    {{if $currentpage.Params.bgmaudio }}
-    <a id="player" href="#javascript:void(0);" onclick="toggleBGM(this)">▶</a>
-    <audio id="bgm" src="{{$currentpage.Params.bgmaudio}}"></audio>
-    <script>
-        function toggleBGM(it)
-        {
-            var bgm = document.getElementById("bgm");
-            if (bgm.paused){ 
-                bgm.play();
-            }else{
-                bgm.pause();
-            }
-            it.innerHTML = bgm.paused? "▶":"⏸";
-            return !bgm.paused;
-        }
-    </script>
-    {{end}}
-
     <!-- <script src="/js/mathjax-v3.0.1-tex-mml-chtml.js"></script> -->
     <!-- <script src="/js/mermaid-v8.4.6.min.js"></script> -->
     <script src="/revealjs-v3.9.2/js/reveal.js"></script>
@@ -57,7 +39,8 @@
         center: true,
 
         math: {
-            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.8.0/MathJax.js',
+            // mathjax: "/js/mathjax-v3.0.1-tex-mml-chtml.js",
             config: 'TeX-AMS_HTML-full',
             TeX: {
                 Macros: {
@@ -80,4 +63,67 @@
     });
 
     </script>
+
+    {{if $currentpage.Params.bgmaudio }}
+    <a id="player" href="javascript:void(0);" onclick="toggleBGM(this)">💛</a>
+    <audio id="bgm" src="{{$currentpage.Params.bgmaudio}}"></audio>
+    <script>
+        function muteBGM()
+        {
+            var bgm = document.getElementById("bgm");
+            bgm.pause();
+        }
+        function initAudio()
+        {
+            var as = document.getElementsByTagName("audio");
+            for (var i = as.length - 1; i >= 0; i--) {
+                console.log(as[i]);
+                if(as[i].id=="bgm") continue;
+                as[i].onplay = e => console.log(e);
+                as[i].onplaying = e => console.log(e);
+                as[i].onplay = e => { muteBGM(); };
+            }
+        }
+        function muteVideo()
+        {
+            var vs = document.getElementsByTagName("video");
+            for (var i = vs.length - 1; i >= 0; i--) {
+                vs[i].pause();
+            }
+        }
+        function initVideo()
+        {
+            var vs = document.getElementsByTagName("video");
+            for (var i = vs.length - 1; i >= 0; i--) {
+                console.log(vs[i]);
+                vs[i].onplay = e => console.log(e);
+                vs[i].onplaying = e => console.log(e);
+                vs[i].onplay = e => { muteBGM(); };
+            }
+        }
+        document.onreadystatechange = onload;
+        // no complete for DOMContentLoaded when 404
+        // document.addEventListener('DOMContentLoaded', onload); 
+        // window.addEventListener('DOMContentLoaded', onload);
+        function onload (e){
+            console.log(document.readyState)
+            if (document.readyState != "complete") return;
+            initVideo();
+            initAudio();
+        }
+        function toggleBGM(it)
+        {
+            var bgm = document.getElementById("bgm");
+            if (bgm.paused){ 
+                muteVideo();
+                bgm.play();
+            }else{
+                bgm.pause();
+            }
+            it.innerHTML = bgm.paused? "💛":"🧡";
+            return !bgm.paused;
+        }
+    </script>
+    {{end}}
+
 {{ end }}

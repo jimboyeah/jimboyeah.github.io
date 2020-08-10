@@ -16,9 +16,7 @@
         {{with .CurrentSection.Title }}{{. | upper }}{{end}}
       </aside>
       {{ partial "social-share.html" . }}
-      <h1 class="f1 athelas mt3 mb1">
-        {{- .Title -}}
-      </h1>
+      <h1 class="f3 athelas mt3 mb1"> {{- .Title -}} </h1>
       {{ with .Params.author }}
       <p class="tracked">
           By <strong>
@@ -46,11 +44,29 @@
         <span class="f6 mv4 dib tracked"> - {{ .WordCount}} words</span>
       {{ end }}
     </header>
-    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+    <div class="nested-copy-line-height lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+      {{if .Prev}} {{if (eq .File.Dir .Prev.File.Dir)}}
+      <a title="Prev Post" class="fl" href="{{.Prev.Permalink}}">{{.Prev.Title}}</a>
+      {{end}}{{end}}
+      {{if .Next}} {{if (eq .File.Dir .Next.File.Dir)}}
+      <a title="Next Post" class="fr" href="{{.Next.Permalink}}">{{.Next.Title}}</a>
+      {{end}}{{end}}
+      <p class="cf"></p>
+
       {{$contents := partial "func/GetTOC.html" .}}
       {{- replaceRE "<p>\\[TOC\\]</p>" (printf "<div class=\"contents\">%s</div>" $contents) .Content | safeHTML -}}
+
+      {{if .Prev}} {{if (eq .File.Dir .Prev.File.Dir)}}
+      <a title="Prev Post" class="fl" href="{{.Prev.Permalink}}">{{.Prev.Title}}</a>
+      {{end}}{{end}}
+      {{if .Next}} {{if (eq .File.Dir .Next.File.Dir)}}
+      <a title="Next Post" class="fr" href="{{.Next.Permalink}}">{{.Next.Title}}</a>
+      {{end}}{{end}}
+      <p class="cf"></p>
+
       {{- partial "tags.html" . -}}
-      <div class="mt6 instapaper_ignoref">
+      <div class="mt3 instapaper_ignoref">
       {{ if .Site.DisqusShortname }}
         {{ template "_internal/disqus.html" . }}
       {{ end }}

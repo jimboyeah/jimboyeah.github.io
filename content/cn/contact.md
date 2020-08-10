@@ -1,18 +1,19 @@
 ---
 title: 联络
 featured_image: "images/notebook.jpg"
-omit_header_text: true
 description: 人们都是喜欢联络感情的。 
+omit_header_text: true
+headerpad_class: pv4
+cover_dimming_class: bg-black-80
 type: page
 menu: main
 toc: true
-cover_dimming_class: bg-black-20
 translationKey: contact
 ---
 
 ____
 
-## 途径一：填写表单
+### 途径一：填写表单
 
 {{< form-contact action="https://formspree.io/mlepzzbb"  >}}
 
@@ -31,7 +32,7 @@ ____
  -->
 表单数据会发往我在 [Formspree](https://formspree.io/) 上面注册的账户中，请注意这点，我会不定期的查收上面接收到的数据。
 
-## 途径二： 微信联络
+### 途径二： 微信联络
 
 可以使用个人的微信 App 给我发出消息：
 
@@ -39,7 +40,7 @@ ____
 
 {{< figure src="/assets/mmqrcode1559674455213_s.jpg" class="w-50" title="坚果个人微信">}}
 
-## 途径三： 电子邮箱
+### 途径三： 电子邮箱
 
 给我的 Gmail 账户发电子信件，地址： hajimboyeah@gmail.com
 

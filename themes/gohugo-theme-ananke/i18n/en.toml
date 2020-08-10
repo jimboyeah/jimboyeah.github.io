@@ -33,3 +33,6 @@ other = "Send"
 
 [taxonomyPageList]
 other = "Below you will find pages that utilize the taxonomy term “{{ .Title }}”"
+
+[notfound]
+other = "This is not the page you were looking for"

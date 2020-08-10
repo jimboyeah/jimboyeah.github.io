@@ -17,6 +17,7 @@
   --grey:         hsl(0, 0%, 48%);
   --grey-light:   hsl(0, 0%, 71%);
   --grey-lighter: hsl(0, 0%, 86%);
+  --near-white:   hsl(0, 0%, 92%);
 
   --white-ter:    hsl(0, 0%, 96%);
   --white-bis:    hsl(0, 0%, 98%);
@@ -39,8 +40,11 @@
   --bw-her-b: 0 2px 0;
 }
 
-a {text-decoration: none;}
+figure {  }
 
+table figure { margin: 0; }
+a {text-decoration: none;}
+blockquote { background: #f1e0e0; padding:8px; }
 pre code,
 ul {
   text-align: left;
@@ -104,9 +108,13 @@ table{
 
 
 .table {
-    background-color: var(--grey-lighter);
+    background-color: var(--near-white);
     border: var(--border);
     font-size: 0.8em;
+    & thead {
+      border-right: 2px solid black;
+      border-left: 2px solid black;
+    }
     & td,
     & th, {
         border: var(--border);

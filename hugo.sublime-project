@@ -23,7 +23,7 @@
 				},
 				{
 					"name": "Git Gitee attach",
-					"shell_cmd": "git remote add gitee https://gitee.com/jimbowhy/jimbowhy.gitee.io.git"
+					"shell_cmd": "git remote add gitee https://gitee.com/jimbowhy/jimbowhy.git"
 				},
 				{
 					"name": "Branch List",

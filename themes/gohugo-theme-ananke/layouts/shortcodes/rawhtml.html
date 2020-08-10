@@ -1,2 +1,2 @@
 {{ $html := .Inner | safeHTML }}
-{{ $html }}
+<div class="{{.Get "class"}}">{{ $html }}</div>

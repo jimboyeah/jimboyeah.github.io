@@ -7,11 +7,11 @@ summary: Hugo 直接使用了 Golang 的模板语法，表达能力很强大，�
 tags: ["hugo", "menu"]
 ---
 
-# 目录
+目录：
 
 [TOC]
 
-# 模板加载流程
+## 模板加载流程
 
 这里对 Hugo 静态站点框架作一个简要的流程分析，主要是分析数据流向。
 
@@ -207,7 +207,7 @@ TYPE 还可以在内容文件中指定：
 又或者，在文件的 Front Matter 区指定 type 类型，再接着建立 **layouts** 下同名的子目录，并建立一个 **single.html** 模板，这样做意味可以完全构造整个 HTML 页面。
 
 
-# Templates 模板语法
+## Templates 模板语法
 - [Go html/template 模板文档](https://godoc.org/html/template)
 - [Go text/template 模板文档](https://godoc.org/text/template)
 - [Hugo 主题](https://themes.gohugo.io/)
@@ -405,7 +405,7 @@ Hugo 使用的是 Go 语言自带的模板引擎，有 Go 语言基础理解起�
 
 
 
-# Base Template 页面骨架模板
+## Base Template 页面骨架模板
 
 这是最基础的模板，为所有页面定义 HTML 标签基本结构，主要是 **head**、**body** 和页面设计布局定义。
 

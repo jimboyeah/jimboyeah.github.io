@@ -64,9 +64,7 @@ Hugo 中的菜单就是命名的一组件菜单项，使用菜单可以：
 
     sectionPagesMenu = "main"
 
-The menu name can be anything, but take a note of what it is.
-
-This will create a menu with all the sections as menu items and all the sections' pages as "shadow-members". The _shadow_ implies that the pages isn't represented by a menu-item themselves, but this enables you to create a top-level menu like this:
+菜单名可以是 main 或其它任意的内容，它在设置嵌套子菜单时会用到，下面试着将菜单输出到页面：
 
     <nav class="sidebar-nav">
         {{ $currentPage := . }}

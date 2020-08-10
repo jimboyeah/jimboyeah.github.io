@@ -11,7 +11,7 @@ Hugo 提供的对象及变量就是 Go 语言实现的各种对象对外公开�
 
 <!--more-->
 
-# Variables 对象变量
+## Variables 对象变量
 
 File 文件系统对象：
 

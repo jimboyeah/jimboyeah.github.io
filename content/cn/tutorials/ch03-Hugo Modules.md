@@ -7,7 +7,11 @@ thumb_image_: "/assets/micro_s.png"
 summary: Hugo Modules 是基于 Go Modules 实现的，模块 Hugo 构建的核心块，一个模块可以一个 Hugo 工程，也可以是 Hugo 定义的 7 种小模块 static, content, layouts, data, assets, i18n, archetypes，可以按喜欢的方式组件使用模块，甚至从工程外部装入模块目录以构建一个大型的虚拟联合文件系统。
 tags: ["hugo"]
 ---
-# Hugo Modules 模块
+目录：
+
+[TOC]
+
+## Hugo Modules 模块
 - https://github.com/golang/go/wiki/Modules
 - https://blog.golang.org/using-go-modules
 - https://zhuanlan.zhihu.com/p/59687626
@@ -38,7 +42,7 @@ Go Moduels 项目配置文件 **go.mod** 描述了当前项目，也可以看作
 这里的填写格式基本为包引用路径+版本号，另外比较特殊的是 go $version，目前从 Go1.13 的代码里来看，还只是个标识作用。
 
 
-✅ 模块基本用法
+## 模块基本用法
 
 在国内网络访问 proxy.golang.org 会有问题，使用 Go Modules 代理可以解决，使用 **go env** 设置 Go 使用环境变量：
 
@@ -92,7 +96,7 @@ goget 也是一个常用的模块安装工具，它可以从 github 获取安装
     require rsc.io/quote v1.5.2
 
 
-✅ Hugo 中的模块
+## Hugo 中的模块
 
 将 Hugo 项目初始为一个模块：
 
@@ -152,7 +156,7 @@ goget 也是一个常用的模块安装工具，它可以从 github 获取安装
 
 
 
-✅ 管理命令参考
+## 管理命令参考
 
 升级次级或补丁版本号：
 

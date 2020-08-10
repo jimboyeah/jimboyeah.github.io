@@ -3,6 +3,7 @@ title: "关于"
 description: "本纯静态站点由 Hugo 生成，它是基于 Go 语言的静态站点生成框架。"
 featured_image: '/assets/IMG_20190117_123248_s.jpg'
 featured_class: 'bg-near-black'
+cover_dimming_class: bg-black-20
 subheadline_class: "black-10"
 description_class: "black-70"
 translationKey: about
@@ -12,6 +13,18 @@ toc: true
 ---
 
 本静态站点用于演示之用，使用 Hugo 构建，以及 Markdown 供应内容。
+
+流行的静态站点框架有以下几个：
+
+- Jekyll (基于 Ruby) https://www.jekyll.com.cn/docs/home/
+- Hexo (基于 Node.js) https://hexo.io/docs/
+- Hugo (基于 Go) https://gohugo.io/documentation/
+
+
+本站有两个访问入口：
+
+- https://jimbowhy.gitee.io/
+- https://jimboyeah.github.io/
 
 此站点提供了一篇关于 Hugo 静态站点生成框架的入门教程。
 
@@ -32,4 +45,4 @@ toc: true
 <!-- {{< figure src="/assets/IMG_20181016_130158.jpg" title="黄玫瑰花瓣" >}} -->
 <!-- {{< figure src="/assets/IMG_20181020_204030.jpg" title="燃烧的火柴" >}} -->
 
-更多的图片，请移步 ---> [相册]({{< ref "slideshow.md"  >}})
+更多图片及资源，请移步 ---> [相册]({{< ref "slideshow.md"  >}})

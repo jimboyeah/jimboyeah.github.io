@@ -10,7 +10,7 @@ tags: ["hugo"]
 
 
 
-# Hugo Web Framework 
+## Hugo Web Framework 
 
 Hugo Framework 是一个静态网站构建工具，以 Go 语言所写，号称**世界上最快的静态网站引擎**。提供文件头，即扉页 front matter 和模板的等基本功能，兼备可伸缩性和可管理性。Hugo 不仅是给开发者设计的，也同样适用于内容管理员和写作人员。
 

@@ -1,0 +1,48 @@
+<textarea style="height: 50vh; width:98vw;">
+{{ $currentPage := . }}
+Current Page Type: {{ .Kind }}
+{{ range .Site.Menus.main }}
+|{{ .Name }} | {{ .URL }} |  {{.Page.File.Dir}} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent{{end}} .Children = {{ .Children }}
+    {{ if .HasChildren }}{{ range .Children }}
+        {{ if .HasChildren }}{{ range .Children }}
+|       {{ .Name }} | {{ .URL }} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent {{ end }}
+        {{ end }}{{end}}
+    {{ end }}{{end}}{{end}}
+
+================ ================ ================ ================
+{{ $currentPage := . }}
+{{ range .Site.Menus.smain }}
+|{{ .Name }} | {{ .URL }} | {{.Page.File.Dir}} | {{ if $currentPage.IsMenuCurrent "smain" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "smain" . }}HasMenuCurrent{{end}} | .Children = {{ .Children }} 
+    {{ if .HasChildren }} 
+    {{ range .Children }}
+        {{ if .HasChildren }}
+        {{ range .Children }}
+|{{ .Name }} | {{ .URL }} | {{ if $currentPage.IsMenuCurrent "smain" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "smain" . }}HasMenuCurrent {{ end }} {{ end }}
+        {{end}}
+    {{ end }}
+    {{end}}{{end}}
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = {{ .IsTranslated }}
+.Translations = {{ .Translations }}
+.AllTranslations = {{ .AllTranslations }}
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}"> {{ end }}{{ end }}
+{{ if .IsTranslated }}
+  <nav class="LangNav">
+  {{ range .AllTranslations }} <a href="{{ .Permalink }}">{{ .Lang }} -{{ .Name }} - {{ .Title }}- {{ .File }}</a> {{ end}} </nav> {{ end }}
+
+================ ================ ================ ================
+{{ range .Sites }}
+  <a href="{{ .Home.RelPermalink }}">🏠 {{.Title}} {{.Language}}</a> {{ end }}
+
+.Sites = {{.Sites}}
+site.Sites = {{site.Sites}}
+
+.Site.Data = {{.Site.Data}}
+.Site.Language.Lang = {{.Site.Language.Lang}}
+
+</textarea>

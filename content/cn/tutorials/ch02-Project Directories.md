@@ -7,7 +7,9 @@ thumb_image_: "/assets/micro_s.png"
 summary: Hugo 仓库提供的文档项目本身就是一个很好的示范，理解 Hogo 工程的目录结构是为了更好地利用 Hugo 的静态站点生成能力，比如语言支持与目录结构的关系、页面模板与 Markdown 文件的关系与文件的组织方式。
 tags: ["hugo", "menu"]
 ---
-# Hugo 目录组织
+目录：
+
+[TOC]
 
 Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容摘自下面文档：
 
@@ -25,7 +27,7 @@ Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容
     └── themes
 
 
-## ✅ archetypes 目录
+## archetypes 目录
 
 默认，通过 `hugo new` 创建的内容会添加 `date`, `title`, `draft = true` 等扉页 front matter 设置信息，它们就是从 **archetypes** 模板文件中拷贝的。这可以节省时间，同时保证统一性。 
 
@@ -41,12 +43,12 @@ Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容
 要明确一点，Hugo 中 MD 文件一般是作为内容文件使用的，只有特殊位置中的 MD 文件才是内容模板，而 **layouts** 目录才是模板存放的专用位置。
 
 
-## ✅ assets 目录
+## assets 目录
 
 不是默认创建的资源目录，保存所有需要通过 **Hugo Pipes** 处理的资源，只有那些 `.Permalink` 和 `.RelPermalink` 引用的文件会发布到 `public` 目录中，参考 Hugo 管道处理。
 
 
-## ✅ config 目录
+## config 目录
 
 配置目录，非默认创建，Hugo 有大量的配置指令，此目录用于保存 JSON, YAML, TOML 等配置文件。最简单的项目只需要一个根目录下的配置文件 `config.toml`。 Every root setting object can stand as its own file and structured by environments.
 
@@ -89,7 +91,7 @@ Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容
 多语言支持参考 multilingual.md 文档。
 
 
-## ✅ content 目录
+## content 目录
 
 参考内容管理 types.md, organization 文档。
 
@@ -154,7 +156,7 @@ Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容
 
 
 
-## ✅ data 目录
+## data 目录
 
 数据模板目录，Hugo 静态网站不会连接像 MySQL 这样的数据库，而此目录保存的数据相当于 Hugo 使用的数据库，生成过程用到的配置数据，可以用 YAML, JSON, TOML 等格式文件。数据模板除了在此的文件定义，还可以从动态内容中生成。通过 **getJSON** 和 **getCSV** 两个函数是模板函数加载外部数据，或者访问数据接口，在外部数据加载完成以前，Hugo 会暂停渲染模板文件。
 
@@ -199,7 +201,7 @@ Hugo 仓库提供的文档项目本身就是一个很好的示范，以下内容
 
 
 
-## ✅ layouts 目录
+## layouts 目录
 
 布局模板文件目录，存放 `.html` 布局模板文件，对应不同的内容，模板有多种，data-templates、homepage、lists、menu-templates、partials、section-templates 等等。
 
@@ -226,17 +228,17 @@ Hugo 会为每个 section 生成 index.html，采用主题布局中的 index.htm
 这个例子中 THEME=ananke, SECTION=posts，如果根目录下的 layouts 是空的，就进入主题目录下搜索 **layouts/section/posts.html** 模板，如果也不存在，因此用的是主题目录下的 **_default/list.html**。
 
 
-## ✅ static 目录
+## static 目录
 
 静态资源存放目录，比如想使用 Marmarid 画作模块，或者 jQuery 工具库，或者其它脚本、图像、CSS 等等，就可以将文件放到这里，在 Hugo 编译生成时会自动原样复制到 **public** 目录。注意，可以有多个静态资源目录。
 
 
-## ✅ resources 目录
+## resources 目录
 
 资源缓冲目录，非默认创建，用于加速 Hugo 的生成过程，也可以用给模板作者分发构建好的 SASS 文件，因此不必安装预处理器。
 
 
-## ✅ public 目录
+## public 目录
 
 生成静态站点的文件输出目录。
 
