@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personals on Go Learning</title>
-    <link>https://jimboyeah.github.io/personal/</link>
+    <link>https://jimbowhy.gitee.io/personal/</link>
     <description>Recent content in Personals on Go Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nothing is Mine</copyright>
     <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
     
-	<atom:link href="https://jimboyeah.github.io/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimbowhy.gitee.io/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cert</title>
-      <link>https://jimboyeah.github.io/personal/showtime/</link>
+      <link>https://jimbowhy.gitee.io/personal/showtime/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/personal/showtime/</guid>
+      <guid>https://jimbowhy.gitee.io/personal/showtime/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>Screenshot</title>
-      <link>https://jimboyeah.github.io/personal/shot/</link>
+      <link>https://jimbowhy.gitee.io/personal/shot/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/personal/shot/</guid>
+      <guid>https://jimbowhy.gitee.io/personal/shot/</guid>
       <description>&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
     <item>
       <title>个人信息</title>
-      <link>https://jimboyeah.github.io/personal/cv_wpwppipi/</link>
+      <link>https://jimbowhy.gitee.io/personal/cv_wpwppipi/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/personal/cv_wpwppipi/</guid>
+      <guid>https://jimbowhy.gitee.io/personal/cv_wpwppipi/</guid>
       <description>.avatar {position: fixed; top: 96px; right:32px; width:168px; border:4px solid #00000047;}.qrcode {position: fixed; top: 388px; right:32px; width:168px; border:4px solid #00000047;}.table {font-size: 1em;}header h1, header h2 {text-shadow: 0px 1px 3px #fff; font-weight: bold; color:black !important;}@media (max-width: 800px) {.avatar {position: absolute;top: 368px;top: 0px;right: 0;width: 128px;border: 4px solid #00000047;margin: 0;}.qrcode {position: absolute;top: 0px;top: 520px;top: 138px;right: 0;width: 128px;border: 4px solid #00000047;margin: 0;}}@media print {.</description>
     </item>
     
     <item>
       <title>相册</title>
-      <link>https://jimboyeah.github.io/personal/slideshow/</link>
+      <link>https://jimbowhy.gitee.io/personal/slideshow/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimboyeah.github.io/personal/slideshow/</guid>
+      <guid>https://jimbowhy.gitee.io/personal/slideshow/</guid>
       <description>这里有我觉得比较有有意思的一些照片、音乐 &lt;!-- raw HTML omitted --&gt; 或者收集到的一些素材</description>
     </item>
     
