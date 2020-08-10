@@ -42,7 +42,7 @@
 <meta itemprop="description" content="坚果的 Hugo 教程">
 <meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
 <meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
-<meta itemprop="wordCount" content="1331">
+<meta itemprop="wordCount" content="1323">
 
 
 
@@ -93,8 +93,36 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/personal/" title="Personals page">
+              Personals
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
               关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
             </a>
           </li>
           
@@ -152,7 +180,8 @@
 
 
     
-    <main class="pb7" role="main">
+
+    <main class="pb5" role="main">
       
   
   
@@ -192,7 +221,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">IV: Hugo Pipes 管道处理</h1>
+      <h1 class="f3 athelas mt3 mb1">IV: Hugo Pipes 管道处理</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
@@ -200,8 +229,17 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      <h1 id="hugo-pipes-管道处理">Hugo Pipes 管道处理</h1>
+
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+       
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
+      
+      <p class="cf"></p>
+
+      <p>目录：</p>
+<div class="contents"><a href="#hugo-pipes-管道处理">## Hugo Pipes 管道处理</a><br><a href="#处理-scss-样式脚本资源">## 处理 SCSS 样式脚本资源</a><br><a href="#构建后期-postprocess">## 构建后期 PostProcess</a><br><a href="#样式加工-postcss">## 样式加工 PostCSS</a><br><a href="#javascript-building-脚本打包">## JavaScript Building 脚本打包</a><br><a href="#babel-脚本转译">## Babel 脚本转译</a><br><a href="#asset-minification">## Asset minification</a><br><a href="#asset-bundling">## Asset bundling</a><br><a href="#为资源文件生成指纹-fingerprinting">## 为资源文件生成指纹 Fingerprinting</a><br><a href="#从字符串中创建资源">## 从字符串中创建资源</a><br><a href="#从模板中获取创建资源">## 从模板中获取创建资源</a><br></div>
+<h2 id="hugo-pipes-管道处理">Hugo Pipes 管道处理</h2>
 <p>Hugo Pipes 是一组织处理资源目录下的文件函数集，资源目录可以通过 <strong>assetDir</strong> 配置项指定，默认是 assets。</p>
 <p>涉及处理的内容：</p>
 <ul>
@@ -296,7 +334,7 @@ type Resource interface {
   {{ printf $style.Content }}
 {{ end }}
 </code></pre>
-<p>✅ 处理 SCSS 样式脚本资源</p>
+<h2 id="处理-scss-样式脚本资源">处理 SCSS 样式脚本资源</h2>
 <p>先将资源文件读入使用：</p>
 <pre><code>{{ $style := resources.Get &quot;sass/main.scss&quot; }}
 </code></pre>
@@ -321,7 +359,7 @@ type Resource interface {
 </code></pre>
 <p>设置 outputStyle 为 compressed 可以获得比 resources.Minify 更好的 SASS/SCSS 压缩效果。</p>
 <p>SASS / SCSS 作为 CSS 的升级版，实现以样式脚本的方式来定义样式表，掌握它们可以极大提高效率。但是学习曲线陡峭，另一个选择是使用 PostCSS 工具。</p>
-<p>✅ 构建后期 PostProcess</p>
+<h2 id="构建后期-postprocess">构建后期 PostProcess</h2>
 <p>允许在构建生成后延迟资源到 /public 的转移，使用 <strong>resources.PostProcess</strong> 标记资源资源后，延迟转移生成后的任何文件，通常转换链中的一个或多个步骤取决于生成的结果。</p>
 <p>一个基本的后期处理是使用 PostCSS 对样式进行清理，当前有两个限制：</p>
 <ul>
@@ -364,7 +402,7 @@ module.exports = {
 
 &lt;link href=&quot;{{ $css.RelPermalink }}&quot; rel=&quot;stylesheet&quot; /&gt;
 </code></pre>
-<p>✅ 样式加工 PostCSS</p>
+<h2 id="样式加工-postcss">样式加工 PostCSS</h2>
 <p>Hugo Pipes 可以使用 PostCSS 处理样式文件，这是一个非常实用的 CSS 工具。</p>
 <p>PostCSS 官方介绍插件功能特性：</p>
 <ul>
@@ -545,7 +583,7 @@ cat input.css | postcss -u autoprefixer  &gt; output.css
 }
 </code></pre>
 <p>参考 <a href="https://github.com/postcss/postcss#usage">https://github.com/postcss/postcss#usage</a></p>
-<p>✅ JavaScript Building 脚本打包</p>
+<h2 id="javascript-building-脚本打包">JavaScript Building 脚本打包</h2>
 <p>Hugo Pipes 使用 ESBuild 来转译 JavaScript 脚本，Tree Shaking 算法可以有效清除死代码，这是一个高效 JavaScript 转译器：</p>
 <pre><code>{{ $built := resources.Get &quot;js/index.js&quot; | js.Build &quot;main.js&quot; }}
 </code></pre>
@@ -558,7 +596,7 @@ cat input.css | postcss -u autoprefixer  &gt; output.css
 {{ $built := resources.Get &quot;scripts/main.js&quot; | js.Build $opts }}
 &lt;script type=&quot;text/javascript&quot; src=&quot;{{ $built.RelPermalink }}&quot; defer&gt;&lt;/script&gt;
 </code></pre>
-<p>✅ Babel 脚本转译</p>
+<h2 id="babel-脚本转译">Babel 脚本转译</h2>
 <p>Hugo Pipes 也可以通过 Babel 来转译脚本，任意版本的 JavaScript 可以转译为另一个版本规范。</p>
 <p>Babel 使用了 babel cli，需要先进行安装，全局安装或作为工程依赖安装：</p>
 <pre><code>npm install -g @babel/cli @babel/core
@@ -574,19 +612,19 @@ npm install @babel/preset-env --save-dev
 {{- $transpiled := resources.Get &quot;scripts/main.js&quot; | babel $opts -}}
 </code></pre>
 <p>默认地，Babel 会使用工程中 babel.config.js 作为配置文件。</p>
-<p>✅ Asset minification</p>
+<h2 id="asset-minification">Asset minification</h2>
 <p>Hugo Pipes 可以使用 <strong>resources.Minify</strong> 压缩 CSS, JS, JSON, HTML, SVG, XML 等资源：</p>
 <pre><code>{{ $css := resources.Get &quot;css/main.css&quot; }}
 {{ $style := $css | resources.Minify }}
 </code></pre>
 <p>如果需要压缩最终输出到 /public 目录的 HTML 文件，可以使用 <strong>hugo &ndash;minify</strong> 命令。</p>
-<p>✅ Asset bundling</p>
+<h2 id="asset-bundling">Asset bundling</h2>
 <p>Hugo Pipes 可以将任意资源打包在一起，相同的 MIME 类型文件就只可以打包为一个文件以减少浏览器请求。</p>
 <pre><code>{{ $plugins := resources.Get &quot;js/plugins.js&quot; }}
 {{ $global := resources.Get &quot;js/global.js&quot; }}
 {{ $js := slice $plugins $global | resources.Concat &quot;js/bundle.js&quot; }}
 </code></pre>
-<p>✅ 为资源文件生成指纹 Fingerprinting</p>
+<h2 id="为资源文件生成指纹-fingerprinting">为资源文件生成指纹 Fingerprinting</h2>
 <p>通过 <strong>resources.Fingerprint</strong> 方法生成 sha256 哈希摘要，可以指定其它，如 sha384, sha512, md5 等。</p>
 <p>处理后的资源对象会在 .Data.Integrity 属性保存摘要数据，由生成摘要的函数名和摘要数据的 Base64 编码用连字符拼接组成。</p>
 <pre><code>{{ $js := resources.Get &quot;js/global.js&quot; }}
@@ -616,7 +654,7 @@ s.integrity = 'sha256-b/TAR5GfYbbQ3gWQCA3fxESsvgU4AbP4rZ+qu1d9CuQ=';
 s.src = 'https://example.com/static/js/other/zepto.js';
 document.head.appendChild(s);
 </code></pre>
-<p>✅ 从字符串中创建资源</p>
+<h2 id="从字符串中创建资源">从字符串中创建资源</h2>
 <p>示范生成 JS 脚本：</p>
 <pre><code>{{ $string := (printf &quot;var rootURL: '%s'; var apiURL: '%s';&quot; (absURL &quot;/&quot;) (.Param &quot;API_URL&quot;)) }}
 {{ $targetPath := &quot;js/vars.js&quot; }}
@@ -626,7 +664,7 @@ document.head.appendChild(s);
 &lt;script type=&quot;text/javascript&quot; src=&quot;{{ $vars.Permalink }}&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; src=&quot;{{ $global.Permalink }}&quot;&gt;&lt;/script&gt;
 </code></pre>
-<p>✅ 从模板中获取创建资源</p>
+<h2 id="从模板中获取创建资源">从模板中获取创建资源</h2>
 <p>使用 resources.ExecuteAsTemplate 只将资源作为模板执行：</p>
 <pre><code>// assets/sass/template.scss
 $backgroundColor: {{ .Param &quot;backgroundColor&quot; }};
@@ -643,14 +681,18 @@ body{
 </code></pre>
 
 
-<ul class="pa0">
+ 
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
+      
+      <p class="cf"></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
    </li>
   
 </ul>
-<div class="mt6 instapaper_ignoref">
+<div class="mt3 instapaper_ignoref">
       
       
       </div>
@@ -670,23 +712,7 @@ body{
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
-        </li>
-	    
-	     <li  class="mb2">
           <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch05a-hugo-templates/">V: Templates 模板机制</a>
         </li>
 	    
 	     <li  class="mb2">
@@ -694,11 +720,27 @@ body{
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch09-menus/">IX: Menus 菜单组织</a>
+          <a href="/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch05a-hugo-templates/">V: Templates 模板机制</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
         </li>
 	    
 	     <li  class="mb2">
           <a href="/tutorials/ch08-functions/">VIII: Functions 内置函数</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch09-menus/">IX: Menus 菜单组织</a>
         </li>
 	    
     </ul>

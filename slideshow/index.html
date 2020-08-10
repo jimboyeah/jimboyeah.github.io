@@ -153,7 +153,8 @@
 
 
     
-    <main class="pb7" role="main">
+
+    <main class="pb5" role="main">
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
@@ -324,7 +325,7 @@
 
 <figure>
     <img src="/assets/Screenshot_2019-06-16-22-53-26-585_com.tencent.karaoke.jpg"/> <figcaption>
-            <h4>2017 年秋天的速写 忧郁的外甥女</h4>
+            <h4>2017 速写 忧郁的外甥女</h4>
         </figcaption>
 </figure>
 
@@ -340,8 +341,8 @@
 
 
 <figure>
-    <img src="/assets/IMG_20181016_130158.jpg"/> <figcaption>
-            <h4>黄玫瑰与键盘</h4>
+    <img src="/assets/hugo-templates.jpg"/> <figcaption>
+            <h4>Hugo 模板逻辑图</h4>
         </figcaption>
 </figure>
 
@@ -349,8 +350,8 @@
         ---
 
 <figure>
-    <img src="/assets/hugo-templates.jpg"/> <figcaption>
-            <h4>Hugo 模板逻辑图</h4>
+    <img src="/assets/IMG_20181016_130158.jpg"/> <figcaption>
+            <h4>黄玫瑰与键盘</h4>
         </figcaption>
 </figure>
 
@@ -556,7 +557,6 @@
     }
     </style>
 
-
     
     
     <script src="/revealjs-v3.9.2/js/reveal.js"></script>
@@ -606,6 +606,7 @@
         {
             var as = document.getElementsByTagName("audio");
             for (var i = as.length - 1; i >= 0; i--) {
+                console.log(as[i]);
                 if(as[i].id=="bgm") continue;
                 as[i].onplay = e => console.log(e);
                 as[i].onplaying = e => console.log(e);
@@ -623,6 +624,7 @@
         {
             var vs = document.getElementsByTagName("video");
             for (var i = vs.length - 1; i >= 0; i--) {
+                console.log(vs[i]);
                 vs[i].onplay = e => console.log(e);
                 vs[i].onplaying = e => console.log(e);
                 vs[i].onplay = e => { muteBGM(); };
@@ -630,7 +632,8 @@
         }
         
         
-        document.onreadystatechange = e => {
+        window.addEventListener('DOMContentLoaded', onload);
+        function onload (e){
             console.log(document.readyState)
             if (document.readyState != "complete") return;
             initVideo();

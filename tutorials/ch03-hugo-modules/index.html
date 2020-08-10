@@ -42,7 +42,7 @@
 <meta itemprop="description" content="坚果的 Hugo 教程">
 <meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
 <meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
-<meta itemprop="wordCount" content="402">
+<meta itemprop="wordCount" content="401">
 
 
 
@@ -93,8 +93,36 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/personal/" title="Personals page">
+              Personals
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
               关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
             </a>
           </li>
           
@@ -152,7 +180,8 @@
 
 
     
-    <main class="pb7" role="main">
+
+    <main class="pb5" role="main">
       
   
   
@@ -192,7 +221,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">III: Hugo Modules 模块</h1>
+      <h1 class="f3 athelas mt3 mb1">III: Hugo Modules 模块</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
@@ -200,8 +229,19 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      <h1 id="hugo-modules-模块">Hugo Modules 模块</h1>
+
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+       
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
+      
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
+      
+      <p class="cf"></p>
+
+      <p>目录：</p>
+<div class="contents"><a href="#hugo-modules-模块">## Hugo Modules 模块</a><br><a href="#模块基本用法">## 模块基本用法</a><br><a href="#hugo-中的模块">## Hugo 中的模块</a><br><a href="#管理命令参考">## 管理命令参考</a><br></div>
+<h2 id="hugo-modules-模块">Hugo Modules 模块</h2>
 <ul>
 <li><a href="https://github.com/golang/go/wiki/Modules">https://github.com/golang/go/wiki/Modules</a></li>
 <li><a href="https://blog.golang.org/using-go-modules">https://blog.golang.org/using-go-modules</a></li>
@@ -229,7 +269,7 @@
 <li><strong>replace</strong> 用于将一个模块版本替换为另外一个模块版本。</li>
 </ul>
 <p>这里的填写格式基本为包引用路径+版本号，另外比较特殊的是 go $version，目前从 Go1.13 的代码里来看，还只是个标识作用。</p>
-<p>✅ 模块基本用法</p>
+<h2 id="模块基本用法">模块基本用法</h2>
 <p>在国内网络访问 proxy.golang.org 会有问题，使用 Go Modules 代理可以解决，使用 <strong>go env</strong> 设置 Go 使用环境变量：</p>
 <pre><code>go env -w GO111MODULE=&quot;on&quot;
 go env -w GOPROXY=https://goproxy.io,direct
@@ -273,7 +313,7 @@ go 1.14
 
 require rsc.io/quote v1.5.2
 </code></pre>
-<p>✅ Hugo 中的模块</p>
+<h2 id="hugo-中的模块">Hugo 中的模块</h2>
 <p>将 Hugo 项目初始为一个模块：</p>
 <pre><code>hugo mod init github.com/gohugoio/myShortcodes
 </code></pre>
@@ -320,7 +360,7 @@ hugo mod graph
 <li>供应化管理 Vendoring 不会保存 themes 目录下的模块。</li>
 <li>大多数命令接收 &ndash;ignoreVendor 选项来忽略 <strong>_vendor</strong> 目录。</li>
 </ul>
-<p>✅ 管理命令参考</p>
+<h2 id="管理命令参考">管理命令参考</h2>
 <p>升级次级或补丁版本号：</p>
 <pre><code>go get -u rsc.io/quote
 </code></pre>
@@ -353,14 +393,20 @@ require (
 </code></pre>
 <p>官方推荐将上述过程在一个新分支来避免混淆，那么类如上述例子可以创建一个 v2 分支，但这个不是强制要求的。</p>
 <p>还有一种方式发布新版本，那就是在主线版本种加入 v2 文件夹，相应的也需要内置 go.mod 这个文件。</p>
-<ul class="pa0">
+ 
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
+      
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
+      
+      <p class="cf"></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
    </li>
   
 </ul>
-<div class="mt6 instapaper_ignoref">
+<div class="mt3 instapaper_ignoref">
       
       
       </div>
@@ -376,11 +422,7 @@ require (
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-          <a href="/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
+          <a href="/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
         </li>
 	    
 	     <li  class="mb2">
@@ -392,23 +434,27 @@ require (
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
-        </li>
-	    
-	     <li  class="mb2">
           <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
+          <a href="/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch08-functions/">VIII: Functions 内置函数</a>
+          <a href="/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
         </li>
 	    
 	     <li  class="mb2">
           <a href="/tutorials/ch09-menus/">IX: Menus 菜单组织</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch08-functions/">VIII: Functions 内置函数</a>
         </li>
 	    
     </ul>

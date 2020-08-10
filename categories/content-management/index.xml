@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Cert</title>
+      <link>https://jimbowhy.gitee.io/personal/showtime/</link>
+      <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
+      
+      <guid>https://jimbowhy.gitee.io/personal/showtime/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
       <title>mermaid</title>
       <link>https://jimbowhy.gitee.io/mermaid/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
@@ -22,11 +31,20 @@
     </item>
     
     <item>
-      <title>相册</title>
-      <link>https://jimbowhy.gitee.io/slideshow/</link>
+      <title>Screenshot</title>
+      <link>https://jimbowhy.gitee.io/personal/shot/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/slideshow/</guid>
+      <guid>https://jimbowhy.gitee.io/personal/shot/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>相册</title>
+      <link>https://jimbowhy.gitee.io/personal/slideshow/</link>
+      <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
+      
+      <guid>https://jimbowhy.gitee.io/personal/slideshow/</guid>
       <description>这里有我觉得比较有有意思的一些照片、音乐 &lt;!-- raw HTML omitted --&gt; 或者收集到的一些素材</description>
     </item>
     

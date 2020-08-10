@@ -93,6 +93,23 @@
   </url>
   
   <url>
+    <loc>https://jimbowhy.gitee.io/en/post/preface/</loc>
+    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimbowhy.gitee.io/post/preface/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimbowhy.gitee.io/en/post/preface/"
+                />
+  </url>
+  
+  <url>
     <loc>https://jimbowhy.gitee.io/en/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>

@@ -27,6 +27,13 @@
   </url>
   
   <url>
+    <loc>https://jimbowhy.gitee.io/personal/showtime/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://jimbowhy.gitee.io/categories/content-management/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -100,7 +107,14 @@
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/resume/</loc>
+    <loc>https://jimbowhy.gitee.io/personal/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimbowhy.gitee.io/personal/shot/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -152,7 +166,7 @@
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/resume/vc_wpwppipi/</loc>
+    <loc>https://jimbowhy.gitee.io/personal/cv_wpwppipi/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -176,7 +190,7 @@
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/slideshow/</loc>
+    <loc>https://jimbowhy.gitee.io/personal/slideshow/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -201,6 +215,23 @@
     <lastmod>2020-08-06T12:09:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimbowhy.gitee.io/post/preface/</loc>
+    <lastmod>2017-04-09T10:58:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimbowhy.gitee.io/en/post/preface/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimbowhy.gitee.io/post/preface/"
+                />
   </url>
   
   <url>

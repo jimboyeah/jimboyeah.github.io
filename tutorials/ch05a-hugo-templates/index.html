@@ -93,8 +93,36 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/personal/" title="Personals page">
+              Personals
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
               关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
             </a>
           </li>
           
@@ -152,7 +180,8 @@
 
 
     
-    <main class="pb7" role="main">
+
+    <main class="pb5" role="main">
       
   
   
@@ -192,7 +221,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">V: Templates 模板机制</h1>
+      <h1 class="f3 athelas mt3 mb1">V: Templates 模板机制</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
@@ -200,10 +229,19 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      <h1 id="目录">目录</h1>
-<div class="contents"><a href="#目录"># 目录</a><br><a href="#模板加载流程"># 模板加载流程</a><br><a href="#templates-模板语法"># Templates 模板语法</a><br><a href="#base-template-页面骨架模板"># Base Template 页面骨架模板</a><br></div>
-<h1 id="模板加载流程">模板加载流程</h1>
+
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+       
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
+      
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
+      
+      <p class="cf"></p>
+
+      <p>目录：</p>
+<div class="contents"><a href="#模板加载流程">## 模板加载流程</a><br><a href="#templates-模板语法">## Templates 模板语法</a><br><a href="#base-template-页面骨架模板">## Base Template 页面骨架模板</a><br></div>
+<h2 id="模板加载流程">模板加载流程</h2>
 <p>这里对 Hugo 静态站点框架作一个简要的流程分析，主要是分析数据流向。</p>
 <p>首先，Hugo 是基于 Go 语言实现的静态站点生成器，并且利用了 GO html/template 模板、Go Modules 等多项技术。</p>
 <p>静态站点的数据内容主要来源有四个：</p>
@@ -402,7 +440,7 @@ type: page
 <p>总结一下，学习使用模板一是为了解内容文件夹下的内容如何通过模板文件呈现为页面。另一方面是解决，如何为指定的一个内容文件定义模板。比如，有一个内容文件 <strong>/about/slideshow.md</strong> 想要做成幻灯片展示页面，与其它页面区别开来。</p>
 <p>如果是 <strong>/about/index.md</strong> 那么，可以直接定义 <strong>/_default/about.html</strong> 实现，从另一个角度看，可以将 slideshow.md 改成其它目录下的 <strong>index.md</strong> 就可以实现要求的模板指定要求。</p>
 <p>又或者，在文件的 Front Matter 区指定 type 类型，再接着建立 <strong>layouts</strong> 下同名的子目录，并建立一个 <strong>single.html</strong> 模板，这样做意味可以完全构造整个 HTML 页面。</p>
-<h1 id="templates-模板语法">Templates 模板语法</h1>
+<h2 id="templates-模板语法">Templates 模板语法</h2>
 <ul>
 <li><a href="https://godoc.org/html/template">Go html/template 模板文档</a></li>
 <li><a href="https://godoc.org/text/template">Go text/template 模板文档</a></li>
@@ -677,7 +715,7 @@ type: page
 <p>模板中常用的数据类型有字典 dict 和切片 slice：</p>
 <pre><code>{{ $style := resources.Get &quot;css/main.css&quot; | resources.PostCSS (dict &quot;config&quot; &quot;customPostCSS.js&quot; &quot;noMap&quot; true) }}
 </code></pre>
-<h1 id="base-template-页面骨架模板">Base Template 页面骨架模板</h1>
+<h2 id="base-template-页面骨架模板">Base Template 页面骨架模板</h2>
 <p>这是最基础的模板，为所有页面定义 HTML 标签基本结构，主要是 <strong>head</strong>、<strong>body</strong> 和页面设计布局定义。</p>
 <p>通过 block 关键字设置区块定义：</p>
 
@@ -834,7 +872,13 @@ type: page
 
 </div>
 
-<ul class="pa0">
+ 
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch06-multilingual/">VI: Multilingual 多语言支持</a>
+      
+       
+      <a title="Next Post" class="fr" href="https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
+      
+      <p class="cf"></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
@@ -845,7 +889,7 @@ type: page
    </li>
   
 </ul>
-<div class="mt6 instapaper_ignoref">
+<div class="mt3 instapaper_ignoref">
       
       
       </div>
@@ -861,15 +905,15 @@ type: page
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-          <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
-        </li>
-	    
-	     <li  class="mb2">
           <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
         </li>
 	    
 	     <li  class="mb2">
           <a href="/tutorials/ch05b-hugo-templates/">V: Templates 其它模板</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
         </li>
 	    
 	     <li  class="mb2">

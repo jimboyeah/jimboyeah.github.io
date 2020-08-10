@@ -42,7 +42,7 @@
 <meta itemprop="description" content="坚果的 Hugo 教程">
 <meta itemprop="datePublished" content="2020-08-06T20:14:08-04:00" />
 <meta itemprop="dateModified" content="2020-08-06T20:14:08-04:00" />
-<meta itemprop="wordCount" content="2015">
+<meta itemprop="wordCount" content="2029">
 
 
 
@@ -93,8 +93,36 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/tutorials/" title="Hugo 教程 page">
+              Hugo 教程
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/personal/" title="Personals page">
+              Personals
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
               关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/about/" title="关于 page">
+              关于
+            </a>
+          </li>
+          
+
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline  white-90" href="/post/" title="小说 page">
+              小说
             </a>
           </li>
           
@@ -152,7 +180,8 @@
 
 
     
-    <main class="pb7" role="main">
+
+    <main class="pb5" role="main">
       
   
   
@@ -192,7 +221,7 @@
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">V: Templates 其它模板</h1>
+      <h1 class="f3 athelas mt3 mb1">V: Templates 其它模板</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2020-08-06T20:14:08-04:00">August 6, 2020</time>
@@ -200,9 +229,16 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-      <h1 id="目录">目录</h1>
-<div class="contents"><a href="#目录"># 目录</a><br><a href="#homepage-template-主页模板">## Homepage Template 主页模板</a><br><a href="#shortcode-短代码模板">## shortcode 短代码模板</a><br><a href="#partials-模板">## Partials 模板</a><br><a href="#pagination-分页模板">## Pagination 分页模板</a><br><a href="#menu-templates-菜单模板">## Menu Templates 菜单模板</a><br><a href="#single-page-template">## Single Page Template</a><br><a href="#list-templates-列表模板">## List Templates 列表模板</a><br></div>
+
+    <div class="nested-copy-line-height lh-copy serif f5 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+       
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch05a-hugo-templates/">V: Templates 模板机制</a>
+      
+       
+      <p class="cf"></p>
+
+      <p>目录：</p>
+<div class="contents"><a href="#homepage-template-主页模板">## Homepage Template 主页模板</a><br><a href="#shortcode-短代码模板">## shortcode 短代码模板</a><br><a href="#partials-模板">## Partials 模板</a><br><a href="#pagination-分页模板">## Pagination 分页模板</a><br><a href="#menu-templates-菜单模板">## Menu Templates 菜单模板</a><br><a href="#single-page-template">## Single Page Template</a><br><a href="#list-templates-列表模板">## List Templates 列表模板</a><br></div>
 <h2 id="homepage-template-主页模板">Homepage Template 主页模板</h2>
 <p>根据不同的内容，对应的不同的主页面，下面是其中的 Home 和 JSON 的主页定位方式，这里并没有列出主题目录，因为主题的 layouts 目录结构意义是一样的：</p>
 <pre><code>  {
@@ -268,12 +304,12 @@
 {{ end }}
 </code></pre>
 <h2 id="shortcode-短代码模板">shortcode 短代码模板</h2>
-<p>短代码模板 <strong>shortcode</strong> 用来生成定义一段功能代码，再供页面调用。</p>
+<p>短代码模板 <strong>shortcode</strong> 用来生成定义一段功能代码，供内容文件调用生成页面。</p>
 <p>Hugo 提供了几个内置的 shortcode，可是在国内网络环境却不太好用：</p>
 <ul>
 <li>
 <p><em>figure</em> 使用语法及对应生成</p>
-<pre><code>  {{&amp;lt figure src=&quot;/media/spf13.jpg&quot; title=&quot;Steve Francia&quot; &gt;}}
+<pre><code>  {{&lt; figure src=&quot;/media/spf13.jpg&quot; title=&quot;Steve Francia&quot; &gt;}}
 
   &lt;figure&gt;
       &lt;img src=&quot;/media/spf13.jpg&quot;  /&gt;
@@ -285,11 +321,11 @@
 </li>
 <li>
 <p><em>gist</em> 用于生成 Git 版本仓库中的 URL</p>
-<pre><code>  {{&amp;lt gist spf13 7896402 &gt;}}
+<pre><code>  {{&lt; gist spf13 7896402 &gt;}}
 
   https://gist.github.com/spf13/7896402
 
-  {{&amp;lt gist spf13 7896402 &quot;img.html&quot; &gt;}}
+  {{&lt; gist spf13 7896402 &quot;img.html&quot; &gt;}}
 
   &lt;script type=&quot;application/javascript&quot; src=&quot;https://gist.github.com/spf13/7896402.js&quot;&gt;&lt;/script&gt;
 </code></pre>
@@ -297,9 +333,9 @@
 <li>
 <p><em>param</em> 获取页面扉页参数</p>
 <p>假设，设置了页面扉页参数 <strong>testparam: Hugo Rocks!</strong> 那么就可以通过将其输出到页面：</p>
-<pre><code>  {{&amp;lt param testparam &gt;}}
+<pre><code>  {{&lt; param testparam &gt;}}
 
-  {{&amp;lt param &quot;my.nested.param&quot; &gt;}}
+  {{&lt; param &quot;my.nested.param&quot; &gt;}}
 </code></pre>
 </li>
 <li>
@@ -316,7 +352,7 @@
 </li>
 <li>
 <p><em>instagram</em> 生成 Instagram 图片 URL，国内墙</p>
-<pre><code>  {{&amp;lt instagram BWNjjyYFxVx hidecaption &gt;}}
+<pre><code>  {{&lt; instagram BWNjjyYFxVx hidecaption &gt;}}
 
   https://www.instagram.com/p/BWNjjyYFxVx/
 </code></pre>
@@ -350,12 +386,12 @@
 {{/*&lt; vimeo_simple 48912912 &gt;*/}}
 </code></pre>
 <p>另外，对于 MD 生成的标准的 HTML 标签，像表格，或列表，无法直接在 MD 设置样式：</p>
-<pre><code>{{&amp;lt table &gt;}}
+<pre><code>{{&lt; table &gt;}}
 | Key | Value |
 |---|---|
 | Static Site Generator | Hugo |
 | Language | Go |
-{{&amp;lt /table &gt;}}
+{{&lt; /table &gt;}}
 </code></pre>
 <p>那么可以通过定义 <strong>shortcodes</strong> 的方式来加外层 DIV 通过 CSS 级联样式去定义，也可以使用</p>
 <pre><code>{{ $table := .Inner | markdownify | safeHTML }}
@@ -430,9 +466,9 @@
 
 
 <p>Hugo 官方文档项目中提供了很好的 <strong>shortcode</strong> 模板学习示例，例如，最常用来展示高亮代码片段 <strong>code</strong> 为例，当你在查看官方文档 MD 文件时，看到以下这样的内容：</p>
-<pre><code>{{&amp;lt code file=&quot;layouts/_default/section.html&quot; download=&quot;section.html&quot; &gt;}}
+<pre><code>{{&lt; code file=&quot;layouts/_default/section.html&quot; download=&quot;section.html&quot; &gt;}}
 ...
-{{&amp;lt /code &gt;}}
+{{&lt; /code &gt;}}
 </code></pre>
 <p>这就表示，MD 文件正使用 <strong>code</strong> 生成相应的内容，来看看它的定义 <strong>layouts_default\shortcodes\code.html</strong>：</p>
 
@@ -451,9 +487,7 @@
         
     
     <div class="code-copy-content nt3" >
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-
-    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$file</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#75715e">}}</span>
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$file</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Get</span> <span style="color:#e6db74">&#34;file&#34;</span> <span style="color:#75715e">}}</span>
     <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$codeLang</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">}}</span>
     <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$suffix</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">findRE</span> <span style="color:#e6db74">&#34;(\\.[^.]+)$&#34;</span> <span style="color:#a6e22e">$file</span> <span style="color:#a6e22e">1</span> <span style="color:#75715e">}}</span>
     <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span>  <span style="color:#a6e22e">$suffix</span> <span style="color:#75715e">}}</span>
@@ -501,7 +535,7 @@
     
     <div class="code-copy-content nt3" >
         <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#66d9ef">lt</span> <span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">go</span> <span style="color:#e6db74">&#34;linenos=table,hl_lines=8 15-17,linenostart=199&#34;</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#a6e22e">highlight</span> <span style="color:#a6e22e">go</span> <span style="color:#e6db74">&#34;linenos=table,hl_lines=8 15-17,linenostart=199&#34;</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
     // GetTitleFunc returns a func that can be used to transform a string to
     // title case.
     //
@@ -522,7 +556,7 @@
         return transform.NewTitleConverter(transform.APStyle)
       }
     }
-    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&amp;</span><span style="color:#66d9ef">lt</span> <span style="color:#960050;background-color:#1e0010">/</span> <span style="color:#a6e22e">highlight</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
+    <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">&lt;</span> <span style="color:#960050;background-color:#1e0010">/</span> <span style="color:#a6e22e">highlight</span> <span style="color:#960050;background-color:#1e0010">&gt;</span><span style="color:#75715e">}}</span>
 </code></pre></div>
     </div>
 
@@ -542,6 +576,9 @@
 <p>首先，模板中对 <code>_hugo_config</code> 变量进行赋值，但没有使用它。然后生成一个 note-icon 图标，然后再将注解内容 .Inner 输出到 div.admonition-content 标签上。</p>
 <p>其中，注释掉的部分没用起作用，但是这里调用了几个 Hugo 函数，<strong>urlize</strong> 用来将一个字符串进行 URL 合法化编码，参考 urlize.md 文档。</p>
 <p>注意，{{- .Inner -}} 模板中的负号用来移除内容的前缀、后缀空格。</p>
+<p>如果内部包含 Markdown 内容，需要使用 % 分隔符：</p>
+<pre><code>{{&amp;#25; tab name=&quot;Tab 1&quot; %}}This is **markdown**{{&amp;#25; /tab %}}
+</code></pre>
 <h2 id="partials-模板">Partials 模板</h2>
 <p>Partials 片断模板用来引用片断内容到页面中显示。</p>
 <p>模板文件定位：</p>
@@ -586,13 +623,9 @@
         
     
     <div class="code-copy-content nt3" >
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-
-   <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">/*</span> 
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">   <span style="color:#75715e">{{</span><span style="color:#960050;background-color:#1e0010">/*</span> 
         <span style="color:#a6e22e">GetFeaturedImage</span>
-
         <span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">return</span> <span style="color:#a6e22e">Permalink</span> <span style="color:#a6e22e">to</span> <span style="color:#a6e22e">featured</span> <span style="color:#a6e22e">image</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#66d9ef">or</span> <span style="color:#a6e22e">an</span> <span style="color:#a6e22e">empty</span> <span style="color:#a6e22e">string</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">not</span> <span style="color:#a6e22e">found</span><span style="color:#a6e22e">.</span>
-
     <span style="color:#960050;background-color:#1e0010">*/</span><span style="color:#75715e">}}</span>
 
     <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$linkToCover</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">}}</span>
@@ -739,9 +772,7 @@ PaginatePath = page
         
     
     <div class="code-copy-content nt3" >
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-
-    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$pag</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">$.Paginator</span> <span style="color:#75715e">}}</span>
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$pag</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">$.Paginator</span> <span style="color:#75715e">}}</span>
     <span style="color:#75715e">{{</span> <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">gt</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.TotalPages</span> <span style="color:#a6e22e">1</span> <span style="color:#75715e">-}}</span>
     &lt;<span style="color:#f92672">ul</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pagination&#34;</span>&gt;
       <span style="color:#75715e">{{</span> <span style="color:#66d9ef">with</span> <span style="color:#a6e22e">$pag</span><span style="color:#a6e22e">.First</span> <span style="color:#75715e">-}}</span>
@@ -807,9 +838,7 @@ PaginatePath = page
         
     
     <div class="code-copy-content nt3" >
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-
-    <span style="color:#75715e">&lt;!-- sidebar start --&gt;</span>
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">    <span style="color:#75715e">&lt;!-- sidebar start --&gt;</span>
     &lt;<span style="color:#f92672">aside</span>&gt;
         &lt;<span style="color:#f92672">ul</span>&gt;
             <span style="color:#75715e">{{</span> <span style="color:#a6e22e">$currentPage</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.</span> <span style="color:#75715e">}}</span>
@@ -932,9 +961,7 @@ menu:
         
     
     <div class="code-copy-content nt3" >
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">
-
-    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">define</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#75715e">}}</span>
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go-html-template" data-lang="go-html-template">    <span style="color:#75715e">{{</span> <span style="color:#a6e22e">define</span> <span style="color:#e6db74">&#34;main&#34;</span> <span style="color:#75715e">}}</span>
     &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;main&#34;</span>&gt;
       &lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;title&#34;</span>&gt;<span style="color:#75715e">{{</span> <span style="color:#a6e22e">.Title</span> <span style="color:#75715e">}}</span>&lt;/<span style="color:#f92672">h1</span>&gt;
       &lt;<span style="color:#f92672">div</span>&gt;
@@ -1028,7 +1055,11 @@ aliases: []
   {{ .Content }}
 &lt;/div&gt;
 </code></pre>
-<ul class="pa0">
+ 
+      <a title="Prev Post" class="fl" href="https://jimbowhy.gitee.io/tutorials/ch05a-hugo-templates/">V: Templates 模板机制</a>
+      
+       
+      <p class="cf"></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/hugo" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">hugo</a>
@@ -1039,7 +1070,7 @@ aliases: []
    </li>
   
 </ul>
-<div class="mt6 instapaper_ignoref">
+<div class="mt3 instapaper_ignoref">
       
       
       </div>
@@ -1055,11 +1086,11 @@ aliases: []
     <ul class="pa0 list">
 	   
 	     <li  class="mb2">
-          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
+          <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
         </li>
 	    
 	     <li  class="mb2">
-          <a href="/tutorials/ch02-project-directories/">II: Hugo 目录组织</a>
+          <a href="/tutorials/ch07-varialbes/">VII: Variables 对象变量</a>
         </li>
 	    
 	     <li  class="mb2">
@@ -1071,15 +1102,15 @@ aliases: []
         </li>
 	    
 	     <li  class="mb2">
+          <a href="/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
+        </li>
+	    
+	     <li  class="mb2">
           <a href="/tutorials/ch01-hugo-web-framework/">I: Hugo Web Framework</a>
         </li>
 	    
 	     <li  class="mb2">
           <a href="/tutorials/ch04-hugo-pipes/">IV: Hugo Pipes 管道处理</a>
-        </li>
-	    
-	     <li  class="mb2">
-          <a href="/tutorials/ch03-hugo-modules/">III: Hugo Modules 模块</a>
         </li>
 	    
 	     <li  class="mb2">
