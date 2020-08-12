@@ -96,20 +96,6 @@
           
 
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline active white-90" href="/en/about/" title="About page">
-              About
-            </a>
-          </li>
-          
-
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline  white-90" href="/en/post/" title="Articles page">
-              Articles
-            </a>
-          </li>
-          
-
-          <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline  white-90" href="/en/post/" title="Articles page">
               Articles
             </a>
@@ -169,7 +155,51 @@
   </header>
 
 
+    <textarea style="height: 50vh; width:98vw;">
+
+Current Page Type: section
+
+|About | /en/about/ |  about\ | MenuCurrent |  .Children = []
     
+|Articles | /en/post/ |  post\ |  |  .Children = []
+    
+|Contact | /en/contact/ |  \ |  |  .Children = []
+    
+
+================ ================ ================ ================
+
+
+|About | /en/about/ | about\ | MenuCurrent | HasMenuCurrent | .Children = [] 
+    
+|Articles | /en/post/ | post\ |  |  | .Children = [] 
+    
+
+================ ================ ================ ================
+翻译内容页面：
+
+.IsTranslated = true
+.Translations = Pages(1)
+.AllTranslations = Pages(2)
+
+  
+  &lt;link rel="alternate" hreflang="zh" href="https://jimbowhy.gitee.io/about/" title="中文"> 
+
+  &lt;nav class="LangNav">
+   &lt;a href="https://jimbowhy.gitee.io/en/about/">en -About - About- about\_index.md&lt;/a>  &lt;a href="https://jimbowhy.gitee.io/about/">zh -关于 - 关于- about\_index.md&lt;/a>  &lt;/nav> 
+
+================ ================ ================ ================
+
+  &lt;a href="/en/">🏠 Go Learning en&lt;/a> 
+  &lt;a href="/">🏠 Go Learning zh&lt;/a> 
+
+.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+site.Sites = [Site(&#34;Go Learning&#34;) Site(&#34;Go Learning&#34;)]
+
+.Site.Data = map[webpack_assets:map[app:map[css:css/app.4fc0b62e4b82c997bb0041217cd6b979.css js:js/app.3fc0f988d21662902933.js]]]
+.Site.Language.Lang = en
+
+</textarea>
+
 
     <main class="pb5" role="main">
       
