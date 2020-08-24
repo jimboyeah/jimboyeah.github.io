@@ -7,12 +7,14 @@ cd public
 git add .
 git commit -m "add publish static web"
 git push gitee master
+
 cd ..
 hugo --baseURL "https://jimboyeah.github.io/"
 cd public
 git add .
 git commit -m "add publish static web"
 git push origin master
+
 rem git push origin master:master -f
 rem git checkout -b 
 cd ..

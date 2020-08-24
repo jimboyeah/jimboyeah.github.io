@@ -18,6 +18,13 @@ toc: true
 ---
 
 {{<rawhtml>}}
+<style>
+    @media (max-width: 800px) {
+    section { margin-top: -40vh; }
+    section:first-child,
+    section:last-child { margin-top: 0vh; }
+    }
+</style>
 <div class="reveal">
 
     <div class="slides">
@@ -72,27 +79,27 @@ toc: true
 
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/panel-style-d.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/panel-style-d.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/panel-style-b.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/panel-style-b.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/panel-style-a.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/panel-style-a.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/layout-small.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/layout-small.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/layout-original-small.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/layout-original-small.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
-{{<figure src="/shot/layout-grid.png" class="" title="演示案例 - 蓝牙控制小程序">}} 
+{{<figure src="/shot/layout-grid.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
 </section>
 
 

@@ -15,14 +15,13 @@
       {{ partial "i18nlist.html" . }}
       {{ if .Site.Menus.main }}
         <ul class="pl0 mr3">
-          {{ range .Site.Menus.main }}
+          {{ range .Site.Menus.main }} {{ if .Menu }}
 <!-- {{ if $currentPage.HasMenuCurrent "main" . }}active2{{end}} -->
           <li class="list f5 f4-ns fw4 dib pr3">
             <a class="hover-white no-underline {{ if $currentPage.IsMenuCurrent "main" . }}active{{end}} white-90" href="{{ .URL }}" title="{{ .Name }} page">
               {{ .Name }}
             </a>
-          </li>
-          {{ end }}
+          </li> {{end}} {{ end }}
         </ul>
       {{ end }}
       {{ partialCached "social-follow.html" . }}

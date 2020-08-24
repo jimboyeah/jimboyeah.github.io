@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"mute",
+				"muteVideo"
+			],
+			[
 				"P",
 				"PrintErrorMessage"
 			],
@@ -388,239 +396,562 @@
 	"buffers":
 	[
 		{
+			"file": "hugo.sublime-project",
+			"settings":
+			{
+				"buffer_size": 1486,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/C/coding/md/writing/hugo.md",
 			"settings":
 			{
-				"buffer_size": 102731,
+				"buffer_size": 115335,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/php.bat",
+			"file": "config.toml",
 			"settings":
 			{
-				"buffer_size": 153,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/docs/content/en/templates/pagination.md",
-			"settings":
-			{
-				"buffer_size": 4790,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/content/cn/tutorials/ch05-Hugo Templates.md",
-			"settings":
-			{
-				"buffer_size": 33451,
+				"buffer_size": 1840,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/content/cn/tutorials/ch07-Varialbes.md",
+			"file": "public/robots.txt",
 			"settings":
 			{
-				"buffer_size": 16296,
-				"encoding": "UTF-8",
+				"buffer_size": 111,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/content/cn/tutorials/ch02-Project Directories.md",
+			"file": "push.bat",
 			"settings":
 			{
-				"buffer_size": 7609,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/public/theme/css/main.css",
-			"settings":
-			{
-				"buffer_size": 2924,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "quickstart/config.toml",
-			"settings":
-			{
-				"buffer_size": 1664,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/code.html",
-			"settings":
-			{
-				"buffer_size": 1220,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/content/cn/contact.md",
-			"settings":
-			{
-				"buffer_size": 1502,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/content/cn/tutorials/ch01-Hugo Web Framework.md",
-			"settings":
-			{
-				"buffer_size": 5001,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
-			"settings":
-			{
-				"buffer_size": 5109,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/post/list.html",
-			"settings":
-			{
-				"buffer_size": 900,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/tutorials/list.html",
-			"settings":
-			{
-				"buffer_size": 514,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/content/cn/tutorials/_index.md",
-			"settings":
-			{
-				"buffer_size": 1189,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/tpl/tplimpl/embedded/templates/pagination.html",
-			"settings":
-			{
-				"buffer_size": 1631,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
-			"settings":
-			{
-				"buffer_size": 462,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/single.html",
-			"settings":
-			{
-				"buffer_size": 3309,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "quickstart/assets/theme/css/main.css",
-			"settings":
-			{
-				"buffer_size": 2954,
+				"buffer_size": 490,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/docs/content/en/functions/replace.md",
+			"file": "themes/gohugo-theme-ananke/layouts/post/list.html",
 			"settings":
 			{
-				"buffer_size": 475,
+				"buffer_size": 932,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/index.html",
+			"file": ".gitignore",
 			"settings":
 			{
-				"buffer_size": 2360,
+				"buffer_size": 68,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+			"file": "/C/coding/md-code/hugo/src/docs/data/docs.json",
 			"settings":
 			{
-				"buffer_size": 1809,
+				"buffer_size": 127032,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/page-header.html",
+			"file": "content/cn/personal/shot.md",
 			"settings":
 			{
-				"buffer_size": 1400,
+				"buffer_size": 3468,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/content/en/about/_index.md",
+			"file": "static/readme.md",
 			"settings":
 			{
-				"buffer_size": 892,
+				"buffer_size": 671,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 671,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/cn/personal/showtime.md",
+			"settings":
+			{
+				"buffer_size": 2108,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
+			"file": "content/cn/personal/slideshow.md",
 			"settings":
 			{
-				"buffer_size": 1226,
+				"buffer_size": 6393,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/_default/page.html",
+			"file": "content/cn/personal/cv_wpwppipi.md",
 			"settings":
 			{
-				"buffer_size": 1013,
+				"buffer_size": 9231,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/cn/about/_index.md",
+			"settings":
+			{
+				"buffer_size": 1442,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/en/post/preface.md",
+			"settings":
+			{
+				"buffer_size": 2124,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/theme/css/main.css",
+			"settings":
+			{
+				"buffer_size": 3180,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+			"settings":
+			{
+				"buffer_size": 1872,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/theme/scss/bulma.scss",
+			"settings":
+			{
+				"buffer_size": 4569,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/coding/md-code/tachyons-4.12/css/tachyons.css",
+			"settings":
+			{
+				"buffer_size": 114984,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/_default/baseof.html",
+			"settings":
+			{
+				"buffer_size": 3161,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/partials/debug.html",
+			"settings":
+			{
+				"buffer_size": 2237,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/partials/site-navigation.html",
+			"settings":
+			{
+				"buffer_size": 1069,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/_default/single.html",
+			"settings":
+			{
+				"buffer_size": 3482,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "content/cn/_index.md",
+			"settings":
+			{
+				"buffer_size": 321,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "themes/gohugo-theme-ananke/layouts/partials/reveal.html",
+			"settings":
+			{
+				"buffer_size": 4435,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/readme.md",
+			"settings":
+			{
+				"buffer_size": 671,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Git Demo",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				]
+			],
+			[
+				"Git Demo",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo server"
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Git Gitee attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo server"
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Git Gitee attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				],
+				[
+					"Git Demo",
+					"Hugo for Github"
+				],
+				[
+					"Git Demo",
+					"Hugo for Gitee"
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo for Github"
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Git Gitee attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				],
+				[
+					"Git Demo",
+					"Hugo for Github"
+				],
+				[
+					"Git Demo",
+					"Hugo for Gitee"
+				],
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo for Github"
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Git Gitee attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				],
+				[
+					"Git Demo",
+					"Hugo for Github"
+				],
+				[
+					"Git Demo",
+					"Hugo for Gitee"
+				],
+				[
+					"Packages/User/PlantUML.sublime-build",
+					""
+				],
+				[
+					"Packages/User/PlantUML.sublime-build",
+					" --> ASCII Art"
+				],
+				[
+					"Packages/User/PlantUML.sublime-build",
+					" --> PNG"
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo for Gitee"
+			]
+		],
+		[
+			[
+				[
+					"Git Demo",
+					""
+				],
+				[
+					"Git Demo",
+					"Git help"
+				],
+				[
+					"Git Demo",
+					"Git Origin attach"
+				],
+				[
+					"Git Demo",
+					"Git Gitee attach"
+				],
+				[
+					"Git Demo",
+					"Branch List"
+				],
+				[
+					"Git Demo",
+					"Branch List remote"
+				],
+				[
+					"Git Demo",
+					"git show"
+				],
+				[
+					"Git Demo",
+					"Hugo server"
+				],
+				[
+					"Packages/MarkdownPreview/Markdown.sublime-build",
+					""
+				]
+			],
+			[
+				"Git Demo",
+				"Hugo server"
+			]
+		],
 		[
 			[
 				[
@@ -754,8 +1085,88 @@
 		"selected_items":
 		[
 			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add All"
+			],
+			[
+				"pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"pus",
+				"Git: Push Current Branch"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
 				"edit",
 				"Project: Edit Project"
+			],
+			[
+				"enabl",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"enable\t",
+				"Package Control: Enable Package"
+			],
+			[
+				"com\t",
+				"Git: Commit"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"adda",
+				"Git: Add All"
+			],
+			[
+				"staus",
+				"Git: Status"
+			],
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"ad",
+				"Git: Add All"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"add ",
+				"Git: Add All"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"init",
+				"Git: Init"
+			],
+			[
+				"comm\t",
+				"Git: Commit"
 			],
 			[
 				"enable",
@@ -778,23 +1189,7 @@
 				"SFTP: Show Panel"
 			],
 			[
-				"commit",
-				"Git: Commit history"
-			],
-			[
-				"com",
-				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add All"
-			],
-			[
 				"statsu",
-				"Git: Status"
-			],
-			[
-				"status",
 				"Git: Status"
 			],
 			[
@@ -806,32 +1201,12 @@
 				"Package Control: Install Package"
 			],
 			[
-				"ad",
-				"Git: Add All"
-			],
-			[
-				"comm",
-				"Git: Commit"
-			],
-			[
 				"pushc",
 				"Git: Push Current Branch"
 			],
 			[
-				"comm\t",
-				"Git: Commit"
-			],
-			[
-				"enabl",
-				"Table Editor: Enable for current view"
-			],
-			[
 				"hex",
 				"HexViewer: Toggle Hex View"
-			],
-			[
-				"adda",
-				"Git: Add All"
 			],
 			[
 				"ena",
@@ -1098,175 +1473,177 @@
 	"expanded_folders":
 	[
 		"/C/coding/md-code/hugo/quickstart",
+		"/C/coding/md-code/hugo/quickstart/assets",
+		"/C/coding/md-code/hugo/quickstart/assets/theme",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/css",
+		"/C/coding/md-code/hugo/quickstart/assets/theme/scss",
 		"/C/coding/md-code/hugo/quickstart/content",
 		"/C/coding/md-code/hugo/quickstart/content/cn",
 		"/C/coding/md-code/hugo/quickstart/content/cn/about",
+		"/C/coding/md-code/hugo/quickstart/content/cn/personal",
 		"/C/coding/md-code/hugo/quickstart/content/cn/post",
 		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials",
 		"/C/coding/md-code/hugo/quickstart/content/en",
 		"/C/coding/md-code/hugo/quickstart/content/en/about",
-		"/C/coding/md-code/hugo/quickstart/data",
-		"/C/coding/md-code/hugo/src/docs",
-		"/C/coding/md-code/hugo/src/docs/_vendor",
-		"/C/coding/md-code/hugo/src/docs/_vendor/github.com",
-		"/C/coding/md-code/hugo/src/docs/config",
-		"/C/coding/md-code/hugo/src/docs/config/_default",
-		"/C/coding/md-code/hugo/src/docs/config/_default/menus",
-		"/C/coding/md-code/hugo/src/docs/config/development",
-		"/C/coding/md-code/hugo/src/docs/config/production",
-		"/C/coding/md-code/hugo/src/docs/content",
-		"/C/coding/md-code/hugo/src/docs/content/en",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/image-processing",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions",
-		"/C/coding/md-code/hugo/src/docs/content/en/getting-started",
-		"/C/coding/md-code/hugo/src/docs/content/en/hosting-and-deployment",
-		"/C/coding/md-code/hugo/src/docs/content/en/hugo-pipes",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables",
-		"/C/coding/md-code/hugo/src/docs/content/zh",
-		"/C/coding/md-code/hugo/src/docs/content/zh/news"
+		"/C/coding/md-code/hugo/quickstart/content/en/post",
+		"/C/coding/md-code/hugo/quickstart/layouts",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default",
+		"/C/coding/md-code/hugo/quickstart/layouts/personal",
+		"/C/coding/md-code/hugo/quickstart/layouts/slideshow",
+		"/C/coding/md-code/hugo/quickstart/public",
+		"/C/coding/md-code/hugo/quickstart/static",
+		"/C/coding/md-code/hugo/quickstart/themes",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials"
 	],
 	"file_history":
 	[
-		"/C/coding/md-code/hugo/hugo.sublime-project",
-		"/C/coding/md-code/hugo/quickstart/hugo.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch09-Menus.md",
-		"/C/coding/md-code/hugo/quickstart/public/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-navigation.html",
-		"/C/coding/md-code/hugo/quickstart/postcss.config.js",
-		"/C/coding/md-code/hugo/quickstart/content/en/contact.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/post/_index.md",
+		"/C/coding/md-code/java/maven/trucks/src/main/webapp/WEB-INF/web.xml",
+		"/C/coding/md-code/XamarinVS2019/readme.md",
+		"/C/coding/md-code/hugo/quickstart/layouts/personal/list.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/404.html",
+		"/C/coding/md-code/hugo/src/docs/layouts/shortcodes/code.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/page-header.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/preface.md",
 		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/_index.md",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-7.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-6.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-4.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-2.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-3.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-1.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-5.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/chapter-8.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/hasPrefix.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/split.md",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/css/main.css",
-		"/C/coding/md-code/hugo/quickstart/content/cn/about/slideshow.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/about/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/contact.md",
-		"/C/coding/md-code/hugo/quickstart/content/en/post/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-6.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/summaries.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/front-matter.md",
-		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-1.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/menu-templates.md",
-		"/C/coding/md-code/hugo/quickstart/content/en/_index.md",
-		"/C/coding/md-code/hugo/quickstart/php.bat",
-		"/C/coding/md-code/hugo/quickstart/content/cn/post/chapter-5.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/menus.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables/menus.md",
-		"/C/coding/md-code/hugo/syna/exampleSite/config.toml",
-		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/_default/menu.yaml",
-		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/production/params.yaml",
-		"/C/coding/md-code/hugo/hugo-theme-iris/exampleSite/config/production/config.yaml",
-		"/C/coding/md-code/hugo/quickstart/content/cn/_index.md",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/i18nlist.html",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/menu-contextual.html",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/i18n/zh.toml",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/multilingual.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables/page.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/ismenucurrent.md",
-		"/C/coding/md-code/hugo/src/langs/language.go",
-		"/C/coding/md-code/hugo/quickstart/content/about/slideshow.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables/taxonomy.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables/site.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/lists.md",
-		"/C/coding/md-code/hugo/quickstart/content/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/about/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/contact.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/cross-references.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/variables/files.md",
-		"/C/coding/md-code/hugo/quickstart/content/en/about/_index.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/_index.md",
-		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-1.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-1.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-4.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-5.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-6.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-3.md",
-		"/C/coding/md-code/hugo/quickstart/content/post/chapter-2.md",
-		"/C/coding/md-code/hugo/src/docs/data/docs.json",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.en.html",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/base/minireset.sass",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/utilities/initial-variables.sass",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/bulma-0.7.5/utilities/derived-variables.sass",
-		"/C/coding/md-code/hugo/quickstart/static/assets/IMG_20181016_130158.jpg",
-		"/C/coding/md-code/hugo/src/resources/resource/resourcetypes.go",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/output-formats.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/content-management/page-resources.md",
-		"/C/coding/md-code/hugo/src/resources/transform.go",
-		"/C/coding/md-code/hugo/quickstart/.gitignore",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/scss/style.scss",
-		"/C/coding/md-code/hugo/src/hugolib/page.go",
-		"/C/coding/md-code/hugo/src/resources/resource.go",
-		"/C/coding/md-code/hugo/quickstart/config.toml",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-favicon.html",
-		"/C/coding/md-code/hugo/quickstart/layouts/_default/baseof-dis.html",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/func/GetFrontMatter.html",
+		"/C/coding/md-code/hugo/quickstart/public/404.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/index.html",
 		"/C/coding/md-code/hugo/src/tpl/tplimpl/embedded/templates/shortcodes/figure.html",
-		"/C/coding/md-code/hugo/quickstart/public/dist/js/app.3fc0f988d21662902933.js",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/static/dist/css/app.7e7787cc1402d7de28bc90f7e65adf96.css",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/get.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/default.md",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/table.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/lookup-order.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/data-templates.md",
-		"/C/coding/md-code/hugo/quickstart/iris-ex.bat",
-		"/C/coding/md-code/hugo/quickstart/syna-ex.bat",
-		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/config/_default/config.yaml",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
-		"/C/coding/md-code/hugo/src/docs/layouts/shortcodes/datatable.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/introduction.md",
-		"/C/coding/md-code/hugo/quickstart/go.mod",
-		"/C/coding/md-code/hugo/src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/partials/docs/functions-signature.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/markdownify.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/personal/slideshow.md",
+		"/C/coding/md/my times/rtx-2011-04-06.txt",
+		"/C/coding/md-code/hugo/quickstart/readme.md",
+		"/C/coding/md-code/hugo/quickstart/static/readme.md",
+		"/C/coding/java/apache-tomcat-8.5.37/conf/tomcat-users.xml",
+		"/C/coding/java/apache-tomcat-8.5.37/RUNNING.txt",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/rawhtml.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/nested/fire.md",
 		"/C/coding/md-code/hugo/src/docs/content/en/content-management/shortcodes.md",
-		"/C/coding/md-code/hugo/src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/partials/home-page-sections/tweets.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/troubleshooting/faq.md",
-		"/C/coding/md-code/tachyons-4.12/src/_tables.css",
-		"/C/coding/md-code/hugo/src/docs/config.toml",
-		"/C/coding/md-code/hugo/src/tpl/tplimpl/embedded/templates/pagination.html",
-		"/C/pictures/a/l/!acqier.bat",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/src/css/_tachyons.css",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/theme.toml",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/static/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/exampleSite/config.toml",
-		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/assets/theme/scss/bulma-0.7.5/elements/table.sass",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/i18n/zh.toml",
+		"/C/coding/md-code/hugo/quickstart/content/cn/contact.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch05b-Hugo Templates.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/_index.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/_index.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/template-debugging.md",
+		"/C/coding/md-code/hugo/quickstart/assets/js/mermaid.min.js",
+		"/C/coding/md-code/hugo/quickstart/assets/js/mathjax-v3.0.1-tex-mml-chtml.js",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/front-matter.md",
+		"/C/coding/md-code/hugo/src/hugolib/collections.go",
+		"/C/coding/md-code/hugo/src/hugolib/page.go",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/debug.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+		"/C/coding/md-code/hugo/quickstart/config.toml",
+		"/C/coding/md-code/hugo/quickstart/content/cn/about/_index.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/readfiles/pages-vs-site-pages.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/variables/pages.md",
+		"/C/coding/md-code/tachyons-4.12/css/tachyons.css",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/index.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/slideshow/single.html",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-1.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/markdownify.md",
+		"/C/coding/md-code/hugo/quickstart/public/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
+		"/C/coding/md-code/hugo/quickstart/layouts/resume/list.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/resume/cv_wpwppipi.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/reveal.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/slideshow.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/menu-templates.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/i18n/en.toml",
+		"/C/coding/md-code/hugo/hugo-theme-iris/layouts/_default/single.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch02-Project Directories.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch03-Hugo Modules.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch04-Hugo Pipes.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch01-Hugo Web Framework.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch09-Menus.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch05a-Hugo Templates.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch07-Varialbes.md",
+		"/C/coding/md-code/hugo/quickstart/push.bat",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/about.html",
+		"/C/coding/md-code/hugo/quickstart/hugo.sublime-project",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-favicon.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch08-Functions.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/mermaid.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/slideshow_demos.md",
+		"/C/coding/md-code/reveal.js/examples/assets/beeping.txt",
+		"/C/coding/md-code/hugo/quickstart/content/cn/mermaid.md",
 		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/example.html",
-		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/markdown.js",
-		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/marked.js",
-		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/math/math.js",
-		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/print-pdf/print-pdf.js",
-		"/C/coding/md-code/reveal.js/test/test-auto-animate.html",
-		"/C/coding/md-code/hugo/quickstart/static/revealjs-v3.9.2/plugin/markdown/example.md",
-		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/content/en/_index.md",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/exampleSite/content/contact.md",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/md5.md",
-		"/C/coding/md-code/hugo/src/docs/public/functions/os.stat/index.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/functions/index-function.md",
-		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/layouts/shortcodes/table.html",
-		"/C/coding/md-code/hugo/quickstart/themes/hugo-theme-iris/exampleSite/content/en/posts/rich-content.md"
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/site-navigation.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/func/GetTOC.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/single.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/sections.md",
+		"/C/coding/md-code/hugo/hugo-theme-iris/layouts/shortcodes/mermaid.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/summary-with-image.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/summary.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch06-Multilingual.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/tutorials/list.html",
+		"/C/coding/md-code/hugo/src/tpl/template.go",
+		"/C/coding/md-code/hugo/quickstart/layouts/post/list.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/page/-single.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/content-management/cross-references.md",
+		"/C/coding/md-code/hugo/quickstart/layouts/slideshow.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/page-slideshow.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/section/single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/home-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/demotype/single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/demotype/page.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/demotype/post.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/demotype/single-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/-single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/list.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/index-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/single-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/post.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/post-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/page.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/list-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/page/demolayout-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/post/list.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/../page/single.html",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials/menu-contextual.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/post/post-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/post/single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/post/post.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/section/-post-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/-baseof.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/baseof.html",
+		"/C/coding/md-code/hugo/src/hugolib/site.go",
+		"/C/coding/md-code/hugo/quickstart/content/en/contact.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-5.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-2.md",
+		"/C/coding/md-code/hugo/quickstart/content/en/post/chapter-6.md",
+		"/C/coding/md-code/hugo/quickstart/layouts/about/../_default/slideshow.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/about/../post/slideshow.md",
+		"/C/coding/md-code/hugo/quickstart/content/cn/post/nested/../../slideshow.md",
+		"/C/coding/md-code/hugo/quickstart/static/mermaid/index.html",
+		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials/ch05-Hugo Templates.md",
+		"/C/coding/md-code/hugo/src/docs/data/docs.json",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/../about/single.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/resume/../single.html",
+		"/C/coding/md-code/hugo/src/docs/content/zh/templates/base.md",
+		"/C/coding/md-code/hugo/src/docs/content/en/functions/render.md",
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/post/summary-with-image.html",
+		"/C/coding/md-code/hugo/quickstart/layouts/_default/../list.html",
+		"/C/coding/md-code/hugo/src/docs/content/en/templates/lists.md"
 	],
 	"find":
 	{
-		"height": 40.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
 		"height": 451.0,
 		"where_history":
 		[
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts",
+			"C:\\coding\\md-code\\hugo\\src\\docs",
+			"C:\\coding\\md-code\\hugo\\docs",
+			"C:\\coding\\md-code\\hugo\\",
+			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts",
 			"C:\\coding\\md-code\\hugo\\quickstart",
 			"C:\\coding\\md-code\\hugo\\quickstart\\themes",
 			"C:\\coding\\md-code\\hugo\\quickstart\\content\\cn\\tutorials",
@@ -1299,134 +1676,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"    -",
-			"Paginator",
-			"pagination",
-			"LIST.HTML",
-			"menu",
-			"Menu",
-			"menu",
-			"Menu",
-			"menu",
-			"Menu",
-			"menu",
-			"Menu",
-			"&#",
-			"&#28",
-			"- $item",
-			"safehtml",
-			"\n    -",
-			"recent_posts_number",
-			"resources.PostCSS",
-			"\n#",
-			"\n# ",
-			"\n#",
-			"b",
-			"  {{ end }} ",
-			" {{ end }}",
-			"white-",
+			"style",
+			"{{ .Name }} ",
+			"Menus",
+			"IsMenuCurrent",
+			"IsEqual",
 			"omit_header_text",
-			"坚果的 Hugo",
+			"omit_header_text: true",
+			"omit_header_text",
+			"png",
+			"fl",
+			"gitee.io",
+			".gitee.io",
+			"演示案例",
+			"shot",
+			"/shot/",
+			"cert",
+			" 0 16px",
+			"16px",
+			"GetFeaturedImage.html：\n\n",
+			"{{&lt ",
+			"A",
+			"version",
+			"vers",
+			"ver",
+			"function () {}",
+			"{{<figure src",
 			"{{<",
-			"{{%",
-			"    {{<",
-			"{{<",
-			"{{%",
-			"坚果的 Hugo 教程",
-			"main",
-			".Path",
-			"File.Path",
-			"menu:",
-			"whatsInThis",
-			"这是什么",
-			"toc",
-			"Front",
-			"Summmer",
-			"Sumarry",
-			"black",
-			"micro_s",
-			": _",
-			"_ <br",
-			" : _",
-			"-",
-			"路径",
-			"Disqus shortcode",
-			"\n.Data.",
-			".Data.",
-			".Sitemap",
-			"\n.Site",
-			".Site",
-			"Prev",
-			"Sort",
-			"sort",
-			"|.",
-			"\n.",
-			"_ <br />",
-			"|.",
-			"\n.",
-			" (e.g.,",
-			"\n.",
-			")",
-			"|.File.",
-			"\n.File.",
-			".File.",
+			"{{",
+			"radius",
+			"white",
+			"title",
+			"_title",
+			"|",
+			"title",
+			"首届",
+			">}}",
+			"| ",
+			"|",
+			"|                    ",
+			"../../../static",
+			"(",
+			"<",
+			">",
+			"**\n",
+			"bg-black-10",
+			"site-header",
+			" <a class",
+			"(eq",
 			"<br>",
-			"\n.Hugo",
-			".Hugo",
-			".",
-			"\n.",
-			".File",
-			"\n.",
-			"\n.File",
-			"Translations",
-			"链接",
-			" ✅",
-			"Language.LanguageName",
-			"fr",
-			" .",
-			"MetaDataFormat",
-			"AMP",
-			"\">",
-			"  content/",
-			"优先",
-			"DefaultContentLanguage",
-			"config.toml 配置中，设置默认的语言：\n\n    DefaultContentLanguage = \"zh\"\n\n",
-			"DefaultContentLanguage",
-			"i18n",
-			"white-bis",
-			"border-collapse",
-			"collaspe",
-			"coll",
-			" !default",
-			"!default;",
-			"$color",
-			"$name",
-			"$pair",
-			"$colors",
-			"table-cell-border",
-			"$text-strong",
-			"border",
-			" $table-cell-border",
-			"$",
-			"grey-darker",
-			"#name",
-			"端口",
-			"port",
-			"{",
-			"$table-color",
-			"autoprefixer",
-			"[",
-			"resource.",
-			"resourceAdapter",
-			"css/",
+			"slug",
+			"pageState",
+			"...",
+			"\n    //",
+			"clear",
+			"Next",
+			"Content",
+			"Preface",
 			":",
-			"postcssAsset",
-			"css",
-			"\r",
-			"stylesheet",
-			"（",
-			"\r",
-			"→ "
+			"10",
+			"__",
+			"mark",
+			"_",
+			"slug",
+			"./../../static",
+			"---",
+			"right",
+			"\n# ",
+			"{{&#25;",
+			"%",
+			"\\",
+			"template(",
+			"{{ template ",
+			"容易上手",
+			"## ",
+			"\n# ",
+			"## ✅",
+			"\n✅ ",
+			"\n✅",
+			"\n# ",
+			"# ",
+			"f2",
+			"f1",
+			"jimboyeah",
+			"muteBGM",
+			"as",
+			"vs",
+			"IMG_20181101_233654_s",
+			"2018-12-02-112213751",
+			"9af1eae66bb1",
+			"c9349af160f3",
+			" 语言",
+			"></",
+			"audio",
+			"\n<",
+			"\n<section",
+			"assets/beeping.wav",
+			"h2",
+			"markdown",
+			"[slide]",
+			"---",
+			"\n##",
+			";",
+			"\n# ",
+			"GetFeaturedImage",
+			"plugin",
+			"revealjs",
+			" end ",
+			"define",
+			"mermaid",
+			"{{/*",
+			"   {{/* ",
+			"home-baseof",
+			"single",
+			"post",
+			"home-baseof",
+			"page",
+			"pages-baseof",
+			"page-baseof",
+			"-baseof",
+			"single-baseof",
+			"page-baseof",
+			"baseof",
+			"page-",
+			"post",
+			"TableOfContents",
+			"section",
+			"post",
+			"list"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1445,24 +1822,58 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/coding/md/writing/hugo.md",
+					"file": "hugo.sublime-project",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102731,
+						"buffer_size": 1486,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4536,
-								4536
+								1215,
+								1215
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 155.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/coding/md/writing/hugo.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								14255,
+								14260
 							]
 						],
 						"settings":
@@ -1485,295 +1896,27 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2257.0,
+						"translation.y": 569.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "quickstart/php.bat",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 153,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								153,
-								153
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src/docs/content/en/templates/pagination.md",
+					"file": "config.toml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4790,
+						"buffer_size": 1840,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "quickstart/content/cn/tutorials/ch05-Hugo Templates.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 33451,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								267,
-								267
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "quickstart/content/cn/tutorials/ch07-Varialbes.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16296,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								165,
-								165
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 2429.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "quickstart/content/cn/tutorials/ch02-Project Directories.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7609,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								276,
-								276
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1184.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "quickstart/public/theme/css/main.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2924,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1647,
-								1717
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 542.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 21,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "quickstart/config.toml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1664,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								67,
-								67
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/TOML/TOML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/code.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1220,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1220,
-								1220
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 22,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "quickstart/content/cn/contact.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1502,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								306,
-								306
+								285,
+								285
 							]
 						],
 						"settings":
@@ -1783,207 +1926,7 @@
 							"origin_encoding": "UTF-8",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "quickstart/content/cn/tutorials/ch01-Hugo Web Framework.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5001,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								640,
-								640
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/baseof.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5109,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1206,
-								1206
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 158.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 17,
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/post/list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 900,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								568,
-								568
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/tutorials/list.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "quickstart/content/cn/tutorials/_index.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1189,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								778,
-								778
-							]
-						],
-						"settings":
-						{
-							"enable_table_editor": true,
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "src/tpl/tplimpl/embedded/templates/pagination.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9,
-								9
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"syntax": "Packages/TOML/TOML.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1995,54 +1938,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 16,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/list.html",
+					"buffer": 3,
+					"file": "public/robots.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 462,
+						"buffer_size": 111,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								462,
-								462
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/_default/single.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2775,
-								2775
+								111,
+								111
 							]
 						],
 						"settings":
@@ -2052,32 +1961,30 @@
 							"origin_encoding": "ASCII",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 423.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "quickstart/assets/theme/css/main.css",
+					"buffer": 4,
+					"file": "push.bat",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2954,
+						"buffer_size": 490,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1066,
-								1066
+								176,
+								176
 							]
 						],
 						"settings":
@@ -2086,237 +1993,32 @@
 							"is_init_dirty_state": false,
 							"origin_encoding": "ASCII",
 							"remote_loading": false,
+							"sftp_duplicate_views": 0,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 211.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 19,
-					"type": "text"
-				},
-				{
-					"buffer": 19,
-					"file": "src/docs/content/en/functions/replace.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 475,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								387,
-								387
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/index.html",
+					"buffer": 5,
+					"file": "themes/gohugo-theme-ananke/layouts/post/list.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2360,
+						"buffer_size": 932,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": true,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 21,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/site-header.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1809,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								71,
-								52
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 20,
-					"type": "text"
-				},
-				{
-					"buffer": 22,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/partials/page-header.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1400,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1120,
-								1108
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 23,
-					"file": "quickstart/content/en/about/_index.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 892,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								273,
-								273
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 23,
-					"type": "text"
-				},
-				{
-					"buffer": 24,
-					"file": "quickstart/themes/gohugo-theme-ananke/layouts/shortcodes/form-contact.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1226,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								145,
-								145
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "ASCII",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 24,
-					"type": "text"
-				},
-				{
-					"buffer": 25,
-					"file": "src/docs/_vendor/github.com/gohugoio/gohugoioTheme/layouts/_default/page.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1013,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								905,
-								1013
+								360,
+								360
 							]
 						],
 						"settings":
@@ -2336,13 +2038,790 @@
 					},
 					"stack_index": 25,
 					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 68,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/coding/md-code/hugo/src/docs/data/docs.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 127032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								36140,
+								36140
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"spell_check": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 27835.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "content/cn/personal/shot.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3468,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								750,
+								750
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "static/readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							],
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "content/cn/personal/showtime.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1764,
+								1764
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 379.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "content/cn/personal/slideshow.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6393,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 291.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "content/cn/personal/cv_wpwppipi.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2546,
+								2546
+							]
+						],
+						"settings":
+						{
+							"enable_table_editor": true,
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 855.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "content/cn/about/_index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								353,
+								353
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "content/en/post/preface.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 11,
+			"sheets":
+			[
+				{
+					"buffer": 16,
+					"file": "assets/theme/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3180,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								980,
+								980
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 372.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "themes/gohugo-theme-ananke/layouts/partials/site-header.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1872,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1084,
+								1084
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "assets/theme/scss/bulma.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/C/coding/md-code/tachyons-4.12/css/tachyons.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 114984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25095,
+								25105
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "themes/gohugo-theme-ananke/layouts/_default/baseof.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2864,
+								2864
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 244.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "themes/gohugo-theme-ananke/layouts/partials/debug.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2237,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								688,
+								688
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "themes/gohugo-theme-ananke/layouts/partials/site-navigation.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								605,
+								605
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "themes/gohugo-theme-ananke/layouts/_default/single.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2430,
+								2430
+							],
+							[
+								2960,
+								2960
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 475.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "push.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 490,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								419
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "content/cn/_index.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								301
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "themes/gohugo-theme-ananke/layouts/partials/reveal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4435,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								658,
+								658
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 40.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "public/readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -2357,6 +2836,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				0,
+				2,
+				1,
+				3
 			]
 		],
 		"cols":
@@ -2367,6 +2858,8 @@
 		"rows":
 		[
 			0.0,
+			0.03,
+			0.97,
 			1.0
 		]
 	},
@@ -2403,7 +2896,7 @@
 	"project": "hugo.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2412,6 +2905,210 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"404",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\404.html"
+			],
+			[
+				"debug",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\debug.html"
+			],
+			[
+				"site",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\site-header.html"
+			],
+			[
+				"pus",
+				"quickstart\\push.bat"
+			],
+			[
+				"readme",
+				"quickstart\\readme.md"
+			],
+			[
+				"read",
+				"quickstart\\static\\readme.md"
+			],
+			[
+				"readm",
+				"quickstart\\readme.md"
+			],
+			[
+				"push",
+				"quickstart\\push.bat"
+			],
+			[
+				"rawhtml",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\shortcodes\\rawhtml.html"
+			],
+			[
+				"shortcode.md",
+				"docs\\content\\en\\content-management\\shortcodes.md"
+			],
+			[
+				"template.md",
+				"docs\\content\\en\\templates\\template-debugging.md"
+			],
+			[
+				"MathJax",
+				"quickstart\\assets\\js\\mathjax-v3.0.1-tex-mml-chtml.js"
+			],
+			[
+				"config",
+				"quickstart\\config.toml"
+			],
+			[
+				"tachy",
+				"tachyons-4.12\\css\\tachyons.css"
+			],
+			[
+				"code",
+				"docs\\layouts\\shortcodes\\code.html"
+			],
+			[
+				"hugolib\\",
+				"src\\hugolib\\collections.go"
+			],
+			[
+				"pages.",
+				"docs\\content\\en\\readfiles\\pages-vs-site-pages.md"
+			],
+			[
+				"pages.md",
+				"src\\docs\\content\\en\\variables\\pages.md"
+			],
+			[
+				"markdown.",
+				"docs\\content\\en\\functions\\markdownify.md"
+			],
+			[
+				"main",
+				"quickstart\\assets\\theme\\css\\main.css"
+			],
+			[
+				"shortcode figure.html",
+				"src\\tpl\\tplimpl\\embedded\\templates\\shortcodes\\figure.html"
+			],
+			[
+				"slides",
+				"quickstart\\content\\cn\\slideshow.md"
+			],
+			[
+				"ch05b",
+				"quickstart\\content\\cn\\tutorials\\ch05b-Hugo Templates.md"
+			],
+			[
+				"chtemplate",
+				"quickstart\\content\\cn\\tutorials\\ch05b-Hugo Templates.md"
+			],
+			[
+				"layouts 404.html",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\404.html"
+			],
+			[
+				"app",
+				"quickstart\\public\\dist\\css\\app.4fc0b62e4b82c997bb0041217cd6b979.css"
+			],
+			[
+				"rea",
+				"quickstart\\readme.md"
+			],
+			[
+				"fav",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\site-favicon.html"
+			],
+			[
+				".",
+				"quickstart\\.gitignore"
+			],
+			[
+				"chfunc",
+				"quickstart\\content\\cn\\tutorials\\ch08-Functions.md"
+			],
+			[
+				"site-navigation",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\site-navigation.html"
+			],
+			[
+				"siteheade",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\site-header.html"
+			],
+			[
+				"ch0 fun",
+				"quickstart\\content\\cn\\tutorials\\ch08-Functions.md"
+			],
+			[
+				"merm",
+				"hugo-theme-iris\\layouts\\shortcodes\\mermaid.html"
+			],
+			[
+				"slideshow",
+				"C:\\coding\\md-code\\hugo\\quickstart\\layouts\\slideshow.html"
+			],
+			[
+				"docs.",
+				"docs\\data\\docs.json"
+			],
+			[
+				"base",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\_default\\baseof.html"
+			],
+			[
+				"sections",
+				"docs\\content\\en\\content-management\\sections.md"
+			],
+			[
+				"front",
+				"docs\\content\\en\\content-management\\front-matter.md"
+			],
+			[
+				"cross",
+				"src\\docs\\content\\en\\content-management\\cross-references.md"
+			],
+			[
+				"doc",
+				"src\\docs\\data\\docs.json"
+			],
+			[
+				"render.md",
+				"docs\\content\\en\\functions\\render.md"
+			],
+			[
+				"_index",
+				"quickstart\\content\\cn\\tutorials\\_index.md"
+			],
+			[
+				"docs.jon",
+				"src\\docs\\data\\docs.json"
+			],
+			[
+				"templates\\md",
+				"docs\\content\\zh\\templates\\base.md"
+			],
+			[
+				"docs",
+				"docs\\data\\docs.json"
+			],
+			[
+				"lookup",
+				"docs\\content\\en\\templates\\lookup-order.md"
+			],
+			[
+				"list.md",
+				"docs\\content\\en\\templates\\lists.md"
+			],
+			[
+				"page-header.html",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\page-header.html"
+			],
+			[
+				"baseof",
+				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\_default\\baseof.html"
+			],
+			[
+				"Render.md",
+				"docs\\content\\en\\functions\\render.md"
+			],
 			[
 				"pagination.html",
 				"hugo\\src\\tpl\\tplimpl\\embedded\\templates\\pagination.html"
@@ -2497,10 +3194,6 @@
 				"docs\\content\\en\\templates\\menu-templates.md"
 			],
 			[
-				"front",
-				"docs\\content\\en\\content-management\\front-matter.md"
-			],
-			[
 				"menus.m",
 				"hugo\\src\\docs\\content\\en\\content-management\\menus.md"
 			],
@@ -2549,10 +3242,6 @@
 				"docs\\content\\en\\functions\\_index.md"
 			],
 			[
-				"docs.",
-				"docs\\data\\docs.json"
-			],
-			[
 				"multilingual.md",
 				"docs\\content\\en\\content-management\\multilingual.md"
 			],
@@ -2589,20 +3278,8 @@
 				"hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts\\partials\\func\\GetFeaturedImage.html"
 			],
 			[
-				"config",
-				"hugo\\quickstart\\config.toml"
-			],
-			[
-				"baseof",
-				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\_default\\baseof.html"
-			],
-			[
 				"con",
 				"hugo\\quickstart\\config.toml"
-			],
-			[
-				"docs",
-				"docs\\data\\docs.json"
 			],
 			[
 				"datatable",
@@ -2739,190 +3416,6 @@
 			[
 				"vcpp_reflection_5",
 				"♬☾ CPP Demo Project\\dotnet-clr\\src\\vcpp_reflection_5.cpp"
-			],
-			[
-				"cmakelist.txt",
-				"♬☾ CPP Demo Project\\dotnet-clr\\CMakeLists.txt"
-			],
-			[
-				"cdaystep",
-				"md\\c-daystep\\readme.md"
-			],
-			[
-				"stm",
-				"md\\STM\\STM32_Nucleo.md"
-			],
-			[
-				"git",
-				"md\\readme_git.md"
-			],
-			[
-				"ffmp",
-				"md\\OpenToonz\\ffmpeg.md"
-			],
-			[
-				"win.",
-				"md\\readme_win.md"
-			],
-			[
-				"mysql",
-				"md\\db\\readme_mysql.md"
-			],
-			[
-				"ci.md",
-				"md\\readme_ci.md"
-			],
-			[
-				"sublime",
-				"md\\readme_sublime.md"
-			],
-			[
-				"win.m",
-				"md\\readme_win.md"
-			],
-			[
-				"mfc",
-				"md\\writing\\mfc\\mfc.md"
-			],
-			[
-				"win",
-				"md\\readme_win.md"
-			],
-			[
-				"pythond",
-				"md\\readme_python.md"
-			],
-			[
-				"python",
-				"md\\readme_python.md"
-			],
-			[
-				"pyth",
-				"md\\readme_python.md"
-			],
-			[
-				"ts.md",
-				"md\\webpack\\readme_ts.md"
-			],
-			[
-				"react",
-				"md\\webpack\\readme_react.md"
-			],
-			[
-				"vue",
-				"md\\c-daystep\\readme_vue.md"
-			],
-			[
-				"web",
-				"md\\webpack\\readme_webpack.md"
-			],
-			[
-				"css.md",
-				"md\\webpack\\readme_css.md"
-			],
-			[
-				"vue.md",
-				"md\\c-daystep\\readme_vue.md"
-			],
-			[
-				"react.md",
-				"md\\webpack\\readme_react.md"
-			],
-			[
-				"webpack",
-				"md\\webpack\\readme_webpack.md"
-			],
-			[
-				"ts.m",
-				"md\\webpack\\readme_ts.md"
-			],
-			[
-				"node",
-				"md\\webpack\\readme_node.md"
-			],
-			[
-				"java",
-				"md\\readme_java.md"
-			],
-			[
-				"qt.md",
-				"md\\Qt\\readme.md"
-			],
-			[
-				"linux",
-				"md\\readme_linux.md"
-			],
-			[
-				"vim",
-				"md\\readme_vim.md"
-			],
-			[
-				"LINUX",
-				"md\\readme_linux.md"
-			],
-			[
-				"coding.js",
-				"coding\\coding.js"
-			],
-			[
-				"sublim",
-				"md\\readme_sublime.md"
-			],
-			[
-				"coding.py",
-				"coding\\coding.py"
-			],
-			[
-				"lin",
-				"md\\OpenGL\\LinearAlgebra.md"
-			],
-			[
-				"markdown",
-				"md\\readme_markdown.md"
-			],
-			[
-				"bit",
-				"md\\writing\\bmp\\bitmap.md"
-			],
-			[
-				"bitma",
-				"md\\writing\\bmp\\bitmap.md"
-			],
-			[
-				"mark",
-				"md\\readme_markdown.md"
-			],
-			[
-				"git.",
-				"md\\readme_git.md"
-			],
-			[
-				"makr",
-				"md\\Markdown Cheatsheet.md"
-			],
-			[
-				"blen",
-				"md\\OpenToonz\\Blender.md"
-			],
-			[
-				"mingw",
-				"User\\C++ MinGW.sublime-build"
-			],
-			[
-				"mina",
-				"md\\readme_mina.md"
-			],
-			[
-				"pay",
-				"md\\readme_pay.md"
-			],
-			[
-				"openGL",
-				"md\\OpenGL\\OpenGL.md"
-			],
-			[
-				"fls",
-				"md\\OpenToonz\\flstudio.md"
 			]
 		],
 		"width": 0.0
@@ -2943,9 +3436,21 @@
 	"select_symbol":
 	{
 		"height": 392.0,
-		"last_filter": "Language",
+		"last_filter": "pageState",
 		"selected_items":
 		[
+			[
+				"pageState",
+				"pageState"
+			],
+			[
+				"template",
+				"Template"
+			],
+			[
+				"LookupLayout",
+				"lookupLayouts"
+			],
 			[
 				"Language",
 				"Language"
@@ -3085,7 +3590,7 @@
 		],
 		"width": 848.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -3097,5 +3602,6 @@
 	"status_bar_visible": true,
 	"template_settings":
 	{
+		"max_columns": 2
 	}
 }

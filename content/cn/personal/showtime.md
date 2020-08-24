@@ -63,7 +63,7 @@ toc: true
 
 <section data-transition="zoom" data-markdown>
     <script type="text/template">
-    ## The End is another begin
+    ## The End is another beginning
 
     《if》 - a melody 2015/1/12
     

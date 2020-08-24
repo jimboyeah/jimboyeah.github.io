@@ -2,10 +2,10 @@
 {{ $currentPage := . }}
 Current Page Type: {{ .Kind }}
 {{ range .Site.Menus.main }}
-|{{ .Name }} | {{ .URL }} |  {{.Page.File.Dir}} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent{{end}} .Children = {{ .Children }}
+|{{.Menu}} - {{ .Name }} | {{ .URL }} |  {{.Page.File.Dir}} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent{{end}} .Children = {{ .Children }}
     {{ if .HasChildren }}{{ range .Children }}
         {{ if .HasChildren }}{{ range .Children }}
-|       {{ .Name }} | {{ .URL }} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent {{ end }}
+|       {{.Menu}} - {{ .Name }} | {{ .URL }} | {{ if $currentPage.IsMenuCurrent "main" . }}MenuCurrent{{ end }} | {{ if $currentPage.HasMenuCurrent "main" . }}HasMenuCurrent {{ end }}
         {{ end }}{{end}}
     {{ end }}{{end}}{{end}}
 

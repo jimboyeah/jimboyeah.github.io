@@ -18,6 +18,7 @@ toc: false
     .qrcode {position: fixed; top: 388px; right:32px; width:168px; border:4px solid #00000047;}
     .table {font-size: 1em;}
     header h1, header h2 {text-shadow: 0px 1px 3px #fff; font-weight: bold; color:black !important;}
+    .next, .prev {display: none;}
     @media (max-width: 800px) {
         .avatar {
             position: absolute;
@@ -77,7 +78,8 @@ toc: false
 ## 基本资料
 
 {{<rawhtml>}}
-<table class="table">
+    <div style="width: 100%;overflow-x: scroll;">
+<table class="table" style="white-space:nowrap;">
 <tr><td class="bg-white-30"> 姓名     </td><td> 叶坚              </td>
     <td class="bg-white-30"> 语言能力 </td><td> 粤语、国语、英语(CET4)</td></tr>
 <tr><td class="bg-white-30"> 性别     </td><td> 男                </td>
@@ -89,6 +91,7 @@ toc: false
 <tr><td class="bg-white-30"> 出生日期 </td><td> 1981/10/28        </td>
     <td class="bg-white-30"></td><td></td></tr>
 </table>
+    </div>
 {{</rawhtml>}}
 
 
@@ -98,13 +101,13 @@ toc: false
 - 精通
 
     - Node + Vue、React 组件化开发，Webpack 打包，微信小程序；
-    - C# + Xamarin 跨平台 APP 开发，.Net Razor Page，Blazor 框架；
+    - C# + Xamarin 跨平台 APP 开发，.Net Razor Page，Blazor 经量级组件框架；
     - Golang + BeeGO、Iris 应用于高并发场景，使用 MySQL 数据库；
+    - Java + Spring SOA 分布式微服务框架；
     <!-- - PHP + Yaf、Laravel； -->
 
 - 熟悉
 
-    - Java Spring MVC；
     - Erlang/OTP、Elixir 分布式高并发应用；
     - Adobe XD + Protopie 原型设计
 
@@ -124,13 +127,14 @@ toc: false
 前端技术主管，负责技术部门团队的建立，从事企业网站开发
 工作，成功服务过美的、豪爵、小熊电器等等品牌厂商。
 
-2017-2019 年，深圳市看中影业有限公司任职，技术负责人，
-直接向老板汇报。主要做小程序开发，如粉丝经济类小程序
-《偶像影响力》，实现粉丝打榜互动的高并发，同时在线人数可达
+2017-2019 年，深圳市看中影业有限公司任职。
+作为一家中小企业，深圳市看中影业有限公司在娱乐及电子商业领域均有涉猎。
+作为技术负责人，在任职期间直接向公司合伙人汇报。职责主要是协同部门同事根据
+产品的运营需要做迭代升级，主要软件产品有小程序开发、微信公众平台应用开发。
+如粉丝经济类小程序《偶像影响力》，实现粉丝打榜互动的高并发，同时在线人数可达
 30万。期间，重构了电商类小程序《宝宝需要》商城等，以及支付
 系统的开发与维护。同时，微信公众平台第三方系统作为近年
 流行的 SaaS 技术，也在任职期间主持完成了开发。
-
 
 <!-- 
 任职经历
@@ -163,6 +167,8 @@ toc: false
 
 深圳市看中影业有限公司
 地址：深圳市宝安区西乡街道宝源路财富港大厦D座603C
+
+
  -->
 
 ## 项目经验
@@ -175,7 +181,7 @@ toc: false
 
 - 某共享床垫系统开发
 
-    整个系统主要分成两个部分，基于微信小程序实现项目的客户端，为硬件用户提供服务。基于 Node、React 实施的 IoT 中后端数据中心，结合数据采集硬件终端，管理系统中注册好的硬件设备，运行过程种自动采集故障信息，并通知管理员及时跟进。后端同时提供了小程序的数据通信服务，包括客户通过小程下单支付，完成支付后，启动硬件提供服务。小程序定时采集，并记录设备的使用记录，所有数据汇总后在中台系统提供报表展示。
+    时间周期 2019-01 ~ 2019-08；此项目为甲方内部运营项目，整个系统主要分成两个部分，基于微信小程序实现项目的客户端，为硬件用户提供服务。基于 Node、React 实施的 IoT 中后端数据中心，结合数据采集硬件终端，管理系统中注册好的硬件设备，运行过程种自动采集故障信息，并通知管理员及时跟进。后端同时提供了小程序的数据通信服务，包括客户通过小程下单支付，完成支付后，启动硬件提供服务。小程序定时采集，并记录设备的使用记录，所有数据汇总后在中台系统提供报表展示。
 
 
 {{<rawhtml class="noprint">}}
@@ -222,7 +228,21 @@ toc: false
 
 ## PS:
 
-另外，利用空闲时间在 GitChat 平台上发布了一部关于编程与前端的电子书，可以参考《实用 Vue 组件开发》的 PDF 文件，下载地址： https://github.com/jimboyeah/demo/blob/C-DayStep-VUE/vue-develop-review_02.pdf
+毕业于电子专业，热衷于新技术，对问题的求解有强烈的探索精神。从事软件开发超过 8 年，对技术保持包容的心态，也掌握完备的全栈开发技术，从前端 Vue、React、Node、Webpack 等组件化工程化技术，到后端 C#、Java，或脚本语言 JavaScript、PHP 等，熟知用恰当的技术做恰当的事比较重要。
+
+作为最复杂的一门语言，C++ 也在日常中使用，比如用它来比练习 OpenGL、OpenCV 等开源库的使用，作为一门复杂的、非工作主力语言，去精通学习 C++ 显然不是好的择选，但是以包容的心态去看待技术，就可以在恰当的时候利用它的优点。比如，可以在 Web 项目中就可以用 C++ 来开发 FFMPEG 的服务端的扩展应用，实现一些音频、视频的处理工具。
+
+曾经，作为一名小技术主管，深谙团队与个人的成长如影随形，团队的成长过程，也伴随着团队成员对自身的成长的追求，所以一个良好协作的氛围显得极其的重要。在我主导《宝宝需要》项目重构开发过程，与团队成员的交流中，对此深有感受。作为团队 Leader，在成员的开始过程出现的技术方向出现偏差时，能够给予正确的引导显得非常重要。维护一个项目需要达成一个共识，方便成员之间的技术交流，更能降低成员间任务接替的时间成本。而成员间顺畅的技术交流，则更有可以激发技术上的创新与优化。
+
+工作以来，一直保持着写作的习惯，从最早在学校开始，通过 Office 将一整本的 C 语言的科学和艺术《The art and science of C》一个词一个词地输入到电脑中，印象中记得全书 600 多页，花费我整个大二的暑期空档和大量的学习时间。开始，是在课上一页一页地抄写，两个星期后，才发现这本书太有趣了，它从编译器的层次来解释了 C 的编译原理，这种不隐藏细节的风格很是喜欢。
+
+现在回想起来，那时也傻也乐于其中，当然傻是因为时间的花费。而快乐是因为又发现这样并且分享了这样优质学习资源：
+
+https://download.csdn.net/download/winsenjiansbomber/6599409
+
+现在，工作上的时间忙了，只能利用空闲时间写些文字记录，而且有了自己最爱的写作工具箱。从早期的 Wiz、印象 等笔记应用，到现在的 Typroa、Sublime Text，组合 Git、Markdown 已经成为日常工作的标配，无论日常开发还是文字记录。
+
+最近一次是在 GitChat 平台上发布了一部关于编程与前端的电子书，可以参考《实用 Vue 组件开发》的 PDF 文件，下载地址： https://github.com/jimboyeah/demo/blob/C-DayStep-VUE/vue-develop-review_02.pdf
 
 
 {{<rawhtml class="noprint">}}

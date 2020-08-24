@@ -1,8 +1,8 @@
 title = "Go Learning"
-baseURL = "https://jimboyeah.github.io/"
+# baseURL = "https://jimboyeah.github.io/"
 # baseURL = "https://jimbowhy.gitee.io/"
 # baseURL = "http://localhost:1314"
-# baseURL = "http://192.168.0.109/"
+baseURL = "http://192.168.0.109/"
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 themesDir = "themes"
@@ -36,10 +36,6 @@ sectionPagesMenu = "smain"
     contentDir = "content/cn/"
     [languages.zh.params]
       linkedin = ""
-
-
-[pam]
-  postcssasset = "theme/css/main.css"
 
 [sitemap]
   changefreq = "monthly"

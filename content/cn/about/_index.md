@@ -3,9 +3,10 @@ title: "关于"
 description: "本纯静态站点由 Hugo 生成，它是基于 Go 语言的静态站点生成框架。"
 featured_image: '/assets/IMG_20190117_123248_s.jpg'
 featured_class: 'bg-near-black'
-cover_dimming_class: bg-black-20
-subheadline_class: "black-10"
-description_class: "black-70"
+omit_header_text: true
+cover_dimming_class: bg-black-20 pb7
+subheadline_class: "white-10"
+description_class: "white-80"
 translationKey: about
 lastmod: 2020-08-06T20:14:08-04:00
 menu: main
@@ -13,13 +14,13 @@ toc: true
 ---
 
 本静态站点用于演示之用，使用 Hugo 构建，以及 Markdown 供应内容。
-
+<!-- 
 流行的静态站点框架有以下几个：
 
 - Jekyll (基于 Ruby) https://www.jekyll.com.cn/docs/home/
 - Hexo (基于 Node.js) https://hexo.io/docs/
 - Hugo (基于 Go) https://gohugo.io/documentation/
-
+ -->
 
 本站有两个访问入口：
 

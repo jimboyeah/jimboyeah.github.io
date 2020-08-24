@@ -40,6 +40,14 @@
 				{
 					"name": "Hugo server",
 					"shell_cmd": "hugo server --baseURL http://192.168.0.109/ --bind 192.168.0.109 -p 80"
+				},
+				{
+					"name": "Hugo for Github",
+					"shell_cmd": "hugo --baseURL https://jimboyeah.github.io/"
+				},
+				{
+					"name": "Hugo for Gitee",
+					"shell_cmd": "hugo --baseURL https://jimbowhy.gitee.io/"
 				}
 			],
 			"working_dir": "${project_path}"
