@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>menu on Go Learning</title>
-    <link>https://jimbowhy.gitee.io/tags/menu/</link>
+    <link>https://jimboyeah.github.io/tags/menu/</link>
     <description>Recent content in menu on Go Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nothing is Mine</copyright>
     <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
     
-	<atom:link href="https://jimbowhy.gitee.io/tags/menu/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimboyeah.github.io/tags/menu/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>II: Hugo 目录组织</title>
-      <link>https://jimbowhy.gitee.io/tutorials/ch02-project-directories/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch02-project-directories/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tutorials/ch02-project-directories/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch02-project-directories/</guid>
       <description>Hugo 仓库提供的文档项目本身就是一个很好的示范，理解 Hogo 工程的目录结构是为了更好地利用 Hugo 的静态站点生成能力，比如语言支持与目录结构的关系、页面模板与 Markdown 文件的关系与文件的组织方式。</description>
     </item>
     
     <item>
       <title>V: Templates 其它模板</title>
-      <link>https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch05b-hugo-templates/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch05b-hugo-templates/</guid>
       <description>Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能。Mardown 文件提共内容数据，而模板则是数据的消化系统。这部分介绍其它各种模板的使用。</description>
     </item>
     
     <item>
       <title>V: Templates 模板机制</title>
-      <link>https://jimbowhy.gitee.io/tutorials/ch05a-hugo-templates/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch05a-hugo-templates/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tutorials/ch05a-hugo-templates/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch05a-hugo-templates/</guid>
       <description>Hugo 直接使用了 Golang 的模板语法，表达能力很强大，配合 Hugo 预定义变量或自定义变量实现非常强大的静态站点功能。Mardown 文件提共内容数据，而模板则是数据的消化系统。关于模板的第一部分内容，主要讲解模板的加载流程。</description>
     </item>
     
     <item>
       <title>VII: Variables 对象变量</title>
-      <link>https://jimbowhy.gitee.io/tutorials/ch07-varialbes/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch07-varialbes/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tutorials/ch07-varialbes/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch07-varialbes/</guid>
       <description>&lt;p&gt;Hugo 提供的对象及变量就是 Go 语言实现的各种对象对外公开的函数方法或属性，了解这些对象是用好模板的基础。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>IX: Menus 菜单组织</title>
-      <link>https://jimbowhy.gitee.io/tutorials/ch09-menus/</link>
+      <link>https://jimboyeah.github.io/tutorials/ch09-menus/</link>
       <pubDate>Thu, 06 Aug 2020 12:09:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tutorials/ch09-menus/</guid>
+      <guid>https://jimboyeah.github.io/tutorials/ch09-menus/</guid>
       <description>Hugo 的菜单系统和多语言结合得非常紧密，在定义多语言时，也可以相应定义相应的菜单。也就是说，一个 Hugo 项目可以有多个不同语言的，每种语言都可以使用专用菜单。&lt;!-- raw HTML omitted --&gt;</description>
     </item>
     
