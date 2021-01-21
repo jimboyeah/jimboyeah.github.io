@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.4d63d1b4.chunk.css",
-    "main.js": "./static/js/main.56cf2750.chunk.js",
-    "main.js.map": "./static/js/main.56cf2750.chunk.js.map",
+    "main.css": "./static/css/main.48228ed1.chunk.css",
+    "main.js": "./static/js/main.43f12840.chunk.js",
+    "main.js.map": "./static/js/main.43f12840.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.4c71838e.js",
     "runtime-main.js.map": "./static/js/runtime-main.4c71838e.js.map",
     "static/js/2.3505a961.chunk.js": "./static/js/2.3505a961.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8e1698fc.chunk.js": "./static/js/3.8e1698fc.chunk.js",
     "static/js/3.8e1698fc.chunk.js.map": "./static/js/3.8e1698fc.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.4d63d1b4.chunk.css.map": "./static/css/main.4d63d1b4.chunk.css.map",
+    "static/css/main.48228ed1.chunk.css.map": "./static/css/main.48228ed1.chunk.css.map",
     "static/js/2.3505a961.chunk.js.LICENSE.txt": "./static/js/2.3505a961.chunk.js.LICENSE.txt",
     "static/media/pacman10_looped.mp3": "./static/media/pacman10_looped.b67a4f2e.mp3",
     "static/media/pacman10_regular.mp3": "./static/media/pacman10_regular.4e84161f.mp3"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4c71838e.js",
     "static/js/2.3505a961.chunk.js",
-    "static/css/main.4d63d1b4.chunk.css",
-    "static/js/main.56cf2750.chunk.js"
+    "static/css/main.48228ed1.chunk.css",
+    "static/js/main.43f12840.chunk.js"
   ]
 }
