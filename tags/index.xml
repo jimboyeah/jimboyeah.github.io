@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Go Learning</title>
-    <link>https://jimbowhy.gitee.io/tags/</link>
+    <link>https://jimboyeah.github.io/tags/</link>
     <description>Recent content in Tags on Go Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Nothing is Mine</copyright>
     <lastBuildDate>Thu, 06 Aug 2020 20:14:08 -0400</lastBuildDate>
     
-	<atom:link href="https://jimbowhy.gitee.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jimboyeah.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugo</title>
-      <link>https://jimbowhy.gitee.io/tags/hugo/</link>
+      <link>https://jimboyeah.github.io/tags/hugo/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tags/hugo/</guid>
+      <guid>https://jimboyeah.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>menu</title>
-      <link>https://jimbowhy.gitee.io/tags/menu/</link>
+      <link>https://jimboyeah.github.io/tags/menu/</link>
       <pubDate>Thu, 06 Aug 2020 20:14:08 -0400</pubDate>
       
-      <guid>https://jimbowhy.gitee.io/tags/menu/</guid>
+      <guid>https://jimboyeah.github.io/tags/menu/</guid>
       <description></description>
     </item>
     
