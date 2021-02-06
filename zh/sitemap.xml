@@ -3,294 +3,294 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/categories/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://jimbowhy.gitee.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://jimbowhy.gitee.io/categories/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/personal/showtime/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/categories/content-management/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tags/hugo/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch01-hugo-web-framework/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch02-project-directories/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch03-hugo-modules/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch04-hugo-pipes/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/</loc>
+    <loc>https://jimboyeah.github.io/categories/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/"
+                href="https://jimboyeah.github.io/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/"
+                href="https://jimboyeah.github.io/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tags/menu/</loc>
+    <loc>https://jimboyeah.github.io/personal/showtime/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/mermaid/</loc>
+    <loc>https://jimboyeah.github.io/categories/content-management/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/personal/cv_wpwppipie/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://jimbowhy.gitee.io/personal/cv_wpwppipi/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="https://jimbowhy.gitee.io/personal/cv_wpwppipie/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/personal/</loc>
+    <loc>https://jimboyeah.github.io/tags/hugo/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/personal/shot/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch01-hugo-web-framework/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tags/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch02-project-directories/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/tutorials/ch03-hugo-modules/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/tutorials/ch04-hugo-pipes/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/tags/"
+                href="https://jimboyeah.github.io/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/tags/"
+                href="https://jimboyeah.github.io/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch05b-hugo-templates/</loc>
+    <loc>https://jimboyeah.github.io/tags/menu/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch05a-hugo-templates/</loc>
+    <loc>https://jimboyeah.github.io/mermaid/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch06-multilingual/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch07-varialbes/</loc>
-    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://jimbowhy.gitee.io/personal/cv_wpwppipi/</loc>
+    <loc>https://jimboyeah.github.io/personal/cv_wpwppipie/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/personal/cv_wpwppipie/"
+                href="https://jimboyeah.github.io/personal/cv_wpwppipi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/personal/cv_wpwppipi/"
+                href="https://jimboyeah.github.io/personal/cv_wpwppipie/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/about/</loc>
+    <loc>https://jimboyeah.github.io/personal/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/personal/shot/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/tags/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/about/"
+                href="https://jimboyeah.github.io/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/about/"
+                href="https://jimboyeah.github.io/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/personal/slideshow/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch05b-hugo-templates/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/slideshow_demos/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch05a-hugo-templates/</loc>
     <lastmod>2020-08-06T20:14:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch09-menus/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch06-multilingual/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/tutorials/ch07-varialbes/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/personal/cv_wpwppipi/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/personal/cv_wpwppipie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/personal/cv_wpwppipi/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/about/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://jimboyeah.github.io/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="https://jimboyeah.github.io/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/personal/slideshow/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/slideshow_demos/</loc>
+    <lastmod>2020-08-06T20:14:08-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://jimboyeah.github.io/tutorials/ch09-menus/</loc>
     <lastmod>2020-08-06T12:09:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/tutorials/ch08-functions/</loc>
+    <loc>https://jimboyeah.github.io/tutorials/ch08-functions/</loc>
     <lastmod>2020-08-06T12:09:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/post/preface/</loc>
+    <loc>https://jimboyeah.github.io/post/preface/</loc>
     <lastmod>2017-04-09T10:58:08-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/post/preface/"
+                href="https://jimboyeah.github.io/en/post/preface/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/post/preface/"
+                href="https://jimboyeah.github.io/post/preface/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/post/</loc>
+    <loc>https://jimboyeah.github.io/post/</loc>
     <lastmod>2017-03-02T12:00:00-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/post/"
+                href="https://jimboyeah.github.io/en/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/post/"
+                href="https://jimboyeah.github.io/post/"
                 />
   </url>
   
   <url>
-    <loc>https://jimbowhy.gitee.io/contact/</loc>
+    <loc>https://jimboyeah.github.io/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://jimbowhy.gitee.io/en/contact/"
+                href="https://jimboyeah.github.io/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://jimbowhy.gitee.io/contact/"
+                href="https://jimboyeah.github.io/contact/"
                 />
   </url>
   
