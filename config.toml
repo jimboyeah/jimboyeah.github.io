@@ -35,7 +35,7 @@ sectionPagesMenu = "smain"
     weight = 2
     contentDir = "content/cn/"
     [languages.zh.params]
-      linkedin = ""
+      linkedin = "https://www.linkedin.com/in/jimboyeah/?zh"
 
 [sitemap]
   changefreq = "monthly"
@@ -55,7 +55,7 @@ sectionPagesMenu = "smain"
   youtube = ""
   github = "https://github.com/jimboyeah/jimboyeah.github.io"
   gitlab = ""
-  linkedin = ""
+  linkedin = "https://www.linkedin.com/in/jimboyeah/"
   mastodon = ""
   slack = ""
   stackoverflow = ""

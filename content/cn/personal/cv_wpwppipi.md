@@ -19,6 +19,7 @@ toc: false
     .table {font-size: 1em;}
     header h1, header h2 {text-shadow: 0px 1px 3px #fff; font-weight: bold; color:black !important;}
     .next, .prev {display: none;}
+    .scrollx { width: 100%;overflow-x: scroll; }
     @media (max-width: 800px) {
         .avatar {
             position: absolute;
@@ -58,6 +59,7 @@ toc: false
         header { background: none !important; }
         .qrcode {position: absolute; top: 0px; right:132px; width:168px; border:4px solid #00000047;}
         .github { position: absolute; left: 108px; top:32px; }
+        .linkedin  { position: absolute; left: 152px; top:32px; }
         time { float:left; margin: 1em 16px 0 0 !important;}
         h2,
         time:after { content:"#"; clear:both;}
@@ -67,6 +69,7 @@ toc: false
         ul li {list-style:none; background: #efefef; padding:2px 8px; background: white; }
         ul ul { padding-left: 16px; margin-top: -2.6em; margin-left: 2em; }
         ul ul li {background: #eee;}
+        .scrollx { width: 100%;overflow-x: hidden; }
     }
 </style>
 {{< /rawhtml >}}
@@ -75,10 +78,10 @@ toc: false
 
 
 
-## 基本资料
+<!-- ## 基本资料 -->
 
 {{<rawhtml>}}
-    <div style="width: 100%;overflow-x: scroll;">
+    <div class="scrollx">
 <table class="table" style="white-space:nowrap;">
 <tr><td class="bg-white-30"> 姓名     </td><td> 叶坚              </td>
     <td class="bg-white-30"> 语言能力 </td><td> 粤语、国语、英语(CET4)</td></tr>
@@ -100,21 +103,20 @@ toc: false
 
 - 精通
 
-    - Node + Vue、React 组件化开发，Webpack 打包，微信小程序；
+    - TypeScript + Node、Vue、React、Webpack，微信小程序；
     - C# + Xamarin 跨平台 APP 开发，.Net Razor Page，Blazor 经量级组件框架；
     - Golang + BeeGO、Iris 应用于高并发场景，使用 MySQL 数据库；
     - Java + Spring SOA 分布式微服务框架；
-    <!-- - PHP + Yaf、Laravel； -->
 
 - 熟悉
 
-    - Erlang/OTP、Elixir 分布式高并发应用；
-    - Adobe XD + Protopie 原型设计
+    - C/C++ 程序开发；Erlang/OTP、Elixir 分布式高并发应用；
+    - Flutter 移动端 APP 开发框架；
+    - PHP + Yaf、Laravel； Python + Django；
+    - Adobe XD + Protopie 原型设计；
 
 <!-- 
 - 一般
-    - Flutter/Weex 移动端开发框架；
-    - Python + Django
     - lua
     - Forth
     - ChezScheme
@@ -179,14 +181,27 @@ toc: false
     宝宝需要是一个基于小程序实现的电子商城系统，后端基于 PHP、ThinkPHP，前端基于 Node、Vue  提供了商品管理中心。小程序提供的多风格的商品展示页面、商品分类目录页、购物车、用户中心。提供用户等级、分享拼团和虚拟商品碎片玩法增强用户黏度，用户在使用的过程可以免费收集到一定的碎片，集满碎片即可按规则兑换商品。在项目实施过程中，需要根据活跃用户数量来确定服务器的架构优化实现，合理为项目设计数据库结构，以确保后端提供可靠稳定的 API 服务。
     项目成果 从无到有为公司提供电商应用产品，丰富了公司现有的产品服务目录。
 
+    {{<rawhtml class="noprint">}}
+    截图展示 ---> <a class="lh-copy" href="{{< ref path="/personal/shot.md" lang="zh" >}}#/1">Play</a>
+    {{</rawhtml>}}
+
 - 某共享床垫系统开发
 
     时间周期 2019-01 ~ 2019-08；此项目为甲方内部运营项目，整个系统主要分成两个部分，基于微信小程序实现项目的客户端，为硬件用户提供服务。基于 Node、React 实施的 IoT 中后端数据中心，结合数据采集硬件终端，管理系统中注册好的硬件设备，运行过程种自动采集故障信息，并通知管理员及时跟进。后端同时提供了小程序的数据通信服务，包括客户通过小程下单支付，完成支付后，启动硬件提供服务。小程序定时采集，并记录设备的使用记录，所有数据汇总后在中台系统提供报表展示。
 
+    {{<rawhtml class="noprint">}}
+    截图展示 ---> <a class="lh-copy" href="{{< ref path="/personal/shot.md" lang="zh" >}}#/8">Play</a>
+    {{</rawhtml>}}
 
-{{<rawhtml class="noprint">}}
-播放幻灯片，这边请 ---> <a class="lh-copy" href="{{< ref path="/personal/shot.md" lang="zh" >}}">Play</a>
-{{</rawhtml>}}
+
+- OEM 企业 MES/SOP 实施项目
+
+    时间周期 2019-07 ~ 2019-12；此项目是某 OEM 公司的 MES 系统 SOP 子模块，是现代流水作业的信息自动化应用，基于 Go 语言提供的高并发能力作为服务端，以 React 组件化开发前端应用。通过 IT 技术将生产现场与数据中心相关连接，形成一个数据中心供生产管理人员时刻在线监督生产任务与产线运行状态，通过数据决策改善产品总体质量，有效地提升企业的管理效率和生产成本，对制造业的竞争力有直接推动和提升作用。
+
+    {{<rawhtml class="noprint">}}
+    播放幻灯片，这边请 ---> <a class="lh-copy" href="{{< ref path="/personal/shot.md" lang="zh" >}}#/14">Play</a>
+    {{</rawhtml>}}
+
 
 
 ## 教育经历
@@ -195,7 +210,8 @@ toc: false
 
 2006 年参加高考，并录取到海南省琼州学院就读**应用电子技术**专业，学院于 2015 年 9 月更名为[**海南热带海洋学院**](http://www.hntou.edu.cn/xygk/xxjj/)。专业设置电路分析、数字电子、模拟电子技术，计算机体系结构，汇编语言、C 语言等课程，熟练掌握计算机辅助电路设计技术（Protel）。在校期间，积极参加各种学习活动，多次获得国家级竞赛及海南地区大学生赛事奖励，同时也获得了学校优秀学生奖学金。
 
-2009 年毕业后一直从事软件开发相关工作，潜心软件工程技术，不断专研软件工程技术。从事软件编程开发超过 8 年，深入 Web 前端及后端开发技术，掌握多门计算机编程语言，具有全栈开发能力。掌握计算机底层 TCP/IP 协议栈，熟悉 RSA 非对称加密安全体系。
+2009 年毕业后一直从事软件开发相关工作，潜心软件工程技术，不断专研软件工程技术。从事软件编程开发超过 8 年，深入 Web 前端及后端开发技术，掌握多门计算机编程语言，具有全栈开发能力。掌握计算机底层 TCP/IP 协议栈，熟悉 RSA 非对称加密安全体系。对区块链有一定基础，熟悉 PoW、PoS、PoA 等基础共识算法，了解 Ethereum 以太坊区块链应用平台。
+
 
 <!-- 主要计算机编程语言有 C、C++、Java、C#、Golang、JavaScript。常用后端框架有 Razor Page、Blazor、Iris、BeeGo、Laravel，前端框架 React、Vue、Bootstrap 等，熟悉 Xamarin 跨平台移动端 APP 开发。 -->
 
@@ -244,10 +260,10 @@ https://download.csdn.net/download/winsenjiansbomber/6599409
 
 最近一次是在 GitChat 平台上发布了一部关于编程与前端的电子书，可以参考《实用 Vue 组件开发》的 PDF 文件，下载地址： https://github.com/jimboyeah/demo/blob/C-DayStep-VUE/vue-develop-review_02.pdf
 
-
-{{<rawhtml class="noprint">}}
+<!-- 
+<rawhtml class="noprint">}}
 个人喜欢做些文字上的记录，以下是摘抄自 rtx-2011-04-06.txt 文件的片段，当时在广州的公司任职中：
-{{</rawhtml>}}
+</rawhtml>}}
 
 > **陈启虹 10:32:59**
 >
@@ -318,3 +334,4 @@ https://download.csdn.net/download/winsenjiansbomber/6599409
 > 对于他们的考核内容不需要考核得太深，但随便给个PSD也不太好。
 >
 > ...
+ -->

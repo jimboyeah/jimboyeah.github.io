@@ -405,19 +405,19 @@
 			}
 		},
 		{
-			"file": "/C/coding/md/writing/hugo.md",
+			"file": "config.toml",
 			"settings":
 			{
-				"buffer_size": 115335,
+				"buffer_size": 1919,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "config.toml",
+			"file": "/C/coding/md/writing/hugo.md",
 			"settings":
 			{
-				"buffer_size": 1840,
+				"buffer_size": 115412,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -470,7 +470,7 @@
 			"file": "content/cn/personal/shot.md",
 			"settings":
 			{
-				"buffer_size": 3468,
+				"buffer_size": 5993,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -503,19 +503,10 @@
 			}
 		},
 		{
-			"file": "content/cn/personal/slideshow.md",
-			"settings":
-			{
-				"buffer_size": 6393,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "content/cn/personal/cv_wpwppipi.md",
 			"settings":
 			{
-				"buffer_size": 9231,
+				"buffer_size": 10022,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -544,6 +535,14 @@
 			{
 				"buffer_size": 3180,
 				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/theme/scss/style.scss",
+			"settings":
+			{
+				"buffer_size": 122,
 				"line_ending": "Unix"
 			}
 		},
@@ -1085,6 +1084,18 @@
 		"selected_items":
 		[
 			[
+				"emme",
+				"Preferences: Emmet Settings"
+			],
+			[
+				"enable ",
+				"Package Control: Enable Package"
+			],
+			[
+				"emmit",
+				"Emmet: Increment Number by 1"
+			],
+			[
 				"com",
 				"Git: Commit"
 			],
@@ -1175,10 +1186,6 @@
 			[
 				"dis",
 				"Package Control: Disable Package"
-			],
-			[
-				"enable ",
-				"Package Control: Enable Package"
 			],
 			[
 				"ins",
@@ -1472,33 +1479,12 @@
 	},
 	"expanded_folders":
 	[
-		"/C/coding/md-code/hugo/quickstart",
-		"/C/coding/md-code/hugo/quickstart/assets",
-		"/C/coding/md-code/hugo/quickstart/assets/theme",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/css",
-		"/C/coding/md-code/hugo/quickstart/assets/theme/scss",
-		"/C/coding/md-code/hugo/quickstart/content",
-		"/C/coding/md-code/hugo/quickstart/content/cn",
-		"/C/coding/md-code/hugo/quickstart/content/cn/about",
-		"/C/coding/md-code/hugo/quickstart/content/cn/personal",
-		"/C/coding/md-code/hugo/quickstart/content/cn/post",
-		"/C/coding/md-code/hugo/quickstart/content/cn/tutorials",
-		"/C/coding/md-code/hugo/quickstart/content/en",
-		"/C/coding/md-code/hugo/quickstart/content/en/about",
-		"/C/coding/md-code/hugo/quickstart/content/en/post",
-		"/C/coding/md-code/hugo/quickstart/layouts",
-		"/C/coding/md-code/hugo/quickstart/layouts/_default",
-		"/C/coding/md-code/hugo/quickstart/layouts/personal",
-		"/C/coding/md-code/hugo/quickstart/layouts/slideshow",
-		"/C/coding/md-code/hugo/quickstart/public",
-		"/C/coding/md-code/hugo/quickstart/static",
-		"/C/coding/md-code/hugo/quickstart/themes",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/partials"
+		"/C/coding/md-code/hugo/quickstart"
 	],
 	"file_history":
 	[
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/static/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css",
+		"/C/coding/md-code/hugo/quickstart/php.bat",
 		"/C/coding/md-code/java/maven/trucks/src/main/webapp/WEB-INF/web.xml",
 		"/C/coding/md-code/XamarinVS2019/readme.md",
 		"/C/coding/md-code/hugo/quickstart/layouts/personal/list.html",
@@ -1624,19 +1610,18 @@
 		"/C/coding/md-code/hugo/quickstart/layouts/resume/../single.html",
 		"/C/coding/md-code/hugo/src/docs/content/zh/templates/base.md",
 		"/C/coding/md-code/hugo/src/docs/content/en/functions/render.md",
-		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/post/summary-with-image.html",
-		"/C/coding/md-code/hugo/quickstart/layouts/_default/../list.html",
-		"/C/coding/md-code/hugo/src/docs/content/en/templates/lists.md"
+		"/C/coding/md-code/hugo/quickstart/themes/gohugo-theme-ananke/layouts/post/summary-with-image.html"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
 		"height": 451.0,
 		"where_history":
 		[
+			"C:\\coding\\md-code\\hugo\\quickstart",
 			"C:\\coding\\md-code\\hugo\\quickstart\\themes",
 			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke",
 			"C:\\coding\\md-code\\hugo\\quickstart\\themes\\gohugo-theme-ananke\\layouts",
@@ -1676,6 +1661,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".grow",
+			"div",
+			"</section>",
+			"div",
+			"link",
 			"style",
 			"{{ .Name }} ",
 			"Menus",
@@ -1798,12 +1788,7 @@
 			"single-baseof",
 			"page-baseof",
 			"baseof",
-			"page-",
-			"post",
-			"TableOfContents",
-			"section",
-			"post",
-			"list"
+			"page-"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1822,7 +1807,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1853,27 +1838,62 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 155.0,
+						"translation.y": 57.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/C/coding/md/writing/hugo.md",
+					"file": "config.toml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 115335,
+						"buffer_size": 1919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14255,
-								14260
+								1047,
+								1047
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_init_dirty_state": false,
+							"origin_encoding": "UTF-8",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/TOML/TOML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 124.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/coding/md/writing/hugo.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1899,42 +1919,7 @@
 						"translation.y": 569.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config.toml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1840,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								285,
-								285
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/TOML/TOML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
@@ -1967,7 +1952,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
@@ -2001,7 +1986,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
@@ -2111,7 +2096,7 @@
 			]
 		},
 		{
-			"selected": 5,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -2120,15 +2105,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3468,
+						"buffer_size": 5993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								750,
-								750
+								1036,
+								1036
 							]
 						],
 						"settings":
@@ -2143,7 +2128,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 105.0,
+						"translation.y": 2396.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
@@ -2183,7 +2168,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 22,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -2216,7 +2201,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
@@ -2232,8 +2217,8 @@
 						"selection":
 						[
 							[
-								1764,
-								1764
+								799,
+								1191
 							]
 						],
 						"settings":
@@ -2248,62 +2233,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 379.0,
+						"translation.y": 225.5,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 12,
-					"file": "content/cn/personal/slideshow.md",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 6393,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"is_init_dirty_state": false,
-							"origin_encoding": "UTF-8",
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 291.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
 					"file": "content/cn/personal/cv_wpwppipi.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9231,
+						"buffer_size": 10022,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2546,
-								2546
+								7252,
+								7252
 							]
 						],
 						"settings":
@@ -2320,14 +2270,14 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 855.0,
+						"translation.y": 4225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "content/cn/about/_index.md",
 					"semi_transient": false,
 					"settings":
@@ -2356,11 +2306,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "content/en/post/preface.md",
 					"semi_transient": false,
 					"settings":
@@ -2389,17 +2339,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 23,
+					"stack_index": 24,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 11,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "assets/theme/css/main.css",
 					"semi_transient": false,
 					"settings":
@@ -2411,8 +2355,8 @@
 						"selection":
 						[
 							[
-								980,
-								980
+								1265,
+								1265
 							]
 						],
 						"settings":
@@ -2427,10 +2371,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 372.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "assets/theme/scss/style.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"origin_encoding": "ASCII",
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -2465,7 +2441,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 21,
 					"type": "text"
 				},
 				{
@@ -2500,7 +2476,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 24,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -2535,7 +2511,7 @@
 						"translation.y": 11720.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
@@ -2570,7 +2546,7 @@
 						"translation.y": 244.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 19,
 					"type": "text"
 				},
 				{
@@ -2605,7 +2581,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 20,
 					"type": "text"
 				},
 				{
@@ -2640,7 +2616,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
@@ -2679,7 +2655,7 @@
 						"translation.y": 475.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 22,
 					"type": "text"
 				},
 				{
@@ -2712,7 +2688,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
@@ -2728,8 +2704,8 @@
 						"selection":
 						[
 							[
-								247,
-								301
+								321,
+								321
 							]
 						],
 						"settings":
@@ -2745,7 +2721,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -2780,7 +2756,7 @@
 						"translation.y": 40.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
@@ -2813,7 +2789,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 15,
 					"type": "text"
 				}
 			]
@@ -2821,7 +2797,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -2842,12 +2818,6 @@
 				1,
 				1,
 				2
-			],
-			[
-				0,
-				2,
-				1,
-				3
 			]
 		],
 		"cols":
@@ -2859,11 +2829,14 @@
 		[
 			0.0,
 			0.03,
-			0.97,
 			1.0
 		]
 	},
 	"menu_visible": true,
+	"output.SFTP":
+	{
+		"height": 0.0
+	},
 	"output.diagnostics":
 	{
 		"height": 0.0
@@ -2896,7 +2869,7 @@
 	"project": "hugo.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -2905,6 +2878,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"shot.md",
+				"quickstart\\content\\cn\\personal\\shot.md"
+			],
 			[
 				"404",
 				"quickstart\\themes\\gohugo-theme-ananke\\layouts\\404.html"
@@ -3412,10 +3389,6 @@
 			[
 				"stream",
 				"src\\streamfile\\streamfile.cbp"
-			],
-			[
-				"vcpp_reflection_5",
-				"♬☾ CPP Demo Project\\dotnet-clr\\src\\vcpp_reflection_5.cpp"
 			]
 		],
 		"width": 0.0
@@ -3423,9 +3396,13 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "",
+		"last_filter": "next",
 		"selected_items":
 		[
+			[
+				"next",
+				"C:\\coding\\md-code\\nextjs-blog\\nextjs.sublime-project"
+			],
 			[
 				"",
 				"C:\\coding\\md-code\\cppDemos\\mfcDemo\\mfcDemo.sublime-project"
@@ -3598,7 +3575,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 347.0,
+	"side_bar_width": 297.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

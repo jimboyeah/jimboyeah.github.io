@@ -45,6 +45,19 @@ toc: true
     </script>
 </section>
 
+<!-- 
+<section data-transition="convex-in concave-out">
+{{<figure src="../../../static/sop/sop-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/kpi-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/userform-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/userlist-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/workline-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/workshop-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/workstation-frame.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+{{<figure src="../../../static/sop/" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}} 
+</section>
+ -->
+
 <section data-transition="zoom-in fade-out">
 {{<figure src="/shot/194565651.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - 电商平台">}} 
 </section>
@@ -100,6 +113,43 @@ toc: true
 
 <section data-transition="zoom-in fade-out" data-background="#514263">
 {{<figure src="/shot/layout-grid.jpg" class="" title="演示案例 - 蓝牙控制小程序">}} 
+</section>
+
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot1.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot2.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot3.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot4.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot5.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot6.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot7.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot8.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
+</section>
+
+<section data-transition="convex-in concave-out">
+{{<figure src="/sop/miniot9.jpg" class="bg-light-blue br4 tc pv3 dark-blue ph1" title="演示案例 - SOP">}}
 </section>
 
 
